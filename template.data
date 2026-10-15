@@ -1,0 +1,37 @@
+const contentTemplates = {
+  modern_tech: {
+    heroTitle: "Scale Your Digital Infrastructure Instantly",
+    heroSubtitle: "Build, deploy, and monitor your cloud applications with our automated performance platform.",
+    btnText: "Start Free Trial",
+    featureTitle: "Built for Modern Scale",
+    ctaTitle: "Ready to optimize your workflow?"
+  },
+  organic_nature: {
+    heroTitle: "Freshly Brewed & Ethically Sourced Everyday",
+    heroSubtitle: "Experience the pure taste of organic nature with our handcrafted selections delivered to you.",
+    btnText: "Order Online",
+    featureTitle: "100% Organic & Fresh",
+    ctaTitle: "Want to taste the purity?"
+  },
+  bold_fitness: {
+    heroTitle: "Unleash Your Absolute Potential Inside",
+    heroSubtitle: "High-intensity training, expert coaching, and premium nutrition to crush your ultimate fitness goals.",
+    btnText: "Join The Gym",
+    featureTitle: "No Excuses. Just Results.",
+    ctaTitle: "Ready to push your limits?"
+  },
+  luxury_minimal: {
+    heroTitle: "Crafted Elegance for the Modern Individual",
+    heroSubtitle: "Discover our curated collection of premium minimalist designs made to last generations.",
+    btnText: "Explore Collection",
+    featureTitle: "Timeless Craftsmanship",
+    ctaTitle: "Experience luxury today."
+  },
+  playful_vibrant: {
+    heroTitle: "Bringing Joy & Creativity to Every Day",
+    heroSubtitle: "Explore a world full of color, fun games, and cute designs made specially to spark imagination.",
+    btnText: "Explore Fun",
+    featureTitle: "Designed for Pure Joy",
+    ctaTitle: "Ready for a fun adventure?"
+  }
+};

@@ -1,0 +1,150 @@
+@import "tailwindcss";
+@import "../node_modules/preline/variants.css";
+@import "../node_modules/preline/css/themes/theme.css";
+@plugin "@tailwindcss/forms";
+@source "../node_modules/preline/dist/*.js";
+
+/*
+  Tailwind v4 removed the `*-opacity-*` utilities that the Tailblocks markup uses.
+  These rules restore the same look without touching the component markup.
+*/
+@layer utilities {
+  .bg-gray-100.bg-opacity-50 { background-color: color-mix(in oklab, var(--color-gray-100) 50%, transparent); }
+  .bg-gray-100.bg-opacity-75 { background-color: color-mix(in oklab, var(--color-gray-100) 75%, transparent); }
+  .border-gray-200.border-opacity-60 { border-color: color-mix(in oklab, var(--color-gray-200) 60%, transparent); }
+}
+
+/* ───────────────────────── motion ─────────────────────────
+   Used by the generated pages (see src/generator/motionRuntime.ts).
+   Nothing is hidden unless the runtime has switched the page to data-motion="on",
+   so content is always visible without JavaScript, and prefers-reduced-motion turns it all off. */
+
+/* reveal on scroll */
+[data-motion='on'] [data-reveal] {
+  opacity: 0;
+  transition:
+    opacity var(--m-dur, 600ms) var(--m-ease, ease-out),
+    transform var(--m-dur, 600ms) var(--m-ease, ease-out);
+}
+[data-motion='on'] [data-reveal='up'] { transform: translateY(var(--m-dist, 16px)); }
+[data-motion='on'] [data-reveal='down'] { transform: translateY(calc(var(--m-dist, 16px) * -1)); }
+[data-motion='on'] [data-reveal='left'] { transform: translateX(calc(var(--m-dist, 16px) * -1)); }
+[data-motion='on'] [data-reveal='right'] { transform: translateX(var(--m-dist, 16px)); }
+[data-motion='on'] [data-reveal='scale'] { transform: scale(0.94); }
+[data-motion='on'] [data-reveal].is-in { opacity: 1; transform: none; }
+[data-motion='on'] [data-delay='1'] { transition-delay: calc(var(--m-stagger, 80ms) * 1); }
+[data-motion='on'] [data-delay='2'] { transition-delay: calc(var(--m-stagger, 80ms) * 2); }
+[data-motion='on'] [data-delay='3'] { transition-delay: calc(var(--m-stagger, 80ms) * 3); }
+[data-motion='on'] [data-delay='4'] { transition-delay: calc(var(--m-stagger, 80ms) * 4); }
+[data-motion='on'] [data-delay='5'] { transition-delay: calc(var(--m-stagger, 80ms) * 5); }
+[data-motion='on'] [data-delay='6'] { transition-delay: calc(var(--m-stagger, 80ms) * 6); }
+[data-motion='on'] [data-delay='7'] { transition-delay: calc(var(--m-stagger, 80ms) * 7); }
+[data-motion='on'] [data-delay='8'] { transition-delay: calc(var(--m-stagger, 80ms) * 8); }
+
+/* a line that draws itself */
+[data-motion='on'] [data-draw] {
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform calc(var(--m-dur, 600ms) * 2.2) var(--m-ease, ease-out);
+}
+[data-motion='on'] [data-draw].is-in { transform: scaleY(1); }
+
+/* headline word by word */
+[data-motion='on'] .m-word {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(0.45em);
+  transition:
+    opacity var(--m-dur, 600ms) var(--m-ease, ease-out),
+    transform var(--m-dur, 600ms) var(--m-ease, ease-out);
+}
+[data-motion='on'] .is-in .m-word,
+[data-motion='on'] .m-word.is-in,
+[data-motion='on'] [data-split].is-in .m-word { opacity: 1; transform: none; }
+
+/* hover */
+.m-lift { transition: transform 0.25s ease, box-shadow 0.25s ease; }
+.m-lift:hover { transform: translateY(-5px); box-shadow: 0 18px 40px -20px rgb(0 0 0 / 0.45); }
+.m-press { transition: transform 0.15s ease, filter 0.2s ease; }
+.m-press:hover { filter: brightness(1.08); }
+.m-press:active { transform: scale(0.97); }
+
+/* floating hero blobs and a slowly moving gradient */
+@keyframes m-float {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(10px, -14px, 0) scale(1.08); }
+}
+@keyframes m-gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+[data-motion='on'] .m-float { animation: m-float 9s ease-in-out infinite; }
+[data-motion='on'] .m-float-slow { animation: m-float 14s ease-in-out infinite reverse; }
+[data-motion='on'] .m-gradient { background-size: 220% 220%; animation: m-gradient 16s ease-in-out infinite; }
+
+/* light sweep across a button */
+@keyframes m-shimmer {
+  0% { transform: translateX(-120%) skewX(-18deg); }
+  60%, 100% { transform: translateX(260%) skewX(-18deg); }
+}
+[data-motion='on'] .m-shimmer { position: relative; overflow: hidden; }
+[data-motion='on'] .m-shimmer::after {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 40%;
+  background: linear-gradient(90deg, transparent, rgb(255 255 255 / 0.35), transparent);
+  animation: m-shimmer 3.4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* gently pulsing ring on the popular plan */
+@keyframes m-glow {
+  0%, 100% { box-shadow: 0 0 0 0 color-mix(in oklab, var(--g-accent, #6366f1) 35%, transparent); }
+  50% { box-shadow: 0 0 0 10px color-mix(in oklab, var(--g-accent, #6366f1) 0%, transparent); }
+}
+[data-motion='on'] .m-glow { animation: m-glow 3s ease-in-out infinite; }
+
+/* keyword strip: pure CSS, so it also runs before any script */
+@keyframes m-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.m-marquee { overflow: hidden; }
+.m-marquee-track { animation: m-marquee var(--m-marquee, 32s) linear infinite; }
+.m-marquee:hover .m-marquee-track { animation-play-state: paused; }
+
+/* FAQ answers slide open */
+@keyframes m-open {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: none; }
+}
+[data-motion='on'] details[open] > :not(summary) { animation: m-open 0.35s var(--m-ease, ease-out); }
+
+/* rotating testimonials: stacked in one cell while the script runs, a plain list without it */
+[data-motion='on'] [data-carousel] [data-slide] {
+  grid-area: 1 / 1;
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: opacity 0.6s var(--m-ease, ease-out), transform 0.6s var(--m-ease, ease-out);
+}
+[data-motion='on'] [data-carousel] [data-slide].is-active { opacity: 1; transform: none; pointer-events: auto; }
+[data-carousel] [data-dot] { opacity: 0.35; transition: opacity 0.3s ease, transform 0.3s ease; }
+[data-carousel] [data-dot][aria-current='true'] { opacity: 1; transform: scale(1.25); }
+
+/* navigation after scrolling: tighter, with a soft shadow */
+[data-scrolled='true'] { box-shadow: 0 10px 30px -18px rgb(0 0 0 / 0.55); }
+.g-root nav[data-scrolled='true'] { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+.g-root nav { transition: padding 0.3s ease, box-shadow 0.3s ease; }
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal], [data-draw], .m-word { opacity: 1 !important; transform: none !important; transition: none !important; }
+  .m-float, .m-float-slow, .m-gradient, .m-glow, .m-shimmer::after, .m-marquee-track { animation: none !important; }
+  .m-lift:hover { transform: none; }
+  details[open] > :not(summary) { animation: none !important; }
+}
+
+/* multi-page sites: the link of the page you are on */
+.g-root a[aria-current='page'] { color: var(--g-accent); font-weight: 600; }

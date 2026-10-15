@@ -1,0 +1,65 @@
+{
+  "none": {
+    "date": "2026-10-15",
+    "train": 3499,
+    "test": 660,
+    "weights": {
+      "rules": 0.5,
+      "learned": 1,
+      "meaning": 0,
+      "probe": 0,
+      "ruleSharpness": 2.5,
+      "abstain": 0.12
+    },
+    "accuracy": {
+      "rules only": 35.9,
+      "learned model only": 64.4,
+      "rules + learned": 64.4,
+      "blend (tuned)": 63.9
+    }
+  },
+  "multilingual-e5-small": {
+    "date": "2026-10-15",
+    "train": 3499,
+    "test": 660,
+    "weights": {
+      "rules": 0.5,
+      "learned": 0.5,
+      "meaning": 1,
+      "probe": 1,
+      "ruleSharpness": 2.5,
+      "abstain": 0.12
+    },
+    "accuracy": {
+      "rules only": 35.9,
+      "learned model only": 64.4,
+      "meaning (nearest) only": 67.3,
+      "meaning (probe) only": 68.8,
+      "rules + learned": 64.4,
+      "learned + both meanings": 77.9,
+      "everything (tuned)": 75
+    }
+  },
+  "all-MiniLM-L6-v2": {
+    "date": "2026-10-15",
+    "train": 3499,
+    "test": 660,
+    "weights": {
+      "rules": 1,
+      "learned": 2,
+      "meaning": 2,
+      "probe": 0.5,
+      "ruleSharpness": 2.5,
+      "abstain": 0.12
+    },
+    "accuracy": {
+      "rules only": 35.9,
+      "learned model only": 64.4,
+      "meaning (nearest) only": 65.8,
+      "meaning (probe) only": 57,
+      "rules + learned": 64.4,
+      "learned + both meanings": 69.4,
+      "everything (tuned)": 74.1
+    }
+  }
+}

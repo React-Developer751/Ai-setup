@@ -1,0 +1,403 @@
+// Export of a page built from the stored components ("My 92 components").
+//   * `buildLibraryProject`    a Vite project: the page, the components it uses, the small runtime around them
+//                              (ThemeScope, content filling, colours) and the images they need
+//   * `buildLibraryStandalone` one .html file: the finished page with its CSS, light / dark switch, animations and,
+//                              when a component needs it, Preline's script for menus and accordions
+// Like exportSite.ts this reads files as text (`?raw`), so it only runs inside Vite.
+import { flushSync } from 'react-dom'
+import { createRoot } from 'react-dom/client'
+import indexCss from '../index.css?raw'
+import packageJson from '../../package.json?raw'
+import prelineScript from '../../node_modules/preline/dist/preline.js?raw'
+import extraContentSource from './extraContent.ts?raw'
+import { faviconSvg } from './artBrain'
+import { escapeHtml, jsString, motionFile, slugify, usedCss, type ExportDetails } from './exportSite'
+import { seededRandom } from './random'
+import finalPromptSource from './finalPrompt.ts?raw'
+import fillContentSource from './library/fillContent.ts?raw'
+import type { generateLibraryPage } from './library/generateLibraryPage'
+import { libraryComponents } from './library/libraryComponents'
+import libraryRolesSource from './library/libraryRoles.ts?raw'
+import libraryThemeSource from './library/libraryTheme.ts?raw'
+import { libraryThemeStyle } from './library/libraryTheme'
+import sectionIdsSource from './library/sectionIds.ts?raw'
+import { Section, ThemeScope } from './library/ThemeScope'
+import themeScopeSource from './library/ThemeScope.tsx?raw'
+import { MOTION_RUNTIME_JS } from './motionRuntimeJs'
+import siteTypesSource from './siteTypes.ts?raw'
+import { defaultMode, onColor, type ColorMode } from './themes'
+import themesSource from './themes.ts?raw'
+import { createZip, type ZipEntry } from './zip'
+
+type Library = ReturnType<typeof generateLibraryPage>
+
+/** The person's own email, phone and address instead of the placeholders (in the text and in the code). */
+export function libraryWithDetails(lib: Library, details: ExportDetails): Library {
+  const contact = { ...lib.content.contact }
+  let code = lib.code
+  for (const key of ['email', 'phone', 'address'] as const) {
+    const to = details[key]?.trim()
+    if (!to || to === contact[key]) continue
+    code = code.split(contact[key]).join(to)
+    contact[key] = to
+  }
+  return { ...lib, code, content: { ...lib.content, contact } }
+}
+
+const componentSources = import.meta.glob<string>('../components/*/*.tsx', { query: '?raw', import: 'default' })
+
+export const libraryProjectName = (lib: Library) => slugify(lib.content.brandName)
+
+/** The text type of the generated content, cut out of the generator's own files so it cannot drift. */
+function contentTypes() {
+  const quote = finalPromptSource.match(/^type Quote = .*$/m)![0]
+  const plan = extraContentSource.match(/^export type Plan = .*$/m)![0]
+  const shared = siteTypesSource.slice(siteTypesSource.indexOf('export type Milestone'))
+  const start = finalPromptSource.indexOf('export type WebsiteContent')
+  const content = finalPromptSource.slice(start, finalPromptSource.indexOf('\n}\n', start) + 3)
+  return `// The shape of the text that fills the page.\n${quote}\n${plan}\n${shared}\n${content}`
+}
+
+const relink = (code: string) =>
+  code
+    .replace(/'\.\.\/finalPrompt'/g, "'./content'")
+    .replace(/'\.\.\/(?:motionBrain|motionRuntime)'/g, "'./motion'")
+    .replace(/'\.\.\/themes'/g, "'./themes'")
+
+/** images that the used components point at (assets/img/...), read from the running app */
+async function assetFiles(sources: string[]): Promise<ZipEntry[]> {
+  const paths = new Set(sources.flatMap((code) => [...code.matchAll(/assets\/[\w\-./]+\.(?:webp|png|jpe?g|svg|gif|avif)/g)].map((m) => m[0])))
+  const found: ZipEntry[] = []
+  for (const path of paths) {
+    try {
+      const response = await fetch(`/${path}`)
+      // a dev server answers a missing file with the app's own page, so check that it really is an image
+      if (response.ok && response.headers.get('content-type')?.startsWith('image/')) found.push({ path: `public/${path}`, content: new Uint8Array(await response.arrayBuffer()) })
+    } catch {
+      // the image is simply left out
+    }
+  }
+  return found
+}
+
+export async function buildLibraryProject(lib: Library): Promise<ZipEntry[]> {
+  const pkg = JSON.parse(packageJson) as { dependencies: Record<string, string>; devDependencies: Record<string, string> }
+  const name = libraryProjectName(lib)
+  const ids = [...new Set(lib.sections.map((s) => s.componentId))]
+  const sources = await Promise.all(ids.map((id) => componentSources[`../components/${id}.tsx`]()))
+
+  const files: ZipEntry[] = [
+    {
+      path: 'package.json',
+      content:
+        JSON.stringify(
+          {
+            name,
+            private: true,
+            version: '1.0.0',
+            type: 'module',
+            scripts: { dev: 'vite', build: 'tsc -b && vite build', preview: 'vite preview' },
+            dependencies: { preline: pkg.dependencies.preline, react: pkg.dependencies.react, 'react-dom': pkg.dependencies['react-dom'] },
+            devDependencies: {
+              '@tailwindcss/forms': pkg.dependencies['@tailwindcss/forms'],
+              '@tailwindcss/vite': pkg.dependencies['@tailwindcss/vite'],
+              '@types/react': pkg.devDependencies['@types/react'],
+              '@types/react-dom': pkg.devDependencies['@types/react-dom'],
+              '@vitejs/plugin-react': pkg.devDependencies['@vitejs/plugin-react'],
+              tailwindcss: pkg.dependencies.tailwindcss,
+              typescript: pkg.devDependencies.typescript,
+              vite: pkg.devDependencies.vite,
+            },
+          },
+          null,
+          2,
+        ) + '\n',
+    },
+    {
+      path: 'index.html',
+      content: `<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>${escapeHtml(lib.content.brandName)}</title>
+    <meta name="description" content="${escapeHtml(lib.content.hero.subtitle)}" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+`,
+    },
+    {
+      path: 'vite.config.ts',
+      content: `import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+import { defineConfig } from 'vite'
+
+// base './' lets the built site live in any folder or sub-path of a web server
+export default defineConfig({
+  base: './',
+  plugins: [react(), tailwindcss()],
+})
+`,
+    },
+    {
+      path: 'tsconfig.json',
+      content:
+        JSON.stringify(
+          {
+            compilerOptions: {
+              target: 'ES2022',
+              lib: ['ES2023', 'DOM', 'DOM.Iterable'],
+              module: 'ESNext',
+              moduleResolution: 'bundler',
+              types: ['vite/client'],
+              jsx: 'react-jsx',
+              strict: true,
+              skipLibCheck: true,
+              noEmit: true,
+              isolatedModules: true,
+              allowImportingTsExtensions: true,
+            },
+            include: ['src'],
+          },
+          null,
+          2,
+        ) + '\n',
+    },
+    { path: '.gitignore', content: 'node_modules\ndist\n' },
+    { path: 'src/index.css', content: indexCss },
+    { path: 'src/vite-env.d.ts', content: '/// <reference types="vite/client" />\n' },
+    {
+      path: 'src/main.tsx',
+      content: `import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './GeneratedLandingPage'
+
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+)
+`,
+    },
+    {
+      path: 'src/GeneratedLandingPage.tsx',
+      content: lib.code.replace("'./generator/library/ThemeScope'", "'./library/ThemeScope'").replace("'./generator/motionBrain'", "'./library/motion'"),
+    },
+    { path: 'src/library/ThemeScope.tsx', content: relink(themeScopeSource) },
+    { path: 'src/library/fillContent.ts', content: relink(fillContentSource) },
+    { path: 'src/library/libraryTheme.ts', content: relink(libraryThemeSource) },
+    { path: 'src/library/libraryRoles.ts', content: libraryRolesSource },
+    { path: 'src/library/sectionIds.ts', content: sectionIdsSource },
+    { path: 'src/library/themes.ts', content: themesSource },
+    { path: 'src/library/content.ts', content: contentTypes() },
+    { path: 'src/library/motion.ts', content: motionFile() },
+    ...ids.map((id, i) => ({ path: `src/components/${id}.tsx`, content: sources[i] })),
+    ...(await assetFiles(sources)),
+    {
+      path: 'README.md',
+      content: `# ${lib.content.brandName}
+
+A one-page website assembled from ready-made components (React + Vite + Tailwind CSS + Preline). It is fully static: no server, no database.
+
+## Run it
+
+\`\`\`bash
+npm install
+npm run dev      # open the address it prints
+npm run build    # the finished site is in dist/
+\`\`\`
+
+## Edit it
+
+- \`src/GeneratedLandingPage.tsx\` the page: the text, the colours and the list of sections (each one is a file in \`src/components/\`).
+- \`src/components/\` the components themselves. Their markup is untouched; the text comes from the \`content\` object, the colours from \`palette\`.
+- \`src/library/\` the small runtime that fills the text, applies the colours and the light / dark switch.
+
+The contact and newsletter forms only show the layout: connect them to a form service before you publish.
+`,
+    },
+  ]
+  return files.map((file) => ({ ...file, path: `${name}/${file.path}` }))
+}
+
+export const buildLibraryZip = async (lib: Library) => createZip(await buildLibraryProject(lib))
+
+// ───────────── one .html file ─────────────
+const SUN = '<circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>'
+const MOON = '<path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>'
+
+const cssText = (style: object) =>
+  Object.entries(style)
+    .map(([key, value]) => `${key.startsWith('--') ? key : key.replace(/[A-Z]/g, (m) => `-${m.toLowerCase()}`)}:${value}`)
+    .join(';')
+
+function renderLibrary(lib: Library) {
+  // draw the page once in memory: the components, then ThemeScope fills their text and sets the colours
+  const host = document.createElement('div')
+  const root = createRoot(host)
+  flushSync(() =>
+    root.render(
+      <ThemeScope theme={lib.themeKey} palette={lib.palette} content={lib.content}>
+        {lib.sections.map(({ role, componentId }) => {
+          const Component = libraryComponents[componentId]
+          return (
+            <Section key={role} role={role}>
+              <Component />
+            </Section>
+          )
+        })}
+      </ThemeScope>,
+    ),
+  )
+  const html = host.innerHTML
+  root.unmount()
+
+  const styles = Object.fromEntries((['light', 'dark'] as ColorMode[]).map((mode) => [mode, cssText(libraryThemeStyle(lib.palette, mode).style)]))
+  const needsPreline = /data-hs-|\bhs-/.test(html)
+  const css = usedCss([html], false)
+  return { html, styles, needsPreline, css }
+}
+
+export function buildLibraryStandalone(lib: Library): string {
+  const { html, styles, needsPreline, css } = renderLibrary(lib)
+  return `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>${escapeHtml(lib.content.brandName)}</title>
+<meta name="description" content="${escapeHtml(lib.content.hero.subtitle)}" />
+<style>${css}
+html{scroll-behavior:smooth;scroll-padding-top:5rem}body{margin:0}</style>
+</head>
+<body>
+${html}
+${needsPreline ? `<script>${prelineScript.replace(/<\/script/gi, '<\\/script')}</script>\n` : ''}<script>
+const STYLES = ${jsString(styles)};
+const MOTION = ${jsString(lib.motion)};
+const SUN = ${jsString(SUN)};
+const MOON = ${jsString(MOON)};
+
+${MOTION_RUNTIME_JS}
+
+const page = document.querySelector('[data-gen-theme]');
+let mode = ${jsString(defaultMode(lib.themeKey))};
+
+document.addEventListener('click', (event) => {
+  const toggle = event.target.closest('[aria-label="Toggle dark mode"]');
+  if (!toggle) return;
+  mode = mode === 'dark' ? 'light' : 'dark';
+  page.setAttribute('style', STYLES[mode]);
+  page.classList.toggle('dark', mode === 'dark');
+  const icon = toggle.querySelector('svg');
+  if (icon) icon.innerHTML = mode === 'dark' ? SUN : MOON;
+});
+
+${needsPreline ? 'if (window.HSStaticMethods) window.HSStaticMethods.autoInit();\n' : ''}initMotion(page, MOTION);
+</script>
+</body>
+</html>
+`
+}
+
+// ───────────── a folder of plain files (index.html + assets) ─────────────
+const PLACEHOLDER_URL = 'https://www.example.com'
+
+export function buildLibraryStaticFiles(lib: Library, details: ExportDetails = {}): ZipEntry[] {
+  const { html, styles, needsPreline, css } = renderLibrary(lib)
+  const brand = lib.content.brandName
+  const description = lib.content.hero.subtitle
+  const siteUrl = details.siteUrl?.trim().replace(/\/+$/, '') || PLACEHOLDER_URL
+  const mode = defaultMode(lib.themeKey)
+  const palette = lib.palette[mode]
+  const favicon = faviconSvg(lib.themeKey, brand, seededRandom(lib.content.brandName.length + 17), palette.accent, onColorOf(palette.accent))
+  const business = {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    name: brand,
+    description,
+    email: lib.content.contact.email,
+    telephone: lib.content.contact.phone,
+    address: lib.content.contact.address,
+  }
+  const script = `${MOTION_RUNTIME_JS}
+
+const STYLES = ${JSON.stringify(styles)};
+const MOTION = ${JSON.stringify(lib.motion)};
+const SUN = ${JSON.stringify(SUN)};
+const MOON = ${JSON.stringify(MOON)};
+const page = document.querySelector('[data-gen-theme]');
+let mode = ${JSON.stringify(mode)};
+try { mode = localStorage.getItem('site-mode') || mode; } catch (e) {}
+function apply() {
+  page.setAttribute('style', STYLES[mode]);
+  page.classList.toggle('dark', mode === 'dark');
+  const icon = document.querySelector('[aria-label="Toggle dark mode"] svg');
+  if (icon) icon.innerHTML = mode === 'dark' ? SUN : MOON;
+}
+apply();
+document.addEventListener('click', (event) => {
+  if (!event.target.closest('[aria-label="Toggle dark mode"]')) return;
+  mode = mode === 'dark' ? 'light' : 'dark';
+  try { localStorage.setItem('site-mode', mode); } catch (e) {}
+  apply();
+});
+if (window.HSStaticMethods) window.HSStaticMethods.autoInit();
+initMotion(page, MOTION);
+`
+  const index = `<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>${escapeHtml(brand)}</title>
+<meta name="description" content="${escapeHtml(description)}" />
+<link rel="canonical" href="${siteUrl}/" />
+<meta property="og:title" content="${escapeHtml(brand)}" />
+<meta property="og:description" content="${escapeHtml(description)}" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="${escapeHtml(brand)}" />
+<meta name="twitter:card" content="summary" />
+<meta name="theme-color" content="${palette.bg}" />
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+<link rel="stylesheet" href="assets/style.css" />
+<script type="application/ld+json">${JSON.stringify(business).replace(/</g, '\\u003c')}</script>
+</head>
+<body>
+${html}
+${needsPreline ? '<script src="assets/preline.js"></script>\n' : ''}<script src="assets/site.js" defer></script>
+</body>
+</html>
+`
+  const today = new Date().toISOString().slice(0, 10)
+  return [
+    { path: 'index.html', content: index },
+    { path: 'assets/style.css', content: `${css}\nhtml{scroll-behavior:smooth;scroll-padding-top:5rem}body{margin:0}\n` },
+    { path: 'assets/site.js', content: script },
+    { path: 'assets/favicon.svg', content: favicon + '\n' },
+    ...(needsPreline ? [{ path: 'assets/preline.js', content: prelineScript }] : []),
+    { path: 'sitemap.xml', content: `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>${siteUrl}/</loc><lastmod>${today}</lastmod></url>\n</urlset>\n` },
+    { path: 'robots.txt', content: `User-agent: *\nAllow: /\n\nSitemap: ${siteUrl}/sitemap.xml\n` },
+    {
+      path: 'README.txt',
+      content: `${brand}: a one-page static website (plain HTML, CSS and JavaScript).
+
+  1. Upload everything in this folder to any web host, or open index.html by double-click.
+  2. ${details.siteUrl ? `The address ${siteUrl} is already in the sitemap, robots.txt and the canonical link.` : `Replace ${PLACEHOLDER_URL} with your real address in sitemap.xml, robots.txt and index.html.`}
+  3. Check the email, phone number and address (they are placeholders unless you filled them in).
+  4. The form layouts come from the stored components and are not connected to anything yet: connect them to a form service
+     such as Formspree or Netlify Forms.
+`,
+    },
+  ].map((file) => ({ ...file, path: `${libraryProjectName(lib)}-static/${file.path}` }))
+}
+
+export const buildLibraryStaticZip = (lib: Library, details: ExportDetails = {}) => createZip(buildLibraryStaticFiles(lib, details))
+
+/** the readable text colour on an accent (same rule as the generator's) */
+const onColorOf = (hex: string) => onColor(hex)

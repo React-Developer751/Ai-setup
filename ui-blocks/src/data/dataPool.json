@@ -1,0 +1,66 @@
+{
+  "_about": "Your own data for the generated websites. Add blog posts, team members, reviews, FAQ entries and gallery captions here: every site the generator makes picks different ones from this pool (see src/data/README.md). The entries below are only examples: replace or delete them.",
+  "settings": {
+    "mode": "pool-first"
+  },
+  "posts": [
+    {
+      "title": "Five habits that make training stick",
+      "tag": "Fitness",
+      "excerpt": "Small, repeatable habits beat big plans. Here are the five we see in every member who is still training a year later.",
+      "author": "Ravi Kulkarni",
+      "role": "Head Coach",
+      "date": "2026-03-12",
+      "for": ["bold_fitness", "gym"],
+      "body": "Motivation gets you through the door once. Habits get you through it every week.\n\n## Book your sessions like meetings\n\nPut your workouts in the calendar and treat them as fixed. The plan that survives a busy week is the one that is already scheduled.\n\n> Show up on the days you do not feel like it, and the rest takes care of itself.\n\n## Keep a simple log\n\nWrite down what you lifted. Seeing the numbers go up is the best reminder that it works.\n\n- Train at the same time of day\n- Sleep before you add more weight\n- Ask your coach when something hurts\n- Celebrate every small win"
+    },
+    {
+      "title": "How to choose fresh ingredients",
+      "tag": "Kitchen tips",
+      "excerpt": "A short guide to reading a market stall: what to smell, what to touch, and what to leave behind.",
+      "author": "Meera Nair",
+      "role": "Head Chef",
+      "date": "2026-02-02",
+      "for": ["food_dining", "restaurant", "cafe", "bakery"],
+      "body": "Good cooking starts before the stove is lit. It starts at the market.\n\n## Use your nose first\n\nFresh produce smells of itself. If it smells of nothing, or of something sour, move on.\n\n## Buy what is in season\n\nSeasonal ingredients taste better and cost less. Ask the seller what came in this morning."
+    }
+  ],
+  "team": [
+    {
+      "name": "Ravi Kulkarni",
+      "role": "Head Coach",
+      "bio": "Ravi has coached strength athletes for twelve years and believes the basics, done well, win every time.",
+      "for": ["bold_fitness", "gym"]
+    },
+    {
+      "name": "Meera Nair",
+      "role": "Head Chef",
+      "bio": "Meera trained in Kerala and Lyon, and still shops for the daily menu at the market herself.",
+      "for": ["food_dining", "restaurant", "cafe", "bakery"]
+    }
+  ],
+  "reviews": [
+    {
+      "quote": "I have tried four gyms in this city. {brand} is the first one I stayed with.",
+      "author": "Aman Verma",
+      "role": "Member since 2023",
+      "for": ["bold_fitness", "gym"]
+    },
+    {
+      "quote": "Everything on the plate tasted like someone cared. We will be back at {brand} next weekend.",
+      "author": "Sneha Rao",
+      "role": "Regular guest",
+      "for": ["food_dining", "restaurant", "cafe", "bakery"]
+    }
+  ],
+  "faq": [
+    {
+      "q": "How quickly do you reply?",
+      "a": "We answer every message within one working day, usually much sooner."
+    }
+  ],
+  "gallery": [
+    { "caption": "Morning light in the main hall", "for": ["bold_fitness", "gym"] },
+    { "caption": "The pass at lunch service", "for": ["food_dining", "restaurant", "cafe", "bakery"] }
+  ]
+}

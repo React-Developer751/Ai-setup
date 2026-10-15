@@ -1,0 +1,42 @@
+{
+  "name": "ui-blocks",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "gen": "node scripts/gen-runtime.mjs",
+    "predev": "npm run gen",
+    "dev": "vite",
+    "prebuild": "npm run gen",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "pool:check": "node scripts/check-pool.mjs",
+    "pool:import": "node scripts/import-pool.mjs",
+    "train": "node scripts/train-models.mjs",
+    "build:embeddings": "node scripts/build-embeddings.mjs",
+    "eval": "node scripts/eval-models.mjs",
+    "eval:kinds": "node scripts/eval-kinds.mjs",
+    "models:download": "node scripts/download-models.mjs",
+    "test:ml": "node scripts/test-ml.mjs",
+    "eval:real": "node scripts/eval-real.mjs"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^4.3.1",
+    "@tailwindcss/forms": "^0.5.11",
+    "@tailwindcss/vite": "^4.3.3",
+    "preline": "^4.2.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "oxlint": "^1.81.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0"
+  }
+}

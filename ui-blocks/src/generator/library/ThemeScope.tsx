@@ -1,0 +1,97 @@
+// Wrapper used by pages built from the stored components: it re-colours them with CSS variables
+// (no change to the components) and fills their placeholder text with the generated content.
+import { useLayoutEffect, useRef, useState, type ReactNode } from 'react'
+import type { WebsiteContent } from '../finalPrompt'
+import type { MotionPlan } from '../motionBrain'
+import { initMotion } from '../motionRuntime'
+import { defaultMode, presetPalette, type ColorMode, type Palette, type ThemeKey } from '../themes'
+import { fillContent } from './fillContent'
+import { libraryThemeStyle } from './libraryTheme'
+import { sectionIds } from './sectionIds'
+import type { Role } from './libraryRoles'
+
+const linkLabels: [string, string][] = [
+  ['home', 'Home'],
+  ['about', 'About'],
+  ['features', 'Features'],
+  ['gallery', 'Gallery'],
+  ['pricing', 'Pricing'],
+  ['team', 'Team'],
+  ['blog', 'Blog'],
+  ['contact', 'Contact'],
+]
+
+export function Section({ role, children }: { role: Role; children: ReactNode }) {
+  return (
+    <div id={sectionIds[role]} data-role={role}>
+      {children}
+    </div>
+  )
+}
+
+export function ThemeScope({
+  theme,
+  accent = 0,
+  palette,
+  content,
+  motion,
+  children,
+}: {
+  theme: ThemeKey
+  /** index of a preset palette; ignored when `palette` is given */
+  accent?: number
+  /** a palette made by the colour brain */
+  palette?: Palette
+  content: WebsiteContent
+  /** how the page moves; leave out for no animation */
+  motion?: MotionPlan
+  children: ReactNode
+}) {
+  const ref = useRef<HTMLDivElement>(null)
+  const [mode, setMode] = useState<ColorMode>(() => defaultMode(theme))
+  const { style, dark } = libraryThemeStyle(palette ?? presetPalette(theme, accent), mode)
+
+  useLayoutEffect(() => {
+    const root = ref.current
+    if (!root) return
+    const present = new Set([...root.querySelectorAll('[data-role]')].map((el) => el.id).filter(Boolean))
+    const links = linkLabels.filter(([id]) => present.has(id)).map(([id, label]) => ({ href: `#${id}`, label }))
+    root.querySelectorAll<HTMLElement>('[data-role]').forEach((el) => {
+      // React StrictMode runs effects twice in development; fill each section only once
+      if (el.dataset.filled) return
+      el.dataset.filled = '1'
+      fillContent(el, el.dataset.role as Role, content, links)
+    })
+    // Preline wires up collapse / dropdown behaviour of the navigation blocks
+    import('preline').then(({ HSStaticMethods }) => HSStaticMethods.autoInit()).catch(() => {})
+
+    // reveal on scroll, card hover, count-up ... (the runtime tags the components' cards itself)
+    return motion ? initMotion(root, motion) : undefined
+  }, [content, motion])
+
+  return (
+    <div ref={ref} data-gen-theme={theme} className={`overflow-x-clip ${dark ? 'dark' : ''}`} style={style}>
+      {children}
+      {/* light / dark switch: sticks to the bottom-right corner of the screen on every device */}
+      <div className="pointer-events-none sticky bottom-4 z-50 flex h-0 justify-end px-4">
+        <button
+          type="button"
+          aria-label="Toggle dark mode"
+          onClick={() => setMode((current) => (current === 'dark' ? 'light' : 'dark'))}
+          className="pointer-events-auto flex size-11 -translate-y-full items-center justify-center rounded-full bg-indigo-500 text-white shadow-lg ring-1 ring-black/10 transition hover:scale-105"
+        >
+          <svg className="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            {dark ? (
+              <>
+                <circle cx="12" cy="12" r="4" />
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+              </>
+            ) : (
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+            )}
+          </svg>
+        </button>
+      </div>
+    </div>
+  )
+}

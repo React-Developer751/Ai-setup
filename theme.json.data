@@ -1,0 +1,31 @@
+{
+  "themes": {
+    "modern_tech": {
+      "bg": "bg-slate-950",
+      "text_main": "text-white",
+      "text_muted": "text-slate-400",
+      "accent": "text-indigo-400",
+      "primary_btn": "bg-indigo-600 text-white hover:bg-indigo-700",
+      "secondary_btn": "border border-slate-700 text-slate-300",
+      "font": "font-sans"
+    },
+    "organic_nature": {
+      "bg": "bg-stone-50",
+      "text_main": "text-stone-900",
+      "text_muted": "text-stone-600",
+      "accent": "text-emerald-700",
+      "primary_btn": "bg-emerald-800 text-amber-50 hover:bg-emerald-900",
+      "secondary_btn": "border border-stone-300 text-stone-700",
+      "font": "font-serif"
+    },
+    "luxury_minimal": {
+      "bg": "bg-zinc-900",
+      "text_main": "text-neutral-100",
+      "text_muted": "text-neutral-400",
+      "accent": "text-amber-200",
+      "primary_btn": "bg-amber-100 text-zinc-900 hover:bg-amber-200",
+      "secondary_btn": "border border-neutral-700 text-neutral-300",
+      "font": "font-mono"
+    }
+  }
+}
