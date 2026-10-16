@@ -1,0 +1,102 @@
+// How the changes are applied while a site is built (see edits.ts): the layout, the text, the colours.
+import { recolor } from '../colorBrain'
+import type { LayoutChoice, LayoutId } from '../finalProductionTemplate'
+import type { WebsiteContent } from '../finalPrompt'
+import type { Palette } from '../themes'
+import type { ThemeKey } from '../themes'
+import type { OpeningHours } from '../siteTypes'
+import { serviceText } from '../personalize'
+import type { SectionKey, SiteEdits } from './edits'
+
+/** which section a layout block belongs to */
+export function sectionOfLayout(id: LayoutId): SectionKey | undefined {
+  if (id.startsWith('features-')) return 'features'
+  if (id.startsWith('about-')) return 'about'
+  if (id.startsWith('steps-')) return 'steps'
+  if (id === 'testimonial' || id.startsWith('testimonials-')) return 'testimonials'
+  if (id === 'stats' || id === 'marquee' || id === 'gallery' || id === 'pricing' || id === 'team' || id === 'blog' || id === 'faq' || id === 'cta' || id === 'contact') return id
+  return undefined
+}
+
+/** removes the blocks of hidden sections (the navigation, hero and footer are never removed) */
+export const filterLayout = <T extends string>(ids: T[], edits: SiteEdits | undefined, sectionOf: (id: T) => SectionKey | undefined = sectionOfLayout as (id: T) => SectionKey | undefined) =>
+  edits?.hidden.length ? ids.filter((id) => !edits.hidden.includes(sectionOf(id) as SectionKey)) : ids
+
+/** sections that only the long page has: asking for one of them turns a short page into the long one */
+const LONG_ONLY: SectionKey[] = ['about', 'steps', 'gallery', 'pricing', 'team', 'blog', 'contact', 'marquee']
+export const needsLongPage = (edits: SiteEdits | undefined) => !!edits?.added.some((s) => LONG_ONLY.includes(s))
+
+/** the on/off choices of the layout, with the person's changes */
+export function applyChoiceEdits(choice: LayoutChoice, edits: SiteEdits | undefined): LayoutChoice {
+  if (!edits || (!edits.hidden.length && !edits.added.length)) return choice
+  const next = { ...choice }
+  const set = (section: SectionKey, on: boolean) => {
+    if (section === 'stats' || section === 'faq' || section === 'gallery' || section === 'team' || section === 'blog') next[section] = on
+    else if (section === 'marquee') next.marquee = on && next.size === 'full'
+    else if (section === 'testimonials') next.testimonials = on ? (next.testimonials === 'none' ? 'single' : next.testimonials) : 'none'
+  }
+  for (const section of edits.added) set(section, true)
+  for (const section of edits.hidden) set(section, false)
+  return next
+}
+
+/** the palette with the new colour and tones */
+export const applyColorEdits = (palette: Palette, theme: ThemeKey, edits: SiteEdits | undefined) => (edits ? recolor(palette, theme, { accent: edits.accent, alt: edits.alt, harmony: edits.harmony, tones: edits.tones }) : palette)
+
+const replaceIn = (value: unknown, from: string, to: string): unknown => {
+  if (typeof value === 'string') return value.replace(new RegExp(from.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi'), to)
+  if (Array.isArray(value)) return value.map((item) => replaceIn(item, from, to))
+  if (value && typeof value === 'object') return Object.fromEntries(Object.entries(value).map(([key, inner]) => [key, replaceIn(inner, from, to)]))
+  return value
+}
+
+/** the texts the person set or replaced, and the contact details; safe to apply twice */
+/** "Mon-Sat 9am-7pm, Sun 10am-2pm" -> one row per group; a single "9am to 7pm daily" is one row */
+export function parseHours(text: string): OpeningHours[] {
+  const groups = text.split(/\s*(?:;|,|\band\b|\|)\s*/i).map((g) => g.trim()).filter(Boolean)
+  const rows = groups.map((group): OpeningHours => {
+    const at = group.search(/\d|closed|24\s*hours|all day/i)
+    if (at > 0) return { day: group.slice(0, at).replace(/[:\s-]+$/, '').replace(/\b(?:open|from|on)\b/gi, '').trim() || 'Open', time: group.slice(at).trim() }
+    return { day: 'Open', time: group }
+  })
+  return rows.length ? rows.slice(0, 7) : [{ day: 'Open', time: text.trim() }]
+}
+
+/** "500" -> "₹500", "500/kg" -> price "₹500" and period "/kg"; a price that already has its symbol stays as typed */
+const money = (price: string, currency: string): { price: string; period: string } => {
+  const m = price.trim().match(/^(\d[\d,]*(?:\.\d+)?)\s*(?:\/-)?(\/[a-z]+)?$/i)
+  return m ? { price: `${currency}${Number(m[1].replace(/,/g, '')).toLocaleString(currency === '₹' ? 'en-IN' : 'en-US')}`, period: m[2] ?? '' } : { price: price.trim(), period: '' }
+}
+
+export function applyContentEdits(content: WebsiteContent, edits: SiteEdits | undefined, currency = '$'): WebsiteContent {
+  if (!edits) return content
+  let next: WebsiteContent = content
+  const t = edits.text
+  if (t.heroTitle) next = { ...next, hero: { ...next.hero, title: t.heroTitle } }
+  if (t.heroSubtitle) next = { ...next, hero: { ...next.hero, subtitle: t.heroSubtitle } }
+  if (t.heroButton) next = { ...next, hero: { ...next.hero, button: t.heroButton } }
+  if (t.featuresTitle) next = { ...next, features: { ...next.features, title: t.featuresTitle } }
+  if (t.aboutTitle) next = { ...next, about: { ...next.about, title: t.aboutTitle } }
+  if (t.ctaTitle) next = { ...next, cta: { ...next.cta, title: t.ctaTitle } }
+  if (t.contactTitle) next = { ...next, contact: { ...next.contact, title: t.contactTitle } }
+  if (t.subject) next = { ...next, subject: t.subject }
+  const { whatsapp, hours, ...basic } = edits.contact
+  if (basic.email || basic.phone || basic.address) next = { ...next, contact: { ...next.contact, ...basic, ...(basic.address ? { showMap: true } : {}) } }
+  if (whatsapp) next = { ...next, contact: { ...next.contact, whatsapp } }
+  if (hours) next = { ...next, hours: parseHours(hours), contact: { ...next.contact, hoursText: hours } }
+  if (edits.photos) next = { ...next, photos: edits.photos }
+  // the services the person listed are the feature cards; the priced ones are the price list
+  if (edits.services?.length) {
+    const items = edits.services
+    const cards = items.map((item, i) => ({ title: item.name, text: item.text ?? serviceText(item.name, i) }))
+    const priced = items.filter((item) => item.price)
+    next = {
+      ...next,
+      features: { ...next.features, items: cards },
+      marquee: items.map((item) => item.name.slice(0, 16)).slice(0, 8),
+      pricing: priced.length ? { ...next.pricing, plans: priced.slice(0, 3).map((item) => ({ name: item.name.slice(0, 22), ...money(item.price as string, currency), perks: [item.text ?? 'Ask us for the details'] })) } : next.pricing,
+    }
+  }
+  for (const { from, to } of edits.replace) next = replaceIn(next, from, to) as WebsiteContent
+  return next
+}

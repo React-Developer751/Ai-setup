@@ -1,0 +1,3331 @@
+[
+  {
+    "id": "pest_control",
+    "label": "Pest control",
+    "theme": "home_services",
+    "keywords": [
+      "pest control",
+      "termite treatment",
+      "cockroach control",
+      "bed bug treatment",
+      "rodent control",
+      "fumigation",
+      "deemak",
+      "कीट नियंत्रण"
+    ],
+    "heroTitles": [
+      "Pest Free Homes You Can Trust",
+      "Book Today, Pests Gone This Week",
+      "Cockroaches Out, Peace Of Mind In"
+    ],
+    "heroSubtitles": [
+      "{brand} treats your home with licensed technicians and medicines that are safe around kids and pets.",
+      "Call in the morning and our team can be at your door by evening, with a clear price before we start.",
+      "From kitchen cockroaches to termites inside cupboards, {brand} clears the problem and keeps it from coming back."
+    ],
+    "button": "Book A Free Inspection",
+    "featureTitle": "Pest Treatments For Every Corner Of Your Home",
+    "features": [
+      {
+        "title": "General Pest Control",
+        "text": "Spray and gel treatment for cockroaches, ants, spiders and flies in kitchen, bath and balcony."
+      },
+      {
+        "title": "Termite Treatment",
+        "text": "Drill and inject treatment around walls and wooden furniture to stop deemak at the source."
+      },
+      {
+        "title": "Bed Bug Removal",
+        "text": "Mattress, bed frame and wall-joint treatment, with a follow-up visit to catch any leftover eggs."
+      },
+      {
+        "title": "Rodent Control",
+        "text": "Finding entry holes, setting traps and baits, and sealing gaps so rats and mice stay out."
+      },
+      {
+        "title": "Mosquito Control",
+        "text": "Fogging and larvae treatment around drains, gardens and water tanks before the rainy season."
+      },
+      {
+        "title": "Pre Construction Treatment",
+        "text": "Soil treatment before the floor is laid, so your new building is protected from termites early."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Free",
+        "label": "Inspection visit"
+      },
+      {
+        "value": "Licensed",
+        "label": "Technicians"
+      },
+      {
+        "value": "Safe",
+        "label": "For kids and pets"
+      }
+    ],
+    "steps": {
+      "title": "How Your Pest Treatment Works",
+      "items": [
+        {
+          "title": "Inspection",
+          "text": "We look at kitchen, cupboards and corners to find what pest you have and where it hides."
+        },
+        {
+          "title": "Clear Quote",
+          "text": "You get the treatment plan and the price in writing before any work begins."
+        },
+        {
+          "title": "Treatment",
+          "text": "Our technician applies the medicine, and tells you how long to keep the room closed."
+        },
+        {
+          "title": "Follow Up",
+          "text": "We come back to check the result and re-treat the spots where pests still show up."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Is the pest medicine safe for my children and pets?",
+        "a": "We use low-odour medicines approved for homes. Keep children and pets out of the room for a few hours after spraying."
+      },
+      {
+        "q": "How long does termite treatment take?",
+        "a": "An average flat takes two to four hours. A big house or a lot of wooden furniture can take longer."
+      },
+      {
+        "q": "Do I need to empty my kitchen before cockroach treatment?",
+        "a": "Just clear the counters and cover utensils and food. We will tell you exactly what to move before the visit."
+      },
+      {
+        "q": "Will the pests come back?",
+        "a": "Some may show up for a few days as the medicine works. If they continue, we return and re-treat under the service plan."
+      },
+      {
+        "q": "Do you treat offices and shops too?",
+        "a": "Yes. We treat homes, offices, restaurants and godowns, and can schedule visits after working hours."
+      }
+    ],
+    "cta": {
+      "title": "Tired Of Seeing Pests In Your Kitchen?",
+      "button": "Book A Free Inspection"
+    },
+    "about": {
+      "title": "About Our Pest Control Team",
+      "paragraphs": [
+        "{brand} is a local pest control team that treats homes, shops and offices with trained technicians and proper equipment.",
+        "We explain what pest you have, what we will use and how long it will last, so you are never left guessing after the visit."
+      ],
+      "points": [
+        "Uniformed, trained technicians",
+        "Written treatment plan and price",
+        "Re-treatment if pests return"
+      ]
+    },
+    "pricing": {
+      "title": "Simple Pest Control Pricing",
+      "plans": [
+        {
+          "name": "Inspection And Spray",
+          "price": "$12",
+          "period": "/visit",
+          "perks": [
+            "Home inspection",
+            "Cockroach and ant spray",
+            "One follow-up call"
+          ]
+        },
+        {
+          "name": "Full Home Treatment",
+          "price": "$35",
+          "period": "/visit",
+          "perks": [
+            "Gel and spray treatment",
+            "Kitchen and bath focus",
+            "Free re-treatment visit"
+          ]
+        },
+        {
+          "name": "Termite Protection",
+          "price": "$90",
+          "period": "/job",
+          "perks": [
+            "Drill and inject treatment",
+            "Wood furniture check",
+            "Written service plan"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Our Pest Control Work",
+      "captions": [
+        "Kitchen gel treatment",
+        "Termite drilling",
+        "Mattress inspection",
+        "Rodent trap setup",
+        "Water tank fogging",
+        "Technician at work"
+      ]
+    },
+    "team": {
+      "title": "Meet The Pest Control Team",
+      "roles": [
+        "Senior Technician",
+        "Termite Specialist",
+        "Customer Support Lead"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "They found where the cockroaches were coming from and the kitchen has been clean since.",
+        "role": "Home owner"
+      },
+      {
+        "quote": "The technician explained everything about the termite work and left the house tidy.",
+        "role": "Flat resident"
+      },
+      {
+        "quote": "Quick visit for our restaurant kitchen, done after closing time without any disturbance.",
+        "role": "Restaurant owner"
+      }
+    ],
+    "blog": {
+      "title": "Pest Control Tips",
+      "posts": [
+        {
+          "tag": "Termites",
+          "title": "Five Early Signs Of Termites In Wooden Furniture"
+        },
+        {
+          "tag": "Kitchen",
+          "title": "Why Cockroaches Keep Coming Back After Spraying"
+        },
+        {
+          "tag": "Monsoon",
+          "title": "How To Keep Mosquitoes Away During Rainy Season"
+        }
+      ]
+    },
+    "marquee": [
+      "Termite",
+      "Cockroach",
+      "Bed Bugs",
+      "Rodents",
+      "Mosquito",
+      "Fumigation",
+      "Inspection",
+      "Kid Safe"
+    ],
+    "contactText": "Spotted pests at home or in your shop? Message or call {brand} and we will arrange a free inspection at a time that suits you."
+  },
+  {
+    "id": "packers_movers",
+    "label": "Packers and movers",
+    "theme": "home_services",
+    "keywords": [
+      "packers and movers",
+      "house shifting",
+      "relocation service",
+      "moving company",
+      "home shifting",
+      "saman shifting",
+      "पैकर्स एंड मूवर्स",
+      "सामान शिफ्टिंग"
+    ],
+    "heroTitles": [
+      "Your Belongings Safe, Start To Finish",
+      "Plan Your Move In One Phone Call",
+      "Settle Into Your New Home Faster"
+    ],
+    "heroSubtitles": [
+      "{brand} packs, loads and delivers your household goods with trained staff and clear pricing, so nothing is left to chance.",
+      "Tell us your date and addresses, and {brand} sends a quote the same day and handles the rest of the move.",
+      "Walk into your new place and find your furniture set up and boxes labelled room by room, ready to unpack."
+    ],
+    "button": "Get A Moving Quote",
+    "featureTitle": "Everything Your Shifting Needs, In One Place",
+    "features": [
+      {
+        "title": "Careful Packing",
+        "text": "Fragile items wrapped in bubble sheet and foam, with sturdy boxes labelled by room."
+      },
+      {
+        "title": "Safe Loading",
+        "text": "Trained loaders lift heavy furniture and appliances properly and tie everything down in the truck."
+      },
+      {
+        "title": "Local And Long Distance",
+        "text": "Shifting within the city or to another state, with the right vehicle size for your load."
+      },
+      {
+        "title": "Unloading And Setup",
+        "text": "We carry boxes in, put furniture where you want it and reassemble beds and wardrobes."
+      },
+      {
+        "title": "Transit Insurance Cover",
+        "text": "Optional cover for your goods in transit, so a damaged item is not your loss alone."
+      },
+      {
+        "title": "Short Term Storage",
+        "text": "A clean, dry godown if your new home is not ready, and we deliver when you are."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Free",
+        "label": "Home survey"
+      },
+      {
+        "value": "Same day",
+        "label": "Written quote"
+      },
+      {
+        "value": "Door to door",
+        "label": "Full service"
+      }
+    ],
+    "steps": {
+      "title": "How Your Move Works",
+      "items": [
+        {
+          "title": "Survey And Quote",
+          "text": "We see your items, by visit or video call, and give you a fixed written price."
+        },
+        {
+          "title": "Pack",
+          "text": "Our team packs everything the day before or on the morning of the move."
+        },
+        {
+          "title": "Load And Transport",
+          "text": "Goods go into the truck, and you can follow the vehicle until it arrives."
+        },
+        {
+          "title": "Unload And Unpack",
+          "text": "We unload, place the furniture and unpack the boxes you ask us to."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "How is the moving price decided?",
+        "a": "It depends on the volume of goods, the distance, floors and whether a lift is available. We give a fixed quote after the survey."
+      },
+      {
+        "q": "Can you move only a few items, like a bed and a fridge?",
+        "a": "Yes. We have small vehicles for part loads and one or two big items within the city."
+      },
+      {
+        "q": "What if something gets damaged on the way?",
+        "a": "Tell us right away. With transit insurance, damage is covered as per the policy, and we help with the claim."
+      },
+      {
+        "q": "Do you dismantle and fit furniture and AC?",
+        "a": "We take apart beds, wardrobes and tables and refit them. AC and geyser removal is done by our technician for an extra charge."
+      },
+      {
+        "q": "How early should I book?",
+        "a": "Two to three days ahead is usually fine. At month end and weekends, book a week early."
+      }
+    ],
+    "cta": {
+      "title": "Moving Soon And Not Sure Where To Start?",
+      "button": "Get A Moving Quote"
+    },
+    "about": {
+      "title": "About Our Moving Team",
+      "paragraphs": [
+        "{brand} helps families and offices shift with trained packers, proper packing material and well-maintained vehicles.",
+        "We quote a fixed price after seeing your load, tell you what is included, and keep you updated until the last box is in."
+      ],
+      "points": [
+        "Fixed price, no surprise charges",
+        "Branded boxes and wrapping",
+        "Staff who stay till unloading is done"
+      ]
+    },
+    "pricing": {
+      "title": "Moving Packages",
+      "plans": [
+        {
+          "name": "Small Load",
+          "price": "$60",
+          "period": "/job",
+          "perks": [
+            "One or two rooms",
+            "Pickup truck or mini van",
+            "Loading and unloading"
+          ]
+        },
+        {
+          "name": "Full House Move",
+          "price": "$220",
+          "period": "/job",
+          "perks": [
+            "Packing material and staff",
+            "Medium truck",
+            "Unpacking and furniture setup"
+          ]
+        },
+        {
+          "name": "Insured Long Distance",
+          "price": "$450",
+          "period": "/job",
+          "perks": [
+            "Transit insurance cover",
+            "Tracked vehicle",
+            "Door to door delivery"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Moves We Have Handled",
+      "captions": [
+        "Wrapped furniture",
+        "Labelled boxes",
+        "Loading the truck",
+        "Fragile packing",
+        "Office shifting",
+        "Unloading at site"
+      ]
+    },
+    "team": {
+      "title": "Meet The Moving Crew",
+      "roles": [
+        "Move Coordinator",
+        "Head Packer",
+        "Truck Driver"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "The team packed our whole flat in one day and nothing was broken when it arrived.",
+        "role": "Family moving cities"
+      },
+      {
+        "quote": "They were on time, careful with the sofa on the stairs and set up our beds before leaving.",
+        "role": "Tenant"
+      },
+      {
+        "quote": "Our office shifted over a weekend and Monday morning everyone had their desks ready.",
+        "role": "Office manager"
+      }
+    ],
+    "blog": {
+      "title": "Moving Guides",
+      "posts": [
+        {
+          "tag": "Packing",
+          "title": "How To Pack Your Kitchen Without Breaking A Single Plate"
+        },
+        {
+          "tag": "Planning",
+          "title": "A Simple Checklist For The Week Before You Move"
+        },
+        {
+          "tag": "Costs",
+          "title": "What Decides The Price Of House Shifting"
+        }
+      ]
+    },
+    "marquee": [
+      "Packing",
+      "Loading",
+      "Transport",
+      "Unloading",
+      "Insurance",
+      "Storage",
+      "House Shifting",
+      "Office Moves"
+    ],
+    "contactText": "Planning to shift homes or your office? Call or message {brand} with your date and addresses and we will send a quote the same day."
+  },
+  {
+    "id": "solar_installer",
+    "label": "Solar installer",
+    "theme": "modern_tech",
+    "keywords": [
+      "solar installer",
+      "solar panel installation",
+      "rooftop solar",
+      "solar system for home",
+      "net metering",
+      "solar water heater",
+      "सोलर पैनल",
+      "solar lagwana"
+    ],
+    "heroTitles": [
+      "Cut Your Power Bill With Rooftop Solar",
+      "From Roof Visit To Power In Weeks",
+      "Make Your Own Electricity, Every Sunny Day"
+    ],
+    "heroSubtitles": [
+      "{brand} designs and installs rooftop solar for homes and shops, and handles the paperwork with your electricity board.",
+      "We visit your roof, size the system to your bill and keep the whole install tidy and quick, with a clear price.",
+      "Your roof can earn its keep. {brand} fits panels, inverter and meter so sunshine lowers your monthly bill."
+    ],
+    "button": "Book A Free Roof Survey",
+    "featureTitle": "Solar Solutions For Homes And Businesses",
+    "features": [
+      {
+        "title": "Rooftop Solar For Homes",
+        "text": "Systems from 1 kW up, sized to your monthly units and the shade-free space on your roof."
+      },
+      {
+        "title": "Shop And Factory Solar",
+        "text": "Larger systems that cut daytime power costs for shops, godowns and small workshops."
+      },
+      {
+        "title": "Net Metering Help",
+        "text": "We file the application and coordinate with the DISCOM so extra units go back to the grid."
+      },
+      {
+        "title": "Solar Water Heaters",
+        "text": "Roof-mounted heaters that give hot water for the family without running a geyser."
+      },
+      {
+        "title": "Battery And Hybrid Setups",
+        "text": "Inverter with battery backup for areas with long power cuts, or a hybrid grid system."
+      },
+      {
+        "title": "Cleaning And Annual Service",
+        "text": "Panel cleaning, wiring checks and inverter health checks so output stays steady."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Free",
+        "label": "Roof survey"
+      },
+      {
+        "value": "Net metering",
+        "label": "Paperwork handled"
+      },
+      {
+        "value": "Annual",
+        "label": "Service visits"
+      }
+    ],
+    "steps": {
+      "title": "How Going Solar Works",
+      "items": [
+        {
+          "title": "Roof Survey",
+          "text": "We check roof space, shade and your last few electricity bills to size the system."
+        },
+        {
+          "title": "Design And Quote",
+          "text": "You get panel and inverter details, expected output and a fixed price in writing."
+        },
+        {
+          "title": "Installation",
+          "text": "Our crew mounts the structure, panels and wiring, usually within a few days."
+        },
+        {
+          "title": "Connection And Support",
+          "text": "We help with net meter approval, switch on the system and show you how to monitor it."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "What size solar system do I need?",
+        "a": "It depends on your monthly units. A home using about 300 units a month often needs around a 2 to 3 kW system."
+      },
+      {
+        "q": "Will solar work during a power cut?",
+        "a": "A normal grid system switches off for safety. With a battery or hybrid inverter you can keep running essentials."
+      },
+      {
+        "q": "Are there government subsidies?",
+        "a": "Subsidy schemes for home rooftop solar exist and change over time. We tell you what applies to you and help apply."
+      },
+      {
+        "q": "How much roof space is required?",
+        "a": "Roughly 80 to 100 square feet of shade-free space per kilowatt. Our survey confirms what your roof can take."
+      },
+      {
+        "q": "Does it need much maintenance?",
+        "a": "Mostly cleaning the panels every few weeks and a yearly check of wiring and the inverter."
+      }
+    ],
+    "cta": {
+      "title": "Ready To Lower Your Monthly Electricity Bill?",
+      "button": "Book A Free Roof Survey"
+    },
+    "about": {
+      "title": "About Our Solar Team",
+      "paragraphs": [
+        "{brand} installs rooftop solar for homes, shops and small factories, from the first survey to the final switch-on.",
+        "We use branded panels and inverters, mount them safely, and stay in touch for service after the system is running."
+      ],
+      "points": [
+        "Branded panels and inverters",
+        "Paperwork support with the board",
+        "Service visits after installation"
+      ]
+    },
+    "pricing": {
+      "title": "Solar Packages",
+      "plans": [
+        {
+          "name": "Home Starter 1 kW",
+          "price": "$700",
+          "period": "/job",
+          "perks": [
+            "Panels and inverter",
+            "Mounting structure",
+            "Installation and wiring"
+          ]
+        },
+        {
+          "name": "Family Home 3 kW",
+          "price": "$1900",
+          "period": "/job",
+          "perks": [
+            "Net metering support",
+            "Remote monitoring",
+            "First year service"
+          ]
+        },
+        {
+          "name": "Shop 5 kW",
+          "price": "$3100",
+          "period": "/job",
+          "perks": [
+            "Higher capacity system",
+            "Three phase inverter",
+            "Annual maintenance plan"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Our Solar Installations",
+      "captions": [
+        "Rooftop panels",
+        "Mounting structure",
+        "Inverter setup",
+        "Terrace array",
+        "Shop roof system",
+        "Cleaning visit"
+      ]
+    },
+    "team": {
+      "title": "Meet The Solar Team",
+      "roles": [
+        "Solar Design Engineer",
+        "Installation Technician",
+        "Service Coordinator"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "They explained the savings clearly, finished in three days and helped with net metering.",
+        "role": "Home owner"
+      },
+      {
+        "quote": "The engineer checked shade on my roof and told me the right size instead of selling the biggest.",
+        "role": "Shop owner"
+      },
+      {
+        "quote": "Panels are clean and neat on the terrace and the app shows how much we make each day.",
+        "role": "Apartment owner"
+      }
+    ],
+    "blog": {
+      "title": "Solar Guides",
+      "posts": [
+        {
+          "tag": "Savings",
+          "title": "How To Read Your Electricity Bill Before Going Solar"
+        },
+        {
+          "tag": "Rooftop",
+          "title": "On Grid Or Hybrid Solar, Which One Suits Your Home"
+        },
+        {
+          "tag": "Care",
+          "title": "Simple Panel Cleaning Habits That Keep Output High"
+        }
+      ]
+    },
+    "marquee": [
+      "Rooftop Solar",
+      "Net Metering",
+      "Inverter",
+      "Solar Panels",
+      "Hybrid",
+      "Water Heater",
+      "Subsidy Help",
+      "Service Plan"
+    ],
+    "contactText": "Wondering if your roof is right for solar? Message or call {brand} and we will arrange a free survey and a clear quote."
+  },
+  {
+    "id": "cctv_security_install",
+    "label": "CCTV and security installation",
+    "theme": "modern_tech",
+    "keywords": [
+      "cctv installation",
+      "cctv camera",
+      "security camera installation",
+      "surveillance system",
+      "video door phone",
+      "biometric attendance",
+      "सीसीटीवी कैमरा",
+      "camera lagwana"
+    ],
+    "heroTitles": [
+      "Keep An Eye On What Matters Most",
+      "Cameras Fitted And Working In One Day",
+      "See Your Shop From Your Phone Anywhere"
+    ],
+    "heroSubtitles": [
+      "{brand} installs CCTV cameras for homes, shops and offices, with neat wiring and clear night vision you can rely on.",
+      "Most home and shop setups are fitted in a single day, and we show you how to view the cameras on your mobile.",
+      "Know who is at the gate and what is happening in the shop, with recordings saved for when you need them."
+    ],
+    "button": "Book A Free Site Visit",
+    "featureTitle": "Security Systems Fitted Neatly And Properly",
+    "features": [
+      {
+        "title": "CCTV Camera Installation",
+        "text": "Dome and bullet cameras placed where they cover gates, counters, lobbies and parking."
+      },
+      {
+        "title": "Mobile Viewing Setup",
+        "text": "Watch live video and playback on your phone from anywhere with your internet connection."
+      },
+      {
+        "title": "Night Vision Cameras",
+        "text": "Infrared cameras that give clear black and white pictures even in a dark lane or godown."
+      },
+      {
+        "title": "Video Door Phone",
+        "text": "See who is at the door before you open it, with a screen inside and a camera outside."
+      },
+      {
+        "title": "Biometric Attendance",
+        "text": "Fingerprint or face machines for staff attendance and door access in shops and offices."
+      },
+      {
+        "title": "AMC And Repairs",
+        "text": "Yearly service for cameras, DVR and cabling, and quick repair if a camera stops recording."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Free",
+        "label": "Site visit"
+      },
+      {
+        "value": "1 day",
+        "label": "Typical install"
+      },
+      {
+        "value": "Mobile",
+        "label": "Live viewing"
+      }
+    ],
+    "steps": {
+      "title": "How Your CCTV Gets Installed",
+      "items": [
+        {
+          "title": "Site Visit",
+          "text": "We walk through your place and mark the best spots for each camera."
+        },
+        {
+          "title": "Quote",
+          "text": "You get camera type, storage days and price in writing, with no hidden extras."
+        },
+        {
+          "title": "Fitting And Wiring",
+          "text": "We fix cameras and hide the cables in pipes so the walls look clean."
+        },
+        {
+          "title": "Mobile Setup",
+          "text": "We link the cameras to your phone and show you how to play back old footage."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "How many cameras does my home or shop need?",
+        "a": "A flat often needs two to four cameras covering the door, balcony and passage. A shop usually needs four to eight."
+      },
+      {
+        "q": "How long will recordings be saved?",
+        "a": "That depends on the hard disk size and camera count. We plan for 15 to 30 days and tell you before fitting."
+      },
+      {
+        "q": "Can I see my cameras when I am travelling?",
+        "a": "Yes, if you have internet at the site, you can watch live and recorded video on your mobile."
+      },
+      {
+        "q": "Will cameras work during a power cut?",
+        "a": "They stop without power. We can add a small UPS so recording continues for a few hours."
+      },
+      {
+        "q": "Do you service cameras that others installed?",
+        "a": "Yes. We repair and upgrade existing systems, including DVR, cables and power supplies."
+      }
+    ],
+    "cta": {
+      "title": "Want Cameras Watching Your Shop Tonight?",
+      "button": "Book A Free Site Visit"
+    },
+    "about": {
+      "title": "About Our Security Team",
+      "paragraphs": [
+        "{brand} fits CCTV, door phones and attendance machines for homes, shops and offices, with tidy wiring and a working setup on day one.",
+        "We explain how to use your system, and we stay available for service if a camera fails or you want to add more."
+      ],
+      "points": [
+        "Hidden, neat cabling",
+        "Branded cameras and hard disks",
+        "Help after installation"
+      ]
+    },
+    "pricing": {
+      "title": "CCTV Packages",
+      "plans": [
+        {
+          "name": "Home 2 Cameras",
+          "price": "$110",
+          "period": "/job",
+          "perks": [
+            "Two HD cameras",
+            "Recorder and hard disk",
+            "Mobile viewing setup"
+          ]
+        },
+        {
+          "name": "Shop 4 Cameras",
+          "price": "$190",
+          "period": "/job",
+          "perks": [
+            "Four night vision cameras",
+            "Monitor connection",
+            "Wiring in pipes"
+          ]
+        },
+        {
+          "name": "Office 8 Cameras",
+          "price": "$400",
+          "period": "/job",
+          "perks": [
+            "Eight cameras",
+            "Large storage disk",
+            "One year service support"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Our Installation Work",
+      "captions": [
+        "Gate camera",
+        "Shop counter view",
+        "Recorder setup",
+        "Night vision test",
+        "Door phone fitting",
+        "Neat cabling"
+      ]
+    },
+    "team": {
+      "title": "Meet The Security Team",
+      "roles": [
+        "Installation Technician",
+        "Network Engineer",
+        "Service Coordinator"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "Cameras were up in one day and the wires are hidden, our shop looks clean.",
+        "role": "Shop owner"
+      },
+      {
+        "quote": "The technician set up the mobile app and showed me how to check old footage.",
+        "role": "Home owner"
+      },
+      {
+        "quote": "Our old camera stopped recording, and they fixed the recorder the next morning.",
+        "role": "Office manager"
+      }
+    ],
+    "blog": {
+      "title": "Security Tips",
+      "posts": [
+        {
+          "tag": "Planning",
+          "title": "Where To Place Cameras Around Your Home And Gate"
+        },
+        {
+          "tag": "Storage",
+          "title": "How Many Days Of Recording Does Your Hard Disk Hold"
+        },
+        {
+          "tag": "Basics",
+          "title": "Analog Or IP Cameras, Which Suits Your Shop"
+        }
+      ]
+    },
+    "marquee": [
+      "CCTV",
+      "Night Vision",
+      "Door Phone",
+      "Biometric",
+      "DVR Setup",
+      "IP Camera",
+      "Mobile View",
+      "Service Plan"
+    ],
+    "contactText": "Want cameras for your home, shop or office? Call or message {brand} and we will arrange a free site visit and a written quote."
+  },
+  {
+    "id": "ac_repair",
+    "label": "AC repair and service",
+    "theme": "home_services",
+    "keywords": [
+      "ac repair",
+      "ac service",
+      "air conditioner repair",
+      "ac installation",
+      "ac gas filling",
+      "split ac",
+      "एसी रिपेयर",
+      "ac theek karwana"
+    ],
+    "heroTitles": [
+      "Cool Air Back Before The Heat Wins",
+      "AC Not Cooling? We Are On The Way",
+      "Cleaner Filters, Cooler Rooms, Lower Bills"
+    ],
+    "heroSubtitles": [
+      "{brand} repairs and services split and window ACs at your home, with spare parts and a price you agree to first.",
+      "Book a slot online or by phone and our technician arrives on time with tools, gas and common parts in the bag.",
+      "A proper AC service clears dust, checks gas and restores cooling, so your room cools faster and uses less power."
+    ],
+    "button": "Book An AC Service",
+    "featureTitle": "AC Care For Every Type Of Cooling Problem",
+    "features": [
+      {
+        "title": "Regular AC Service",
+        "text": "Indoor and outdoor unit cleaning, filter wash and a cooling check before summer starts."
+      },
+      {
+        "title": "Gas Leak And Refill",
+        "text": "We find the leak, fix it and refill the correct gas, instead of just topping up each season."
+      },
+      {
+        "title": "Deep Jet Cleaning",
+        "text": "Water jet cleaning of coil and blower to remove the dirt that blocks airflow and cooling."
+      },
+      {
+        "title": "AC Installation",
+        "text": "Wall mounting, pipe fitting and drain line for new split ACs, with a trial run before we leave."
+      },
+      {
+        "title": "Uninstall And Relocate",
+        "text": "Safe gas pump down, removal and refitting if you move to a new flat or change rooms."
+      },
+      {
+        "title": "PCB And Compressor Repair",
+        "text": "Diagnosis of dead boards, fan motors and compressors, with the cost shared before we repair."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Same day",
+        "label": "Visits in the city"
+      },
+      {
+        "value": "Quote first",
+        "label": "Before any repair"
+      },
+      {
+        "value": "All brands",
+        "label": "Split and window ACs"
+      }
+    ],
+    "steps": {
+      "title": "How Your AC Repair Works",
+      "items": [
+        {
+          "title": "Book A Slot",
+          "text": "Tell us your AC brand and problem and pick a time that suits you."
+        },
+        {
+          "title": "Check And Diagnose",
+          "text": "Our technician checks gas pressure, airflow and electrical parts to find the real fault."
+        },
+        {
+          "title": "Approve The Price",
+          "text": "You see the repair cost before we start, with no extra work done without your yes."
+        },
+        {
+          "title": "Repair And Test",
+          "text": "We fix it, clean up and run the AC with you to confirm the cooling."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "How often should I service my AC?",
+        "a": "Once or twice a year. Do it before summer, and again if you run the AC almost daily or live near a dusty road."
+      },
+      {
+        "q": "Why is my AC running but not cooling?",
+        "a": "Common causes are choked filters, low gas or a dirty outdoor coil. A technician check will tell which one it is."
+      },
+      {
+        "q": "Is gas refilling needed every year?",
+        "a": "No. Gas does not get used up. If it is low, there is a leak that should be repaired."
+      },
+      {
+        "q": "Why is water dripping from my indoor unit?",
+        "a": "Usually a blocked drain pipe or a dirty coil. We clear the drain and clean the unit."
+      },
+      {
+        "q": "Can you install an AC I bought online?",
+        "a": "Yes. We install any brand, and you only pay for the fitting and any extra pipe or stand you need."
+      }
+    ],
+    "cta": {
+      "title": "Is Your Room Too Hot To Sleep?",
+      "button": "Book An AC Service"
+    },
+    "about": {
+      "title": "About Our AC Technicians",
+      "paragraphs": [
+        "{brand} is a local AC repair team that services split and window units in homes, shops and small offices.",
+        "We diagnose the actual fault, tell you the cost in advance and use proper parts, so you do not pay for repairs you do not need."
+      ],
+      "points": [
+        "Fault diagnosed before pricing",
+        "Clean, tidy work in your room",
+        "Service warranty on repairs"
+      ]
+    },
+    "pricing": {
+      "title": "AC Service Pricing",
+      "plans": [
+        {
+          "name": "Basic Service",
+          "price": "$10",
+          "period": "/visit",
+          "perks": [
+            "Filter and coil clean",
+            "Cooling check",
+            "Drain check"
+          ]
+        },
+        {
+          "name": "Jet Deep Clean",
+          "price": "$18",
+          "period": "/visit",
+          "perks": [
+            "Water jet indoor cleaning",
+            "Outdoor unit wash",
+            "Gas pressure check"
+          ]
+        },
+        {
+          "name": "Gas Refill With Repair",
+          "price": "$45",
+          "period": "/job",
+          "perks": [
+            "Leak test and fix",
+            "Gas refill",
+            "Service warranty"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "AC Service In Action",
+      "captions": [
+        "Jet cleaning coil",
+        "Gas pressure check",
+        "Outdoor unit wash",
+        "Split AC fitting",
+        "Filter cleaning",
+        "Cooling test"
+      ]
+    },
+    "team": {
+      "title": "Meet The AC Technicians",
+      "roles": [
+        "Senior AC Technician",
+        "Installation Specialist",
+        "Service Coordinator"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "The technician found a leak, fixed it and the AC has cooled well all summer.",
+        "role": "Home owner"
+      },
+      {
+        "quote": "On time, covered the floor before jet cleaning and left no mess in the bedroom.",
+        "role": "Flat resident"
+      },
+      {
+        "quote": "He told me the cost before opening the unit and did not push any extra parts.",
+        "role": "Shop owner"
+      }
+    ],
+    "blog": {
+      "title": "AC Care Tips",
+      "posts": [
+        {
+          "tag": "Savings",
+          "title": "Why A Dirty Filter Makes Your Electricity Bill Higher"
+        },
+        {
+          "tag": "Summer",
+          "title": "Five Checks To Do Before You Switch On The AC"
+        },
+        {
+          "tag": "Buying",
+          "title": "Inverter Or Non Inverter AC For Your Room Size"
+        }
+      ]
+    },
+    "marquee": [
+      "AC Service",
+      "Gas Refill",
+      "Jet Cleaning",
+      "Split AC",
+      "Window AC",
+      "Installation",
+      "Repair",
+      "Cooling Check"
+    ],
+    "contactText": "AC not cooling or making noise? Call or message {brand} and we will book a technician visit at a time that suits you."
+  },
+  {
+    "id": "painting_contractor",
+    "label": "Painting contractor",
+    "theme": "home_services",
+    "keywords": [
+      "painting contractor",
+      "house painting",
+      "home painting service",
+      "wall painting",
+      "exterior painting",
+      "waterproofing paint",
+      "पेंटिंग ठेकेदार",
+      "rang rogan"
+    ],
+    "heroTitles": [
+      "Fresh Walls, Finished With Care",
+      "Colour Your Home Without The Mess",
+      "A Smooth Finish That Lasts Years"
+    ],
+    "heroSubtitles": [
+      "{brand} paints homes, shops and offices with proper wall preparation, so the finish looks smooth and stays that way.",
+      "We cover your furniture, fix the cracks, paint on schedule and clean the floors, so you can live in peace.",
+      "Choose from your favourite colour shades and brands, and see the cost per room before any paint is opened."
+    ],
+    "button": "Get A Free Painting Quote",
+    "featureTitle": "Painting Services For Inside And Outside",
+    "features": [
+      {
+        "title": "Interior Wall Painting",
+        "text": "Putty, primer and two coats of emulsion on walls and ceilings for a smooth, even finish."
+      },
+      {
+        "title": "Exterior Painting",
+        "text": "Weather-proof paint for outer walls, boundary walls and gates that stand up to sun and rain."
+      },
+      {
+        "title": "Waterproofing And Damp",
+        "text": "Treatment of seepage patches and roof leaks before painting, so peeling does not return."
+      },
+      {
+        "title": "Wood And Metal Polish",
+        "text": "Doors, grills and furniture sanded and finished with PU, enamel or melamine polish."
+      },
+      {
+        "title": "Texture And Designer Walls",
+        "text": "Accent walls with texture, stencils or two-tone colour to give a room its own look."
+      },
+      {
+        "title": "Office And Shop Painting",
+        "text": "Quick repainting in off hours or over a weekend so your business loses very little time."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Free",
+        "label": "Site visit and quote"
+      },
+      {
+        "value": "Colour",
+        "label": "Shade guidance"
+      },
+      {
+        "value": "Clean",
+        "label": "Floors left spotless"
+      }
+    ],
+    "steps": {
+      "title": "How Your Painting Job Goes",
+      "items": [
+        {
+          "title": "Site Visit",
+          "text": "We measure walls, check dampness and cracks, and talk through brands and colours."
+        },
+        {
+          "title": "Quote And Schedule",
+          "text": "You get a written price by area and a start date with a finishing date."
+        },
+        {
+          "title": "Preparation",
+          "text": "Furniture is covered, cracks are filled, walls are sanded and primed."
+        },
+        {
+          "title": "Paint And Handover",
+          "text": "Two coats are applied, touch-ups are done and we clean up before final walk-through."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "How long does it take to paint a 2 BHK flat?",
+        "a": "Usually five to seven working days, depending on the wall condition and whether putty work is needed."
+      },
+      {
+        "q": "Do I need to move all my furniture?",
+        "a": "No. We shift it to the centre and cover it with plastic sheets. Bring out small and fragile items."
+      },
+      {
+        "q": "How is the painting cost calculated?",
+        "a": "Most jobs are priced by wall area in square feet, plus extra for putty, textures or polish work."
+      },
+      {
+        "q": "Can you paint a wall that has damp patches?",
+        "a": "We first find the source of dampness and treat it, otherwise the new paint will peel again."
+      },
+      {
+        "q": "Do you supply the paint?",
+        "a": "Yes, we can supply any major brand, or you can buy the paint and we charge for labour only."
+      }
+    ],
+    "cta": {
+      "title": "Ready For Walls You Love Coming Home To?",
+      "button": "Get A Free Painting Quote"
+    },
+    "about": {
+      "title": "About Our Painting Crew",
+      "paragraphs": [
+        "{brand} is a team of painters who care about preparation, because most paint problems start under the paint, not on top.",
+        "We give you a fixed written quote, work to a schedule, cover your belongings and leave the home clean when we leave."
+      ],
+      "points": [
+        "Proper putty and primer work",
+        "Fixed price in writing",
+        "Floors and furniture protected"
+      ]
+    },
+    "pricing": {
+      "title": "Painting Packages",
+      "plans": [
+        {
+          "name": "Single Room",
+          "price": "$90",
+          "period": "/room",
+          "perks": [
+            "Walls and ceiling",
+            "Putty touch-up",
+            "Two coats of emulsion"
+          ]
+        },
+        {
+          "name": "Full Flat Painting",
+          "price": "$450",
+          "period": "/job",
+          "perks": [
+            "Complete putty and primer",
+            "Premium emulsion",
+            "Furniture covering and cleanup"
+          ]
+        },
+        {
+          "name": "Exterior Waterproofing",
+          "price": "$900",
+          "period": "/job",
+          "perks": [
+            "Crack and seepage repair",
+            "Weather-proof paint",
+            "Scaffold or rope access"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Painted Homes And Shops",
+      "captions": [
+        "Bedroom accent wall",
+        "Putty work",
+        "Exterior facade",
+        "Textured wall",
+        "Door polish",
+        "Finished living room"
+      ]
+    },
+    "team": {
+      "title": "Meet The Painters",
+      "roles": [
+        "Head Painter",
+        "Putty And Finish Specialist",
+        "Site Supervisor"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "They covered everything, fixed the cracks first and the walls look smooth.",
+        "role": "Home owner"
+      },
+      {
+        "quote": "The price was clear from the start and the crew finished a day early.",
+        "role": "Flat owner"
+      },
+      {
+        "quote": "Our shop was repainted over the weekend and we opened on Monday as usual.",
+        "role": "Shop owner"
+      }
+    ],
+    "blog": {
+      "title": "Painting Advice",
+      "posts": [
+        {
+          "tag": "Colours",
+          "title": "How To Choose Wall Colours For A Small Bedroom"
+        },
+        {
+          "tag": "Damp",
+          "title": "Why Paint Peels In The Rainy Season And How To Stop It"
+        },
+        {
+          "tag": "Planning",
+          "title": "How Often Should You Repaint Your Home"
+        }
+      ]
+    },
+    "marquee": [
+      "Interior",
+      "Exterior",
+      "Putty",
+      "Primer",
+      "Emulsion",
+      "Waterproofing",
+      "Wood Polish",
+      "Texture"
+    ],
+    "contactText": "Planning to repaint a room, a flat or a shop? Call or message {brand} and we will visit, measure and send a written quote."
+  },
+  {
+    "id": "carpentry_furniture",
+    "label": "Carpentry and custom furniture",
+    "theme": "creative_studio",
+    "keywords": [
+      "carpenter",
+      "custom furniture",
+      "modular wardrobe",
+      "furniture maker",
+      "wooden furniture repair",
+      "kitchen cabinets carpenter",
+      "बढ़ई",
+      "badhai"
+    ],
+    "heroTitles": [
+      "Furniture Made To Fit Your Space",
+      "Solid Wood Work Built By Hand",
+      "From Rough Sketch To Finished Wardrobe"
+    ],
+    "heroSubtitles": [
+      "{brand} designs and builds wardrobes, beds, tables and shelves cut to your exact room size, in the wood you choose.",
+      "Share a photo or a rough idea, and we measure at your home, draw it, quote it and build it in our workshop.",
+      "Every joint is checked and every edge is finished, so furniture from {brand} looks good and holds up for years."
+    ],
+    "button": "Book A Home Measurement",
+    "featureTitle": "Carpentry Work For Every Room In Your Home",
+    "features": [
+      {
+        "title": "Custom Wardrobes",
+        "text": "Sliding or hinged wardrobes with shelves, drawers and hanging space planned around your clothes."
+      },
+      {
+        "title": "Beds And Storage",
+        "text": "Solid beds with box or hydraulic storage, headboards and side tables in matching finish."
+      },
+      {
+        "title": "Kitchen Cabinets",
+        "text": "Moisture-resistant cabinets with soft-close hinges, built to fit your kitchen walls."
+      },
+      {
+        "title": "TV Units And Shelves",
+        "text": "Wall units, bookshelves and display shelves made to the size of your wall."
+      },
+      {
+        "title": "Doors And Windows",
+        "text": "Teak and engineered wood doors, frames and window shutters, fitted and polished."
+      },
+      {
+        "title": "Repair And Polish",
+        "text": "Loose joints tightened, broken parts replaced and old furniture sanded and re-polished."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Free",
+        "label": "Home measurement"
+      },
+      {
+        "value": "Custom",
+        "label": "Size and design"
+      },
+      {
+        "value": "Workshop",
+        "label": "Made in-house"
+      }
+    ],
+    "steps": {
+      "title": "How Your Furniture Gets Built",
+      "items": [
+        {
+          "title": "Measure And Discuss",
+          "text": "We visit, measure the space and talk through design, wood and finish."
+        },
+        {
+          "title": "Drawing And Quote",
+          "text": "You see a simple drawing and a written price before any wood is cut."
+        },
+        {
+          "title": "Workshop Build",
+          "text": "Pieces are cut, joined and finished in our workshop with progress photos for you."
+        },
+        {
+          "title": "Delivery And Fitting",
+          "text": "We bring the furniture home, fit it level and fix any small adjustment on the spot."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Which wood should I choose for a wardrobe?",
+        "a": "Plywood with laminate or veneer suits most homes. Solid wood is best for beds and doors if your budget allows."
+      },
+      {
+        "q": "How long does custom furniture take?",
+        "a": "A bed or table usually takes one to two weeks. A full wardrobe or kitchen can take three to five weeks."
+      },
+      {
+        "q": "Can you copy a design from a photo?",
+        "a": "Yes. Send us the picture and we will adjust it to your space and tell you the cost."
+      },
+      {
+        "q": "Do you repair old furniture?",
+        "a": "We repair joints, replace broken parts, change hinges and polish old sofas, almirahs and dining tables."
+      },
+      {
+        "q": "Is any advance payment needed?",
+        "a": "A small advance is taken to buy the material. The balance is paid in stages as work progresses and on delivery."
+      }
+    ],
+    "cta": {
+      "title": "Have A Space That Needs The Perfect Fit?",
+      "button": "Book A Home Measurement"
+    },
+    "about": {
+      "title": "About Our Carpenters",
+      "paragraphs": [
+        "{brand} is a family-run carpentry workshop that builds furniture for homes, small offices and shops to measure.",
+        "We explain which board and finish fit your budget, show you drawings first, and fit everything carefully at your place."
+      ],
+      "points": [
+        "Built to your exact measurements",
+        "Quality hardware and fittings",
+        "Repair help after delivery"
+      ]
+    },
+    "pricing": {
+      "title": "Carpentry Pricing Guide",
+      "plans": [
+        {
+          "name": "Repair And Polish",
+          "price": "$15",
+          "period": "/visit",
+          "perks": [
+            "Joint tightening",
+            "Hinge and lock change",
+            "Touch-up polish"
+          ]
+        },
+        {
+          "name": "Custom Wardrobe",
+          "price": "$280",
+          "period": "/job",
+          "perks": [
+            "Home measurement",
+            "Shelves and drawers",
+            "Fitting included"
+          ]
+        },
+        {
+          "name": "Full Bedroom Set",
+          "price": "$650",
+          "period": "/job",
+          "perks": [
+            "Bed with storage",
+            "Wardrobe and side tables",
+            "Matching finish"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Pieces From Our Workshop",
+      "captions": [
+        "Sliding wardrobe",
+        "Storage bed",
+        "Teak door",
+        "Wall shelves",
+        "Kitchen cabinets",
+        "Polished table"
+      ]
+    },
+    "team": {
+      "title": "Meet The Craftsmen",
+      "roles": [
+        "Master Carpenter",
+        "Finishing Specialist",
+        "Site Fitter"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "The wardrobe fit the odd corner perfectly and the carpenters cleaned up after the fitting.",
+        "role": "Home owner"
+      },
+      {
+        "quote": "They repaired our old dining table so well that it looks new again.",
+        "role": "Family customer"
+      },
+      {
+        "quote": "Kitchen cabinets were made on time and the drawers still slide smoothly.",
+        "role": "Flat owner"
+      }
+    ],
+    "blog": {
+      "title": "Furniture Guides",
+      "posts": [
+        {
+          "tag": "Materials",
+          "title": "Plywood, MDF Or Solid Wood For Home Furniture"
+        },
+        {
+          "tag": "Planning",
+          "title": "How To Plan A Wardrobe For A Small Bedroom"
+        },
+        {
+          "tag": "Care",
+          "title": "Keeping Wooden Furniture Safe From Damp And Termites"
+        }
+      ]
+    },
+    "marquee": [
+      "Wardrobe",
+      "Bed Making",
+      "Kitchen Units",
+      "Doors",
+      "Polish",
+      "Repair",
+      "Teak Wood",
+      "Plywood"
+    ],
+    "contactText": "Need a wardrobe, bed or a repair done properly? Call or message {brand} and we will visit your home to measure."
+  },
+  {
+    "id": "cleaning_services",
+    "label": "Home and office cleaning",
+    "theme": "home_services",
+    "keywords": [
+      "cleaning service",
+      "home cleaning",
+      "deep cleaning",
+      "sofa cleaning",
+      "bathroom cleaning",
+      "office cleaning",
+      "safai",
+      "सफाई सेवा"
+    ],
+    "heroTitles": [
+      "A Home That Feels Truly Fresh",
+      "Book A Clean In Under A Minute",
+      "Sparkling Kitchens, Bathrooms And Floors"
+    ],
+    "heroSubtitles": [
+      "{brand} sends trained cleaners with their own equipment to deep clean your home, kitchen and bathrooms.",
+      "Pick your day and time, tell us the size of your home, and a cleaning team arrives ready to start.",
+      "Grease off the kitchen tiles, limescale off the taps and dust out of the sofa, so the house feels new again."
+    ],
+    "button": "Book A Cleaning",
+    "featureTitle": "Cleaning For Every Room And Every Surface",
+    "features": [
+      {
+        "title": "Full Home Deep Cleaning",
+        "text": "Floors, walls, fans, windows, cupboards and corners cleaned top to bottom, room by room."
+      },
+      {
+        "title": "Kitchen Degreasing",
+        "text": "Chimney, tiles, cabinets, stove and sink scrubbed to remove oil and stubborn stains."
+      },
+      {
+        "title": "Bathroom Descaling",
+        "text": "Tiles, taps, sinks and commodes cleaned of hard water marks and bad smell."
+      },
+      {
+        "title": "Sofa And Carpet Cleaning",
+        "text": "Machine shampoo and vacuum cleaning for sofas, carpets and mattresses, with stain care."
+      },
+      {
+        "title": "Move In And Move Out Clean",
+        "text": "A full clean before you move in or hand over the flat, so it is ready right away."
+      },
+      {
+        "title": "Office And Shop Cleaning",
+        "text": "Regular or one-time cleaning of desks, floors, washrooms and glass, outside working hours."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Trained",
+        "label": "Cleaning staff"
+      },
+      {
+        "value": "Own",
+        "label": "Equipment and liquids"
+      },
+      {
+        "value": "Same day",
+        "label": "Slots on request"
+      }
+    ],
+    "steps": {
+      "title": "How Your Cleaning Works",
+      "items": [
+        {
+          "title": "Choose Service",
+          "text": "Tell us the type of cleaning, the size of your home and any special areas."
+        },
+        {
+          "title": "Confirm Slot",
+          "text": "We confirm the price and send a team at the time you picked."
+        },
+        {
+          "title": "Deep Clean",
+          "text": "Cleaners work room by room with machines, brushes and safe cleaning liquids."
+        },
+        {
+          "title": "Check And Sign Off",
+          "text": "You walk around with the supervisor and we redo anything you are not happy with."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "How long does a deep clean take?",
+        "a": "A 2 BHK flat usually takes five to seven hours with a team of two to three cleaners."
+      },
+      {
+        "q": "Do I need to give cleaning materials?",
+        "a": "No. Our team brings its own machines, brushes and cleaning liquids. You only need to provide water and power."
+      },
+      {
+        "q": "Are your cleaning products safe for children and pets?",
+        "a": "We use mild liquids made for homes and tell you how long to wait before the floor is used."
+      },
+      {
+        "q": "Can you remove old stains from sofas?",
+        "a": "We treat most stains. Very old or dye stains may fade but may not vanish, and we tell you before we start."
+      },
+      {
+        "q": "Do you offer weekly or monthly cleaning?",
+        "a": "Yes. Offices and homes can book a regular visit with the same team."
+      }
+    ],
+    "cta": {
+      "title": "Want A Spotless Home Without The Effort?",
+      "button": "Book A Cleaning"
+    },
+    "about": {
+      "title": "About Our Cleaning Team",
+      "paragraphs": [
+        "{brand} provides trained and verified cleaners for homes, offices and shops, using machines that clean better than a mop alone.",
+        "We keep a checklist for each room so nothing is skipped, and we ask for your feedback before the team leaves."
+      ],
+      "points": [
+        "Verified, uniformed staff",
+        "Room by room checklist",
+        "Re-clean if something is missed"
+      ]
+    },
+    "pricing": {
+      "title": "Cleaning Pricing",
+      "plans": [
+        {
+          "name": "Bathroom Cleaning",
+          "price": "$10",
+          "period": "/bathroom",
+          "perks": [
+            "Tiles and fittings",
+            "Descaling",
+            "Commode sanitising"
+          ]
+        },
+        {
+          "name": "Sofa And Carpet Clean",
+          "price": "$25",
+          "period": "/job",
+          "perks": [
+            "Shampoo and vacuum",
+            "Stain treatment",
+            "Quick drying method"
+          ]
+        },
+        {
+          "name": "Full Home Deep Clean",
+          "price": "$60",
+          "period": "/job",
+          "perks": [
+            "All rooms and kitchen",
+            "Fans and windows",
+            "Floor scrubbing"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Before And After Cleaning",
+      "captions": [
+        "Kitchen tile shine",
+        "Sofa shampoo",
+        "Bathroom descaled",
+        "Window cleaning",
+        "Floor scrubbing",
+        "Office desk clean"
+      ]
+    },
+    "team": {
+      "title": "Meet The Cleaning Crew",
+      "roles": [
+        "Cleaning Supervisor",
+        "Deep Clean Specialist",
+        "Customer Care Executive"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "The team scrubbed our kitchen until the tiles shone and finished before evening.",
+        "role": "Home owner"
+      },
+      {
+        "quote": "Sofa looked new after cleaning and there was no bad smell left behind.",
+        "role": "Family customer"
+      },
+      {
+        "quote": "We now book them every Saturday for our office and the staff are always on time.",
+        "role": "Office manager"
+      }
+    ],
+    "blog": {
+      "title": "Cleaning Tips",
+      "posts": [
+        {
+          "tag": "Kitchen",
+          "title": "Simple Ways To Remove Oil Stains From Kitchen Tiles"
+        },
+        {
+          "tag": "Bathroom",
+          "title": "How To Stop Hard Water Marks On Taps And Glass"
+        },
+        {
+          "tag": "Festival",
+          "title": "A Room By Room Plan For Pre Diwali Cleaning"
+        }
+      ]
+    },
+    "marquee": [
+      "Deep Clean",
+      "Kitchen",
+      "Bathroom",
+      "Sofa Shampoo",
+      "Carpet",
+      "Office Clean",
+      "Move In Clean",
+      "Windows"
+    ],
+    "contactText": "Need your home or office cleaned? Message or call {brand} with your location and size, and we will confirm a slot and price."
+  },
+  {
+    "id": "laundry_drycleaning",
+    "label": "Laundry and dry cleaning",
+    "theme": "home_services",
+    "keywords": [
+      "laundry service",
+      "dry cleaning",
+      "dry cleaner",
+      "ironing service",
+      "wash and fold",
+      "laundry pickup",
+      "धुलाई",
+      "kapde dhulai"
+    ],
+    "heroTitles": [
+      "Clothes Collected, Cleaned, Back At Your Door",
+      "Fresh Laundry Without Lifting A Finger",
+      "Garments Returned Crisp And Fresh"
+    ],
+    "heroSubtitles": [
+      "{brand} picks up your clothes, washes or dry cleans them with care and delivers them folded and ready to wear.",
+      "Skip the weekend washing. Schedule a pickup, and get everything back in two days, or the same day for ironing.",
+      "From daily shirts to wedding sarees and woollens, every garment is sorted, treated and pressed with proper care."
+    ],
+    "button": "Schedule A Pickup",
+    "featureTitle": "Garment Care From Daily Wear To Delicate Wear",
+    "features": [
+      {
+        "title": "Wash And Fold",
+        "text": "Everyday clothes washed, dried and neatly folded by weight, ready to go in the cupboard."
+      },
+      {
+        "title": "Dry Cleaning",
+        "text": "Suits, sarees, lehengas and blazers cleaned with solvent that is gentle on fabric and colour."
+      },
+      {
+        "title": "Steam Ironing",
+        "text": "Shirts, trousers and kurtas pressed with steam for sharp creases, available same day."
+      },
+      {
+        "title": "Woollen And Winter Wear",
+        "text": "Sweaters, jackets and shawls cleaned and packed so they stay soft and shape holds."
+      },
+      {
+        "title": "Curtains And Bedding",
+        "text": "Heavy quilts, blankets, bedsheets and curtains washed in large machines and dried fully."
+      },
+      {
+        "title": "Shoe And Bag Cleaning",
+        "text": "Sneakers and leather bags cleaned and freshened, with stain treatment where needed."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Free",
+        "label": "Pickup and delivery"
+      },
+      {
+        "value": "48 hours",
+        "label": "Usual turnaround"
+      },
+      {
+        "value": "Same day",
+        "label": "Steam ironing"
+      }
+    ],
+    "steps": {
+      "title": "How Laundry Pickup Works",
+      "items": [
+        {
+          "title": "Schedule",
+          "text": "Pick a day and time by phone or message, and our rider comes to your door."
+        },
+        {
+          "title": "Sort And Tag",
+          "text": "We count and tag every item, and check pockets and stains before washing."
+        },
+        {
+          "title": "Clean And Press",
+          "text": "Clothes are washed or dry cleaned as per their label, then pressed and folded."
+        },
+        {
+          "title": "Deliver",
+          "text": "Your clothes arrive on hangers or in a pack, with a bill matching your list."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "How long does laundry take?",
+        "a": "Wash and fold usually takes two days. Dry cleaning takes two to four days, and ironing can be same day."
+      },
+      {
+        "q": "Do you charge for pickup and delivery?",
+        "a": "Pickup and delivery is free within our service area above a small minimum order."
+      },
+      {
+        "q": "What if a garment gets damaged or lost?",
+        "a": "Every item is counted and tagged. If there is a problem, tell us at delivery and we will sort it out fairly."
+      },
+      {
+        "q": "Can you remove tough stains like oil or ink?",
+        "a": "We treat most stains before washing. Old stains may fade but may not vanish, and we will let you know."
+      },
+      {
+        "q": "Do you wash different colours separately?",
+        "a": "Yes. We separate whites, darks and delicates, and follow the care label on each garment."
+      }
+    ],
+    "cta": {
+      "title": "Spending Your Weekends Washing Clothes?",
+      "button": "Schedule A Pickup"
+    },
+    "about": {
+      "title": "About Our Laundry Service",
+      "paragraphs": [
+        "{brand} is a neighbourhood laundry and dry cleaning service that collects, cleans and returns your clothes with care.",
+        "We read every care label, count each piece at pickup and press garments properly, so your wardrobe stays in good shape."
+      ],
+      "points": [
+        "Free pickup and delivery",
+        "Every item counted and tagged",
+        "Label-based washing"
+      ]
+    },
+    "pricing": {
+      "title": "Laundry Rates",
+      "plans": [
+        {
+          "name": "Wash And Fold",
+          "price": "$1",
+          "period": "/kg",
+          "perks": [
+            "Wash and dry",
+            "Neatly folded",
+            "Free pickup and delivery"
+          ]
+        },
+        {
+          "name": "Steam Iron Bundle",
+          "price": "$2",
+          "period": "/bundle",
+          "perks": [
+            "Shirts and trousers",
+            "Sharp crease finish",
+            "Same day option"
+          ]
+        },
+        {
+          "name": "Dry Clean Suit",
+          "price": "$8",
+          "period": "/suit",
+          "perks": [
+            "Solvent clean",
+            "Pressed finish",
+            "Garment cover"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Inside Our Laundry",
+      "captions": [
+        "Steam pressing",
+        "Folded shirts",
+        "Dry clean line",
+        "Saree care",
+        "Quilt washing",
+        "Ready for delivery"
+      ]
+    },
+    "team": {
+      "title": "Meet The Laundry Team",
+      "roles": [
+        "Dry Cleaning Specialist",
+        "Pressing Expert",
+        "Pickup And Delivery Rider"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "Pickup was on time and my shirts came back crisp and perfectly folded.",
+        "role": "Office professional"
+      },
+      {
+        "quote": "They cleaned my silk saree without fading and returned it in a proper cover.",
+        "role": "Family customer"
+      },
+      {
+        "quote": "Heavy blankets were washed and fully dry, with no smell at all.",
+        "role": "Home owner"
+      }
+    ],
+    "blog": {
+      "title": "Garment Care Tips",
+      "posts": [
+        {
+          "tag": "Care",
+          "title": "What The Symbols On Your Clothing Label Really Mean"
+        },
+        {
+          "tag": "Winter",
+          "title": "How To Store Woollen Clothes So They Stay Soft"
+        },
+        {
+          "tag": "Stains",
+          "title": "Quick Steps For Fresh Tea And Oil Stains Before Washing"
+        }
+      ]
+    },
+    "marquee": [
+      "Wash And Fold",
+      "Dry Clean",
+      "Steam Iron",
+      "Pickup",
+      "Delivery",
+      "Woollens",
+      "Saree Care",
+      "Curtains"
+    ],
+    "contactText": "Need clothes picked up and cleaned? Message or call {brand} with your address and we will schedule a pickup that suits you."
+  },
+  {
+    "id": "water_purifier_service",
+    "label": "Water purifier service",
+    "theme": "home_services",
+    "keywords": [
+      "water purifier service",
+      "ro service",
+      "ro repair",
+      "water filter installation",
+      "ro water purifier",
+      "filter change",
+      "आरओ सर्विस",
+      "ro theek karwana"
+    ],
+    "heroTitles": [
+      "Clean Drinking Water, Every Single Day",
+      "RO Not Working? We Fix It Today",
+      "Fresh Filters, Better Taste, Safer Glass"
+    ],
+    "heroSubtitles": [
+      "{brand} services and repairs RO, UV and gravity water purifiers at your home, with genuine filters and a clear bill.",
+      "Slow flow, bad taste or a beeping machine? Book a visit and our technician will check it and fix it on the spot.",
+      "Change filters on time, test the water and keep your family drinking safe water, with reminders when service is due."
+    ],
+    "button": "Book A Purifier Service",
+    "featureTitle": "Water Purifier Care For Every Brand",
+    "features": [
+      {
+        "title": "RO Service And Cleaning",
+        "text": "Checking pump, membrane and tank, flushing the system and cleaning the cabinet and pipes."
+      },
+      {
+        "title": "Filter And Membrane Change",
+        "text": "Sediment, carbon and RO membrane replaced with genuine parts at the right time."
+      },
+      {
+        "title": "New Purifier Installation",
+        "text": "Wall fitting, water inlet and drain connection, plus a TDS check once it is running."
+      },
+      {
+        "title": "Water Quality Test",
+        "text": "TDS and hardness testing at your tap, so you know whether RO or UV is right for you."
+      },
+      {
+        "title": "Leak And Low Flow Repair",
+        "text": "Fixing leaking tubes, weak pumps, faulty valves and low water flow from the tap."
+      },
+      {
+        "title": "Annual Service Plan",
+        "text": "Scheduled visits with filter changes and cleaning at a fixed price for the whole year."
+      }
+    ],
+    "stats": [
+      {
+        "value": "All brands",
+        "label": "RO and UV"
+      },
+      {
+        "value": "Genuine",
+        "label": "Filters and parts"
+      },
+      {
+        "value": "Reminders",
+        "label": "For next service"
+      }
+    ],
+    "steps": {
+      "title": "How Your Purifier Service Works",
+      "items": [
+        {
+          "title": "Book A Visit",
+          "text": "Tell us your purifier brand and the problem, and choose a time slot."
+        },
+        {
+          "title": "Check And Test",
+          "text": "The technician tests the water, flow and pressure and finds which part needs attention."
+        },
+        {
+          "title": "Service Or Replace",
+          "text": "Parts are cleaned or replaced with your approval and the price quoted first."
+        },
+        {
+          "title": "Final Test",
+          "text": "We flush the system, check the TDS and note the date of the next service."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "How often should I change RO filters?",
+        "a": "Sediment and carbon filters about twice a year; the membrane lasts longer, depending on how hard your water is."
+      },
+      {
+        "q": "Why does my RO water taste different?",
+        "a": "Usually it means filters are exhausted or the tank needs cleaning. A service normally fixes the taste."
+      },
+      {
+        "q": "Is RO water suitable for everyone?",
+        "a": "RO is good for high TDS and hard water. Where TDS is low, UV or UF can be enough. We test before we advise."
+      },
+      {
+        "q": "Can you service a purifier bought from another brand?",
+        "a": "Yes. We service most RO, UV and UF models, and can source standard parts for them."
+      },
+      {
+        "q": "Why is my RO wasting so much water?",
+        "a": "A worn membrane or a faulty valve can increase reject water. We check and fix it."
+      }
+    ],
+    "cta": {
+      "title": "Not Sure If Your Drinking Water Is Safe?",
+      "button": "Book A Purifier Service"
+    },
+    "about": {
+      "title": "About Our Water Purifier Team",
+      "paragraphs": [
+        "{brand} installs and services water purifiers in homes, shops and small offices, using genuine filters and proper tools.",
+        "We test your tap water, tell you what your family really needs, and set up regular services so you do not have to remember."
+      ],
+      "points": [
+        "Genuine filters and parts",
+        "TDS test at every visit",
+        "Service reminders by message"
+      ]
+    },
+    "pricing": {
+      "title": "Purifier Service Pricing",
+      "plans": [
+        {
+          "name": "Basic RO Service",
+          "price": "$7",
+          "period": "/visit",
+          "perks": [
+            "System flush",
+            "Cabinet and tank cleaning",
+            "TDS check"
+          ]
+        },
+        {
+          "name": "Filter Change Service",
+          "price": "$20",
+          "period": "/visit",
+          "perks": [
+            "Sediment and carbon filters",
+            "Full service",
+            "Genuine parts"
+          ]
+        },
+        {
+          "name": "Annual Service Plan",
+          "price": "$35",
+          "period": "/year",
+          "perks": [
+            "Three scheduled visits",
+            "Free labour on repairs",
+            "Priority booking"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Purifier Service Photos",
+      "captions": [
+        "Filter replacement",
+        "Membrane check",
+        "TDS testing",
+        "New installation",
+        "Tank cleaning",
+        "Wall mounted RO"
+      ]
+    },
+    "team": {
+      "title": "Meet The Service Team",
+      "roles": [
+        "RO Technician",
+        "Installation Specialist",
+        "Service Coordinator"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "The technician tested our water first and only changed the filters that needed it.",
+        "role": "Home owner"
+      },
+      {
+        "quote": "Water tastes fresh again and the leak under the sink was fixed in the same visit.",
+        "role": "Flat resident"
+      },
+      {
+        "quote": "They send a reminder before every service so we never forget to change the filters.",
+        "role": "Shop owner"
+      }
+    ],
+    "blog": {
+      "title": "Safe Water Tips",
+      "posts": [
+        {
+          "tag": "Basics",
+          "title": "RO, UV Or UF, Which Purifier Fits Your Water"
+        },
+        {
+          "tag": "Care",
+          "title": "Signs Your Water Purifier Needs A Service Right Now"
+        },
+        {
+          "tag": "Testing",
+          "title": "What TDS Really Tells You About Your Drinking Water"
+        }
+      ]
+    },
+    "marquee": [
+      "RO Service",
+      "UV Filter",
+      "Filter Change",
+      "Membrane",
+      "TDS Test",
+      "Installation",
+      "Leak Repair",
+      "Annual Plan"
+    ],
+    "contactText": "Is your purifier slow, leaking or due for service? Call or message {brand} and we will book a technician visit."
+  },
+  {
+    "id": "car_rental",
+    "label": "Car rental",
+    "theme": "automotive",
+    "keywords": [
+      "car rental",
+      "car hire",
+      "rent a car",
+      "self drive car",
+      "car on rent",
+      "गाड़ी किराये पर",
+      "gaadi kiraye par"
+    ],
+    "heroTitles": [
+      "Pick Up Your Ride And Go Today",
+      "Clean Cars, Clear Prices, No Surprises",
+      "The Right Car For Every Trip You Plan"
+    ],
+    "heroSubtitles": [
+      "{brand} rents well-maintained cars for city travel, family trips and weddings, with or without a driver.",
+      "Choose your car, pay a transparent rate and drive away with the papers and fuel details clearly explained.",
+      "Hatchbacks for city errands, SUVs for hill trips and sedans for airport runs, all cleaned and checked before each trip."
+    ],
+    "button": "Book A Car Today",
+    "featureTitle": "Car Rental Options For Every Kind Of Trip",
+    "features": [
+      {
+        "title": "Self Drive Rental",
+        "text": "Hourly, daily or weekly hire of hatchbacks, sedans and SUVs with a security deposit and ID check."
+      },
+      {
+        "title": "Car With Driver",
+        "text": "Experienced drivers who know the roads, for outstation trips, tours and long family journeys."
+      },
+      {
+        "title": "Airport Pickup And Drop",
+        "text": "Fixed rate rides to and from the airport, with flight tracking and a driver waiting at arrival."
+      },
+      {
+        "title": "Wedding And Event Cars",
+        "text": "Decorated cars for the groom, guests and family, booked for the day with a clear schedule."
+      },
+      {
+        "title": "Monthly And Corporate Hire",
+        "text": "Dedicated cars for companies and long-stay visitors, billed monthly with one fixed rate."
+      },
+      {
+        "title": "Outstation Tours",
+        "text": "Round-trip and one-way trips to hill stations and temples, with route advice and toll details."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Clean",
+        "label": "Cars before every trip"
+      },
+      {
+        "value": "Clear",
+        "label": "Rates and kilometres"
+      },
+      {
+        "value": "24/7",
+        "label": "Help during rental"
+      }
+    ],
+    "steps": {
+      "title": "How To Rent A Car",
+      "items": [
+        {
+          "title": "Choose Your Car",
+          "text": "Tell us dates, route and passengers, and we suggest the right car and rate."
+        },
+        {
+          "title": "Share Documents",
+          "text": "Provide your ID and driving licence, and pay the booking amount to confirm."
+        },
+        {
+          "title": "Pick Up Or Delivery",
+          "text": "Collect from our office or have the car delivered, and check it with us on a condition sheet."
+        },
+        {
+          "title": "Return And Settle",
+          "text": "Bring the car back with the agreed fuel level, and we close the bill on the spot."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "What documents do I need to rent a car?",
+        "a": "A valid driving licence, an ID proof such as Aadhaar, and an address proof. Some cars also need a security deposit."
+      },
+      {
+        "q": "Are kilometres limited?",
+        "a": "Daily packages have a set kilometre limit, and extra kilometres are charged at a fixed rate. We tell you before booking."
+      },
+      {
+        "q": "Who pays for fuel, tolls and parking?",
+        "a": "For self drive, you do. For car with driver, tolls and parking are usually extra and noted on the quote."
+      },
+      {
+        "q": "What happens if the car breaks down?",
+        "a": "Call our helpline anytime. We arrange help on the road or send a replacement car where possible."
+      },
+      {
+        "q": "Is the car insured?",
+        "a": "Yes. Cars have valid insurance. A deductible may apply in case of an accident, which we explain at booking."
+      }
+    ],
+    "cta": {
+      "title": "Planning A Trip And Need A Car?",
+      "button": "Book A Car Today"
+    },
+    "about": {
+      "title": "About Our Car Rental",
+      "paragraphs": [
+        "{brand} is a local car rental business with a fleet of serviced cars and experienced drivers for city and outstation trips.",
+        "We keep our rates simple, explain the kilometre and fuel rules up front, and stay reachable if you need help on the road."
+      ],
+      "points": [
+        "Serviced and cleaned cars",
+        "Rates explained before booking",
+        "Helpline during your trip"
+      ]
+    },
+    "pricing": {
+      "title": "Car Rental Rates",
+      "plans": [
+        {
+          "name": "Hatchback Daily",
+          "price": "$30",
+          "period": "/day",
+          "perks": [
+            "Self drive option",
+            "Set daily kilometres",
+            "Insurance included"
+          ]
+        },
+        {
+          "name": "Sedan With Driver",
+          "price": "$55",
+          "period": "/day",
+          "perks": [
+            "Experienced driver",
+            "Outstation ready",
+            "Fuel and toll extra"
+          ]
+        },
+        {
+          "name": "SUV Family Trip",
+          "price": "$80",
+          "period": "/day",
+          "perks": [
+            "Seven seater",
+            "Luggage space",
+            "Helpline support"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Our Rental Fleet",
+      "captions": [
+        "City hatchback",
+        "Family SUV",
+        "Airport sedan",
+        "Wedding car",
+        "Clean interior",
+        "Ready for pickup"
+      ]
+    },
+    "team": {
+      "title": "Meet The Rental Team",
+      "roles": [
+        "Fleet Manager",
+        "Senior Driver",
+        "Booking Executive"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "The car was spotless, the rate was exactly as quoted and returning it took five minutes.",
+        "role": "Weekend traveller"
+      },
+      {
+        "quote": "Our driver knew the hill roads well and we reached on time with the whole family.",
+        "role": "Family customer"
+      },
+      {
+        "quote": "Airport pickup was on time even though our flight was late.",
+        "role": "Business visitor"
+      }
+    ],
+    "blog": {
+      "title": "Travel And Rental Tips",
+      "posts": [
+        {
+          "tag": "Planning",
+          "title": "Self Drive Or Car With Driver, Which Is Better For Your Trip"
+        },
+        {
+          "tag": "Checklist",
+          "title": "What To Check On A Rental Car Before You Drive Off"
+        },
+        {
+          "tag": "Outstation",
+          "title": "A Packing And Route Checklist For Long Family Drives"
+        }
+      ]
+    },
+    "marquee": [
+      "Self Drive",
+      "With Driver",
+      "Airport",
+      "Outstation",
+      "Wedding Cars",
+      "SUV",
+      "Sedan",
+      "Hatchback"
+    ],
+    "contactText": "Need a car for a day, a week or a wedding? Message or call {brand} with your dates and route and we will suggest the right car."
+  },
+  {
+    "id": "driving_school",
+    "label": "Driving school",
+    "theme": "education",
+    "keywords": [
+      "driving school",
+      "driving classes",
+      "learn car driving",
+      "driving lessons",
+      "driving licence",
+      "car training",
+      "ड्राइविंग स्कूल",
+      "gaadi seekhna"
+    ],
+    "heroTitles": [
+      "Learn To Drive With A Calm Instructor",
+      "Get Your Licence Without The Hassle",
+      "Drive Confidently On Real City Roads"
+    ],
+    "heroSubtitles": [
+      "{brand} teaches car driving to complete beginners and nervous drivers, step by step, in a dual control car.",
+      "We cover lessons, practice and licence paperwork, so you walk into the RTO test knowing what to expect.",
+      "Start in an open ground, move to quiet streets and finish on busy roads with your instructor beside you."
+    ],
+    "button": "Book A Trial Lesson",
+    "featureTitle": "Driving Training That Builds Real Confidence",
+    "features": [
+      {
+        "title": "Beginner Car Lessons",
+        "text": "Starting the car, clutch and gear control, steering and braking in a safe practice ground."
+      },
+      {
+        "title": "City Road Practice",
+        "text": "Real traffic practice, lane changes, junctions and roundabouts with an instructor ready to help."
+      },
+      {
+        "title": "Parking And Reversing",
+        "text": "Parallel, reverse and angle parking and tight turns, the skills most new drivers find hardest."
+      },
+      {
+        "title": "Nervous Driver Support",
+        "text": "Slow, patient classes for people who stopped driving or are afraid of the road."
+      },
+      {
+        "title": "Licence Paperwork Help",
+        "text": "We help with learner licence forms, slot booking and test preparation at the RTO."
+      },
+      {
+        "title": "Refresher And Highway Class",
+        "text": "Short courses for licence holders who want more confidence, highway or night driving."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Dual control",
+        "label": "Training cars"
+      },
+      {
+        "value": "Women",
+        "label": "Instructors available"
+      },
+      {
+        "value": "RTO",
+        "label": "Test preparation"
+      }
+    ],
+    "steps": {
+      "title": "How Your Driving Course Works",
+      "items": [
+        {
+          "title": "Trial Lesson",
+          "text": "Meet your instructor, sit in the car and tell us your goal and comfort level."
+        },
+        {
+          "title": "Basic Training",
+          "text": "Learn clutch, gears, steering and braking in a quiet, safe area first."
+        },
+        {
+          "title": "Road Practice",
+          "text": "Move to streets and busy roads, practising turns, junctions and parking."
+        },
+        {
+          "title": "Licence Test",
+          "text": "We help you prepare for the RTO test and book your slot."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "How many days does it take to learn driving?",
+        "a": "Most people learn the basics in 15 to 30 days of daily 30 to 60 minute classes. It depends on practice and confidence."
+      },
+      {
+        "q": "I have never touched a steering wheel, can I join?",
+        "a": "Yes. Most of our students are complete beginners, and we start from how to sit and hold the wheel."
+      },
+      {
+        "q": "Can I choose a woman instructor?",
+        "a": "Yes. Please tell us when you book, and we will arrange a woman instructor wherever possible."
+      },
+      {
+        "q": "Do you help with the driving licence?",
+        "a": "Yes. We guide you with the learner licence, documents and the test process."
+      },
+      {
+        "q": "Can I practise in my own car?",
+        "a": "Yes. After a few lessons, your instructor can train you in your own car, if it is insured and in good condition."
+      }
+    ],
+    "cta": {
+      "title": "Ready To Finally Sit In The Driver Seat?",
+      "button": "Book A Trial Lesson"
+    },
+    "about": {
+      "title": "About Our Driving School",
+      "paragraphs": [
+        "{brand} is a local driving school with patient instructors who teach safe habits, not only how to pass the test.",
+        "Our cars have dual controls, and every lesson is planned to your pace, with the next goal made clear at the end of each class."
+      ],
+      "points": [
+        "Patient, trained instructors",
+        "Dual control cars",
+        "Pick up from your door on request"
+      ]
+    },
+    "pricing": {
+      "title": "Course Fees",
+      "plans": [
+        {
+          "name": "Trial Lesson",
+          "price": "$4",
+          "period": "/class",
+          "perks": [
+            "30 minute drive",
+            "Meet your instructor",
+            "Know your level"
+          ]
+        },
+        {
+          "name": "Refresher Course",
+          "price": "$25",
+          "period": "/course",
+          "perks": [
+            "10 short classes",
+            "Highway practice",
+            "Confidence building"
+          ]
+        },
+        {
+          "name": "Complete Course",
+          "price": "$50",
+          "period": "/course",
+          "perks": [
+            "20 days of lessons",
+            "Road and parking practice",
+            "Licence help"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Life At Our Driving School",
+      "captions": [
+        "Dual control car",
+        "Practice ground",
+        "Reverse parking",
+        "City road lesson",
+        "Instructor guidance",
+        "Test preparation"
+      ]
+    },
+    "team": {
+      "title": "Meet Our Instructors",
+      "roles": [
+        "Senior Driving Instructor",
+        "Women Driving Instructor",
+        "RTO Documentation Helper"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "I was scared of traffic, but my instructor was calm and I was driving in two weeks.",
+        "role": "New driver"
+      },
+      {
+        "quote": "They explained clutch control so simply and helped me get the licence.",
+        "role": "College student"
+      },
+      {
+        "quote": "Parking was my biggest fear, and the practice sessions fixed it.",
+        "role": "Working professional"
+      }
+    ],
+    "blog": {
+      "title": "Driving Tips",
+      "posts": [
+        {
+          "tag": "Beginners",
+          "title": "Five Common Mistakes New Drivers Make With The Clutch"
+        },
+        {
+          "tag": "Licence",
+          "title": "How To Prepare For Your RTO Driving Test"
+        },
+        {
+          "tag": "Confidence",
+          "title": "Simple Ways To Overcome Fear Of Driving In Traffic"
+        }
+      ]
+    },
+    "marquee": [
+      "Car Classes",
+      "Clutch Control",
+      "Parking",
+      "Learner Licence",
+      "RTO Test",
+      "Highway",
+      "Beginners",
+      "Refresher"
+    ],
+    "contactText": "Want to learn driving or get over your fear of the road? Call or message {brand} to book a trial lesson."
+  },
+  {
+    "id": "mobile_repair",
+    "label": "Mobile phone repair",
+    "theme": "modern_tech",
+    "keywords": [
+      "mobile repair",
+      "phone repair",
+      "screen replacement",
+      "mobile screen repair",
+      "battery replacement",
+      "iphone repair",
+      "मोबाइल रिपेयर",
+      "phone theek karwana"
+    ],
+    "heroTitles": [
+      "Cracked Screen Fixed While You Wait",
+      "Honest Phone Repairs With A Warranty",
+      "Your Phone Back Like New Today"
+    ],
+    "heroSubtitles": [
+      "{brand} repairs screens, batteries, charging ports and water damage for all major phone brands, mostly in under an hour.",
+      "Bring your phone in, hear what is wrong and the exact price first, and only then do we start the repair.",
+      "Dropped it, wet it or it just will not charge? We check it free and fix it with quality parts and a warranty."
+    ],
+    "button": "Get A Free Phone Check",
+    "featureTitle": "Phone Repairs For Every Common Problem",
+    "features": [
+      {
+        "title": "Screen Replacement",
+        "text": "Cracked or dead display swapped with a quality screen, often finished in under an hour."
+      },
+      {
+        "title": "Battery Replacement",
+        "text": "New battery for phones that drain fast, swell up or switch off suddenly, with a health check."
+      },
+      {
+        "title": "Charging Port Repair",
+        "text": "Cleaning or replacing charging ports when the phone charges slowly or only at certain angles."
+      },
+      {
+        "title": "Water Damage Treatment",
+        "text": "Opening the phone, cleaning the board and drying it quickly to save a phone that fell in water."
+      },
+      {
+        "title": "Software And Data Help",
+        "text": "Hang, boot loop, update trouble and data backup or recovery wherever it is possible."
+      },
+      {
+        "title": "Speaker, Mic And Camera Fix",
+        "text": "Replacing faulty speakers, microphones and camera modules so calls and photos work again."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Free",
+        "label": "Phone check"
+      },
+      {
+        "value": "Under 1 hour",
+        "label": "Common repairs"
+      },
+      {
+        "value": "Warranty",
+        "label": "On every repair"
+      }
+    ],
+    "steps": {
+      "title": "How A Phone Repair Works",
+      "items": [
+        {
+          "title": "Free Check",
+          "text": "We open the problem up in front of you and find what has failed."
+        },
+        {
+          "title": "Price And Choice",
+          "text": "You choose between standard and premium parts, and we confirm the final price."
+        },
+        {
+          "title": "Repair",
+          "text": "The technician fixes your phone while you wait, or overnight for harder faults."
+        },
+        {
+          "title": "Test And Warranty",
+          "text": "We test touch, camera, sound and charging with you and give a repair warranty."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "How long does a screen replacement take?",
+        "a": "Most common models are done in 30 to 60 minutes. Some phones may need the part to be ordered, which takes a day or two."
+      },
+      {
+        "q": "Will I lose my data during repair?",
+        "a": "Screen and battery repairs do not touch your data. For board-level faults we advise taking a backup first."
+      },
+      {
+        "q": "Do you use original parts?",
+        "a": "We offer original or high quality compatible parts and tell you which is which, so you can choose by budget."
+      },
+      {
+        "q": "My phone fell in water, can it be saved?",
+        "a": "Switch it off and bring it quickly. The sooner we clean the board, the better the chance of saving it."
+      },
+      {
+        "q": "Is there a warranty on repairs?",
+        "a": "Yes. Repairs come with a warranty on the part and labour. Physical or water damage after repair is not covered."
+      }
+    ],
+    "cta": {
+      "title": "Is A Broken Phone Slowing Down Your Day?",
+      "button": "Get A Free Phone Check"
+    },
+    "about": {
+      "title": "About Our Repair Shop",
+      "paragraphs": [
+        "{brand} is a mobile repair shop where the technician explains the problem and fixes it in front of you whenever possible.",
+        "We stock common screens and batteries, quote the real price first, and give a warranty so you repair with confidence."
+      ],
+      "points": [
+        "Free check and honest quote",
+        "Repair done in front of you",
+        "Warranty on parts and labour"
+      ]
+    },
+    "pricing": {
+      "title": "Repair Price Guide",
+      "plans": [
+        {
+          "name": "Battery Replacement",
+          "price": "$12",
+          "period": "/repair",
+          "perks": [
+            "New battery",
+            "Health check",
+            "Warranty"
+          ]
+        },
+        {
+          "name": "Water Damage Treatment",
+          "price": "$25",
+          "period": "/repair",
+          "perks": [
+            "Board cleaning",
+            "Drying process",
+            "Full diagnosis"
+          ]
+        },
+        {
+          "name": "Screen Replacement",
+          "price": "$35",
+          "period": "/repair",
+          "perks": [
+            "Quality display",
+            "Touch test",
+            "Repair warranty"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Inside Our Repair Bench",
+      "captions": [
+        "Screen swap",
+        "Battery fitting",
+        "Board cleaning",
+        "Tools on bench",
+        "Charging port fix",
+        "Tested and ready"
+      ]
+    },
+    "team": {
+      "title": "Meet The Repair Team",
+      "roles": [
+        "Senior Repair Technician",
+        "Board Level Specialist",
+        "Customer Desk Executive"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "They changed my cracked screen in forty minutes and the price was what they told me.",
+        "role": "Student"
+      },
+      {
+        "quote": "My phone died after falling in water and they got it working and saved my photos.",
+        "role": "Working professional"
+      },
+      {
+        "quote": "New battery and the phone now lasts all day, and they gave me a bill with warranty.",
+        "role": "Regular customer"
+      }
+    ],
+    "blog": {
+      "title": "Phone Care Tips",
+      "posts": [
+        {
+          "tag": "Battery",
+          "title": "Seven Habits That Make Your Phone Battery Last Longer"
+        },
+        {
+          "tag": "Water",
+          "title": "What To Do In The First Ten Minutes After A Phone Falls In Water"
+        },
+        {
+          "tag": "Screens",
+          "title": "Original Or Compatible Screen, How To Choose"
+        }
+      ]
+    },
+    "marquee": [
+      "Screen Repair",
+      "Battery",
+      "Charging Port",
+      "Water Damage",
+      "Data Backup",
+      "Speaker Fix",
+      "iPhone",
+      "Android"
+    ],
+    "contactText": "Phone broken or acting up? Visit or message {brand} with your phone model and problem and we will tell you the price right away."
+  },
+  {
+    "id": "bike_repair_garage",
+    "label": "Bike and scooter garage",
+    "theme": "automotive",
+    "keywords": [
+      "bike repair",
+      "bike service",
+      "motorcycle garage",
+      "scooter repair",
+      "two wheeler service",
+      "bike mechanic",
+      "बाइक रिपेयर",
+      "gaadi service"
+    ],
+    "heroTitles": [
+      "Your Bike Running Smooth Again",
+      "Quick Service, Done While You Wait",
+      "Honest Mechanics You Can Hand Your Keys To"
+    ],
+    "heroSubtitles": [
+      "{brand} services and repairs bikes and scooters of all makes, explaining each fault before we touch a spanner.",
+      "Drop your bike in the morning, get an update by message, and pick it up washed and ready by evening.",
+      "From a simple oil change to engine work, we fix what is needed and show you the old parts we replaced."
+    ],
+    "button": "Book A Bike Service",
+    "featureTitle": "Complete Care For Your Two Wheeler",
+    "features": [
+      {
+        "title": "General Bike Service",
+        "text": "Engine oil, filters, chain, brakes, clutch and cables checked, adjusted and cleaned."
+      },
+      {
+        "title": "Engine And Clutch Repair",
+        "text": "Fixing hard starting, pickup problems, noise and clutch slip with proper tuning or parts."
+      },
+      {
+        "title": "Brake And Suspension",
+        "text": "Brake pad and shoe changes, fork oil change and shock checks for safe, smooth riding."
+      },
+      {
+        "title": "Tyre And Puncture Work",
+        "text": "Tubeless and tube puncture repair, tyre change, wheel balancing and alignment."
+      },
+      {
+        "title": "Electrical And Battery",
+        "text": "Self start, lights, horn, wiring faults and battery testing or replacement."
+      },
+      {
+        "title": "Scooter Care",
+        "text": "CVT, belt, variator and brake service for scooters, plus carburettor or injector cleaning."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Same day",
+        "label": "Basic service"
+      },
+      {
+        "value": "Old parts",
+        "label": "Shown to you"
+      },
+      {
+        "value": "Pickup",
+        "label": "And drop available"
+      }
+    ],
+    "steps": {
+      "title": "How Your Bike Service Works",
+      "items": [
+        {
+          "title": "Drop Or Pickup",
+          "text": "Bring the bike in, or we collect it from your home with a quick note of its condition."
+        },
+        {
+          "title": "Inspection",
+          "text": "The mechanic checks it and tells you which jobs are needed and the cost of each."
+        },
+        {
+          "title": "Repair",
+          "text": "We fix only what you approve, using genuine or good quality spares."
+        },
+        {
+          "title": "Wash And Handover",
+          "text": "The bike is washed and test ridden, and you get the bill and old parts."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "How often should I service my bike?",
+        "a": "Usually every 3,000 to 4,000 km or every three months. Your owner manual gives the exact interval for your model."
+      },
+      {
+        "q": "How long does a normal service take?",
+        "a": "A regular service takes two to four hours. Engine or electrical work might take a day or more."
+      },
+      {
+        "q": "Why is my bike hard to start?",
+        "a": "It may be the battery, spark plug, carburettor or fuel filter. We test each before suggesting a repair."
+      },
+      {
+        "q": "Do you use genuine spare parts?",
+        "a": "We use genuine or trusted brand parts and tell you the option and the price before fitting."
+      },
+      {
+        "q": "Do you repair all brands and scooters?",
+        "a": "Yes. We work on most commuter bikes, sports bikes and scooters. For some premium models, we confirm parts in advance."
+      }
+    ],
+    "cta": {
+      "title": "Is Your Bike Making A Strange Noise?",
+      "button": "Book A Bike Service"
+    },
+    "about": {
+      "title": "About Our Garage",
+      "paragraphs": [
+        "{brand} is a neighbourhood bike garage run by mechanics who ride, repair and talk straight about what your bike needs.",
+        "We give an estimate first, avoid unnecessary changes and keep the old parts for you to see, so every rupee spent makes sense."
+      ],
+      "points": [
+        "Estimate before work starts",
+        "Old parts shown to you",
+        "Pickup and drop on request"
+      ]
+    },
+    "pricing": {
+      "title": "Service Price List",
+      "plans": [
+        {
+          "name": "Basic Service",
+          "price": "$7",
+          "period": "/service",
+          "perks": [
+            "Oil change labour",
+            "Chain and brake adjustment",
+            "Free bike wash"
+          ]
+        },
+        {
+          "name": "Full Bike Service",
+          "price": "$15",
+          "period": "/service",
+          "perks": [
+            "Engine tuning",
+            "Filter and plug check",
+            "Electrical check"
+          ]
+        },
+        {
+          "name": "Pickup And Service",
+          "price": "$22",
+          "period": "/service",
+          "perks": [
+            "Home pickup and drop",
+            "Full service",
+            "Wash and polish"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "From Our Garage",
+      "captions": [
+        "Engine tuning",
+        "Brake check",
+        "Chain cleaning",
+        "Tyre change",
+        "Scooter service",
+        "Washed and ready"
+      ]
+    },
+    "team": {
+      "title": "Meet The Mechanics",
+      "roles": [
+        "Head Mechanic",
+        "Electrical Specialist",
+        "Service Advisor"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "They told me exactly what my bike needed, nothing extra, and returned it washed.",
+        "role": "Daily commuter"
+      },
+      {
+        "quote": "Hard starting problem was fixed in one visit after others could not find the cause.",
+        "role": "Bike owner"
+      },
+      {
+        "quote": "Pickup and drop saved me a trip, and they sent photos of the work done.",
+        "role": "Office professional"
+      }
+    ],
+    "blog": {
+      "title": "Bike Care Tips",
+      "posts": [
+        {
+          "tag": "Basics",
+          "title": "How To Tell When Your Bike Needs An Oil Change"
+        },
+        {
+          "tag": "Monsoon",
+          "title": "Rainy Season Care To Protect Your Chain And Brakes"
+        },
+        {
+          "tag": "Mileage",
+          "title": "Easy Habits That Improve Your Bike Mileage"
+        }
+      ]
+    },
+    "marquee": [
+      "Bike Service",
+      "Oil Change",
+      "Brakes",
+      "Clutch",
+      "Puncture",
+      "Scooter",
+      "Battery",
+      "Wash"
+    ],
+    "contactText": "Bike or scooter acting up? Call or message {brand} with your model and problem, and we will tell you when to bring it in."
+  },
+  {
+    "id": "interior_designer",
+    "label": "Interior designer",
+    "theme": "luxury_minimal",
+    "keywords": [
+      "interior designer",
+      "home interior",
+      "interior design",
+      "modular kitchen design",
+      "false ceiling",
+      "living room design",
+      "इंटीरियर डिज़ाइनर",
+      "ghar ka interior"
+    ],
+    "heroTitles": [
+      "Rooms Designed Around How You Live",
+      "Your Dream Home, Planned Down To The Inch",
+      "Calm, Comfortable Spaces Made To Last"
+    ],
+    "heroSubtitles": [
+      "{brand} plans and builds interiors for flats, villas and offices, from first sketch to final decoration.",
+      "See your rooms in 3D before work begins, agree on the budget, and let one team handle carpentry, lighting and finishing.",
+      "We listen to how your family lives and design storage, light and colour so the home feels yours from day one."
+    ],
+    "button": "Book A Design Consultation",
+    "featureTitle": "Interior Design From Idea To Finished Room",
+    "features": [
+      {
+        "title": "Space Planning",
+        "text": "Furniture layout and room flow that make the most of every square foot, especially in small flats."
+      },
+      {
+        "title": "3D Design Views",
+        "text": "Realistic views of your living room, bedroom and kitchen so you can decide before building."
+      },
+      {
+        "title": "Modular Kitchen",
+        "text": "Smart kitchen layouts with chimney, hob, storage and counters planned for how you actually cook."
+      },
+      {
+        "title": "Wardrobes And Storage",
+        "text": "Built-in wardrobes, shoe racks and loft storage that give clutter somewhere to go."
+      },
+      {
+        "title": "False Ceiling And Lighting",
+        "text": "Ceiling designs and layered lighting that set the mood of a room without overheating it."
+      },
+      {
+        "title": "Turnkey Execution",
+        "text": "Civil work, carpentry, electrical, painting and décor handled by one team under one schedule."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Free",
+        "label": "First consultation"
+      },
+      {
+        "value": "3D",
+        "label": "Design before build"
+      },
+      {
+        "value": "One team",
+        "label": "Design to handover"
+      }
+    ],
+    "steps": {
+      "title": "How We Design Your Home",
+      "items": [
+        {
+          "title": "Consultation",
+          "text": "We meet at your site, understand your family, budget and taste, and measure the space."
+        },
+        {
+          "title": "Design And Budget",
+          "text": "You get layouts, 3D views and an itemised budget to approve or change."
+        },
+        {
+          "title": "Build",
+          "text": "Our team does the carpentry, electrical, painting and decor, with regular site updates."
+        },
+        {
+          "title": "Handover",
+          "text": "We walk through every room with you, fix small snags and hand over a clean home."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "How much does home interior cost?",
+        "a": "It depends on size, materials and scope. A 2 BHK can range widely, and we give an itemised budget after the first meeting."
+      },
+      {
+        "q": "How long does a full home interior take?",
+        "a": "Most flats take 45 to 90 days after the design is approved and the materials are chosen."
+      },
+      {
+        "q": "Can I design just one room or the kitchen?",
+        "a": "Yes. Many clients start with a kitchen or a bedroom and add more rooms later."
+      },
+      {
+        "q": "Will I see the design before work starts?",
+        "a": "Yes. You approve layout drawings and 3D views before we order any material or begin work."
+      },
+      {
+        "q": "How are payments arranged?",
+        "a": "Payments are made in stages linked to design approval, material order, work progress and handover."
+      }
+    ],
+    "cta": {
+      "title": "Ready To Turn Your House Into A Home?",
+      "button": "Book A Free Consultation"
+    },
+    "about": {
+      "title": "About Our Design Studio",
+      "paragraphs": [
+        "{brand} is an interior design team that works with families, tenants and small businesses to build spaces that are practical and good looking.",
+        "We keep the process clear: honest budget, fixed schedule, regular updates and a single point of contact from start to finish."
+      ],
+      "points": [
+        "Itemised budget in writing",
+        "Single point of contact",
+        "Design, build and handover"
+      ]
+    },
+    "pricing": {
+      "title": "Design Packages",
+      "plans": [
+        {
+          "name": "Design Consultation",
+          "price": "$0",
+          "period": "/consultation",
+          "perks": [
+            "Site visit",
+            "Ideas and budget talk",
+            "Rough layout advice"
+          ]
+        },
+        {
+          "name": "Room Makeover",
+          "price": "$900",
+          "period": "/room",
+          "perks": [
+            "3D design",
+            "Carpentry and lighting",
+            "Painting and handover"
+          ]
+        },
+        {
+          "name": "Full Flat Interior",
+          "price": "$5500",
+          "period": "/job",
+          "perks": [
+            "Complete design",
+            "Modular kitchen and wardrobes",
+            "Turnkey execution"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Spaces We Have Designed",
+      "captions": [
+        "Living room",
+        "Modular kitchen",
+        "Master bedroom",
+        "False ceiling",
+        "Kids room",
+        "Study corner"
+      ]
+    },
+    "team": {
+      "title": "Meet The Design Team",
+      "roles": [
+        "Lead Interior Designer",
+        "3D Visualiser",
+        "Site Project Manager"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "They used our small flat so well and the 3D view matched the final result closely.",
+        "role": "Flat owner"
+      },
+      {
+        "quote": "One team did the whole home and the site supervisor kept us updated every week.",
+        "role": "Family customer"
+      },
+      {
+        "quote": "The kitchen layout was planned around how we cook, and it works well every day.",
+        "role": "Home owner"
+      }
+    ],
+    "blog": {
+      "title": "Interior Ideas",
+      "posts": [
+        {
+          "tag": "Small Homes",
+          "title": "Seven Ways To Make A Small Living Room Feel Bigger"
+        },
+        {
+          "tag": "Kitchen",
+          "title": "Choosing The Right Layout For An Indian Modular Kitchen"
+        },
+        {
+          "tag": "Budget",
+          "title": "Where To Spend And Where To Save On Home Interiors"
+        }
+      ]
+    },
+    "marquee": [
+      "Interiors",
+      "3D Design",
+      "Modular Kitchen",
+      "Wardrobes",
+      "False Ceiling",
+      "Lighting",
+      "Turnkey",
+      "Space Planning"
+    ],
+    "contactText": "Planning to design or redo your home? Message or call {brand} and we will set up a free consultation at your site."
+  }
+]

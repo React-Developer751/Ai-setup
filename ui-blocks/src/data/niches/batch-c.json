@@ -1,0 +1,3349 @@
+[
+  {
+    "id": "chartered_accountant",
+    "label": "Chartered accountant",
+    "theme": "professional_services",
+    "keywords": [
+      "chartered accountant",
+      "ca firm",
+      "gst filing",
+      "itr filing",
+      "income tax return",
+      "tax consultant",
+      "company registration",
+      "चार्टर्ड अकाउंटेंट",
+      "ca near me"
+    ],
+    "heroTitles": [
+      "Accounts, GST And Tax Handled Properly",
+      "Your Books Kept Clean All Year Round",
+      "Chartered Accountants For Small Businesses"
+    ],
+    "heroSubtitles": [
+      "{brand} looks after bookkeeping, GST returns and income tax filing so your paperwork stays in order and on time.",
+      "From company incorporation to audit support, {brand} explains each step in plain words before any filing is made.",
+      "Send your bills and bank statements to {brand}, and receive organised accounts and clear reminders for every due date."
+    ],
+    "button": "Book A Consultation",
+    "featureTitle": "Accounting, Tax And Compliance Services",
+    "features": [
+      {
+        "title": "GST Registration And Returns",
+        "text": "New GST registration plus monthly and quarterly return filing, with invoice matching before every submission."
+      },
+      {
+        "title": "Income Tax Filing",
+        "text": "Return filing for salaried people, professionals and businesses, with a document checklist shared up front."
+      },
+      {
+        "title": "Bookkeeping And Accounts",
+        "text": "Day-to-day entries, bank reconciliation and monthly statements maintained in Tally or similar software."
+      },
+      {
+        "title": "Company Incorporation",
+        "text": "Private limited, LLP and proprietorship set-up, including name approval, PAN, TAN and bank account papers."
+      },
+      {
+        "title": "Audit And Assurance",
+        "text": "Statutory and tax audit support with working papers, schedules and the required reports prepared for signing."
+      },
+      {
+        "title": "Notices And Assessments",
+        "text": "Reading income tax and GST notices, drafting replies and attending to follow-ups with the department."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Monthly",
+        "label": "Return reminders"
+      },
+      {
+        "value": "Tally",
+        "label": "Books support"
+      },
+      {
+        "value": "Written",
+        "label": "Fee quotes"
+      }
+    ],
+    "steps": {
+      "title": "How We Work With You",
+      "items": [
+        {
+          "title": "Intro Call",
+          "text": "We listen to your business type, turnover range and which filings are pending."
+        },
+        {
+          "title": "Document Collection",
+          "text": "You receive a simple checklist and can share files by email or WhatsApp."
+        },
+        {
+          "title": "Preparation And Review",
+          "text": "Entries and returns are prepared, then shown to you before anything is filed."
+        },
+        {
+          "title": "Filing And Records",
+          "text": "Returns are filed on the portal and acknowledgements are sent with your copy of the file."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Which documents are needed for GST registration?",
+        "a": "Usually PAN, Aadhaar, address proof, a bank statement or cancelled cheque and a photo. We confirm the exact list for your case."
+      },
+      {
+        "q": "Can you file my income tax return if I have business income?",
+        "a": "Yes. Share your sales, expense records and bank statements, and we prepare the return under the correct form."
+      },
+      {
+        "q": "Do you handle old pending GST returns?",
+        "a": "We can review what is pending, work out the dues with you and file the backlog returns in order."
+      },
+      {
+        "q": "What happens if I receive a tax notice?",
+        "a": "Send us a copy. We read it, tell you what it asks for and prepare a reply within the stated response date."
+      },
+      {
+        "q": "How are your fees decided?",
+        "a": "Fees depend on the number of entries and filings involved. You get a written quote before work starts."
+      }
+    ],
+    "cta": {
+      "title": "Need Your Accounts Sorted Out?",
+      "button": "Talk To A CA"
+    },
+    "about": {
+      "title": "A CA Office Built Around Small Businesses",
+      "paragraphs": [
+        "{brand} is a chartered accountancy practice that works with shopkeepers, traders, professionals and new companies who want their compliance handled without confusion.",
+        "We keep language simple, share due dates well in advance and explain every figure we put on a return, so you always know what was filed on your behalf."
+      ],
+      "points": [
+        "Written fee quote before work",
+        "Due date reminders by message",
+        "Files organised by financial year"
+      ]
+    },
+    "pricing": {
+      "title": "Fee Packages",
+      "plans": [
+        {
+          "name": "Individual ITR",
+          "price": "$8",
+          "period": "/return",
+          "perks": [
+            "Salary and capital gains income",
+            "Form 16 and AIS check",
+            "Acknowledgement copy shared"
+          ]
+        },
+        {
+          "name": "Monthly GST And Books",
+          "price": "$25",
+          "period": "/month",
+          "perks": [
+            "GST returns filed",
+            "Bookkeeping entries",
+            "Monthly statements"
+          ]
+        },
+        {
+          "name": "Company Set-up",
+          "price": "$70",
+          "period": "/company",
+          "perks": [
+            "Name approval and incorporation",
+            "PAN and TAN applications",
+            "Bank account paperwork"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Inside The Practice",
+      "captions": [
+        "Ledger review desk",
+        "GST return preparation",
+        "Client file cabinet",
+        "Tally data entry",
+        "Audit working papers",
+        "Consultation meeting"
+      ]
+    },
+    "team": {
+      "title": "Meet The Team",
+      "roles": [
+        "Chartered Accountant",
+        "Accounts Executive",
+        "GST Compliance Associate"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "They explained my GST return line by line before filing, which I had never experienced before.",
+        "role": "Trader"
+      },
+      {
+        "quote": "My yearly paperwork is now collected in one folder and I get reminders before every due date.",
+        "role": "Shop owner"
+      },
+      {
+        "quote": "The notice reply was drafted clearly and I knew exactly what had been submitted.",
+        "role": "Consultant"
+      }
+    ],
+    "blog": {
+      "title": "Tax And Compliance Notes",
+      "posts": [
+        {
+          "tag": "GST",
+          "title": "Documents To Keep Ready Before Monthly GST Filing"
+        },
+        {
+          "tag": "Income Tax",
+          "title": "How To Read Your AIS And Form 26AS Before Filing"
+        },
+        {
+          "tag": "Business",
+          "title": "Proprietorship Or Private Limited: What To Compare First"
+        }
+      ]
+    },
+    "marquee": [
+      "GST Returns",
+      "Income Tax",
+      "Bookkeeping",
+      "Audit",
+      "Incorporation",
+      "TDS",
+      "Notices",
+      "Tally"
+    ],
+    "contactText": "Message or call {brand} with your question and the filings you are unsure about, and we will reply with the next steps."
+  },
+  {
+    "id": "insurance_agent",
+    "label": "Insurance agent",
+    "theme": "professional_services",
+    "keywords": [
+      "insurance agent",
+      "life insurance",
+      "health insurance",
+      "term insurance",
+      "motor insurance",
+      "insurance advisor",
+      "bima",
+      "बीमा",
+      "policy renewal"
+    ],
+    "heroTitles": [
+      "Insurance Advice That Is Easy To Follow",
+      "Policies Explained Before You Sign Anything",
+      "Health, Life And Motor Cover Made Simple"
+    ],
+    "heroSubtitles": [
+      "{brand} helps families compare health, term and motor policies, and explains what each one covers and excludes.",
+      "Sit with {brand} for a clear walk-through of premiums, waiting periods and claim steps before choosing a plan.",
+      "{brand} stays with you after the policy is issued, with renewal reminders and help when you need to raise a claim."
+    ],
+    "button": "Request A Policy Review",
+    "featureTitle": "Insurance Help For Every Stage",
+    "features": [
+      {
+        "title": "Health Insurance",
+        "text": "Individual and family floater plans compared on room rent limits, waiting periods and network hospitals."
+      },
+      {
+        "title": "Term Life Cover",
+        "text": "Pure protection plans explained by cover amount, policy term and what the nominee needs to do later."
+      },
+      {
+        "title": "Motor Insurance",
+        "text": "Car and two-wheeler policy renewals, add-on covers and transfer of cover when a vehicle changes hands."
+      },
+      {
+        "title": "Travel And Home Cover",
+        "text": "Short trip policies and home or shop cover arranged with the sum insured discussed openly."
+      },
+      {
+        "title": "Claim Assistance",
+        "text": "Help with intimation, document lists and follow-ups with the insurer when a claim is being made."
+      },
+      {
+        "title": "Renewal Tracking",
+        "text": "A list of your policy dates, so renewals are not missed and cover continues without a gap."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Many",
+        "label": "Insurers compared"
+      },
+      {
+        "value": "Free",
+        "label": "Policy review"
+      },
+      {
+        "value": "On call",
+        "label": "Claim help"
+      }
+    ],
+    "steps": {
+      "title": "How A Policy Review Goes",
+      "items": [
+        {
+          "title": "Understand Needs",
+          "text": "We ask about family, income, existing policies and any health conditions to be disclosed."
+        },
+        {
+          "title": "Compare Options",
+          "text": "You see a few suitable plans side by side with premiums and conditions in plain words."
+        },
+        {
+          "title": "Complete The Proposal",
+          "text": "We fill the proposal form with you, making sure every answer is accurate."
+        },
+        {
+          "title": "Stay Covered",
+          "text": "Policy documents are handed over and renewal and claim support continue afterwards."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Should I disclose my medical history?",
+        "a": "Yes. Complete and honest disclosure on the proposal form protects your claim later, and we help you fill it carefully."
+      },
+      {
+        "q": "What is a waiting period?",
+        "a": "It is the time after purchase before certain illnesses are covered. We point it out in each plan we show you."
+      },
+      {
+        "q": "Can I port my health policy to another insurer?",
+        "a": "Portability is allowed under insurer rules. We check the conditions and timelines with you before suggesting it."
+      },
+      {
+        "q": "Who do I call when I need to make a claim?",
+        "a": "Call us first. We guide you through intimation and the documents the insurer asks for."
+      },
+      {
+        "q": "Do you charge for advice?",
+        "a": "Policy review carries no fee. Agents earn a commission from the insurer, which is built into the premium you see."
+      }
+    ],
+    "cta": {
+      "title": "Not Sure Your Cover Is Enough?",
+      "button": "Book A Free Review"
+    },
+    "about": {
+      "title": "An Advisor Who Reads The Fine Print",
+      "paragraphs": [
+        "{brand} is an insurance agency office that sits with families to understand what they actually need before showing any product.",
+        "We read the policy wording with you, mark the exclusions and keep your documents in one place so a claim is never a scramble."
+      ],
+      "points": [
+        "Plans compared in plain language",
+        "Exclusions pointed out upfront",
+        "Renewal reminders on your phone"
+      ]
+    },
+    "pricing": {
+      "title": "Ways To Work With Us",
+      "plans": [
+        {
+          "name": "Policy Review",
+          "price": "$0",
+          "period": "/consultation",
+          "perks": [
+            "Existing policies checked",
+            "Gaps explained simply",
+            "No obligation to buy"
+          ]
+        },
+        {
+          "name": "Family Planning",
+          "price": "$12",
+          "period": "/consultation",
+          "perks": [
+            "Health and term needs mapped",
+            "Three plans compared",
+            "Written summary shared"
+          ]
+        },
+        {
+          "name": "Claim Support",
+          "price": "$20",
+          "period": "/claim",
+          "perks": [
+            "Document checklist",
+            "Insurer follow-ups",
+            "Status updates by message"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "At The Office",
+      "captions": [
+        "Policy comparison sheet",
+        "Family planning meeting",
+        "Claim document folder",
+        "Renewal calendar board",
+        "Proposal form help",
+        "Advisor desk"
+      ]
+    },
+    "team": {
+      "title": "Meet Your Advisors",
+      "roles": [
+        "Insurance Advisor",
+        "Claims Coordinator",
+        "Policy Servicing Executive"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "He went through the exclusions of my family health plan one by one, which no one had done before.",
+        "role": "Parent"
+      },
+      {
+        "quote": "When we had to file a claim, the office told us exactly which papers to collect.",
+        "role": "Policyholder"
+      },
+      {
+        "quote": "I get a message a month before each renewal so my vehicle cover never lapses.",
+        "role": "Vehicle owner"
+      }
+    ],
+    "blog": {
+      "title": "Insurance Explained",
+      "posts": [
+        {
+          "tag": "Health",
+          "title": "Room Rent Limits And Co-Payment: What They Mean"
+        },
+        {
+          "tag": "Term Plans",
+          "title": "How Much Term Cover To Think About For A Family"
+        },
+        {
+          "tag": "Motor",
+          "title": "Zero Depreciation And Other Car Add-Ons Explained"
+        }
+      ]
+    },
+    "marquee": [
+      "Health Cover",
+      "Term Plan",
+      "Motor Policy",
+      "Renewals",
+      "Claims Help",
+      "Travel Cover",
+      "Home Cover",
+      "Nominee"
+    ],
+    "contactText": "Call or message {brand} with your current policy details, and we will arrange a time to go through them with you."
+  },
+  {
+    "id": "loan_finance_agent",
+    "label": "Loan and finance agent",
+    "theme": "professional_services",
+    "keywords": [
+      "loan agent",
+      "home loan",
+      "personal loan",
+      "business loan",
+      "loan against property",
+      "loan consultant",
+      "finance agent",
+      "लोन एजेंट",
+      "loan dsa"
+    ],
+    "heroTitles": [
+      "Loan Paperwork Done With Patience",
+      "Home, Personal And Business Loan Guidance",
+      "Understand Your Loan Before You Apply"
+    ],
+    "heroSubtitles": [
+      "{brand} guides you through home, personal and business loan applications and keeps every document in the right order.",
+      "With {brand} you see the interest rate type, processing fee and EMI details laid out clearly before you apply.",
+      "{brand} coordinates with banks and finance companies on your behalf, and keeps you informed at each stage of the file."
+    ],
+    "button": "Check Loan Options",
+    "featureTitle": "Loan Services We Help With",
+    "features": [
+      {
+        "title": "Home Loans",
+        "text": "Purchase, construction and balance transfer files prepared with property papers and income documents."
+      },
+      {
+        "title": "Personal Loans",
+        "text": "Applications for salaried and self-employed people, with EMI and tenure options explained."
+      },
+      {
+        "title": "Business Loans",
+        "text": "Working capital, term loans and machinery finance files built from GST returns and bank statements."
+      },
+      {
+        "title": "Loan Against Property",
+        "text": "Documentation help for borrowing against a residential or commercial property you own."
+      },
+      {
+        "title": "Vehicle Loans",
+        "text": "New and used car or two-wheeler finance with down payment and EMI options set out clearly."
+      },
+      {
+        "title": "Credit Report Guidance",
+        "text": "Reading your credit report together and noting entries that may need correction before applying."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Many",
+        "label": "Lenders approached"
+      },
+      {
+        "value": "Written",
+        "label": "Fee details"
+      },
+      {
+        "value": "Step by step",
+        "label": "File updates"
+      }
+    ],
+    "steps": {
+      "title": "From Enquiry To Disbursal",
+      "items": [
+        {
+          "title": "Share Your Requirement",
+          "text": "Tell us the amount, purpose and your income sources in a short call."
+        },
+        {
+          "title": "Collect Documents",
+          "text": "You get a checklist for identity, income, bank and property papers."
+        },
+        {
+          "title": "Submit To Lenders",
+          "text": "The file goes to suitable banks or finance companies, and you see their offers."
+        },
+        {
+          "title": "Sanction And Disbursal",
+          "text": "We help you read the sanction letter and complete the formalities with the lender."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Do you charge a fee to the borrower?",
+        "a": "Any fee is stated in writing before you apply. Lenders may also pay a commission, which we mention openly."
+      },
+      {
+        "q": "Does applying to many lenders affect my credit score?",
+        "a": "Each formal application can create an enquiry on your report, so we apply only to lenders that fit your profile."
+      },
+      {
+        "q": "Which documents are usually needed?",
+        "a": "Identity and address proof, recent bank statements and income proof. Property and business papers are added as needed."
+      },
+      {
+        "q": "Can approval be assured?",
+        "a": "No. Approval and rates are decided only by the lender. We help present your file properly."
+      },
+      {
+        "q": "What is the difference between fixed and floating rates?",
+        "a": "Fixed stays the same for a set period while floating moves with the lender's benchmark. We show both in your offers."
+      }
+    ],
+    "cta": {
+      "title": "Planning To Take A Loan?",
+      "button": "Talk To Us"
+    },
+    "about": {
+      "title": "Loan Help That Stays Transparent",
+      "paragraphs": [
+        "{brand} works as a loan facilitation office, helping individuals and small businesses prepare complete files and understand the terms offered.",
+        "We never push a particular lender. We lay out rates, charges and repayment schedules so the choice stays with you."
+      ],
+      "points": [
+        "Charges explained before applying",
+        "Complete document checklists",
+        "Updates at each stage of the file"
+      ]
+    },
+    "pricing": {
+      "title": "Service Options",
+      "plans": [
+        {
+          "name": "Loan Check",
+          "price": "$0",
+          "period": "/consultation",
+          "perks": [
+            "Eligibility discussion",
+            "Document checklist",
+            "Lender options outlined"
+          ]
+        },
+        {
+          "name": "Credit Report Review",
+          "price": "$8",
+          "period": "/session",
+          "perks": [
+            "Report read together",
+            "Entries marked for follow-up",
+            "Preparation notes shared"
+          ]
+        },
+        {
+          "name": "File Preparation",
+          "price": "$15",
+          "period": "/file",
+          "perks": [
+            "Application forms filled",
+            "Documents arranged",
+            "Submission to lenders"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Our Work Desk",
+      "captions": [
+        "Loan file checklist",
+        "EMI discussion",
+        "Document scanning",
+        "Sanction letter review",
+        "Property paper check",
+        "Client meeting"
+      ]
+    },
+    "team": {
+      "title": "Meet The Team",
+      "roles": [
+        "Loan Consultant",
+        "Documentation Executive",
+        "Banking Relations Associate"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "They listed every document for my home loan in one sheet, and nothing was asked twice.",
+        "role": "Home buyer"
+      },
+      {
+        "quote": "The processing fee and prepayment terms were explained before I signed anything.",
+        "role": "Salaried borrower"
+      },
+      {
+        "quote": "Our business loan file was neat and the updates came at each stage.",
+        "role": "Shop owner"
+      }
+    ],
+    "blog": {
+      "title": "Loan Basics",
+      "posts": [
+        {
+          "tag": "Home Loan",
+          "title": "Documents To Gather Before A Home Loan Application"
+        },
+        {
+          "tag": "Credit",
+          "title": "Reading Your Credit Report Line By Line"
+        },
+        {
+          "tag": "Business",
+          "title": "Working Capital Loan Or Term Loan: Which Fits"
+        }
+      ]
+    },
+    "marquee": [
+      "Home Loan",
+      "Personal Loan",
+      "Business Loan",
+      "EMI",
+      "Documents",
+      "Balance Transfer",
+      "Credit Report",
+      "Sanction"
+    ],
+    "contactText": "Message {brand} with the loan type and amount you have in mind, and we will call back to go through the next steps."
+  },
+  {
+    "id": "astrologer_vastu",
+    "label": "Astrologer and Vastu consultant",
+    "theme": "general_business",
+    "keywords": [
+      "astrologer",
+      "jyotish",
+      "kundli",
+      "vastu consultant",
+      "vastu shastra",
+      "horoscope",
+      "kundali matching",
+      "ज्योतिष",
+      "वास्तु"
+    ],
+    "heroTitles": [
+      "Jyotish And Vastu Guidance With Care",
+      "Kundli Readings Explained In Simple Words",
+      "Vastu Advice For Your Home And Shop"
+    ],
+    "heroSubtitles": [
+      "{brand} prepares kundli readings and explains planetary periods in plain language, as guidance and not as a prediction of fate.",
+      "Book {brand} for kundli matching, muhurat selection and Vastu review of your home, shop or office layout.",
+      "{brand} offers calm consultations in person, by phone or on video, with a written summary of what was discussed."
+    ],
+    "button": "Book A Consultation",
+    "featureTitle": "Jyotish And Vastu Consultations",
+    "features": [
+      {
+        "title": "Kundli Reading",
+        "text": "A birth chart prepared from your date, time and place, with houses and planetary periods explained."
+      },
+      {
+        "title": "Kundli Matching",
+        "text": "Guna milan and chart comparison for marriage, discussed in full with both families."
+      },
+      {
+        "title": "Muhurat Selection",
+        "text": "Auspicious dates for weddings, griha pravesh, naming ceremonies and starting a new business."
+      },
+      {
+        "title": "Vastu For Homes",
+        "text": "Room by room review of direction and placement, with simple adjustments that avoid major construction."
+      },
+      {
+        "title": "Vastu For Shops",
+        "text": "Counter, cash box and entrance placement reviewed for shops, clinics and small offices."
+      },
+      {
+        "title": "Remedy Guidance",
+        "text": "Traditional practices such as mantra, puja timing or gemstone discussion, shared as options for you."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Video",
+        "label": "Calls available"
+      },
+      {
+        "value": "Written",
+        "label": "Chart summary"
+      },
+      {
+        "value": "Private",
+        "label": "Birth details"
+      }
+    ],
+    "steps": {
+      "title": "How A Consultation Works",
+      "items": [
+        {
+          "title": "Share Birth Details",
+          "text": "Send date, time and place of birth, or the site plan for a Vastu visit."
+        },
+        {
+          "title": "Chart Preparation",
+          "text": "The kundli or floor plan is studied before we meet so time is used well."
+        },
+        {
+          "title": "Discussion",
+          "text": "We talk through your questions in person, by phone or over video."
+        },
+        {
+          "title": "Written Notes",
+          "text": "You receive a summary with the points covered and suggestions to consider."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Do I need my exact birth time?",
+        "a": "An accurate time gives a more reliable chart. If you are unsure, we can discuss how to estimate it from family records."
+      },
+      {
+        "q": "Can Vastu be checked from a floor plan?",
+        "a": "A plan helps for first impressions, but a visit or photos of each room gives a fuller review."
+      },
+      {
+        "q": "Is astrology a scientific prediction?",
+        "a": "It is a traditional belief system. We present it as guidance for reflection and not as certain outcomes."
+      },
+      {
+        "q": "Do I have to wear a gemstone?",
+        "a": "No. Remedies are optional and we explain the reasoning so you can decide freely."
+      },
+      {
+        "q": "Will my birth details stay private?",
+        "a": "Yes. Your details are used only for your consultation and are not shared."
+      }
+    ],
+    "cta": {
+      "title": "Want Your Kundli Read Calmly?",
+      "button": "Book A Slot"
+    },
+    "about": {
+      "title": "Tradition Explained Without Fear",
+      "paragraphs": [
+        "{brand} offers jyotish and Vastu consultations rooted in traditional texts, with an emphasis on clear explanation rather than alarm.",
+        "Every sitting ends with written notes, so you can revisit what was discussed with your family at your own pace."
+      ],
+      "points": [
+        "Consultation in Hindi or English",
+        "Written notes after each sitting",
+        "No pressure to buy remedies"
+      ]
+    },
+    "pricing": {
+      "title": "Consultation Fees",
+      "plans": [
+        {
+          "name": "Kundli Reading",
+          "price": "$12",
+          "period": "/consultation",
+          "perks": [
+            "Birth chart prepared",
+            "Planetary periods explained",
+            "Written summary"
+          ]
+        },
+        {
+          "name": "Matching And Muhurat",
+          "price": "$18",
+          "period": "/consultation",
+          "perks": [
+            "Kundli matching for two charts",
+            "Date suggestions",
+            "Family discussion time"
+          ]
+        },
+        {
+          "name": "Vastu Visit",
+          "price": "$40",
+          "period": "/visit",
+          "perks": [
+            "Room by room review",
+            "Simple adjustment list",
+            "Floor plan notes"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Consultation Space",
+      "captions": [
+        "Birth chart drawing",
+        "Vastu compass reading",
+        "Puja corner",
+        "Panchang calendar",
+        "Floor plan review",
+        "Consultation desk"
+      ]
+    },
+    "team": {
+      "title": "Meet The Practitioners",
+      "roles": [
+        "Jyotish Acharya",
+        "Vastu Consultant",
+        "Appointment Coordinator"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "The chart was explained patiently, and there was no attempt to frighten us.",
+        "role": "Parent"
+      },
+      {
+        "quote": "We received a list of small Vastu changes that did not need any breaking work.",
+        "role": "Home owner"
+      },
+      {
+        "quote": "The muhurat options were given with reasons so our family could choose together.",
+        "role": "Bride's family"
+      }
+    ],
+    "blog": {
+      "title": "Jyotish And Vastu Notes",
+      "posts": [
+        {
+          "tag": "Kundli",
+          "title": "What Your Birth Chart Houses Actually Represent"
+        },
+        {
+          "tag": "Vastu",
+          "title": "Kitchen And Entrance Direction: Simple Vastu Checks"
+        },
+        {
+          "tag": "Muhurat",
+          "title": "How Auspicious Dates Are Chosen For A Wedding"
+        }
+      ]
+    },
+    "marquee": [
+      "Kundli",
+      "Jyotish",
+      "Vastu",
+      "Muhurat",
+      "Horoscope",
+      "Panchang",
+      "Gun Milan",
+      "Puja"
+    ],
+    "contactText": "Write to {brand} with your preferred day and the kind of consultation you want, and we will confirm a slot."
+  },
+  {
+    "id": "ielts_language_coaching",
+    "label": "IELTS and language coaching",
+    "theme": "education",
+    "keywords": [
+      "ielts coaching",
+      "ielts classes",
+      "pte coaching",
+      "toefl coaching",
+      "spoken english classes",
+      "english speaking course",
+      "german language classes",
+      "आईईएलटीएस कोचिंग"
+    ],
+    "heroTitles": [
+      "IELTS Coaching With Real Practice Tests",
+      "Learn To Speak English With Confidence",
+      "Language Classes Built Around Your Test Date"
+    ],
+    "heroSubtitles": [
+      "{brand} trains students in all four IELTS modules with timed practice, speaking sessions and written feedback.",
+      "Join small batches at {brand} for IELTS, PTE and spoken English with trainers who correct you one to one.",
+      "{brand} also teaches German and French for beginners, with weekday and weekend batches and regular speaking circles."
+    ],
+    "button": "Book A Demo Class",
+    "featureTitle": "Courses For Tests And Everyday Language",
+    "features": [
+      {
+        "title": "IELTS Academic And General",
+        "text": "Listening, reading, writing and speaking modules taught separately and then combined in full mock tests."
+      },
+      {
+        "title": "PTE And TOEFL Prep",
+        "text": "Computer-based practice for integrated tasks, with a training of the format and question types."
+      },
+      {
+        "title": "Spoken English",
+        "text": "Daily conversation drills, vocabulary building and pronunciation correction for work and study."
+      },
+      {
+        "title": "Writing Feedback",
+        "text": "Task 1 and Task 2 essays marked with comments on structure, grammar and coherence."
+      },
+      {
+        "title": "Mock Speaking Interviews",
+        "text": "Recorded practice interviews with a trainer, followed by notes on fluency and answer structure."
+      },
+      {
+        "title": "German And French Basics",
+        "text": "Beginner levels A1 and A2 for students planning study or work abroad."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Small",
+        "label": "Batch sizes"
+      },
+      {
+        "value": "Weekly",
+        "label": "Mock tests"
+      },
+      {
+        "value": "Free",
+        "label": "Demo class"
+      }
+    ],
+    "steps": {
+      "title": "Your Path With Us",
+      "items": [
+        {
+          "title": "Level Check",
+          "text": "A short written and spoken test shows where you stand today."
+        },
+        {
+          "title": "Batch Choice",
+          "text": "You pick a morning, evening or weekend batch that fits your routine."
+        },
+        {
+          "title": "Practice And Feedback",
+          "text": "Weekly tasks are marked and trainers discuss each mistake with you."
+        },
+        {
+          "title": "Full Mock Tests",
+          "text": "Before your exam date, you attempt timed tests that follow the real format."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Which IELTS version should I choose?",
+        "a": "Academic is usually for study, and General Training for work or migration. We help you confirm with your target institution."
+      },
+      {
+        "q": "Can I join if my English is weak?",
+        "a": "Yes. The level check places you in a foundation batch before the test-focused batch."
+      },
+      {
+        "q": "Do you offer online classes?",
+        "a": "Yes. Live online batches run alongside classroom batches, with the same practice material."
+      },
+      {
+        "q": "Are exam fees included?",
+        "a": "No. Registration fees are paid directly to the test body. We can help you book the date."
+      },
+      {
+        "q": "Can I get a band score promise?",
+        "a": "No one can promise a score. We offer structured practice and honest feedback on where you stand."
+      }
+    ],
+    "cta": {
+      "title": "Ready To Start Your Test Preparation?",
+      "button": "Join A Free Demo"
+    },
+    "about": {
+      "title": "Coaching Focused On Practice",
+      "paragraphs": [
+        "{brand} is a language training institute that prepares students for IELTS, PTE and everyday English through regular timed practice and personal feedback.",
+        "Batches are kept small so trainers can hear each student speak and read each written answer closely."
+      ],
+      "points": [
+        "Small batches with named trainers",
+        "Weekly full-length mock tests",
+        "Writing and speaking feedback"
+      ]
+    },
+    "pricing": {
+      "title": "Course Options",
+      "plans": [
+        {
+          "name": "Spoken English",
+          "price": "$25",
+          "period": "/month",
+          "perks": [
+            "Daily conversation practice",
+            "Vocabulary notes",
+            "Weekend speaking circle"
+          ]
+        },
+        {
+          "name": "Test Booster",
+          "price": "$35",
+          "period": "/course",
+          "perks": [
+            "Two-week intensive",
+            "Speaking mock interviews",
+            "Last-week revision"
+          ]
+        },
+        {
+          "name": "IELTS Regular",
+          "price": "$60",
+          "period": "/month",
+          "perks": [
+            "All four modules",
+            "Weekly mock test",
+            "Essay marking"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Inside The Institute",
+      "captions": [
+        "Listening lab",
+        "Speaking practice",
+        "Mock test hall",
+        "Writing correction",
+        "Batch classroom",
+        "Trainer feedback"
+      ]
+    },
+    "team": {
+      "title": "Meet The Trainers",
+      "roles": [
+        "IELTS Trainer",
+        "Spoken English Coach",
+        "Academic Counsellor"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "My essays came back with comments on every paragraph, and that changed how I wrote.",
+        "role": "IELTS student"
+      },
+      {
+        "quote": "The mock speaking interview felt just like the real thing and I knew my weak points.",
+        "role": "Study abroad aspirant"
+      },
+      {
+        "quote": "I now speak at work without stopping to translate in my head.",
+        "role": "Office employee"
+      }
+    ],
+    "blog": {
+      "title": "Language Learning Notes",
+      "posts": [
+        {
+          "tag": "IELTS",
+          "title": "How To Structure A Task 2 Essay In Forty Minutes"
+        },
+        {
+          "tag": "Speaking",
+          "title": "Practising Part 2 Cue Cards Without A Partner"
+        },
+        {
+          "tag": "Listening",
+          "title": "Common Distractors In IELTS Listening Sections"
+        }
+      ]
+    },
+    "marquee": [
+      "IELTS",
+      "PTE",
+      "TOEFL",
+      "Speaking",
+      "Writing",
+      "Listening",
+      "Reading",
+      "Mock Tests"
+    ],
+    "contactText": "Message {brand} to book a demo class or ask about the next batch, and we will share timings and fees."
+  },
+  {
+    "id": "tuition_centre",
+    "label": "Tuition centre",
+    "theme": "education",
+    "keywords": [
+      "tuition centre",
+      "tuition classes",
+      "coaching classes",
+      "home tuition",
+      "maths tuition",
+      "science tuition",
+      "board exam coaching",
+      "ट्यूशन क्लास",
+      "tuition near me"
+    ],
+    "heroTitles": [
+      "Tuition Classes That Keep Parents Informed",
+      "Small Batches For Classes Six To Twelve",
+      "Maths And Science Taught Step By Step"
+    ],
+    "heroSubtitles": [
+      "{brand} runs class-wise batches in maths, science and English, with regular tests and clear updates to parents.",
+      "Students at {brand} get doubt classes, weekly tests and homework checked daily, so no topic stays unclear for long.",
+      "{brand} supports board exam preparation with chapter tests, revision sheets and one to one doubt time."
+    ],
+    "button": "Book A Demo Class",
+    "featureTitle": "Classes And Support For Students",
+    "features": [
+      {
+        "title": "Class-Wise Batches",
+        "text": "Separate groups for classes six to twelve, kept small so each child gets attention."
+      },
+      {
+        "title": "Maths And Science",
+        "text": "Concepts built on the board first, then solved through examples from the textbook and past papers."
+      },
+      {
+        "title": "Doubt Classes",
+        "text": "A fixed weekly session where students bring questions from school and self-study."
+      },
+      {
+        "title": "Weekly Tests",
+        "text": "Short chapter tests every week, checked and discussed in the following class."
+      },
+      {
+        "title": "Board Exam Revision",
+        "text": "Sample papers, formula sheets and timed practice for CBSE, ICSE and state board students."
+      },
+      {
+        "title": "Parent Updates",
+        "text": "Attendance and test marks shared by message, with a parent meeting at regular intervals."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Weekly",
+        "label": "Chapter tests"
+      },
+      {
+        "value": "Monthly",
+        "label": "Parent updates"
+      },
+      {
+        "value": "Free",
+        "label": "Demo class"
+      }
+    ],
+    "steps": {
+      "title": "How Your Child Joins",
+      "items": [
+        {
+          "title": "Demo Class",
+          "text": "Your child attends one class to see the teaching style and the group."
+        },
+        {
+          "title": "Basic Assessment",
+          "text": "A short test shows which topics need more practice."
+        },
+        {
+          "title": "Batch Allotment",
+          "text": "We place your child in the matching class and timing."
+        },
+        {
+          "title": "Regular Review",
+          "text": "Test results and progress notes are shared with you every month."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Which boards and classes do you teach?",
+        "a": "We teach classes six to twelve for CBSE, ICSE and state boards, with subject lists shown at enquiry."
+      },
+      {
+        "q": "How many students are in a batch?",
+        "a": "Batches are kept small. The exact limit depends on the class, and we tell you at the demo."
+      },
+      {
+        "q": "What if my child misses a class?",
+        "a": "Notes and homework are shared, and the topic can be revisited in the doubt class."
+      },
+      {
+        "q": "Do you take tests regularly?",
+        "a": "Yes. There is a short test each week and a larger test after every few chapters."
+      },
+      {
+        "q": "Can parents meet the teachers?",
+        "a": "Yes. Parent meetings are held at regular intervals, and you can also request a call any time."
+      }
+    ],
+    "cta": {
+      "title": "Looking For Steady Academic Support?",
+      "button": "Book A Free Demo"
+    },
+    "about": {
+      "title": "A Tuition Centre That Keeps You Posted",
+      "paragraphs": [
+        "{brand} is a neighbourhood tuition centre where teachers know each student by name and track progress through simple weekly tests.",
+        "We believe in explaining concepts until they click, and in telling parents honestly how a child is doing."
+      ],
+      "points": [
+        "Small, class-wise batches",
+        "Weekly tests and homework checks",
+        "Regular parent updates"
+      ]
+    },
+    "pricing": {
+      "title": "Monthly Fees",
+      "plans": [
+        {
+          "name": "Single Subject",
+          "price": "$12",
+          "period": "/month",
+          "perks": [
+            "Three classes a week",
+            "Weekly test",
+            "Doubt class access"
+          ]
+        },
+        {
+          "name": "Maths And Science",
+          "price": "$22",
+          "period": "/month",
+          "perks": [
+            "Two subjects",
+            "Weekly tests",
+            "Parent updates"
+          ]
+        },
+        {
+          "name": "Board Year Programme",
+          "price": "$30",
+          "period": "/month",
+          "perks": [
+            "All main subjects",
+            "Sample paper practice",
+            "Revision sessions"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Around The Centre",
+      "captions": [
+        "Whiteboard class",
+        "Doubt session",
+        "Test paper marking",
+        "Study desk row",
+        "Parent meeting",
+        "Library corner"
+      ]
+    },
+    "team": {
+      "title": "Meet The Teachers",
+      "roles": [
+        "Maths Teacher",
+        "Science Teacher",
+        "Centre Coordinator"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "My daughter now asks her doubts openly because the teachers give time to every child.",
+        "role": "Parent"
+      },
+      {
+        "quote": "I receive test marks on my phone every week so I know where help is needed.",
+        "role": "Parent"
+      },
+      {
+        "quote": "The board revision sheets made the last month much more organised.",
+        "role": "Class ten student"
+      }
+    ],
+    "blog": {
+      "title": "Study Tips For Parents And Students",
+      "posts": [
+        {
+          "tag": "Maths",
+          "title": "A Simple Weekly Routine For Maths Practice"
+        },
+        {
+          "tag": "Board Exams",
+          "title": "How To Use Sample Papers In The Last Month"
+        },
+        {
+          "tag": "Parenting",
+          "title": "Helping Your Child With Homework Without Doing It"
+        }
+      ]
+    },
+    "marquee": [
+      "Maths",
+      "Science",
+      "English",
+      "Doubt Class",
+      "Weekly Test",
+      "Board Prep",
+      "Homework",
+      "Parent Update"
+    ],
+    "contactText": "Call or message {brand} with your child's class and subjects, and we will share batch timings and a demo date."
+  },
+  {
+    "id": "music_dance_classes",
+    "label": "Music and dance classes",
+    "theme": "creative_studio",
+    "keywords": [
+      "music classes",
+      "dance classes",
+      "guitar classes",
+      "singing classes",
+      "classical dance",
+      "tabla classes",
+      "bharatanatyam",
+      "संगीत कक्षा",
+      "dance academy"
+    ],
+    "heroTitles": [
+      "Learn Music And Dance At Your Own Pace",
+      "Classes For Voice, Guitar And Classical Dance",
+      "A Calm Place To Practise And Perform"
+    ],
+    "heroSubtitles": [
+      "{brand} teaches vocal, keyboard, guitar, tabla and dance in small classes for children and adults at every level.",
+      "At {brand}, beginners start with basics like swar, taal and posture, and move on to songs and routines at their own speed.",
+      "{brand} holds small recitals during the year so students can perform in a friendly setting among family and friends."
+    ],
+    "button": "Book A Trial Class",
+    "featureTitle": "Instruments, Voice And Dance Styles",
+    "features": [
+      {
+        "title": "Vocal Training",
+        "text": "Breathing, sur practice and song learning in Hindustani classical, film and devotional styles."
+      },
+      {
+        "title": "Guitar And Keyboard",
+        "text": "Chords, scales and songs taught from the first lesson, with notation shared for home practice."
+      },
+      {
+        "title": "Tabla And Percussion",
+        "text": "Taal cycles, theka and basic compositions built up through hand exercises and daily riyaz."
+      },
+      {
+        "title": "Classical Dance",
+        "text": "Foundation steps, mudras and rhythm patterns in Kathak or Bharatanatyam with a trained teacher."
+      },
+      {
+        "title": "Western And Bollywood Dance",
+        "text": "Fun, high-energy routines for kids, teens and adults, with warm-ups and stretching included."
+      },
+      {
+        "title": "Exam Preparation",
+        "text": "Guidance for graded music and dance examinations, with theory notes and practice sessions."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Free",
+        "label": "Trial class"
+      },
+      {
+        "value": "All ages",
+        "label": "Welcome"
+      },
+      {
+        "value": "Yearly",
+        "label": "Recital"
+      }
+    ],
+    "steps": {
+      "title": "Your Learning Journey",
+      "items": [
+        {
+          "title": "Trial Class",
+          "text": "Try one session of your chosen instrument or dance style with no commitment."
+        },
+        {
+          "title": "Pick A Schedule",
+          "text": "Choose weekday evening or weekend timings that suit your routine."
+        },
+        {
+          "title": "Weekly Practice",
+          "text": "Each class ends with a short practice plan to follow at home."
+        },
+        {
+          "title": "Stage Time",
+          "text": "Join a recital when you feel ready, in a relaxed setting."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "What age can children start?",
+        "a": "Many students begin at five or six for voice and dance, and instruments like guitar often start a little later."
+      },
+      {
+        "q": "Do I need my own instrument?",
+        "a": "A practice instrument at home helps a lot. We advise on what to buy before you spend anything."
+      },
+      {
+        "q": "Can adults join as beginners?",
+        "a": "Yes. Adult batches are common, and lessons are paced for people with busy schedules."
+      },
+      {
+        "q": "Are classes individual or in groups?",
+        "a": "Both are offered. Instruments are often one to one, and dance is usually taught in small groups."
+      },
+      {
+        "q": "Do you hold exams?",
+        "a": "We prepare students for graded exams when they want them, but it is optional."
+      }
+    ],
+    "cta": {
+      "title": "Ready To Pick Up An Instrument Or A Step?",
+      "button": "Book A Trial"
+    },
+    "about": {
+      "title": "Where Practice Feels Like Play",
+      "paragraphs": [
+        "{brand} is a music and dance school where teachers focus on patience, regular riyaz and enjoyment before performance.",
+        "Students learn in small groups or one to one, with simple notation and practice recordings to support them between classes."
+      ],
+      "points": [
+        "Teachers trained in their style",
+        "Small batches and one to one options",
+        "Yearly student recital"
+      ]
+    },
+    "pricing": {
+      "title": "Class Fees",
+      "plans": [
+        {
+          "name": "Trial Class",
+          "price": "$3",
+          "period": "/class",
+          "perks": [
+            "Meet the teacher",
+            "Try any instrument or style",
+            "No commitment"
+          ]
+        },
+        {
+          "name": "Group Dance",
+          "price": "$20",
+          "period": "/month",
+          "perks": [
+            "Weekly classes",
+            "Warm-up and stretching",
+            "Recital participation"
+          ]
+        },
+        {
+          "name": "Vocal Or Guitar",
+          "price": "$30",
+          "period": "/month",
+          "perks": [
+            "Weekly one to one class",
+            "Practice notation",
+            "Home practice plan"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Studio Moments",
+      "captions": [
+        "Tabla practice",
+        "Dance rehearsal",
+        "Guitar lesson",
+        "Vocal warm-up",
+        "Recital stage",
+        "Instrument wall"
+      ]
+    },
+    "team": {
+      "title": "Meet The Teachers",
+      "roles": [
+        "Vocal Teacher",
+        "Dance Instructor",
+        "Instrument Tutor"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "My son looks forward to his guitar class every week and practises without being reminded.",
+        "role": "Parent"
+      },
+      {
+        "quote": "The first recital was relaxed and everyone clapped for every student.",
+        "role": "Student's parent"
+      },
+      {
+        "quote": "As an adult beginner I never felt behind, as the teacher went at my pace.",
+        "role": "Adult learner"
+      }
+    ],
+    "blog": {
+      "title": "Notes On Music And Dance",
+      "posts": [
+        {
+          "tag": "Music",
+          "title": "Daily Riyaz: How Fifteen Minutes Can Be Enough"
+        },
+        {
+          "tag": "Dance",
+          "title": "Mudras And Their Meaning In Classical Dance"
+        },
+        {
+          "tag": "Parents",
+          "title": "Choosing The Right First Instrument For A Child"
+        }
+      ]
+    },
+    "marquee": [
+      "Vocals",
+      "Guitar",
+      "Keyboard",
+      "Tabla",
+      "Kathak",
+      "Bollywood",
+      "Riyaz",
+      "Recital"
+    ],
+    "contactText": "Message or call {brand} to book a trial class or ask about timings, and we will help you pick the right batch."
+  },
+  {
+    "id": "ayurveda_panchakarma",
+    "label": "Ayurveda and Panchakarma clinic",
+    "theme": "beauty_wellness",
+    "keywords": [
+      "panchakarma",
+      "ayurvedic doctor",
+      "vaidya",
+      "ayurvedic clinic",
+      "abhyanga",
+      "shirodhara",
+      "पंचकर्म",
+      "ayurveda clinic",
+      "ayurveda centre",
+      "ayurvedic hospital",
+      "ayurvedic treatment"
+    ],
+    "heroTitles": [
+      "Ayurvedic Consultation Based On Your Prakriti",
+      "Panchakarma Therapies With Trained Vaidyas",
+      "Traditional Care With A Patient Approach"
+    ],
+    "heroSubtitles": [
+      "{brand} begins with a detailed consultation on prakriti, digestion and routine before suggesting any diet or herbal plan.",
+      "Panchakarma at {brand} is planned individually by the vaidya, with preparation, therapy and recovery diet explained in advance.",
+      "{brand} offers traditional therapies and herbal preparations as supportive care, alongside your regular medical treatment."
+    ],
+    "button": "Book A Consultation",
+    "featureTitle": "Ayurvedic Care And Therapies",
+    "features": [
+      {
+        "title": "Prakriti Consultation",
+        "text": "Pulse reading, history and questions on digestion and sleep to understand your body type."
+      },
+      {
+        "title": "Panchakarma Therapies",
+        "text": "Vamana, virechana, basti and nasya planned by the vaidya after assessment and preparation."
+      },
+      {
+        "title": "Abhyanga And Swedana",
+        "text": "Warm herbal oil massage followed by steam, given in a quiet treatment room."
+      },
+      {
+        "title": "Shirodhara",
+        "text": "A steady stream of medicated oil over the forehead, offered as a relaxing therapy."
+      },
+      {
+        "title": "Herbal Medicines",
+        "text": "Churna, vati and kashayam prescribed after consultation and explained with dose and timing."
+      },
+      {
+        "title": "Diet And Routine Advice",
+        "text": "Seasonal food, daily routine and simple yoga suggestions fitted to your lifestyle."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Individual",
+        "label": "Therapy plans"
+      },
+      {
+        "value": "Vaidya",
+        "label": "Led consultation"
+      },
+      {
+        "value": "Written",
+        "label": "Diet advice"
+      }
+    ],
+    "steps": {
+      "title": "Your Course Of Care",
+      "items": [
+        {
+          "title": "Consultation",
+          "text": "The vaidya studies your history, pulse and prakriti in an unhurried sitting."
+        },
+        {
+          "title": "Treatment Plan",
+          "text": "You receive a plan covering therapies, herbs, diet and expected duration."
+        },
+        {
+          "title": "Therapy Sessions",
+          "text": "Sessions are carried out by trained therapists with the vaidya reviewing progress."
+        },
+        {
+          "title": "Follow-Up",
+          "text": "A review visit adjusts the diet and medicines, and a maintenance routine is shared."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Is Ayurveda a substitute for medical treatment?",
+        "a": "It is a traditional system of care. Please continue any prescribed medicines and tell us about them at your visit."
+      },
+      {
+        "q": "How long does Panchakarma take?",
+        "a": "It depends on the therapy and your assessment. The vaidya explains the schedule at consultation."
+      },
+      {
+        "q": "Do I need to fast before therapy?",
+        "a": "Some therapies need light food beforehand. We give clear instructions when you book."
+      },
+      {
+        "q": "Can I do Panchakarma during pregnancy?",
+        "a": "Many therapies are not advised in pregnancy. Please tell us at booking so the vaidya can advise safely."
+      },
+      {
+        "q": "Are the medicines made in-house?",
+        "a": "We explain the source and ingredients of each preparation so you know what you take."
+      }
+    ],
+    "cta": {
+      "title": "Interested In Traditional Ayurvedic Care?",
+      "button": "Book A Visit"
+    },
+    "about": {
+      "title": "A Vaidya Led Clinic",
+      "paragraphs": [
+        "{brand} is an Ayurvedic clinic where consultation comes first and every therapy is chosen after understanding your prakriti and current health.",
+        "We keep treatment rooms calm, explain each step before it begins and encourage you to continue regular medical care alongside."
+      ],
+      "points": [
+        "Vaidya consultation before any therapy",
+        "Ingredients of medicines explained",
+        "Calm, private treatment rooms"
+      ]
+    },
+    "pricing": {
+      "title": "Consultation And Therapy Styles",
+      "plans": [
+        {
+          "name": "First Consultation",
+          "price": "$8",
+          "period": "/consultation",
+          "perks": [
+            "Prakriti assessment",
+            "Diet advice",
+            "Herbal prescription"
+          ]
+        },
+        {
+          "name": "Abhyanga With Swedana",
+          "price": "$20",
+          "period": "/session",
+          "perks": [
+            "Warm oil massage",
+            "Herbal steam",
+            "Rest period"
+          ]
+        },
+        {
+          "name": "Panchakarma Programme",
+          "price": "$250",
+          "period": "/programme",
+          "perks": [
+            "Therapy plan by vaidya",
+            "Daily sessions",
+            "Recovery diet guidance"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Clinic Spaces",
+      "captions": [
+        "Herbal preparation shelf",
+        "Shirodhara therapy",
+        "Consultation room",
+        "Medicated oils",
+        "Steam therapy room",
+        "Herb garden corner"
+      ]
+    },
+    "team": {
+      "title": "Meet The Practitioners",
+      "roles": [
+        "Ayurvedic Vaidya",
+        "Panchakarma Therapist",
+        "Diet And Lifestyle Counsellor"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "The doctor spent time asking about my daily routine and explained every medicine.",
+        "role": "Patient"
+      },
+      {
+        "quote": "The therapy room was quiet and each step was told to me before it began.",
+        "role": "Visitor"
+      },
+      {
+        "quote": "I received a written diet chart that suited our family kitchen.",
+        "role": "Patient's family"
+      }
+    ],
+    "blog": {
+      "title": "Ayurveda Notes",
+      "posts": [
+        {
+          "tag": "Prakriti",
+          "title": "Vata, Pitta And Kapha: Understanding Body Types"
+        },
+        {
+          "tag": "Seasonal Care",
+          "title": "Ritucharya: Adjusting Your Diet With The Seasons"
+        },
+        {
+          "tag": "Therapies",
+          "title": "What To Expect During Your First Abhyanga"
+        }
+      ]
+    },
+    "marquee": [
+      "Ayurveda",
+      "Panchakarma",
+      "Vaidya",
+      "Prakriti",
+      "Abhyanga",
+      "Shirodhara",
+      "Herbal",
+      "Diet Advice"
+    ],
+    "contactText": "Call or message {brand} to book a consultation, and let us know about any medicines you currently take."
+  },
+  {
+    "id": "physiotherapy",
+    "label": "Physiotherapy clinic",
+    "theme": "healthcare",
+    "keywords": [
+      "physiotherapy",
+      "physiotherapist",
+      "physio clinic",
+      "back pain treatment",
+      "knee pain physiotherapy",
+      "sports injury rehab",
+      "home physiotherapy",
+      "फिजियोथेरेपी",
+      "neck pain exercises"
+    ],
+    "heroTitles": [
+      "Physiotherapy Based On Careful Assessment",
+      "Movement Care For Pain And Recovery",
+      "Rehabilitation Plans Made For You"
+    ],
+    "heroSubtitles": [
+      "{brand} starts every course with a full assessment of your movement, pain pattern and daily activities.",
+      "Physiotherapists at {brand} guide you through hands-on treatment and home exercises for back, neck, knee and shoulder problems.",
+      "{brand} also offers rehabilitation after surgery or injury, planned stage by stage with your doctor's advice."
+    ],
+    "button": "Book An Assessment",
+    "featureTitle": "Physiotherapy Services",
+    "features": [
+      {
+        "title": "Back And Neck Care",
+        "text": "Assessment of posture and movement, with manual therapy and exercises for desk and driving habits."
+      },
+      {
+        "title": "Knee And Joint Rehab",
+        "text": "Strengthening and mobility work for knee, hip and ankle problems, adjusted to your comfort."
+      },
+      {
+        "title": "Sports Injury Care",
+        "text": "Treatment and return-to-play exercises for sprains, strains and overuse injuries."
+      },
+      {
+        "title": "Post-Surgery Rehabilitation",
+        "text": "Stage-wise exercise programmes after fracture, ligament or joint replacement surgery."
+      },
+      {
+        "title": "Neuro Rehabilitation",
+        "text": "Balance, gait and strength training for people recovering from stroke or nerve conditions."
+      },
+      {
+        "title": "Home Visits",
+        "text": "Therapy at home for patients who cannot travel, with simple equipment brought along."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Full",
+        "label": "Initial assessment"
+      },
+      {
+        "value": "Home visits",
+        "label": "Available"
+      },
+      {
+        "value": "Written",
+        "label": "Exercise plan"
+      }
+    ],
+    "steps": {
+      "title": "What To Expect",
+      "items": [
+        {
+          "title": "Assessment",
+          "text": "The physiotherapist asks about your history and examines movement and strength."
+        },
+        {
+          "title": "Treatment Plan",
+          "text": "Goals and the number of sessions are discussed and agreed with you."
+        },
+        {
+          "title": "Hands-On Therapy",
+          "text": "Manual techniques, exercises and electrotherapy are used as needed."
+        },
+        {
+          "title": "Home Programme",
+          "text": "You leave with simple exercises and tips to continue between sessions."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Do I need a doctor's referral?",
+        "a": "Not always, but please bring any scans or reports. In some conditions we advise a doctor's review first."
+      },
+      {
+        "q": "How many sessions will I need?",
+        "a": "It varies by condition. The physiotherapist gives an estimate after the first assessment and reviews it as you progress."
+      },
+      {
+        "q": "Will treatment be painful?",
+        "a": "Some techniques may feel uncomfortable, but we work within your tolerance and tell you what to expect."
+      },
+      {
+        "q": "What should I wear?",
+        "a": "Loose, comfortable clothes that let us reach the area being treated."
+      },
+      {
+        "q": "Do you provide home visits?",
+        "a": "Yes, within a service area. Please call to check availability for your location."
+      }
+    ],
+    "cta": {
+      "title": "Living With Pain Or Stiffness?",
+      "button": "Book A Session"
+    },
+    "about": {
+      "title": "Hands-On Care With Clear Goals",
+      "paragraphs": [
+        "{brand} is a physiotherapy clinic where each patient receives a thorough assessment and a plan explained in plain words.",
+        "We combine manual therapy, exercise and education, so you understand your condition and can continue exercises at home."
+      ],
+      "points": [
+        "Assessment before every course",
+        "Exercise sheets for home practice",
+        "Treatment goals shared with you"
+      ]
+    },
+    "pricing": {
+      "title": "Session Options",
+      "plans": [
+        {
+          "name": "Therapy Session",
+          "price": "$8",
+          "period": "/session",
+          "perks": [
+            "Manual therapy",
+            "Guided exercises",
+            "Progress review"
+          ]
+        },
+        {
+          "name": "Initial Assessment",
+          "price": "$10",
+          "period": "/session",
+          "perks": [
+            "Detailed examination",
+            "Diagnosis discussion",
+            "Treatment plan"
+          ]
+        },
+        {
+          "name": "Home Visit",
+          "price": "$15",
+          "period": "/visit",
+          "perks": [
+            "Therapy at your home",
+            "Portable equipment",
+            "Family exercise guidance"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Inside The Clinic",
+      "captions": [
+        "Exercise area",
+        "Treatment couch",
+        "Balance training",
+        "Ultrasound therapy",
+        "Resistance bands",
+        "Assessment room"
+      ]
+    },
+    "team": {
+      "title": "Meet The Therapists",
+      "roles": [
+        "Physiotherapist",
+        "Sports Rehab Therapist",
+        "Clinic Coordinator"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "The physiotherapist explained why my back hurt and gave me exercises I could actually follow.",
+        "role": "Office worker"
+      },
+      {
+        "quote": "After my knee surgery, the exercises were introduced step by step at a safe pace.",
+        "role": "Patient"
+      },
+      {
+        "quote": "Home visits made it easy for my father to continue therapy.",
+        "role": "Patient's son"
+      }
+    ],
+    "blog": {
+      "title": "Movement And Recovery",
+      "posts": [
+        {
+          "tag": "Back Pain",
+          "title": "Desk Posture Habits That Strain Your Lower Back"
+        },
+        {
+          "tag": "Rehab",
+          "title": "Gentle Knee Exercises To Discuss With Your Therapist"
+        },
+        {
+          "tag": "Sports",
+          "title": "Warming Up Properly Before Weekend Cricket"
+        }
+      ]
+    },
+    "marquee": [
+      "Physiotherapy",
+      "Back Pain",
+      "Knee Rehab",
+      "Sports Injury",
+      "Exercise",
+      "Posture",
+      "Home Visits",
+      "Mobility"
+    ],
+    "contactText": "Call or message {brand} to book an assessment, and bring any reports or scans you already have."
+  },
+  {
+    "id": "diagnostic_lab",
+    "label": "Diagnostic lab",
+    "theme": "healthcare",
+    "keywords": [
+      "diagnostic lab",
+      "pathology lab",
+      "blood test",
+      "health checkup",
+      "home sample collection",
+      "lab test",
+      "thyroid test",
+      "पैथोलॉजी लैब",
+      "blood test near me"
+    ],
+    "heroTitles": [
+      "Blood Tests With Home Sample Collection",
+      "Pathology Reports Delivered On Time",
+      "Health Check-Up Packages For Every Age"
+    ],
+    "heroSubtitles": [
+      "{brand} offers blood, urine and other routine tests with careful sample handling and printed or online reports.",
+      "Book a home sample collection with {brand}, and a trained phlebotomist visits at the time you choose.",
+      "{brand} lists test preparation instructions clearly, so you know about fasting before you arrive or before our visit."
+    ],
+    "button": "Book A Test",
+    "featureTitle": "Tests And Check-Up Services",
+    "features": [
+      {
+        "title": "Routine Blood Tests",
+        "text": "Complete blood count, sugar, lipid profile, kidney and liver function tests under one roof."
+      },
+      {
+        "title": "Thyroid And Vitamin Tests",
+        "text": "Thyroid profile, vitamin D and B12 testing with preparation notes shared when you book."
+      },
+      {
+        "title": "Home Sample Collection",
+        "text": "A trained phlebotomist collects samples at home, with sealed tubes brought to the lab."
+      },
+      {
+        "title": "Health Check-Up Packages",
+        "text": "Combined panels for adults, seniors and women, designed to be taken in one visit."
+      },
+      {
+        "title": "Urine And Stool Tests",
+        "text": "Routine and culture tests with clear collection instructions and labelled containers."
+      },
+      {
+        "title": "Report Delivery",
+        "text": "Reports sent by WhatsApp or email and printed on request, with reference ranges shown."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Home",
+        "label": "Sample collection"
+      },
+      {
+        "value": "Online",
+        "label": "Reports"
+      },
+      {
+        "value": "Clear",
+        "label": "Fasting notes"
+      }
+    ],
+    "steps": {
+      "title": "How Testing Works",
+      "items": [
+        {
+          "title": "Choose Your Test",
+          "text": "Pick a test or package, and our desk tells you about fasting and preparation."
+        },
+        {
+          "title": "Sample Collection",
+          "text": "Visit the lab or schedule a home visit at a convenient time."
+        },
+        {
+          "title": "Lab Processing",
+          "text": "Samples are labelled, processed and verified by the lab team."
+        },
+        {
+          "title": "Report Delivery",
+          "text": "You receive your report digitally, with a printed copy if you need one."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Do I need to fast before a blood test?",
+        "a": "Some tests such as fasting sugar and lipid profile need fasting. We tell you the exact period when you book."
+      },
+      {
+        "q": "Do I need a doctor's prescription?",
+        "a": "Many routine tests can be booked directly. Please consult your doctor to interpret the results."
+      },
+      {
+        "q": "How soon will I get my report?",
+        "a": "Routine tests are usually reported the same day or the next day, and special tests take longer. We confirm timing at booking."
+      },
+      {
+        "q": "Is home collection available on Sundays?",
+        "a": "Please check with our desk for current timings in your area."
+      },
+      {
+        "q": "Can the lab explain my results?",
+        "a": "We show reference ranges, but only your doctor can advise on what the results mean for you."
+      }
+    ],
+    "cta": {
+      "title": "Need A Test Or Health Check-Up?",
+      "button": "Book Sample Collection"
+    },
+    "about": {
+      "title": "A Lab That Handles Samples With Care",
+      "paragraphs": [
+        "{brand} is a pathology and diagnostic laboratory serving families and doctors in the neighbourhood with routine and special tests.",
+        "Samples are labelled at the time of collection, and reports are checked by the pathologist before they are released."
+      ],
+      "points": [
+        "Clear fasting and preparation notes",
+        "Home collection by trained staff",
+        "Reports checked before release"
+      ]
+    },
+    "pricing": {
+      "title": "Test And Package Styles",
+      "plans": [
+        {
+          "name": "Single Test",
+          "price": "$3",
+          "period": "/test",
+          "perks": [
+            "Walk-in or home visit",
+            "Digital report",
+            "Reference ranges shown"
+          ]
+        },
+        {
+          "name": "Basic Health Check-Up",
+          "price": "$15",
+          "period": "/package",
+          "perks": [
+            "Blood sugar and lipid profile",
+            "Kidney and liver panel",
+            "Complete blood count"
+          ]
+        },
+        {
+          "name": "Full Body Panel",
+          "price": "$30",
+          "period": "/package",
+          "perks": [
+            "Thyroid and vitamin tests",
+            "Urine routine",
+            "Printed and digital report"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Inside The Lab",
+      "captions": [
+        "Sample collection room",
+        "Analyser machine",
+        "Test tube rack",
+        "Reporting desk",
+        "Home collection kit",
+        "Microscope station"
+      ]
+    },
+    "team": {
+      "title": "Meet The Lab Team",
+      "roles": [
+        "Pathologist",
+        "Lab Technician",
+        "Phlebotomist"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "The staff told me exactly how long to fast, and the report arrived on my phone the same evening.",
+        "role": "Patient"
+      },
+      {
+        "quote": "Home collection was easy for my mother who finds it hard to travel.",
+        "role": "Family member"
+      },
+      {
+        "quote": "The report layout was neat and showed reference ranges beside each value.",
+        "role": "Patient"
+      }
+    ],
+    "blog": {
+      "title": "Understanding Lab Tests",
+      "posts": [
+        {
+          "tag": "Preparation",
+          "title": "Fasting Before Blood Tests: What To Know"
+        },
+        {
+          "tag": "Check-Ups",
+          "title": "Which Routine Tests Adults Commonly Discuss With Doctors"
+        },
+        {
+          "tag": "Reports",
+          "title": "How To Read The Reference Range On A Lab Report"
+        }
+      ]
+    },
+    "marquee": [
+      "Blood Test",
+      "Thyroid",
+      "Lipid Profile",
+      "Home Collection",
+      "Check-Up",
+      "Urine Test",
+      "Reports",
+      "Pathology"
+    ],
+    "contactText": "Call or message {brand} with the test name or your doctor's prescription, and we will share preparation steps and a time."
+  },
+  {
+    "id": "pharmacy",
+    "label": "Pharmacy",
+    "theme": "healthcare",
+    "keywords": [
+      "pharmacy",
+      "medical store",
+      "chemist",
+      "medicine shop",
+      "home delivery medicines",
+      "online pharmacy",
+      "generic medicine",
+      "मेडिकल स्टोर",
+      "dawai ki dukaan"
+    ],
+    "heroTitles": [
+      "Your Neighbourhood Medical Store",
+      "Medicines With Careful Checking And Delivery",
+      "Prescriptions Filled By A Registered Pharmacist"
+    ],
+    "heroSubtitles": [
+      "{brand} stocks prescription and over-the-counter medicines, with a registered pharmacist checking every prescription.",
+      "Send your prescription to {brand} on WhatsApp and have medicines delivered to your door in the neighbourhood.",
+      "{brand} also keeps health devices, baby care and wellness items, and reminds regular customers about monthly refills."
+    ],
+    "button": "Send Your Prescription",
+    "featureTitle": "Medicines And Health Supplies",
+    "features": [
+      {
+        "title": "Prescription Medicines",
+        "text": "Medicines filled as written and checked by a registered pharmacist before they are handed over."
+      },
+      {
+        "title": "Home Delivery",
+        "text": "Medicines delivered to your door within our area, with a bill and the batch details."
+      },
+      {
+        "title": "Monthly Refills",
+        "text": "A saved list for chronic care medicines, with a reminder before your supply finishes."
+      },
+      {
+        "title": "Generic Alternatives",
+        "text": "The pharmacist can explain generic options with the same salt, to discuss with your doctor."
+      },
+      {
+        "title": "Health Devices",
+        "text": "BP monitors, glucometers, thermometers and nebulisers, with a demo of how to use them."
+      },
+      {
+        "title": "Baby And Elder Care",
+        "text": "Diapers, baby food, supplements and mobility aids kept in stock for families."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Registered",
+        "label": "Pharmacist"
+      },
+      {
+        "value": "Local",
+        "label": "Home delivery"
+      },
+      {
+        "value": "Bill",
+        "label": "For every sale"
+      }
+    ],
+    "steps": {
+      "title": "How To Order",
+      "items": [
+        {
+          "title": "Share Prescription",
+          "text": "Bring it to the counter or send a clear photo on WhatsApp."
+        },
+        {
+          "title": "Pharmacist Check",
+          "text": "We verify the prescription and confirm availability and price with you."
+        },
+        {
+          "title": "Packing",
+          "text": "Medicines are packed with a bill, and expiry dates are checked."
+        },
+        {
+          "title": "Pickup Or Delivery",
+          "text": "Collect from the store or choose delivery to your address."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Can I buy prescription medicines without a prescription?",
+        "a": "No. Prescription-only medicines are dispensed only against a valid prescription from a registered doctor."
+      },
+      {
+        "q": "Do you deliver outside your area?",
+        "a": "Delivery covers nearby localities. Please ask the counter for your area."
+      },
+      {
+        "q": "Can I switch to a generic medicine?",
+        "a": "We can explain generic options, but please confirm with your doctor before changing any medicine."
+      },
+      {
+        "q": "How do you check expiry dates?",
+        "a": "Stock is checked regularly, and we show the expiry on the strip before billing."
+      },
+      {
+        "q": "Do you accept returns?",
+        "a": "Unopened medicines in good condition can be discussed at the counter, subject to the rules for returns."
+      }
+    ],
+    "cta": {
+      "title": "Need Medicines Delivered Today?",
+      "button": "Order On WhatsApp"
+    },
+    "about": {
+      "title": "A Pharmacy That Takes Time To Check",
+      "paragraphs": [
+        "{brand} is a local medical store run by a registered pharmacist, serving regular customers and families who value careful counter service.",
+        "We keep records of refills for those who need them and explain how and when to take each medicine as the doctor has advised."
+      ],
+      "points": [
+        "Prescriptions checked by a pharmacist",
+        "Printed bill for every purchase",
+        "Refill reminders for regular customers"
+      ]
+    },
+    "pricing": {
+      "title": "Service Options",
+      "plans": [
+        {
+          "name": "Counter Service",
+          "price": "$0",
+          "period": "/visit",
+          "perks": [
+            "Prescription checking",
+            "Dose guidance",
+            "Printed bill"
+          ]
+        },
+        {
+          "name": "Home Delivery",
+          "price": "$1",
+          "period": "/order",
+          "perks": [
+            "Delivery within the area",
+            "Medicine bill included",
+            "WhatsApp updates"
+          ]
+        },
+        {
+          "name": "Monthly Refill Plan",
+          "price": "$2",
+          "period": "/month",
+          "perks": [
+            "Saved medicine list",
+            "Reminder before refill",
+            "Priority packing"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Around The Store",
+      "captions": [
+        "Medicine shelves",
+        "Pharmacist counter",
+        "Delivery bags",
+        "Health devices",
+        "Baby care section",
+        "Cold storage"
+      ]
+    },
+    "team": {
+      "title": "Meet The Staff",
+      "roles": [
+        "Registered Pharmacist",
+        "Pharmacy Assistant",
+        "Delivery Executive"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "They remind me before my monthly medicines run out, which saves me a trip.",
+        "role": "Regular customer"
+      },
+      {
+        "quote": "The pharmacist explained the timing of each tablet patiently.",
+        "role": "Senior citizen"
+      },
+      {
+        "quote": "Medicines reached home on time along with a proper bill.",
+        "role": "Family customer"
+      }
+    ],
+    "blog": {
+      "title": "Medicine Safety Notes",
+      "posts": [
+        {
+          "tag": "Storage",
+          "title": "How To Store Common Medicines At Home"
+        },
+        {
+          "tag": "Safety",
+          "title": "Reading The Label: Expiry, Batch And Storage Notes"
+        },
+        {
+          "tag": "Devices",
+          "title": "Using A Home BP Monitor Correctly"
+        }
+      ]
+    },
+    "marquee": [
+      "Medicines",
+      "Prescription",
+      "Home Delivery",
+      "Refills",
+      "Generic",
+      "BP Monitor",
+      "Baby Care",
+      "Pharmacist"
+    ],
+    "contactText": "Message {brand} a photo of your prescription or call the counter, and we will confirm stock and delivery."
+  },
+  {
+    "id": "counselling_therapy",
+    "label": "Counselling and therapy practice",
+    "theme": "healthcare",
+    "keywords": [
+      "therapist",
+      "psychologist",
+      "online therapy",
+      "couple counselling",
+      "anxiety counselling",
+      "mental health counsellor",
+      "child counselling",
+      "counselling centre",
+      "counselling services",
+      "काउंसलिंग सेंटर"
+    ],
+    "heroTitles": [
+      "A Quiet Space To Talk Things Through",
+      "Counselling For Individuals, Couples And Teens",
+      "Therapy Sessions In Person Or Online"
+    ],
+    "heroSubtitles": [
+      "{brand} offers private counselling sessions where you can speak at your own pace with a trained and patient listener.",
+      "Clients at {brand} choose individual, couple, family or teen sessions, in person or on a secure video call.",
+      "{brand} keeps session notes confidential and explains how the sessions will run at the very first meeting."
+    ],
+    "button": "Book A First Session",
+    "featureTitle": "Counselling Services",
+    "features": [
+      {
+        "title": "Individual Counselling",
+        "text": "One to one sessions for stress, low mood, grief, life changes and difficult thoughts."
+      },
+      {
+        "title": "Couple Counselling",
+        "text": "Joint sessions to work on communication and recurring conflicts in a safe, balanced setting."
+      },
+      {
+        "title": "Teen And Child Support",
+        "text": "Age-appropriate sessions for school stress, friendships and emotional struggles, with parent involvement."
+      },
+      {
+        "title": "Career Counselling",
+        "text": "Conversations about career choices, work pressure and burnout, with structured exercises."
+      },
+      {
+        "title": "Family Sessions",
+        "text": "A guided space for families to talk through changes, caregiving strain and misunderstandings."
+      },
+      {
+        "title": "Online Sessions",
+        "text": "Secure video sessions for people who prefer privacy at home or live in another city."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Private",
+        "label": "Confidential sessions"
+      },
+      {
+        "value": "Online",
+        "label": "Or in person"
+      },
+      {
+        "value": "Flexible",
+        "label": "Evening slots"
+      }
+    ],
+    "steps": {
+      "title": "Beginning Counselling",
+      "items": [
+        {
+          "title": "Reach Out",
+          "text": "Message or call us and share what you are comfortable sharing."
+        },
+        {
+          "title": "First Session",
+          "text": "We talk about your concerns and what you hope to get from counselling."
+        },
+        {
+          "title": "Plan Together",
+          "text": "You and the counsellor agree on how often to meet and what to work on."
+        },
+        {
+          "title": "Review Progress",
+          "text": "We check in on how sessions are going and adjust as needed."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Is what I say kept confidential?",
+        "a": "Yes. What you share stays private, apart from legal or safety exceptions that are explained in the first session."
+      },
+      {
+        "q": "How long is each session?",
+        "a": "A session usually lasts about fifty minutes. The first meeting may be slightly longer."
+      },
+      {
+        "q": "How many counselling sessions will I need?",
+        "a": "It differs for each person. We review together every few sessions and you can pause or stop at any time."
+      },
+      {
+        "q": "Can you prescribe medicines?",
+        "a": "No. Counsellors do not prescribe. If a medical review seems useful, we suggest you consult a psychiatrist."
+      },
+      {
+        "q": "Is counselling only for serious problems?",
+        "a": "No. Many people come to talk through stress, decisions or relationships, with no crisis involved."
+      }
+    ],
+    "cta": {
+      "title": "Ready To Talk To Someone?",
+      "button": "Book A Session"
+    },
+    "about": {
+      "title": "Counselling Without Judgement",
+      "paragraphs": [
+        "{brand} is a counselling practice where trained professionals listen carefully and help clients make sense of what they are going through.",
+        "We do not offer quick fixes. We offer a steady, respectful space and practical tools you can use between sessions."
+      ],
+      "points": [
+        "Confidential and respectful sessions",
+        "In-person and online options",
+        "Practical tools between sessions"
+      ]
+    },
+    "pricing": {
+      "title": "Session Types",
+      "plans": [
+        {
+          "name": "Introductory Call",
+          "price": "$0",
+          "period": "/consultation",
+          "perks": [
+            "Short phone chat",
+            "Fit discussion",
+            "No obligation"
+          ]
+        },
+        {
+          "name": "Individual Session",
+          "price": "$15",
+          "period": "/session",
+          "perks": [
+            "Fifty-minute session",
+            "Private setting",
+            "Home exercises"
+          ]
+        },
+        {
+          "name": "Couple Session",
+          "price": "$25",
+          "period": "/session",
+          "perks": [
+            "Joint session",
+            "Communication exercises",
+            "Balanced approach"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "The Practice",
+      "captions": [
+        "Quiet counselling room",
+        "Waiting area",
+        "Therapy sofa",
+        "Notebook and tea",
+        "Online session setup",
+        "Calming corner"
+      ]
+    },
+    "team": {
+      "title": "Meet The Counsellors",
+      "roles": [
+        "Counselling Psychologist",
+        "Child And Teen Counsellor",
+        "Couple Therapist"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "I felt heard from the first session and never rushed to say more than I wanted.",
+        "role": "Client"
+      },
+      {
+        "quote": "Online sessions let me talk privately from home after work.",
+        "role": "Working professional"
+      },
+      {
+        "quote": "The counsellor gave us simple exercises to practise as a couple.",
+        "role": "Client"
+      }
+    ],
+    "blog": {
+      "title": "Mind And Wellbeing",
+      "posts": [
+        {
+          "tag": "Stress",
+          "title": "Small Habits To Notice When Stress Builds Up"
+        },
+        {
+          "tag": "Relationships",
+          "title": "Talking About Hard Things Without Blame"
+        },
+        {
+          "tag": "Teens",
+          "title": "Supporting A Teenager Who Is Overwhelmed By Exams"
+        }
+      ]
+    },
+    "marquee": [
+      "Counselling",
+      "Therapy",
+      "Anxiety",
+      "Stress",
+      "Couples",
+      "Teens",
+      "Online Sessions",
+      "Confidential"
+    ],
+    "contactText": "Message or call {brand} to ask about a first session. In an emergency, please contact local emergency services or a helpline."
+  },
+  {
+    "id": "immigration_consultant",
+    "label": "Immigration consultant",
+    "theme": "professional_services",
+    "keywords": [
+      "immigration consultant",
+      "study visa",
+      "work permit",
+      "canada pr",
+      "visa consultant",
+      "student visa",
+      "tourist visa",
+      "इमिग्रेशन कंसल्टेंट",
+      "overseas education"
+    ],
+    "heroTitles": [
+      "Visa And Immigration Guidance Explained Clearly",
+      "Study Abroad And Work Visa Paperwork",
+      "Honest Advice On Visa Options And Documents"
+    ],
+    "heroSubtitles": [
+      "{brand} guides students and professionals through visa applications for study, work, visit and settlement.",
+      "With {brand}, you receive a document checklist, a timeline and a clear explanation of each requirement before you apply.",
+      "{brand} cannot promise a visa decision, but prepares your file carefully and keeps you informed at each stage."
+    ],
+    "button": "Book A Profile Review",
+    "featureTitle": "Visa And Immigration Services",
+    "features": [
+      {
+        "title": "Student Visa Applications",
+        "text": "Course and country shortlisting, university applications, financial documents and visa file preparation."
+      },
+      {
+        "title": "Work Permit Guidance",
+        "text": "Reviewing job offers, employer documents and visa category requirements for skilled applicants."
+      },
+      {
+        "title": "Permanent Residency Pathways",
+        "text": "Explaining points-based and other routes, and checking your profile against stated criteria."
+      },
+      {
+        "title": "Visitor And Tourist Visas",
+        "text": "Application forms, itineraries, invitation letters and supporting documents arranged for travel."
+      },
+      {
+        "title": "Statement And Document Review",
+        "text": "Reading statements of purpose, bank documents and certificates for gaps before submission."
+      },
+      {
+        "title": "Pre-Departure Briefing",
+        "text": "Notes on accommodation, banking, health cover and settling in before you fly."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Written",
+        "label": "Fee agreement"
+      },
+      {
+        "value": "Step by step",
+        "label": "File updates"
+      },
+      {
+        "value": "Honest",
+        "label": "Profile review"
+      }
+    ],
+    "steps": {
+      "title": "How Your Application Moves",
+      "items": [
+        {
+          "title": "Profile Review",
+          "text": "We study your education, work history and goals and tell you which routes may apply."
+        },
+        {
+          "title": "Document Preparation",
+          "text": "A checklist is shared and we help arrange certificates, statements and forms."
+        },
+        {
+          "title": "Application Submission",
+          "text": "The application is filed with the university, employer or visa authority."
+        },
+        {
+          "title": "Decision And Next Steps",
+          "text": "We keep you informed, and explain any request for more documents or an interview."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Can you guarantee a visa?",
+        "a": "No. Only the visa authority makes the decision. We help present a complete and accurate application."
+      },
+      {
+        "q": "How early should I start?",
+        "a": "Earlier is better, as document collection, tests and processing times can take months. We give a timeline at your review."
+      },
+      {
+        "q": "Do you charge before filing?",
+        "a": "Fees and what they cover are written down before work starts, and we do not ask for hidden payments."
+      },
+      {
+        "q": "Will you advise on IELTS or other tests?",
+        "a": "Yes. We tell you which test is required and what scores the country or course normally asks for."
+      },
+      {
+        "q": "What if my visa is refused?",
+        "a": "We review the refusal letter with you and discuss whether reapplying or another route makes sense."
+      }
+    ],
+    "cta": {
+      "title": "Planning To Study Or Work Abroad?",
+      "button": "Book A Review"
+    },
+    "about": {
+      "title": "Immigration Advice That Stays Honest",
+      "paragraphs": [
+        "{brand} is an immigration consultancy that helps students, professionals and families understand visa routes and prepare complete applications.",
+        "We refuse to make promises about decisions. Our work is to explain rules as they stand and to keep your file accurate and on time."
+      ],
+      "points": [
+        "Fee agreement in writing",
+        "Document checklist for each route",
+        "Regular file updates"
+      ]
+    },
+    "pricing": {
+      "title": "Service Packages",
+      "plans": [
+        {
+          "name": "Profile Review",
+          "price": "$10",
+          "period": "/consultation",
+          "perks": [
+            "Route options discussed",
+            "Document list",
+            "Timeline outline"
+          ]
+        },
+        {
+          "name": "Visitor Visa",
+          "price": "$40",
+          "period": "/application",
+          "perks": [
+            "Form filing",
+            "Itinerary and letters",
+            "Document review"
+          ]
+        },
+        {
+          "name": "Student Visa File",
+          "price": "$150",
+          "period": "/application",
+          "perks": [
+            "University application help",
+            "Visa form preparation",
+            "Interview briefing"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Our Office",
+      "captions": [
+        "Document review desk",
+        "World map wall",
+        "Passport forms",
+        "Consultation meeting",
+        "Application folder",
+        "Interview practice"
+      ]
+    },
+    "team": {
+      "title": "Meet The Team",
+      "roles": [
+        "Immigration Consultant",
+        "Documentation Officer",
+        "Student Counsellor"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "They gave me a clear document list and explained why each item was required.",
+        "role": "Student"
+      },
+      {
+        "quote": "I appreciated that they did not make promises and told me the real timeline.",
+        "role": "Working professional"
+      },
+      {
+        "quote": "The mock interview helped me feel calmer before the appointment.",
+        "role": "Applicant"
+      }
+    ],
+    "blog": {
+      "title": "Visa Guide Notes",
+      "posts": [
+        {
+          "tag": "Study Abroad",
+          "title": "Preparing Financial Documents For A Student Visa"
+        },
+        {
+          "tag": "Work Visa",
+          "title": "Skilled Worker Routes: Reading The Eligibility Criteria"
+        },
+        {
+          "tag": "Interviews",
+          "title": "Preparing For A Visa Interview Calmly"
+        }
+      ]
+    },
+    "marquee": [
+      "Study Visa",
+      "Work Permit",
+      "PR Pathway",
+      "Tourist Visa",
+      "SOP Review",
+      "IELTS",
+      "Documents",
+      "Interview Prep"
+    ],
+    "contactText": "Message {brand} with your country of interest and your background, and we will arrange a profile review call."
+  },
+  {
+    "id": "notary_documentation",
+    "label": "Notary and documentation service",
+    "theme": "professional_services",
+    "keywords": [
+      "notary",
+      "notary public",
+      "affidavit",
+      "stamp paper",
+      "rent agreement",
+      "document attestation",
+      "name change affidavit",
+      "नोटरी",
+      "vakil documents"
+    ],
+    "heroTitles": [
+      "Notary Services For Everyday Documents",
+      "Affidavits And Agreements Drafted And Attested",
+      "Stamp Paper And Documentation Without Running Around"
+    ],
+    "heroSubtitles": [
+      "{brand} drafts and notarises affidavits, rent agreements and declarations, with every detail read back to you before signing.",
+      "At {brand}, you can arrange stamp paper, drafting and notary attestation in a single visit during office hours.",
+      "{brand} helps with name change, address proof and gift or rental documents, and explains which papers each one needs."
+    ],
+    "button": "Ask About A Document",
+    "featureTitle": "Notary And Documentation Services",
+    "features": [
+      {
+        "title": "Affidavits",
+        "text": "Drafting and attestation of sworn statements for name change, address proof, lost document and similar needs."
+      },
+      {
+        "title": "Rent Agreements",
+        "text": "Rental and leave and licence agreements drafted on stamp paper, with terms read out to both parties."
+      },
+      {
+        "title": "Stamp Paper Arrangement",
+        "text": "Stamp papers of the required value arranged for agreements, bonds and undertakings."
+      },
+      {
+        "title": "Document Attestation",
+        "text": "Attestation of copies and signatures as permitted for a notary, with originals seen at the desk."
+      },
+      {
+        "title": "Name Change Papers",
+        "text": "Affidavit and publication steps explained for name change in records and certificates."
+      },
+      {
+        "title": "Power Of Attorney",
+        "text": "General and special power of attorney drafts prepared for you to review before execution."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Same day",
+        "label": "Most attestations"
+      },
+      {
+        "value": "Clear",
+        "label": "Fee list"
+      },
+      {
+        "value": "Draft first",
+        "label": "Read before signing"
+      }
+    ],
+    "steps": {
+      "title": "How We Handle A Document",
+      "items": [
+        {
+          "title": "Tell Us The Purpose",
+          "text": "Explain what the document is for and who will need it."
+        },
+        {
+          "title": "Drafting",
+          "text": "We prepare the draft and read it with you so the facts are right."
+        },
+        {
+          "title": "Signing And Attestation",
+          "text": "Parties sign in front of the notary with valid identity proof."
+        },
+        {
+          "title": "Copies And Records",
+          "text": "You receive the original and photocopies, and the entry is recorded in the notary register."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "What do I need to bring for an affidavit?",
+        "a": "Identity proof, address proof and any supporting papers. We tell you the exact list when you call."
+      },
+      {
+        "q": "Must all parties be present?",
+        "a": "For most agreements, yes. Parties sign before the notary with their identity proof."
+      },
+      {
+        "q": "What is the stamp paper value for a rent agreement?",
+        "a": "It differs by state and rent amount. We confirm the current requirement before drafting."
+      },
+      {
+        "q": "Do you give legal advice?",
+        "a": "No. We draft and attest documents. For disputes or legal advice, please consult a practising advocate."
+      },
+      {
+        "q": "Can you notarise a document in a foreign language?",
+        "a": "It depends on the document. Please call us and we will explain how it can be handled."
+      }
+    ],
+    "cta": {
+      "title": "Need A Document Drafted Or Attested?",
+      "button": "Call Us Today"
+    },
+    "about": {
+      "title": "Documents Done Carefully",
+      "paragraphs": [
+        "{brand} is a notary and documentation desk that helps residents and small businesses with affidavits, agreements and attestation.",
+        "Each document is read aloud before signing, and every fee is quoted at the counter, so there are no surprises at the end."
+      ],
+      "points": [
+        "Drafts read out before signing",
+        "Fee list shown at the counter",
+        "Entries kept in the notary register"
+      ]
+    },
+    "pricing": {
+      "title": "Typical Fee Styles",
+      "plans": [
+        {
+          "name": "Attestation",
+          "price": "$1",
+          "period": "/page",
+          "perks": [
+            "Original check",
+            "Seal and signature",
+            "Same-day handling"
+          ]
+        },
+        {
+          "name": "Affidavit",
+          "price": "$3",
+          "period": "/document",
+          "perks": [
+            "Drafting",
+            "Notary attestation",
+            "Two copies"
+          ]
+        },
+        {
+          "name": "Rent Agreement",
+          "price": "$12",
+          "period": "/agreement",
+          "perks": [
+            "Drafting on stamp paper",
+            "Attestation",
+            "Copies for both parties"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "At The Desk",
+      "captions": [
+        "Notary seal",
+        "Stamp paper stack",
+        "Agreement drafting",
+        "Register entry",
+        "Document filing",
+        "Signing desk"
+      ]
+    },
+    "team": {
+      "title": "Meet The Team",
+      "roles": [
+        "Notary Public",
+        "Documentation Assistant",
+        "Drafting Clerk"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "They read the whole agreement out to us before we signed, which was reassuring.",
+        "role": "Tenant"
+      },
+      {
+        "quote": "The affidavit was ready the same afternoon and the fee was told upfront.",
+        "role": "Customer"
+      },
+      {
+        "quote": "They listed the papers I needed on the phone, so I made only one trip.",
+        "role": "Customer"
+      }
+    ],
+    "blog": {
+      "title": "Documentation Guide",
+      "posts": [
+        {
+          "tag": "Rent",
+          "title": "What A Rent Agreement Should Clearly State"
+        },
+        {
+          "tag": "Affidavits",
+          "title": "Common Reasons For An Address Proof Affidavit"
+        },
+        {
+          "tag": "Process",
+          "title": "Why Your Identity Proof Is Checked At The Notary"
+        }
+      ]
+    },
+    "marquee": [
+      "Notary",
+      "Affidavit",
+      "Stamp Paper",
+      "Rent Agreement",
+      "Attestation",
+      "Name Change",
+      "Drafting",
+      "Attorney Power"
+    ],
+    "contactText": "Call or message {brand} with the document you need, and we will list the papers to bring and the visiting hours."
+  },
+  {
+    "id": "digital_marketing_agency",
+    "label": "Digital marketing agency",
+    "theme": "modern_tech",
+    "keywords": [
+      "digital marketing agency",
+      "seo services",
+      "social media marketing",
+      "google ads",
+      "facebook ads",
+      "website promotion",
+      "performance marketing",
+      "डिजिटल मार्केटिंग",
+      "seo company"
+    ],
+    "heroTitles": [
+      "Digital Marketing For Local Businesses",
+      "Search, Social And Ads Managed Together",
+      "Marketing That Reports What Actually Happened"
+    ],
+    "heroSubtitles": [
+      "{brand} helps local businesses get found on Google, run social pages and manage paid ads with plain monthly reports.",
+      "With {brand}, you get a clear plan for SEO, Google Ads and social media, along with honest reporting on leads and costs.",
+      "{brand} works with shops, clinics, coaching centres and small brands that want steady enquiries without confusing jargon."
+    ],
+    "button": "Get A Marketing Plan",
+    "featureTitle": "Digital Marketing Services",
+    "features": [
+      {
+        "title": "Search Engine Optimisation",
+        "text": "Page fixes, keyword research and content planning so your business appears for the right local searches."
+      },
+      {
+        "title": "Google Business Profile",
+        "text": "Setting up and updating your Maps listing with photos, hours, services and review replies."
+      },
+      {
+        "title": "Google And Meta Ads",
+        "text": "Campaign set-up, audience and keyword choice and weekly budget checks with transparent spend reports."
+      },
+      {
+        "title": "Social Media Management",
+        "text": "Monthly content calendar, post design and captions for Instagram and Facebook pages."
+      },
+      {
+        "title": "Website And Landing Pages",
+        "text": "Simple, fast pages with enquiry forms and click-to-call buttons built for mobile visitors."
+      },
+      {
+        "title": "Reporting And Tracking",
+        "text": "Call, form and WhatsApp enquiry tracking with a monthly summary of what worked."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Monthly",
+        "label": "Reports"
+      },
+      {
+        "value": "Transparent",
+        "label": "Ad spend"
+      },
+      {
+        "value": "Free",
+        "label": "Audit call"
+      }
+    ],
+    "steps": {
+      "title": "How We Work Together",
+      "items": [
+        {
+          "title": "Audit Call",
+          "text": "We review your website, listing and social pages and note what is missing."
+        },
+        {
+          "title": "Plan And Budget",
+          "text": "You receive a written plan with channels, tasks and monthly cost."
+        },
+        {
+          "title": "Launch And Manage",
+          "text": "Pages, content and campaigns go live and are tuned each week."
+        },
+        {
+          "title": "Report And Improve",
+          "text": "A monthly review shows enquiries, spend and what changes next."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "How long does SEO take to show results?",
+        "a": "It builds gradually over months and depends on competition. We share progress milestones instead of making promises."
+      },
+      {
+        "q": "Who owns the ad accounts and website?",
+        "a": "You do. Accounts are created in your name, and we are added as managers."
+      },
+      {
+        "q": "What is the minimum ad budget?",
+        "a": "It depends on your city and category. We suggest a starting amount in the plan and adjust after the first weeks."
+      },
+      {
+        "q": "Do you work on long contracts?",
+        "a": "We prefer monthly agreements, so you stay because the work is useful and not because of a lock-in."
+      },
+      {
+        "q": "Can you manage only social media?",
+        "a": "Yes. Services can be taken separately, such as only social media, only ads or only SEO."
+      }
+    ],
+    "cta": {
+      "title": "Want More Enquiries From Online Channels?",
+      "button": "Book An Audit Call"
+    },
+    "about": {
+      "title": "A Small Agency With Plain Reports",
+      "paragraphs": [
+        "{brand} is a digital marketing agency for local and small businesses, covering search, social media and paid advertising under one roof.",
+        "We share what was spent, what was posted and which enquiries came in, so you can judge the work with your own eyes."
+      ],
+      "points": [
+        "Accounts in your name",
+        "Monthly reporting in plain words",
+        "Monthly agreements, no lock-in"
+      ]
+    },
+    "pricing": {
+      "title": "Monthly Packages",
+      "plans": [
+        {
+          "name": "Local Starter",
+          "price": "$60",
+          "period": "/month",
+          "perks": [
+            "Google Business Profile care",
+            "Basic on-page SEO",
+            "Monthly report"
+          ]
+        },
+        {
+          "name": "Ads Management",
+          "price": "$100",
+          "period": "/month",
+          "perks": [
+            "Google or Meta campaigns",
+            "Weekly budget checks",
+            "Enquiry tracking"
+          ]
+        },
+        {
+          "name": "Social And Content",
+          "price": "$120",
+          "period": "/month",
+          "perks": [
+            "Monthly content calendar",
+            "Post designs and captions",
+            "Page management"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Work In Progress",
+      "captions": [
+        "Campaign dashboard",
+        "Content calendar wall",
+        "Ad copy review",
+        "Design desk",
+        "Website mockup",
+        "Client strategy meeting"
+      ]
+    },
+    "team": {
+      "title": "Meet The Team",
+      "roles": [
+        "SEO Specialist",
+        "Performance Marketer",
+        "Social Media Designer"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "Their monthly report shows exactly how many calls and forms came from each channel.",
+        "role": "Clinic owner"
+      },
+      {
+        "quote": "They set up our Maps listing properly and replied to reviews in a polite tone.",
+        "role": "Shop owner"
+      },
+      {
+        "quote": "We kept ownership of our ad accounts, which gave us a lot of comfort.",
+        "role": "Coaching centre owner"
+      }
+    ],
+    "blog": {
+      "title": "Marketing Notes",
+      "posts": [
+        {
+          "tag": "Local SEO",
+          "title": "Setting Up Your Google Business Profile Step By Step"
+        },
+        {
+          "tag": "Ads",
+          "title": "How To Read Your First Google Ads Report"
+        },
+        {
+          "tag": "Social",
+          "title": "A Simple Monthly Content Plan For A Small Shop"
+        }
+      ]
+    },
+    "marquee": [
+      "SEO",
+      "Google Ads",
+      "Meta Ads",
+      "Social Media",
+      "Local SEO",
+      "Landing Page",
+      "Reporting",
+      "Content"
+    ],
+    "contactText": "Message {brand} with your website or page link and what you sell, and we will send back a short audit with next steps."
+  }
+]

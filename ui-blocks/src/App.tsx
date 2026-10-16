@@ -1,6 +1,9 @@
-import { useState } from 'react'
-import ComponentLibrary from './ComponentLibrary'
+import { lazy, Suspense, useState } from 'react'
+import { ErrorBoundary } from './ErrorBoundary'
 import GeneratorPage from './GeneratorPage'
+
+// the catalogue of the 92 stored components is only needed when its tab is opened
+const ComponentLibrary = lazy(() => import('./ComponentLibrary'))
 
 const MODES = {
   generator: { label: 'Website Generator', Page: GeneratorPage },
@@ -14,8 +17,8 @@ function App() {
   const { Page } = MODES[mode]
 
   return (
-    <div className="min-h-screen bg-white">
-      <div className="flex items-center gap-2 border-b border-gray-200 bg-gray-50 px-4 py-2">
+    <div className="flex h-screen flex-col bg-white">
+      <div className="flex shrink-0 items-center gap-2 border-b border-gray-200 bg-gray-50 px-4 py-1.5">
         {(Object.keys(MODES) as Mode[]).map((key) => (
           <button
             key={key}
@@ -29,7 +32,13 @@ function App() {
           </button>
         ))}
       </div>
-      <Page />
+      <div className={mode === 'generator' ? 'flex min-h-0 flex-1 flex-col overflow-auto lg:overflow-hidden' : 'min-h-0 flex-1 overflow-auto'}>
+        <ErrorBoundary key={mode}>
+          <Suspense fallback={<p className="p-6 text-sm text-gray-500">Loading ...</p>}>
+            <Page />
+          </Suspense>
+        </ErrorBoundary>
+      </div>
     </div>
   )
 }

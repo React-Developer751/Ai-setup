@@ -166,3 +166,78 @@ export function thinkColors(prompt: string, theme: ThemeKey, rand: () => number)
     ],
   }
 }
+
+// ───────────── changing a palette that already exists ─────────────
+export function hexToHsl(hex: string): { h: number; s: number; l: number } {
+  const r = parseInt(hex.slice(1, 3), 16) / 255
+  const g = parseInt(hex.slice(3, 5), 16) / 255
+  const b = parseInt(hex.slice(5, 7), 16) / 255
+  const max = Math.max(r, g, b)
+  const min = Math.min(r, g, b)
+  const l = (max + min) / 2
+  const d = max - min
+  if (d === 0) return { h: 0, s: 0, l: l * 100 }
+  const s = d / (1 - Math.abs(2 * l - 1))
+  const h = max === r ? ((g - b) / d) % 6 : max === g ? (b - r) / d + 2 : (r - g) / d + 4
+  return { h: wrap(h * 60), s: s * 100, l: l * 100 }
+}
+
+/** the hue moves toward `target` by at most `step` degrees (the short way round) */
+const hueToward = (hue: number, target: number, step: number) => {
+  const diff = ((target - hue + 540) % 360) - 180
+  return wrap(hue + Math.max(-step, Math.min(step, diff)))
+}
+
+export type PaletteChange = { accent?: string; alt?: string; harmony?: ('complementary' | 'analogous' | 'triadic' | 'split')[]; tones?: ('warmer' | 'cooler' | 'vibrant' | 'muted' | 'darker' | 'lighter')[] }
+
+/**
+ * The same palette with the person's changes: a new main colour (all the other colours follow its hue, contrast is checked again),
+ * and tones: warmer / cooler turn the hue, vibrant / muted change the saturation, darker / lighter the lightness of the accent.
+ */
+export function recolor(palette: Palette, theme: ThemeKey, change: PaletteChange): Palette {
+  if (!change.accent && !change.alt && !change.harmony?.length && !change.tones?.length) return palette
+  const mood = { ...MOODS[theme] }
+  const old = hexToHsl(palette.light.accent)
+  const altOffset = wrap(hexToHsl(palette.light.alt).h - old.h)
+  let hue = old.h
+  let neutral = false
+  if (change.accent) {
+    const asked = hexToHsl(change.accent)
+    hue = asked.h
+    // grey, black and white have no hue: the palette keeps its own and the accent turns neutral
+    neutral = asked.s < 12
+    if (!neutral) mood.saturation = Math.max(35, Math.min(95, asked.s))
+    else mood.saturation = 0
+    // the lightness asked for counts too: navy is darker than sky blue
+    if (!neutral) {
+      mood.accentLight = Math.max(22, Math.min(55, asked.l))
+      mood.accentDark = Math.max(52, Math.min(80, asked.l + 14))
+    }
+  }
+  // a colour that goes with the main one: the hue turns round the colour wheel
+  for (const kind of change.harmony ?? []) hue = wrap(hue + { complementary: 180, analogous: 30, triadic: 120, split: 150 }[kind])
+  for (const tone of change.tones ?? []) {
+    if (tone === 'warmer') hue = hueToward(hue, 28, 25)
+    else if (tone === 'cooler') hue = hueToward(hue, 215, 25)
+    else if (tone === 'vibrant') mood.saturation = Math.min(95, mood.saturation + 14)
+    else if (tone === 'muted') mood.saturation = Math.max(18, mood.saturation - 18)
+    else if (tone === 'darker') {
+      mood.accentLight = Math.max(20, mood.accentLight - 8)
+      mood.accentDark = Math.max(45, mood.accentDark - 8)
+    } else if (tone === 'lighter') {
+      mood.accentLight = Math.min(60, mood.accentLight + 8)
+      mood.accentDark = Math.min(85, mood.accentDark + 8)
+    }
+  }
+  const altHue = change.alt ? hexToHsl(change.alt).h : wrap(hue + altOffset)
+  const next: Palette = { name: palette.name, light: buildMode('light', hue, altHue, mood), dark: buildMode('dark', hue, altHue, mood) }
+  if (neutral && change.accent) {
+    const { l } = hexToHsl(change.accent)
+    // a neutral accent: near black on light backgrounds, near white on dark ones (decided by what was asked)
+    const darkAccent = l < 50
+    next.light.accent = darkAccent ? '#111827' : '#374151'
+    next.dark.accent = darkAccent ? '#e5e7eb' : '#f9fafb'
+  }
+  next.name = `${hueName(hue)} + ${hueName(altHue)} (edited)`
+  return next
+}

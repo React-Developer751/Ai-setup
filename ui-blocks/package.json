@@ -19,7 +19,20 @@
     "eval:kinds": "node scripts/eval-kinds.mjs",
     "models:download": "node scripts/download-models.mjs",
     "test:ml": "node scripts/test-ml.mjs",
-    "eval:real": "node scripts/eval-real.mjs"
+    "eval:real": "node scripts/eval-real.mjs",
+    "server": "node server/index.mjs",
+    "eval:edit": "node scripts/eval-edit.mjs",
+    "eval:intents": "node scripts/eval-pipeline.mjs",
+    "test:edit": "node scripts/test-edit.mjs",
+    "audit:sites": "node scripts/audit-sites.mjs",
+    "eval:business": "node scripts/eval-models.mjs --test=src/data/training/business-blind.jsonl",
+    "build:lite": "node scripts/build-lite.mjs",
+    "check:niches": "node scripts/check-niches.mjs",
+    "test": "node scripts/test-edit.mjs && node scripts/test-niche.mjs && node scripts/test-business.mjs && node scripts/test-projects.mjs && node scripts/e2e-edit.mjs && node scripts/audit-sites.mjs && npm run test:ml",
+    "test:niche": "node scripts/test-niche.mjs",
+    "eval:niches": "node scripts/eval-niches.mjs",
+    "test:business": "node scripts/test-business.mjs",
+    "test:projects": "node scripts/test-projects.mjs"
   },
   "dependencies": {
     "@huggingface/transformers": "^4.3.1",

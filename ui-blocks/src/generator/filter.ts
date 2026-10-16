@@ -25,14 +25,16 @@ const HINGLISH = new Set(['mere', 'meri', 'mera', 'ke', 'ki', 'ka', 'liye', 'ban
 const CUT_WORDS = /\s+(?:that|which|who|whose|where|offers?|offering|with|having|has|and\s+has|jo|ke\s+liye)\b[\s\S]*$/i
 
 /** "gym Iron Pulse" has no "called", but "Iron Pulse" is clearly the name: capitalised words inside the prompt. */
-function nameFromCapitals(userPrompt: string) {
+function nameFromCapitals(rawPrompt: string) {
+  // "Dr. Sharma": the full stop after a title is not the end of a sentence
+  const userPrompt = rawPrompt.replace(/\b(Dr|Mr|Mrs|Ms|Prof|Er|Adv)\.\s+(?=[A-Z])/g, '$1 ')
   for (const match of userPrompt.matchAll(/[A-Z][\w&'-]*(?:\s+(?:&\s+)?[A-Z][\w&'-]*){0,3}/g)) {
     const parts = match[0].split(/\s+/)
     const words = parts.filter((w) => !NOT_A_NAME.has(w.toLowerCase()))
     if (!words.length || words.length !== parts.length) continue
     // at the very start of the prompt a single capitalised word is just the first word of a sentence
     if (match.index === 0 && words.length < 2) continue
-    return match[0]
+    return match[0].replace(/^(Dr|Mr|Mrs|Ms|Prof|Er|Adv) /, '$1. ')
   }
   return undefined
 }
@@ -105,7 +107,12 @@ const THEME_NOUN: Record<string, string> = {
   nonprofit: 'Foundation',
 }
 
-function inventName(subject: string, userPrompt: string, themeKey?: string) {
+function inventName(subject: string, userPrompt: string, themeKey?: string, nicheLabel?: string) {
+  // a niche knows what the business is called in plain words ("Pest control" -> "Harbor Pest Control")
+  if (nicheLabel) {
+    const first = [...userPrompt.toLowerCase()].reduce((h, ch) => (h * 31 + ch.charCodeAt(0)) >>> 0, 7)
+    return `${FRESH_WORDS[first % FRESH_WORDS.length]} ${titleCase(nicheLabel.toLowerCase())}`.replace(/\b(?:Ngo|Pg|Hr|Ac|Cctv|Gst|Seo|Ev|Dj|Diy)\b/g, (m) => m.toUpperCase())
+  }
   const words = subject.split(/\s+/).filter((w) => w && !GENERIC_TAIL.has(w))
   const last = words.pop() ?? ''
   // "car rental company" -> "car rental"; "bakery" -> "bakery"; "dentist" -> "dental"
@@ -119,7 +126,7 @@ function inventName(subject: string, userPrompt: string, themeKey?: string) {
   return `${FRESH_WORDS[seed % FRESH_WORDS.length]} ${titleCase(head).replace(/\b(?:Ngo|Pg|Hr|Ac|Cctv|Gst|Seo|Ev)\b/g, (m) => m.toUpperCase())}`
 }
 
-export function extractContentDetails(userPrompt: string, themeKey?: string) {
+export function extractContentDetails(userPrompt: string, themeKey?: string, nicheLabel?: string) {
   // 1) "called/named" followed by capitalised words: "named Leafy Premium"
   const capitalised = userPrompt.match(/\b(?:called|named)\s+([A-Z][\w&'-]*(?:\s+(?:&|[A-Z][\w&'-]*)){0,3})/)?.[1]
 
@@ -131,5 +138,5 @@ export function extractContentDetails(userPrompt: string, themeKey?: string) {
 
   const subject = extractSubject(userPrompt)
   const named = (capitalised ?? (fromLoose || nameFromCapitals(userPrompt) || '')).slice(0, MAX_NAME_LENGTH).trim()
-  return { businessName: named || inventName(subject, userPrompt, themeKey), subject }
+  return { businessName: named || inventName(subject, userPrompt, themeKey, nicheLabel), subject }
 }

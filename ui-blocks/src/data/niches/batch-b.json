@@ -1,0 +1,3328 @@
+[
+  {
+    "id": "craft_brewery_bar",
+    "label": "Craft brewery and taproom",
+    "theme": "food_dining",
+    "keywords": [
+      "craft brewery",
+      "microbrewery",
+      "taproom",
+      "craft beer",
+      "brewpub",
+      "beer flight",
+      "brewery tour",
+      "बीयर बार"
+    ],
+    "heroTitles": [
+      "Fresh Pints Straight From The Tank",
+      "Pull Up A Stool At Our Taproom",
+      "Brewed Small, Poured Cold Daily"
+    ],
+    "heroSubtitles": [
+      "{brand} brews in small batches and pours them a few steps from the tank, with a rotating tap list and food to match.",
+      "Try a flight of four beers, pick a favourite and take a growler home. The team at {brand} is happy to guide your first sip.",
+      "Weekend quiz nights, live music and brewery tours at {brand}. Bring friends, order a board and stay for another round."
+    ],
+    "button": "Reserve A Table",
+    "featureTitle": "What Is Pouring And Cooking At The Taproom",
+    "features": [
+      {
+        "title": "Rotating Tap List",
+        "text": "Wheat ales, pale ales, stouts and seasonal pours change with each batch, listed on the board every day."
+      },
+      {
+        "title": "Tasting Flights",
+        "text": "Four small glasses of different styles let you compare beers before you commit to a full pint."
+      },
+      {
+        "title": "Food Pairing Menu",
+        "text": "Wood-fired pizza, loaded fries and spiced bar bites are picked to sit well beside hoppy and malty beers."
+      },
+      {
+        "title": "Brewery Tours",
+        "text": "Walk past the fermenters with our brewer, smell the malt and hop, and finish with a tasting at the bar."
+      },
+      {
+        "title": "Growlers And Cans",
+        "text": "Fill a growler or grab chilled cans from the counter to enjoy your favourite pour at home."
+      },
+      {
+        "title": "Events And Private Hosting",
+        "text": "Trivia nights, live acoustic sets and birthday tables can be booked with a set menu and a reserved corner."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Small batch",
+        "label": "Brewed on site"
+      },
+      {
+        "value": "Weekly",
+        "label": "New tap rotation"
+      },
+      {
+        "value": "Weekends",
+        "label": "Tours and live music"
+      }
+    ],
+    "steps": {
+      "title": "Your Evening At The Taproom",
+      "items": [
+        {
+          "title": "Book Or Walk In",
+          "text": "Reserve a table online for groups, or take a bar stool when you arrive."
+        },
+        {
+          "title": "Taste A Flight",
+          "text": "Order four small pours and let the staff explain what each one is about."
+        },
+        {
+          "title": "Pair With Food",
+          "text": "Choose a plate that suits your pick, from crisp fries to a hot pizza."
+        },
+        {
+          "title": "Take Some Home",
+          "text": "Fill a growler or pick up cans of the beer you liked most."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Do you offer tasting flights?",
+        "a": "Yes, a flight has four small pours of your choice from the tap list, so you can compare styles before ordering a pint."
+      },
+      {
+        "q": "Can I book the brewery tour?",
+        "a": "Tours run on set days and need a booking. Message us with your group size and we will confirm a slot."
+      },
+      {
+        "q": "Is there food or can I bring my own?",
+        "a": "We serve a full bar menu with vegetarian options. Outside food is not allowed inside the taproom."
+      },
+      {
+        "q": "Do you have options if I do not drink beer?",
+        "a": "Yes, we pour house-made sodas, cold brew and fresh lime coolers alongside the beers."
+      },
+      {
+        "q": "Can I host a private event here?",
+        "a": "You can reserve a section for birthdays or team evenings. Tell us the date and headcount for a menu suggestion."
+      }
+    ],
+    "cta": {
+      "title": "Ready For A Cold Pour Tonight?",
+      "button": "Reserve A Table"
+    },
+    "about": {
+      "title": "A Taproom Built Around The Brew",
+      "paragraphs": [
+        "{brand} began with a small brewhouse and a simple idea: serve beer where it is made, while it is at its freshest.",
+        "Our brewer tweaks recipes every few weeks, so the tap board always has something new next to the regulars you keep coming back for."
+      ],
+      "points": [
+        "Brewed in small batches",
+        "Food made for beer",
+        "Open to beginners and regulars"
+      ]
+    },
+    "pricing": {
+      "title": "Flights, Growlers And Group Plans",
+      "plans": [
+        {
+          "name": "Tasting Flight",
+          "price": "$8",
+          "period": "/flight",
+          "perks": [
+            "Four small pours",
+            "Tasting notes card",
+            "Staff guidance"
+          ]
+        },
+        {
+          "name": "Brewery Tour",
+          "price": "$14",
+          "period": "/person",
+          "perks": [
+            "Guided walk through the brewhouse",
+            "Two beer samples",
+            "Snack plate included"
+          ]
+        },
+        {
+          "name": "Group Table",
+          "price": "$120",
+          "period": "/table",
+          "perks": [
+            "Reserved corner for eight",
+            "Shared food platters",
+            "Two flights on the house"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Inside The Taproom",
+      "captions": [
+        "Fresh tap pours",
+        "Copper fermenters",
+        "Flight of four",
+        "Pizza and pints",
+        "Quiz night crowd",
+        "Growler fill station"
+      ]
+    },
+    "team": {
+      "title": "The People Behind The Bar",
+      "roles": [
+        "Head Brewer",
+        "Taproom Manager",
+        "Bar Chef"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "The flight helped me find a pale ale I actually love, and the staff never rushed us.",
+        "role": "Weekend visitor"
+      },
+      {
+        "quote": "We booked the tour for a friend's birthday and the tasting at the end was a real highlight.",
+        "role": "Group booker"
+      },
+      {
+        "quote": "Great pizza, cold pours and a relaxed room. Our regular Friday spot now.",
+        "role": "Regular guest"
+      }
+    ],
+    "blog": {
+      "title": "From The Brew Deck",
+      "posts": [
+        {
+          "tag": "Beer Basics",
+          "title": "How To Read A Tap List As A Beginner"
+        },
+        {
+          "tag": "Pairing",
+          "title": "Five Bar Snacks That Suit A Hoppy Pale Ale"
+        },
+        {
+          "tag": "Behind The Scenes",
+          "title": "A Day Inside The Brewhouse From Mash To Keg"
+        }
+      ]
+    },
+    "marquee": [
+      "Tap List",
+      "Flights",
+      "Growlers",
+      "Pale Ale",
+      "Stout",
+      "Brewery Tour",
+      "Live Music",
+      "Pizza Night"
+    ],
+    "contactText": "Planning a group evening or a brewery tour? Send {brand} a message with your date and headcount and we will hold a table."
+  },
+  {
+    "id": "cloud_kitchen",
+    "label": "Cloud kitchen",
+    "theme": "food_dining",
+    "keywords": [
+      "cloud kitchen",
+      "ghost kitchen",
+      "delivery kitchen",
+      "home delivery food",
+      "meal box",
+      "क्लाउड किचन"
+    ],
+    "heroTitles": [
+      "Hot Meals Packed And At Your Door",
+      "A Kitchen Built Only For Delivery",
+      "Order Tonight, Eat Within The Hour"
+    ],
+    "heroSubtitles": [
+      "{brand} cooks to order in a kitchen made for delivery, so food leaves hot, sealed and on its way to you quickly.",
+      "Pick a thali, a biryani bowl or a combo from our menu. {brand} packs each order to keep gravies leak-proof and rice fluffy.",
+      "Office lunches, family dinners or a late craving, {brand} takes orders on our app, phone and WhatsApp and delivers across your area."
+    ],
+    "button": "Order Now",
+    "featureTitle": "What Our Kitchen Sends To Your Door",
+    "features": [
+      {
+        "title": "Daily Menu Combos",
+        "text": "A main, a side and a dessert in one box, priced simply for a filling lunch or dinner."
+      },
+      {
+        "title": "Cooked After You Order",
+        "text": "Nothing waits under a lamp. Your dish goes on the stove once the order reaches the kitchen."
+      },
+      {
+        "title": "Leak-Proof Packaging",
+        "text": "Sealed containers with separate gravy and rice portions keep food tidy and warm on the ride."
+      },
+      {
+        "title": "Office Lunch Orders",
+        "text": "Place a team order by 11 am and we send labelled boxes with cutlery for every person."
+      },
+      {
+        "title": "Multiple Brands, One Kitchen",
+        "text": "Choose north Indian, biryani, rolls or healthy bowls from separate menus cooked in the same facility."
+      },
+      {
+        "title": "Live Order Tracking",
+        "text": "Get message updates when your food is being cooked, packed and handed to the rider."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Delivery",
+        "label": "No dine-in rush"
+      },
+      {
+        "value": "Cooked fresh",
+        "label": "After every order"
+      },
+      {
+        "value": "Daily",
+        "label": "Lunch and dinner menu"
+      }
+    ],
+    "steps": {
+      "title": "From Menu To Doorstep",
+      "items": [
+        {
+          "title": "Pick Your Meal",
+          "text": "Browse the menu on the app or WhatsApp and add your dishes."
+        },
+        {
+          "title": "We Cook It Fresh",
+          "text": "The kitchen starts your order as soon as you confirm payment."
+        },
+        {
+          "title": "Sealed And Packed",
+          "text": "Each dish is boxed separately and checked against your order slip."
+        },
+        {
+          "title": "Rider Brings It",
+          "text": "A delivery partner brings the box to your address and updates you on the way."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Which areas do you deliver to?",
+        "a": "We deliver within a set radius of the kitchen. Share your pin code and we will confirm if we reach you."
+      },
+      {
+        "q": "Can I place an order for a group?",
+        "a": "Yes, orders for ten or more people should be sent a few hours ahead so we can plan the cooking."
+      },
+      {
+        "q": "How do you keep the food hot?",
+        "a": "Dishes are packed in insulated bags with sealed containers and handed to the rider as soon as they are ready."
+      },
+      {
+        "q": "Do you have vegetarian and jain options?",
+        "a": "Our menu marks vegetarian items clearly, and jain preparations can be requested in the order note."
+      },
+      {
+        "q": "What if my order is wrong or spilled?",
+        "a": "Send a photo on WhatsApp and our team will fix the order or arrange a replacement."
+      }
+    ],
+    "cta": {
+      "title": "Hungry And Nothing In The Fridge?",
+      "button": "Order Now"
+    },
+    "about": {
+      "title": "A Kitchen Designed For Your Doorstep",
+      "paragraphs": [
+        "{brand} has no tables and no dining hall. Every rupee goes into the stoves, the packing and the delivery so your food arrives well.",
+        "Our chefs cook from fixed recipes with fresh vegetables each morning, which keeps taste consistent from one order to the next."
+      ],
+      "points": [
+        "Cooked only after you order",
+        "Packed to avoid spills",
+        "Menus for office and home"
+      ]
+    },
+    "pricing": {
+      "title": "Meal Boxes And Subscriptions",
+      "plans": [
+        {
+          "name": "Single Combo",
+          "price": "$4",
+          "period": "/order",
+          "perks": [
+            "Main dish plus side",
+            "Sealed packaging",
+            "Cutlery included"
+          ]
+        },
+        {
+          "name": "Family Dinner Box",
+          "price": "$16",
+          "period": "/box",
+          "perks": [
+            "Serves four people",
+            "Two mains and rice or bread",
+            "Dessert included"
+          ]
+        },
+        {
+          "name": "Weekly Lunch Plan",
+          "price": "$22",
+          "period": "/week",
+          "perks": [
+            "Five weekday lunches",
+            "Menu changes daily",
+            "Free delivery on all days"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "From Our Pass",
+      "captions": [
+        "Biryani being packed",
+        "Sealed meal boxes",
+        "Fresh thali spread",
+        "Kitchen at lunchtime",
+        "Rider handover",
+        "Dessert cups ready"
+      ]
+    },
+    "team": {
+      "title": "Who Runs The Kitchen",
+      "roles": [
+        "Head Chef",
+        "Packing Supervisor",
+        "Delivery Coordinator"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "Food reached warm and nothing spilled. The dal and rice combo is now our regular office lunch.",
+        "role": "Office customer"
+      },
+      {
+        "quote": "Ordered on WhatsApp for a family dinner and the box was neatly separated and well sealed.",
+        "role": "Family customer"
+      },
+      {
+        "quote": "They fixed a missing item within minutes after I sent a photo. Easy to deal with.",
+        "role": "Repeat customer"
+      }
+    ],
+    "blog": {
+      "title": "Notes From The Kitchen",
+      "posts": [
+        {
+          "tag": "Delivery Tips",
+          "title": "How To Order Food That Travels Well"
+        },
+        {
+          "tag": "Office Lunch",
+          "title": "A Simple Way To Plan Team Lunches Every Week"
+        },
+        {
+          "tag": "Menu",
+          "title": "Why Our Gravies Are Packed Apart From Rice"
+        }
+      ]
+    },
+    "marquee": [
+      "Biryani Bowls",
+      "Lunch Combo",
+      "Family Box",
+      "Thali",
+      "Rolls",
+      "Office Orders",
+      "Fresh Daily",
+      "Fast Delivery"
+    ],
+    "contactText": "Need a bulk order or want to know if {brand} delivers to your street? Message us your address and we will reply with menu and timing."
+  },
+  {
+    "id": "tiffin_service",
+    "label": "Tiffin service",
+    "theme": "food_dining",
+    "keywords": [
+      "tiffin service",
+      "tiffin",
+      "dabba service",
+      "home cooked meals",
+      "monthly tiffin",
+      "mess service",
+      "ghar ka khana",
+      "टिफिन सेवा"
+    ],
+    "heroTitles": [
+      "Ghar Ka Khana Delivered To Your Desk",
+      "A Home-Style Meal In Every Dabba",
+      "Skip The Cooking, Keep The Taste"
+    ],
+    "heroSubtitles": [
+      "{brand} sends a hot, home-style tiffin every day with roti, sabzi, dal and rice, made with little oil and plenty of care.",
+      "Students, working professionals and families rely on {brand} for a steady monthly tiffin that feels like food from home.",
+      "Choose lunch, dinner or both. {brand} changes the menu daily so you never eat the same sabzi twice in a row."
+    ],
+    "button": "Start My Tiffin",
+    "featureTitle": "What Is Packed In Your Tiffin",
+    "features": [
+      {
+        "title": "Daily Changing Menu",
+        "text": "Two sabzis, dal, rice and fresh rotis change every day so the meal never feels repeated."
+      },
+      {
+        "title": "Light Home-Style Cooking",
+        "text": "Meals are cooked with less oil and mild masala, the way a family kitchen would make them."
+      },
+      {
+        "title": "Veg And Jain Options",
+        "text": "Pure vegetarian tiffins and jain preparations without onion or garlic are available on request."
+      },
+      {
+        "title": "Lunch And Dinner Slots",
+        "text": "Pick a lunch tiffin for work, a dinner tiffin for the evening, or take both on one plan."
+      },
+      {
+        "title": "Steel Dabba Delivery",
+        "text": "Food arrives in a clean steel tiffin and we collect the empty one on the next delivery."
+      },
+      {
+        "title": "Pause And Resume Easily",
+        "text": "Going home for a week? Tell us a day ahead and we skip the delivery without any fuss."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Daily",
+        "label": "Fresh menu"
+      },
+      {
+        "value": "Both slots",
+        "label": "Both slots covered"
+      },
+      {
+        "value": "Pausable",
+        "label": "With a day's notice"
+      }
+    ],
+    "steps": {
+      "title": "How Your Tiffin Reaches You",
+      "items": [
+        {
+          "title": "Choose Your Plan",
+          "text": "Pick lunch, dinner or both and a veg or jain menu."
+        },
+        {
+          "title": "Share Your Address",
+          "text": "Give us your home or office location and preferred delivery time."
+        },
+        {
+          "title": "We Cook In The Morning",
+          "text": "Your food is cooked fresh each day with seasonal vegetables."
+        },
+        {
+          "title": "Dabba Arrives Hot",
+          "text": "Our delivery boy brings your tiffin and picks up yesterday's empty box."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Can I try the tiffin before subscribing?",
+        "a": "Yes, you can order a single trial tiffin first to check the taste and portion before you take a monthly plan."
+      },
+      {
+        "q": "What if I will be away for a few days?",
+        "a": "Call or message a day before and we pause your tiffin. You will not pay for the skipped days."
+      },
+      {
+        "q": "Is the food really home-style?",
+        "a": "Our cooks follow simple home recipes with less oil and spice, and avoid heavy gravies and artificial colours."
+      },
+      {
+        "q": "Do you provide chapati or rice only options?",
+        "a": "You can choose a plan with extra rotis, less rice or a roti-only box. Tell us when you register."
+      },
+      {
+        "q": "How do I pay for the month?",
+        "a": "You can pay by UPI or cash at the start of the month, and we share a simple delivery calendar."
+      }
+    ],
+    "cta": {
+      "title": "Tired Of Ordering Out Every Day?",
+      "button": "Start My Tiffin"
+    },
+    "about": {
+      "title": "Cooked Like It Is For Our Own Family",
+      "paragraphs": [
+        "{brand} started with a home kitchen and a few regular customers who missed ghar ka khana. That same simple style still guides every tiffin we send.",
+        "We buy vegetables each morning, keep the masalas mild and pack with care, so your lunch is something you look forward to."
+      ],
+      "points": [
+        "Fresh vegetables each day",
+        "Light oil, mild spices",
+        "Reliable monthly delivery"
+      ]
+    },
+    "pricing": {
+      "title": "Simple Monthly Tiffin Plans",
+      "plans": [
+        {
+          "name": "Trial Tiffin",
+          "price": "$3",
+          "period": "/tiffin",
+          "perks": [
+            "Single meal to test taste",
+            "No joining commitment",
+            "Veg or jain choice"
+          ]
+        },
+        {
+          "name": "Lunch Only",
+          "price": "$45",
+          "period": "/month",
+          "perks": [
+            "One tiffin every working day",
+            "Roti, sabzi, dal and rice",
+            "Steel dabba pickup"
+          ]
+        },
+        {
+          "name": "Lunch And Dinner",
+          "price": "$80",
+          "period": "/month",
+          "perks": [
+            "Two tiffins a day",
+            "Menu changes daily",
+            "Pause with a day's notice"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "From Our Kitchen",
+      "captions": [
+        "Fresh rotis rolling",
+        "Steel tiffin lineup",
+        "Dal and sabzi",
+        "Morning veggie prep",
+        "Packed for delivery",
+        "Sunday special thali"
+      ]
+    },
+    "team": {
+      "title": "Meet The Cooks",
+      "roles": [
+        "Head Cook",
+        "Roti Maker",
+        "Delivery Lead"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "The food is light and tastes like my mother's cooking. It has made life in a new city easier.",
+        "role": "Working professional"
+      },
+      {
+        "quote": "Delivery is on time and they pause the plan without any argument when I travel.",
+        "role": "Monthly subscriber"
+      },
+      {
+        "quote": "Good portions, clean dabba and a different sabzi every day. Hostel food was never like this.",
+        "role": "College student"
+      }
+    ],
+    "blog": {
+      "title": "From The Tiffin Table",
+      "posts": [
+        {
+          "tag": "Everyday Eating",
+          "title": "How To Build A Balanced Thali On A Budget"
+        },
+        {
+          "tag": "Student Life",
+          "title": "Eating Well While Living Away From Home"
+        },
+        {
+          "tag": "Kitchen Notes",
+          "title": "Why Less Oil Makes Everyday Food Easier To Eat"
+        }
+      ]
+    },
+    "marquee": [
+      "Ghar Ka Khana",
+      "Dabba",
+      "Fresh Roti",
+      "Dal Rice",
+      "Monthly Plan",
+      "Veg Thali",
+      "Jain Meals",
+      "Lunch Box"
+    ],
+    "contactText": "Want to know the weekly menu or check if {brand} delivers near you? Call or message us and we will set up a trial tiffin."
+  },
+  {
+    "id": "sweet_shop_mithai",
+    "label": "Sweet shop (mithai)",
+    "theme": "food_dining",
+    "keywords": [
+      "sweet shop",
+      "mithai shop",
+      "mithai",
+      "indian sweets",
+      "halwai",
+      "festival sweets box",
+      "bulk sweets order",
+      "मिठाई की दुकान"
+    ],
+    "heroTitles": [
+      "Mithai Made Fresh Every Morning",
+      "Sweet Boxes For Every Celebration",
+      "Where Festivals Begin With Ghee"
+    ],
+    "heroSubtitles": [
+      "{brand} makes its barfis, laddoos and jalebis in small batches each day, using pure ghee, khoya and dry fruits.",
+      "From Diwali boxes to wedding favours, {brand} packs sweets in neat gift boxes you can hand over with pride.",
+      "Order a kilo for guests or a hundred boxes for the office. {brand} plans bulk mithai orders with taste and timing in mind."
+    ],
+    "button": "Order Sweets Online",
+    "featureTitle": "Sweets, Snacks And Gift Boxes",
+    "features": [
+      {
+        "title": "Fresh Daily Batches",
+        "text": "Kaju katli, laddoo, barfi and rasgulla are prepared every morning and sold the same day."
+      },
+      {
+        "title": "Festival Gift Boxes",
+        "text": "Diwali, Rakhi, Holi and Eid boxes come in sizes from small family packs to premium dry fruit assortments."
+      },
+      {
+        "title": "Custom Gift Hampers",
+        "text": "Add sweets, namkeen and dry fruits to a hamper with your own message card and ribbon."
+      },
+      {
+        "title": "Bulk And Wedding Orders",
+        "text": "Place orders for functions, shaadi favours or office gifting with a set menu and delivery date."
+      },
+      {
+        "title": "Sugar-Free Choices",
+        "text": "Dates and dry fruit sweets made without added sugar for those who need to watch their intake."
+      },
+      {
+        "title": "Namkeen And Farsan Counter",
+        "text": "Take home fresh samosa, kachori and sev along with your sweets for the full tea-time spread."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Fresh daily",
+        "label": "Sweets made each morning"
+      },
+      {
+        "value": "Pure ghee",
+        "label": "Used in core mithai"
+      },
+      {
+        "value": "Bulk orders",
+        "label": "Planned with a date"
+      }
+    ],
+    "steps": {
+      "title": "How To Order Your Mithai",
+      "items": [
+        {
+          "title": "Pick Sweets Or A Box",
+          "text": "Choose by the kilo, a ready festival box or build a custom hamper."
+        },
+        {
+          "title": "Share Date And Quantity",
+          "text": "Tell us when you need it and how many boxes, so we can plan the batch."
+        },
+        {
+          "title": "We Make And Pack",
+          "text": "Sweets are made fresh and arranged neatly in your chosen box."
+        },
+        {
+          "title": "Pickup Or Delivery",
+          "text": "Collect from the shop or have it delivered to your home or venue."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "How early should I order festival boxes?",
+        "a": "For Diwali and Rakhi, order a week ahead so we can reserve your box size and print your message card."
+      },
+      {
+        "q": "Do you take bulk orders for weddings?",
+        "a": "Yes, share the date, quantity and budget and we will suggest a menu and give a quote."
+      },
+      {
+        "q": "How long do the sweets stay fresh?",
+        "a": "Milk-based sweets are best within two days. Dry fruit sweets keep longer, and we mention shelf life on each box."
+      },
+      {
+        "q": "Can you make sugar-free or vegan mithai?",
+        "a": "We have a small range of sugar-free sweets made from dates and nuts. Vegan items can be made with notice."
+      },
+      {
+        "q": "Do you ship sweets to other cities?",
+        "a": "We send dry sweets and snacks by courier. Milk sweets are for local delivery only."
+      }
+    ],
+    "cta": {
+      "title": "Planning Sweets For The Next Celebration?",
+      "button": "Order Sweets Online"
+    },
+    "about": {
+      "title": "A Halwai Counter With Family Recipes",
+      "paragraphs": [
+        "{brand} is a neighbourhood mithai shop where the kadhai is lit before sunrise and every tray is made by hand.",
+        "We keep recipes simple, use real ghee and khoya, and pack with care so a box from us looks as good as it tastes."
+      ],
+      "points": [
+        "Made fresh each morning",
+        "Real ghee and khoya",
+        "Neat, gift-ready packing"
+      ]
+    },
+    "pricing": {
+      "title": "Boxes And Hampers For Gifting",
+      "plans": [
+        {
+          "name": "Family Mithai Box",
+          "price": "$7",
+          "period": "/box",
+          "perks": [
+            "Assorted barfi and laddoo",
+            "Half kilo pack",
+            "Festival wrapping"
+          ]
+        },
+        {
+          "name": "Festival Gift Hamper",
+          "price": "$25",
+          "period": "/hamper",
+          "perks": [
+            "Sweets, namkeen and dry fruits",
+            "Printed message card",
+            "Ribbon and gift bag"
+          ]
+        },
+        {
+          "name": "Bulk Office Pack",
+          "price": "$110",
+          "period": "/pack",
+          "perks": [
+            "Twenty small sweet boxes",
+            "Custom label option",
+            "Delivery to your office"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Fresh From The Kadhai",
+      "captions": [
+        "Kaju katli trays",
+        "Hot jalebi frying",
+        "Festival gift boxes",
+        "Laddoo by hand",
+        "Silver leaf barfi",
+        "Counter at Diwali"
+      ]
+    },
+    "team": {
+      "title": "The Mithai Makers",
+      "roles": [
+        "Head Halwai",
+        "Packing Manager",
+        "Order Desk Lead"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "Our Diwali boxes for clients were neat, fresh and delivered on the date we agreed.",
+        "role": "Business owner"
+      },
+      {
+        "quote": "The kaju katli tastes of real ghee and does not feel too sweet. We buy it every festival.",
+        "role": "Local family"
+      },
+      {
+        "quote": "They planned sweets for my sister's wedding and took care of the favour boxes as well.",
+        "role": "Wedding host"
+      }
+    ],
+    "blog": {
+      "title": "Sweet Stories",
+      "posts": [
+        {
+          "tag": "Festivals",
+          "title": "How To Choose A Mithai Box For Diwali Gifting"
+        },
+        {
+          "tag": "Know Your Sweets",
+          "title": "Barfi, Laddoo Or Peda: What Sets Them Apart"
+        },
+        {
+          "tag": "Planning",
+          "title": "A Simple Guide To Ordering Sweets For A Wedding"
+        }
+      ]
+    },
+    "marquee": [
+      "Mithai",
+      "Kaju Katli",
+      "Laddoo",
+      "Barfi",
+      "Jalebi",
+      "Gift Boxes",
+      "Namkeen",
+      "Bulk Orders"
+    ],
+    "contactText": "Planning a festival box or a large order? Write to {brand} with your date and quantity and we will share options and a quote."
+  },
+  {
+    "id": "ice_cream_parlour",
+    "label": "Ice cream parlour",
+    "theme": "playful_vibrant",
+    "keywords": [
+      "ice cream parlour",
+      "ice cream shop",
+      "gelato",
+      "kulfi",
+      "sundae",
+      "ice cream cake",
+      "ice cream",
+      "आइसक्रीम पार्लर"
+    ],
+    "heroTitles": [
+      "Scoop Up Something Cold And Happy",
+      "Big Scoops, Small Prices, Pure Fun",
+      "Your Sweet Tooth Lives Here"
+    ],
+    "heroSubtitles": [
+      "{brand} serves scoops, sundaes and shakes in flavours from classic vanilla to mango, paan and brownie fudge.",
+      "Birthday tubs, ice cream cakes and party packs are made to order at {brand}, so your celebration ends on a sweet note.",
+      "Walk in for a cone after school or order a family tub for home. {brand} keeps the freezer full of new flavours."
+    ],
+    "button": "See Today's Flavours",
+    "featureTitle": "Cones, Sundaes, Cakes And More",
+    "features": [
+      {
+        "title": "Scoops And Cones",
+        "text": "Pick one, two or three scoops in a wafer cone, waffle cone or cup, with sprinkles if you like."
+      },
+      {
+        "title": "Loaded Sundaes",
+        "text": "Brownie, hot fudge, nuts and cherry stack up in a tall glass for sharing or for one big treat."
+      },
+      {
+        "title": "Ice Cream Cakes",
+        "text": "Order a cake with layers of sponge and your favourite flavour, with a name written on top."
+      },
+      {
+        "title": "Kulfi And Local Flavours",
+        "text": "Matka kulfi, kesar pista and paan scoops give a desi twist next to the usual vanilla and chocolate."
+      },
+      {
+        "title": "Shakes And Floats",
+        "text": "Thick milkshakes and soda floats are blended to order for hot afternoons."
+      },
+      {
+        "title": "Party Tubs",
+        "text": "Take home a one-litre or two-litre tub of your chosen flavours for birthdays and family gatherings."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Many",
+        "label": "Flavours on display"
+      },
+      {
+        "value": "Custom",
+        "label": "Cakes and sundaes"
+      },
+      {
+        "value": "Late hours",
+        "label": "Open for evening treats"
+      }
+    ],
+    "steps": {
+      "title": "Getting Your Treat",
+      "items": [
+        {
+          "title": "Pick A Flavour",
+          "text": "Taste a free sample spoon and decide what you feel like today."
+        },
+        {
+          "title": "Choose How To Serve",
+          "text": "Go for a cone, sundae, shake or a tub for later."
+        },
+        {
+          "title": "Add Toppings",
+          "text": "Select sauces, nuts and sprinkles to finish your order."
+        },
+        {
+          "title": "Eat Here Or Carry",
+          "text": "Sit in the parlour or take a well-packed tub home."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Can I taste a flavour before choosing?",
+        "a": "Yes, ask for a small sample spoon of any flavour in the freezer."
+      },
+      {
+        "q": "How early should I order an ice cream cake?",
+        "a": "Order a day ahead for a plain cake and two days ahead if you want a custom design or photo."
+      },
+      {
+        "q": "Do you have eggless or sugar-free choices?",
+        "a": "Our scoops and cakes are eggless. We also have a few sugar-free flavours, so please ask at the counter."
+      },
+      {
+        "q": "Will the tub melt on the way home?",
+        "a": "We pack tubs with a cold sleeve for short trips. For longer travel, ask for dry ice packing."
+      },
+      {
+        "q": "Do you take party and school orders?",
+        "a": "Yes, we prepare cup packs and party tubs in bulk with notice. Share the date and number of guests."
+      }
+    ],
+    "cta": {
+      "title": "Feeling Like Something Cold?",
+      "button": "See Today's Flavours"
+    },
+    "about": {
+      "title": "A Parlour For Every Sweet Mood",
+      "paragraphs": [
+        "{brand} is a neighbourhood ice cream parlour with a bright counter, a loud freezer and a mix of classic and local flavours.",
+        "We make our ice cream with real milk and fruit, and add new flavours with each season, like mango in summer and gajar halwa in winter."
+      ],
+      "points": [
+        "Free sample spoons",
+        "Real milk and fruit",
+        "Cakes for every birthday"
+      ]
+    },
+    "pricing": {
+      "title": "Scoops, Tubs And Cakes",
+      "plans": [
+        {
+          "name": "Double Scoop Cup",
+          "price": "$2",
+          "period": "/cup",
+          "perks": [
+            "Two flavours of your choice",
+            "Choice of cone or cup",
+            "One free topping"
+          ]
+        },
+        {
+          "name": "Family Tub",
+          "price": "$9",
+          "period": "/tub",
+          "perks": [
+            "One litre of ice cream",
+            "Two flavours in one tub",
+            "Cold sleeve packing"
+          ]
+        },
+        {
+          "name": "Ice Cream Cake",
+          "price": "$20",
+          "period": "/cake",
+          "perks": [
+            "Half kilo cake",
+            "Name written on top",
+            "Order a day ahead"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Freezer Favourites",
+      "captions": [
+        "Triple scoop cone",
+        "Brownie fudge sundae",
+        "Mango kulfi stick",
+        "Birthday ice cream cake",
+        "Sprinkle toppings bar",
+        "Pastel freezer counter"
+      ]
+    },
+    "team": {
+      "title": "Meet The Scoopers",
+      "roles": [
+        "Ice Cream Maker",
+        "Cake Decorator",
+        "Counter Lead"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "The mango scoop tastes like the real fruit and the sundaes are big enough to share.",
+        "role": "Family visitor"
+      },
+      {
+        "quote": "We ordered a cake for my son's birthday and it arrived on time with his name on top.",
+        "role": "Parent"
+      },
+      {
+        "quote": "A nice place to sit after dinner with friends. The kulfi flavours are the best part.",
+        "role": "Regular customer"
+      }
+    ],
+    "blog": {
+      "title": "The Cold Counter Blog",
+      "posts": [
+        {
+          "tag": "Flavours",
+          "title": "Seasonal Ice Cream Flavours Worth Waiting For"
+        },
+        {
+          "tag": "Celebrations",
+          "title": "How To Order An Ice Cream Cake For A Party"
+        },
+        {
+          "tag": "Tips",
+          "title": "Keeping A Tub Frozen On The Way Home"
+        }
+      ]
+    },
+    "marquee": [
+      "Scoops",
+      "Sundae",
+      "Kulfi",
+      "Ice Cream Cake",
+      "Milkshake",
+      "Waffle Cone",
+      "Party Tubs",
+      "Gelato"
+    ],
+    "contactText": "Want a custom cake or a party order from {brand}? Send us the date and guest count and we will help you choose flavours."
+  },
+  {
+    "id": "juice_smoothie_bar",
+    "label": "Juice and smoothie bar",
+    "theme": "organic_nature",
+    "keywords": [
+      "juice bar",
+      "smoothie bar",
+      "fresh juice",
+      "cold pressed juice",
+      "juice centre",
+      "protein smoothie",
+      "detox juice",
+      "जूस सेंटर"
+    ],
+    "heroTitles": [
+      "Squeezed Fresh While You Wait",
+      "Blend Your Day With Real Fruit",
+      "A Glass Full Of Good Stuff"
+    ],
+    "heroSubtitles": [
+      "{brand} presses oranges, pomegranates and sugarcane in front of you and blends smoothies from whole fruit, never from syrup.",
+      "Pick a pre-workout banana shake, a green juice or a fruit bowl at {brand}. Everything is made after you order.",
+      "Order a week of juices or a party counter from {brand}. We deliver cold bottles to homes, gyms and offices on schedule."
+    ],
+    "button": "Order A Fresh Juice",
+    "featureTitle": "What We Press, Blend And Pour",
+    "features": [
+      {
+        "title": "Fresh Pressed Juices",
+        "text": "Orange, pomegranate, watermelon and sugarcane are pressed on the spot with no added sugar or water."
+      },
+      {
+        "title": "Whole Fruit Smoothies",
+        "text": "Mango, banana, berry and dates are blended with curd or milk for a thick, filling drink."
+      },
+      {
+        "title": "Protein Shakes",
+        "text": "Add oats, peanut butter or a scoop of protein to a banana shake for a gym-ready post-workout drink."
+      },
+      {
+        "title": "Green And Detox Blends",
+        "text": "Spinach, cucumber, mint, apple and ginger blends for those who like something lighter in the morning."
+      },
+      {
+        "title": "Fruit Bowls And Salads",
+        "text": "Chopped seasonal fruit with chaat masala or honey, packed as a quick snack or breakfast."
+      },
+      {
+        "title": "Weekly Juice Packs",
+        "text": "Subscribe to a pack of cold bottles delivered to your door each morning for a week or a month."
+      }
+    ],
+    "stats": [
+      {
+        "value": "To order",
+        "label": "Pressed on the spot"
+      },
+      {
+        "value": "No syrup",
+        "label": "Whole fruit only"
+      },
+      {
+        "value": "Morning",
+        "label": "Daily bottle delivery"
+      }
+    ],
+    "steps": {
+      "title": "Your Fresh Glass In Four Steps",
+      "items": [
+        {
+          "title": "Choose Your Drink",
+          "text": "Pick a juice, smoothie or shake from the menu board."
+        },
+        {
+          "title": "Customise It",
+          "text": "Ask for less sugar, extra ice, or add oats, seeds or protein."
+        },
+        {
+          "title": "We Press Or Blend",
+          "text": "Fruit goes into the machine only after you order."
+        },
+        {
+          "title": "Sip Fresh",
+          "text": "Drink at the counter or carry a sealed bottle with you."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Do you add sugar or ice?",
+        "a": "No sugar is added by default. We only add it or ice if you ask, so tell us how you like it."
+      },
+      {
+        "q": "How long can a bottled juice be kept?",
+        "a": "Fresh juice tastes best within a few hours. Keep it cold and finish it within the day."
+      },
+      {
+        "q": "Can I get a smoothie without dairy?",
+        "a": "Yes, we can blend with almond milk or coconut water in place of milk or curd."
+      },
+      {
+        "q": "Do you deliver juice packs?",
+        "a": "We deliver weekly and monthly packs of cold bottles within a set area. Share your location for details."
+      },
+      {
+        "q": "Can you supply juice for a party?",
+        "a": "We set up a juice counter for events with a fruit menu. Message us the guest count and date."
+      }
+    ],
+    "cta": {
+      "title": "Need A Healthier Sip Today?",
+      "button": "Order A Fresh Juice"
+    },
+    "about": {
+      "title": "A Small Bar With A Simple Promise",
+      "paragraphs": [
+        "{brand} began with a single juicer and a belief that a cold glass of real fruit beats any packaged drink.",
+        "We buy fruit each morning from the mandi, wash it in front of you, and squeeze or blend only when your order comes in."
+      ],
+      "points": [
+        "Fruit bought fresh each day",
+        "No syrup or preservatives",
+        "Customised to your taste"
+      ]
+    },
+    "pricing": {
+      "title": "Glasses, Bottles And Weekly Packs",
+      "plans": [
+        {
+          "name": "Fresh Juice Glass",
+          "price": "$2",
+          "period": "/glass",
+          "perks": [
+            "Pressed to order",
+            "No added sugar",
+            "Choice of fruit"
+          ]
+        },
+        {
+          "name": "Protein Smoothie",
+          "price": "$4",
+          "period": "/glass",
+          "perks": [
+            "Banana, oats and peanut butter",
+            "Large 400 ml serving",
+            "Extra protein option"
+          ]
+        },
+        {
+          "name": "Weekly Juice Pack",
+          "price": "$18",
+          "period": "/week",
+          "perks": [
+            "Six cold bottles",
+            "Morning home delivery",
+            "Change flavours any day"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "From The Juice Counter",
+      "captions": [
+        "Oranges being pressed",
+        "Green smoothie jars",
+        "Pomegranate glass",
+        "Fruit bowl with honey",
+        "Cold bottle rack",
+        "Mixed berry blend"
+      ]
+    },
+    "team": {
+      "title": "The Juice Crew",
+      "roles": [
+        "Juice Bar Lead",
+        "Smoothie Maker",
+        "Delivery Rider"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "I stop here after the gym for a banana protein shake. It is thick and not too sweet.",
+        "role": "Gym member"
+      },
+      {
+        "quote": "The weekly bottle pack reaches before I leave for work and tastes freshly pressed.",
+        "role": "Office employee"
+      },
+      {
+        "quote": "Good to find a place that does fresh juice without sugar syrup. The pomegranate is excellent.",
+        "role": "Regular customer"
+      }
+    ],
+    "blog": {
+      "title": "Fresh Pressed Notes",
+      "posts": [
+        {
+          "tag": "Seasonal Fruit",
+          "title": "Which Fruit To Choose For Summer Juices"
+        },
+        {
+          "tag": "Smoothies",
+          "title": "Building A Smoothie That Keeps You Full"
+        },
+        {
+          "tag": "Habits",
+          "title": "A Simple Morning Routine With Fresh Juice"
+        }
+      ]
+    },
+    "marquee": [
+      "Fresh Juice",
+      "Smoothies",
+      "Protein Shake",
+      "Cold Pressed",
+      "Detox Blend",
+      "Fruit Bowl",
+      "Sugarcane",
+      "No Syrup"
+    ],
+    "contactText": "Interested in a weekly pack or an event counter? Message {brand} with your location and we will share the fruit menu."
+  },
+  {
+    "id": "catering_service",
+    "label": "Catering service",
+    "theme": "events_wedding",
+    "keywords": [
+      "catering service",
+      "caterer",
+      "wedding catering",
+      "party catering",
+      "event catering",
+      "buffet catering",
+      "bulk food order",
+      "केटरिंग सर्विस"
+    ],
+    "heroTitles": [
+      "Good Food For Every Guest At Your Event",
+      "Your Menu, Cooked And Served With Care",
+      "From Twenty Plates To Two Thousand"
+    ],
+    "heroSubtitles": [
+      "{brand} plans, cooks and serves food for weddings, birthdays and office events, so you can enjoy the day with your guests.",
+      "Tell {brand} your guest count and budget and we suggest a menu, set up the buffet and send trained staff to serve.",
+      "Live counters, thali service or boxed meals, {brand} adapts to the kind of event you are hosting."
+    ],
+    "button": "Get A Menu Quote",
+    "featureTitle": "How We Cater Your Event",
+    "features": [
+      {
+        "title": "Wedding And Reception Menus",
+        "text": "Multi-course vegetarian and non-vegetarian menus with starters, mains, breads, rice and dessert."
+      },
+      {
+        "title": "Birthday And House Parties",
+        "text": "Smaller menus for twenty to a hundred guests, with starters, a main course and a cake table."
+      },
+      {
+        "title": "Corporate Lunch Boxes",
+        "text": "Individually packed lunch boxes for meetings, trainings and office events, labelled and delivered on time."
+      },
+      {
+        "title": "Live Counters",
+        "text": "Chaat, dosa, pasta and tandoor counters that cook in front of guests and keep food fresh."
+      },
+      {
+        "title": "Trained Service Staff",
+        "text": "Uniformed waiters, buffet helpers and a captain keep service smooth and plates clean."
+      },
+      {
+        "title": "Tasting Before You Book",
+        "text": "Taste a few menu items at our kitchen before you finalise, so you are sure about the flavours."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Free",
+        "label": "Menu planning"
+      },
+      {
+        "value": "Tasting",
+        "label": "Before booking"
+      },
+      {
+        "value": "Staff",
+        "label": "Serving and cleanup"
+      }
+    ],
+    "steps": {
+      "title": "From Enquiry To Last Plate",
+      "items": [
+        {
+          "title": "Share Event Details",
+          "text": "Tell us the date, venue, guest count and the kind of food you prefer."
+        },
+        {
+          "title": "Menu And Tasting",
+          "text": "We suggest a menu with a quote and arrange a tasting if you like."
+        },
+        {
+          "title": "Confirm And Plan",
+          "text": "Pay an advance, lock the menu and agree on setup timing and staff."
+        },
+        {
+          "title": "Cook And Serve",
+          "text": "Our team arrives early, sets up the buffet, serves your guests and clears up."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "How early should I book?",
+        "a": "For weddings, book a month or more ahead. For smaller parties, a week is usually enough."
+      },
+      {
+        "q": "Can you cook at my venue?",
+        "a": "Yes, we can cook on site or bring food from our kitchen, depending on the space and facilities."
+      },
+      {
+        "q": "Do you offer vegetarian and jain menus?",
+        "a": "We prepare pure vegetarian and jain menus in a separate setup, and can also plan mixed menus."
+      },
+      {
+        "q": "What is included in the per-plate price?",
+        "a": "It covers the food, serving staff, buffet setup and plates. Special decor and live counters are quoted separately."
+      },
+      {
+        "q": "Can I change the menu after booking?",
+        "a": "Small changes can be made up to a few days before the event. Tell us early to avoid extra cost."
+      }
+    ],
+    "cta": {
+      "title": "Hosting An Event And Need Food Sorted?",
+      "button": "Get A Menu Quote"
+    },
+    "about": {
+      "title": "Food Planning You Can Rely On",
+      "paragraphs": [
+        "{brand} is a catering team of cooks, helpers and servers who handle everything from shopping to the last plate.",
+        "We stay in touch from your first call until the event ends, so there are no surprises about the menu, the numbers or the timing."
+      ],
+      "points": [
+        "Menu fitted to your budget",
+        "Trained serving staff",
+        "Tasting before you confirm"
+      ]
+    },
+    "pricing": {
+      "title": "Typical Catering Packages",
+      "plans": [
+        {
+          "name": "Lunch Box Order",
+          "price": "$5",
+          "period": "/box",
+          "perks": [
+            "Main, roti, rice and sweet",
+            "Sealed individual boxes",
+            "Minimum twenty boxes"
+          ]
+        },
+        {
+          "name": "Party Buffet",
+          "price": "$12",
+          "period": "/plate",
+          "perks": [
+            "Starters, mains and dessert",
+            "Serving staff included",
+            "Buffet setup and cleanup"
+          ]
+        },
+        {
+          "name": "Wedding Feast",
+          "price": "$22",
+          "period": "/plate",
+          "perks": [
+            "Multi-course menu",
+            "Two live counters",
+            "Captain and full service staff"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Events We Have Served",
+      "captions": [
+        "Wedding buffet spread",
+        "Live chaat counter",
+        "Boxed corporate lunch",
+        "Dessert table",
+        "Starter platters",
+        "Service team ready"
+      ]
+    },
+    "team": {
+      "title": "Our Catering Team",
+      "roles": [
+        "Head Chef",
+        "Event Captain",
+        "Menu Planner"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "They handled our daughter's engagement dinner calmly and the food was well received by guests.",
+        "role": "Event host"
+      },
+      {
+        "quote": "The lunch boxes for our training day were labelled, on time and tasted good.",
+        "role": "Office manager"
+      },
+      {
+        "quote": "The tasting made decisions easy. Service staff were polite and kept the buffet neat.",
+        "role": "Family host"
+      }
+    ],
+    "blog": {
+      "title": "Planning Your Menu",
+      "posts": [
+        {
+          "tag": "Weddings",
+          "title": "How To Pick A Wedding Menu Your Guests Will Enjoy"
+        },
+        {
+          "tag": "Budget",
+          "title": "Understanding Per-Plate Pricing For Catering"
+        },
+        {
+          "tag": "Office Events",
+          "title": "Boxed Lunch Ideas For Meetings And Training Days"
+        }
+      ]
+    },
+    "marquee": [
+      "Wedding Menu",
+      "Buffet",
+      "Live Counters",
+      "Lunch Boxes",
+      "Party Food",
+      "Veg Menu",
+      "Tasting",
+      "Event Staff"
+    ],
+    "contactText": "Tell {brand} your date, guest count and venue, and we will come back with a menu and a quote."
+  },
+  {
+    "id": "kirana_grocery",
+    "label": "Kirana and grocery store",
+    "theme": "general_business",
+    "keywords": [
+      "kirana store",
+      "kirana",
+      "grocery store",
+      "grocery delivery",
+      "provision store",
+      "monthly ration",
+      "किराना दुकान"
+    ],
+    "heroTitles": [
+      "Your Neighbourhood Kirana, Now At Your Door",
+      "Rasoi Essentials Without The Market Trip",
+      "Fresh Staples, Fair Rates, Fast Home Delivery"
+    ],
+    "heroSubtitles": [
+      "{brand} stocks atta, dal, rice, oil, masala and daily essentials, and brings them home in a few hours.",
+      "Send your monthly list on WhatsApp and {brand} packs it, bills it clearly and delivers it to your gate.",
+      "Fresh fruit and vegetables arrive each morning at {brand}, next to branded packets, dairy and everyday household items."
+    ],
+    "button": "Send My Grocery List",
+    "featureTitle": "Everything For The Kitchen And Home",
+    "features": [
+      {
+        "title": "Daily Essentials",
+        "text": "Atta, rice, dal, sugar, oil, tea and spices from trusted brands and loose staples at fair rates."
+      },
+      {
+        "title": "Fresh Fruit And Vegetables",
+        "text": "Seasonal vegetables and fruit come in each morning and are packed to order for you."
+      },
+      {
+        "title": "Free Home Delivery",
+        "text": "Orders above a minimum amount are brought to your door, with cash or UPI payment on delivery."
+      },
+      {
+        "title": "Monthly Basket",
+        "text": "Share your standard monthly list once and we pack the same basket on the first of every month."
+      },
+      {
+        "title": "Dairy, Bread And Eggs",
+        "text": "Milk, curd, paneer, bread and eggs are kept in the fridge and delivered along with your items."
+      },
+      {
+        "title": "Household And Pooja Items",
+        "text": "Cleaning supplies, toiletries, agarbatti and pooja samagri are all kept at the same counter."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Same day",
+        "label": "Home delivery"
+      },
+      {
+        "value": "Monthly",
+        "label": "Basket on request"
+      },
+      {
+        "value": "Fresh",
+        "label": "Vegetables every morning"
+      }
+    ],
+    "steps": {
+      "title": "Ordering Is As Easy As A Message",
+      "items": [
+        {
+          "title": "Send Your List",
+          "text": "Message the items you need on WhatsApp or call the shop."
+        },
+        {
+          "title": "We Pack And Bill",
+          "text": "Your items are picked, weighed and a clear bill is shared."
+        },
+        {
+          "title": "Delivery To Your Door",
+          "text": "Our boy brings the order to your flat or house."
+        },
+        {
+          "title": "Pay Your Way",
+          "text": "Pay on delivery by cash or UPI, or settle at month end if on a basket plan."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "What is the minimum order for home delivery?",
+        "a": "We deliver free above a small minimum. Smaller orders are delivered for a nominal charge."
+      },
+      {
+        "q": "Can I set up a monthly grocery list?",
+        "a": "Yes, share your list once and we pack the same basket each month. You can change items anytime."
+      },
+      {
+        "q": "Are vegetables and fruit fresh?",
+        "a": "They come from the mandi each morning, and we pack the freshest pieces for delivery orders."
+      },
+      {
+        "q": "Which areas do you cover?",
+        "a": "We deliver within a few kilometres of the shop. Share your colony name and we will confirm."
+      },
+      {
+        "q": "Can I return a product that is damaged?",
+        "a": "Tell us on the same day and we will replace the item or adjust the bill."
+      }
+    ],
+    "cta": {
+      "title": "Running Low On Rasoi Items?",
+      "button": "Send My Grocery List"
+    },
+    "about": {
+      "title": "The Dukaan Your Family Already Trusts",
+      "paragraphs": [
+        "{brand} is a neighbourhood store that knows what each household buys, from the right brand of atta to the dal that cooks soft.",
+        "We keep the old kirana habits of fair weight, clear billing and a friendly word, and add the convenience of delivery and easy ordering."
+      ],
+      "points": [
+        "Fair weight and clear bills",
+        "Delivery to your doorstep",
+        "Monthly lists remembered"
+      ]
+    },
+    "pricing": {
+      "title": "Baskets And Delivery Options",
+      "plans": [
+        {
+          "name": "Weekly Veg Basket",
+          "price": "$6",
+          "period": "/basket",
+          "perks": [
+            "Seasonal vegetables",
+            "Fresh herbs included",
+            "Delivered on your chosen day"
+          ]
+        },
+        {
+          "name": "Festival Pooja Pack",
+          "price": "$12",
+          "period": "/pack",
+          "perks": [
+            "Pooja samagri and diyas",
+            "Dry fruit and sweets",
+            "Home delivery included"
+          ]
+        },
+        {
+          "name": "Monthly Kitchen Basket",
+          "price": "$65",
+          "period": "/month",
+          "perks": [
+            "Atta, dal, rice, oil and masala",
+            "Packed on the first of the month",
+            "Edit your list anytime"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Around The Store",
+      "captions": [
+        "Atta and dal shelves",
+        "Morning vegetable crates",
+        "Spice jars lined up",
+        "Monthly baskets packed",
+        "Fresh fruit counter",
+        "Delivery bags ready"
+      ]
+    },
+    "team": {
+      "title": "Who Serves You",
+      "roles": [
+        "Store Owner",
+        "Delivery Boy",
+        "Packing Helper"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "I send my monthly list once and it arrives properly packed. Rates match what I used to pay in the market.",
+        "role": "Homemaker"
+      },
+      {
+        "quote": "Vegetables are always fresh and they replaced a spoiled item without any argument.",
+        "role": "Regular customer"
+      },
+      {
+        "quote": "WhatsApp ordering is simple and the delivery boy is polite and quick.",
+        "role": "Working couple"
+      }
+    ],
+    "blog": {
+      "title": "Kitchen And Pantry Tips",
+      "posts": [
+        {
+          "tag": "Pantry",
+          "title": "Building A Monthly Grocery List That Does Not Run Out"
+        },
+        {
+          "tag": "Fresh Produce",
+          "title": "How To Pick Fresh Vegetables In Every Season"
+        },
+        {
+          "tag": "Storage",
+          "title": "Storing Atta, Dal And Rice Through The Monsoon"
+        }
+      ]
+    },
+    "marquee": [
+      "Kirana",
+      "Atta Dal",
+      "Fresh Veg",
+      "Monthly Basket",
+      "Home Delivery",
+      "Pooja Items",
+      "Dairy",
+      "Daily Needs"
+    ],
+    "contactText": "Want to start a monthly basket or check delivery to your colony? Send {brand} a message with your list and address."
+  },
+  {
+    "id": "bookstore",
+    "label": "Bookstore",
+    "theme": "education",
+    "keywords": [
+      "bookstore",
+      "book shop",
+      "bookshop",
+      "books online",
+      "children's books",
+      "textbooks",
+      "second hand books",
+      "किताबों की दुकान"
+    ],
+    "heroTitles": [
+      "Find Your Next Great Read In Person",
+      "Shelves Worth Getting Lost In",
+      "Books You Can Hold Before You Buy"
+    ],
+    "heroSubtitles": [
+      "{brand} stocks fiction, non-fiction, children's books and exam guides, with staff who read what they recommend.",
+      "Ask {brand} for a book you cannot find elsewhere. We order titles in a few days and keep them aside for you.",
+      "Join a reading circle, browse a quiet corner or pick a gift at {brand}. Every book is wrapped on request."
+    ],
+    "button": "Browse New Arrivals",
+    "featureTitle": "What You Will Find On Our Shelves",
+    "features": [
+      {
+        "title": "Fiction And Non-Fiction",
+        "text": "Novels, biographies, business and self-help sit beside new releases and well-loved classics."
+      },
+      {
+        "title": "Children's Corner",
+        "text": "Picture books, story series and activity books arranged by age so young readers can browse freely."
+      },
+      {
+        "title": "Textbooks And Exam Guides",
+        "text": "School, college and competitive exam books are stocked by board and syllabus, with new editions each session."
+      },
+      {
+        "title": "Special Orders",
+        "text": "Ask for any title and we order it from the publisher, usually arriving within a few working days."
+      },
+      {
+        "title": "Gift Wrapping",
+        "text": "Choose a book, add a note, and we wrap it in paper with a ribbon for birthdays and festivals."
+      },
+      {
+        "title": "Reading Circle Nights",
+        "text": "Monthly meets where readers share a book of the month and swap recommendations over tea."
+      }
+    ],
+    "stats": [
+      {
+        "value": "On request",
+        "label": "Any title on request"
+      },
+      {
+        "value": "Monthly",
+        "label": "Reading circle"
+      },
+      {
+        "value": "Free",
+        "label": "Gift wrapping"
+      }
+    ],
+    "steps": {
+      "title": "Getting Your Book",
+      "items": [
+        {
+          "title": "Browse Or Ask",
+          "text": "Walk the shelves or tell us what kind of story you are after."
+        },
+        {
+          "title": "Special Order If Needed",
+          "text": "If a title is not in stock, we place an order with the publisher."
+        },
+        {
+          "title": "We Call You",
+          "text": "Once your book arrives, we message you and hold it for a week."
+        },
+        {
+          "title": "Collect Or Delivery",
+          "text": "Pick it up from the shop or have it sent to your home."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Can you order a book that is not in stock?",
+        "a": "Yes. Share the title or author and we order it, usually within a few working days."
+      },
+      {
+        "q": "Do you sell school textbooks?",
+        "a": "We keep popular school and college textbooks. Share the class and board and we will reserve a set for you."
+      },
+      {
+        "q": "Do you offer discounts for students or libraries?",
+        "a": "We give a discount on bulk orders for schools, libraries and book clubs. Contact us for a quote."
+      },
+      {
+        "q": "Can I return or exchange a book?",
+        "a": "Unused books with the bill can be exchanged within a week. Special orders cannot be returned."
+      },
+      {
+        "q": "Do you deliver books?",
+        "a": "We deliver nearby and courier to other cities. Delivery cost depends on weight and location."
+      }
+    ],
+    "cta": {
+      "title": "Looking For A Book To Fall Into?",
+      "button": "Browse New Arrivals"
+    },
+    "about": {
+      "title": "A Neighbourhood Home For Readers",
+      "paragraphs": [
+        "{brand} is an independent bookstore run by people who read all day and talk about books even longer.",
+        "We keep the shelves curated rather than crowded, so you can find a good book quickly and enjoy the time you spend browsing."
+      ],
+      "points": [
+        "Staff who read the books",
+        "Special orders welcome",
+        "Kids and adults corners"
+      ]
+    },
+    "pricing": {
+      "title": "Book Club And Gifting Plans",
+      "plans": [
+        {
+          "name": "Gift Wrapped Book",
+          "price": "$2",
+          "period": "/book",
+          "perks": [
+            "Paper wrap and ribbon",
+            "Handwritten message card",
+            "Ready in ten minutes"
+          ]
+        },
+        {
+          "name": "Reader's Club",
+          "price": "$12",
+          "period": "/year",
+          "perks": [
+            "Discount on every purchase",
+            "Early access to new arrivals",
+            "Reading circle entry"
+          ]
+        },
+        {
+          "name": "Kids Starter Pack",
+          "price": "$18",
+          "period": "/pack",
+          "perks": [
+            "Five picture books",
+            "Chosen by age group",
+            "Gift box included"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Inside The Shop",
+      "captions": [
+        "New arrivals table",
+        "Quiet reading nook",
+        "Children's shelf",
+        "Gift wrapped books",
+        "Reading circle evening",
+        "Textbook section"
+      ]
+    },
+    "team": {
+      "title": "The People Who Read",
+      "roles": [
+        "Store Owner",
+        "Children's Book Specialist",
+        "Order Desk Assistant"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "They found an out-of-print title I had searched for and called me when it arrived.",
+        "role": "Book lover"
+      },
+      {
+        "quote": "The children's corner is lovely and the staff helped me pick books for my daughter's age.",
+        "role": "Parent"
+      },
+      {
+        "quote": "Our book club orders from here every month and the group discount helps.",
+        "role": "Club organiser"
+      }
+    ],
+    "blog": {
+      "title": "From The Reading Desk",
+      "posts": [
+        {
+          "tag": "Recommendations",
+          "title": "Ten Novels To Start Your Reading Habit"
+        },
+        {
+          "tag": "For Parents",
+          "title": "How To Choose Picture Books For Different Ages"
+        },
+        {
+          "tag": "Study",
+          "title": "Choosing The Right Reference Books For Exam Prep"
+        }
+      ]
+    },
+    "marquee": [
+      "New Arrivals",
+      "Novels",
+      "Kids Books",
+      "Textbooks",
+      "Special Order",
+      "Gift Wrap",
+      "Book Club",
+      "Bestsellers"
+    ],
+    "contactText": "Looking for a specific title or a bulk order? Write to {brand} and we will check stock or place an order for you."
+  },
+  {
+    "id": "gift_shop",
+    "label": "Gift shop",
+    "theme": "fashion_retail",
+    "keywords": [
+      "gift shop",
+      "gift store",
+      "return gifts",
+      "personalised gifts",
+      "gift hamper",
+      "birthday gift",
+      "corporate gifts",
+      "गिफ्ट शॉप"
+    ],
+    "heroTitles": [
+      "Gifts That Say More Than Words",
+      "Pick It, Wrap It, Gift It Today",
+      "Thoughtful Presents For Every Occasion"
+    ],
+    "heroSubtitles": [
+      "{brand} has gifts for birthdays, weddings and anniversaries, from soft toys and mugs to hampers and home decor.",
+      "Add a name, photo or message to a mug, frame or cushion at {brand} and turn a simple present into a keepsake.",
+      "Ordering for a team or party? {brand} prepares return gifts and corporate hampers in bulk, wrapped and ready."
+    ],
+    "button": "Find The Perfect Gift",
+    "featureTitle": "Gifts For Every Person And Moment",
+    "features": [
+      {
+        "title": "Personalised Gifts",
+        "text": "Mugs, cushions, frames and keychains printed with names, photos or short messages."
+      },
+      {
+        "title": "Gift Hampers",
+        "text": "Ready and custom hampers with chocolates, candles, dry fruits and small decor items."
+      },
+      {
+        "title": "Return Gifts For Kids",
+        "text": "Small toys, stationery sets and goodie bags in bulk for birthdays and school events."
+      },
+      {
+        "title": "Corporate Gifting",
+        "text": "Diaries, desk items and hampers with your company logo for clients, staff and festivals."
+      },
+      {
+        "title": "Wedding And Anniversary Gifts",
+        "text": "Couple frames, decor pieces and silver-look gift items packed in elegant boxes."
+      },
+      {
+        "title": "Gift Wrapping And Cards",
+        "text": "Choose a wrapping theme, add a card and ribbon, and we pack it so it is ready to hand over."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Same day",
+        "label": "Wrapping"
+      },
+      {
+        "value": "Custom",
+        "label": "Names and photos"
+      },
+      {
+        "value": "Bulk",
+        "label": "Return gifts and corporate"
+      }
+    ],
+    "steps": {
+      "title": "Gifting Made Simple",
+      "items": [
+        {
+          "title": "Tell Us Who It Is For",
+          "text": "Share the person, occasion and your budget."
+        },
+        {
+          "title": "Choose Or Customise",
+          "text": "Pick a ready gift or send a name, photo or message for printing."
+        },
+        {
+          "title": "We Wrap And Pack",
+          "text": "Your gift is wrapped, tagged and checked before handover."
+        },
+        {
+          "title": "Pickup Or Delivery",
+          "text": "Collect it from the shop or have it sent to the recipient."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "How long do personalised gifts take?",
+        "a": "Most mugs and frames are ready within two days. Larger or bulk custom orders take a few days longer."
+      },
+      {
+        "q": "Can you deliver the gift to someone else?",
+        "a": "Yes, we deliver within the city and can add your message card without showing the price."
+      },
+      {
+        "q": "Do you offer bulk pricing for return gifts?",
+        "a": "Yes, we give a lower rate for orders of twenty pieces or more. Share your budget and we suggest items."
+      },
+      {
+        "q": "Can you add a company logo?",
+        "a": "We print logos on diaries, mugs and bags. Send the logo file and quantity for a quote."
+      },
+      {
+        "q": "What if I need a gift quickly?",
+        "a": "We keep ready hampers and wrap on the spot, so a last-minute gift can be ready in minutes."
+      }
+    ],
+    "cta": {
+      "title": "Running Out Of Time To Find A Gift?",
+      "button": "Find The Perfect Gift"
+    },
+    "about": {
+      "title": "A Shop That Likes Choosing Presents",
+      "paragraphs": [
+        "{brand} is a gift shop that enjoys the small moment when someone opens a present and smiles.",
+        "We pick items for different budgets, offer printing and wrapping in-house, and help you choose when you are unsure what to buy."
+      ],
+      "points": [
+        "Gifts for every budget",
+        "In-house printing and wrapping",
+        "Bulk orders welcome"
+      ]
+    },
+    "pricing": {
+      "title": "Popular Gift Options",
+      "plans": [
+        {
+          "name": "Personalised Mug",
+          "price": "$6",
+          "period": "/piece",
+          "perks": [
+            "Name or photo print",
+            "Gift box packing",
+            "Ready in two days"
+          ]
+        },
+        {
+          "name": "Celebration Hamper",
+          "price": "$22",
+          "period": "/hamper",
+          "perks": [
+            "Chocolates, candle and card",
+            "Custom message tag",
+            "Wrapped and ribboned"
+          ]
+        },
+        {
+          "name": "Return Gift Pack",
+          "price": "$50",
+          "period": "/pack",
+          "perks": [
+            "Twenty small gift bags",
+            "Toys and stationery mix",
+            "Colour theme of your choice"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Gift Counter Highlights",
+      "captions": [
+        "Wrapped hamper boxes",
+        "Printed photo mugs",
+        "Return gift bags",
+        "Cushion with name",
+        "Festival gift table",
+        "Handwritten card corner"
+      ]
+    },
+    "team": {
+      "title": "The Gifting Team",
+      "roles": [
+        "Gift Consultant",
+        "Customisation Artist",
+        "Wrapping Specialist"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "I forgot my sister's birthday till the evening and they had a hamper wrapped in fifteen minutes.",
+        "role": "Last-minute shopper"
+      },
+      {
+        "quote": "The photo frame came out clear and the packing looked premium. My parents loved it.",
+        "role": "Anniversary gifter"
+      },
+      {
+        "quote": "Return gifts for thirty kids were packed neatly and delivered before the party.",
+        "role": "Birthday host"
+      }
+    ],
+    "blog": {
+      "title": "Gifting Ideas",
+      "posts": [
+        {
+          "tag": "Occasions",
+          "title": "What To Gift On A Wedding Anniversary"
+        },
+        {
+          "tag": "Kids Parties",
+          "title": "Return Gift Ideas That Children Actually Use"
+        },
+        {
+          "tag": "Corporate",
+          "title": "Choosing Festival Gifts For Clients And Teams"
+        }
+      ]
+    },
+    "marquee": [
+      "Gift Hampers",
+      "Custom Mugs",
+      "Return Gifts",
+      "Photo Frames",
+      "Gift Wrap",
+      "Corporate Gifts",
+      "Birthday Gifts",
+      "Cushions"
+    ],
+    "contactText": "Tell {brand} who the gift is for and your budget, and we will suggest options or take a custom order."
+  },
+  {
+    "id": "florist",
+    "label": "Florist",
+    "theme": "organic_nature",
+    "keywords": [
+      "florist",
+      "flower shop",
+      "bouquet",
+      "flower delivery",
+      "wedding flowers",
+      "flower decoration",
+      "fresh flowers",
+      "फूल वाला"
+    ],
+    "heroTitles": [
+      "Fresh Blooms Tied By Hand",
+      "Say It With Flowers Today",
+      "Bouquets That Open Smiles"
+    ],
+    "heroSubtitles": [
+      "{brand} arranges roses, lilies, orchids and seasonal blooms into bouquets, bunches and vase arrangements made the same day.",
+      "Send flowers across town with a handwritten note. {brand} delivers birthday, anniversary and get-well bouquets fresh and on time.",
+      "From mandap decor to car garlands, {brand} designs flowers for weddings and events with fresh stock and neat setup."
+    ],
+    "button": "Order A Bouquet",
+    "featureTitle": "Flowers For Gifts, Homes And Events",
+    "features": [
+      {
+        "title": "Hand-Tied Bouquets",
+        "text": "Roses, gerberas and lilies are tied with fresh greens and wrapped in paper with a ribbon."
+      },
+      {
+        "title": "Same-Day Delivery",
+        "text": "Order before noon and we deliver a fresh bouquet within the city the same day."
+      },
+      {
+        "title": "Wedding Flower Decor",
+        "text": "Mandap, stage, entrance and varmala designs planned with you and set up before the event starts."
+      },
+      {
+        "title": "Daily Pooja Flowers",
+        "text": "Marigold garlands, loose petals and lotus buds for temples and homes, delivered every morning."
+      },
+      {
+        "title": "Indoor Plants And Vases",
+        "text": "Small potted plants and vase arrangements for desks, tables and gift-giving."
+      },
+      {
+        "title": "Flower Subscriptions",
+        "text": "A fresh bunch sent each week to your home or office reception without having to reorder."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Same day",
+        "label": "City delivery"
+      },
+      {
+        "value": "Fresh",
+        "label": "Stock every morning"
+      },
+      {
+        "value": "Custom",
+        "label": "Wedding and event decor"
+      }
+    ],
+    "steps": {
+      "title": "From Order To Bloom",
+      "items": [
+        {
+          "title": "Choose A Bouquet",
+          "text": "Pick a style or tell us the flowers, colours and budget you have in mind."
+        },
+        {
+          "title": "Add A Message",
+          "text": "Write a short note for the card, or ask us to leave it blank."
+        },
+        {
+          "title": "We Arrange It Fresh",
+          "text": "Our florist makes the bouquet with flowers picked up that morning."
+        },
+        {
+          "title": "Delivered Or Collected",
+          "text": "The bouquet reaches the recipient or waits for you at the shop."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "How early should I order flowers for an event?",
+        "a": "For weddings, book two to three weeks ahead. For birthdays, a day before is usually fine."
+      },
+      {
+        "q": "Can you deliver to another city?",
+        "a": "We deliver within our city. For other cities, we can place an order with a partner florist on your behalf."
+      },
+      {
+        "q": "How long will the bouquet last?",
+        "a": "Roses usually last four to five days with fresh water and a trimmed stem. We share a small care card."
+      },
+      {
+        "q": "Can I choose the colours?",
+        "a": "Yes, tell us the colours or occasion and our florist will make a bouquet to match."
+      },
+      {
+        "q": "Do you supply flowers for temples or poojas?",
+        "a": "Yes, we deliver marigold garlands, loose petals and pooja flowers daily on a subscription."
+      }
+    ],
+    "cta": {
+      "title": "Need Flowers Before The Day Ends?",
+      "button": "Order A Bouquet"
+    },
+    "about": {
+      "title": "A Florist With Mud On Its Boots",
+      "paragraphs": [
+        "{brand} starts its day at the flower market, picking stems that are firm and fragrant before anything is arranged.",
+        "From a single rose to a full stage setup, we keep the work personal, talk to you about colours, and make each arrangement by hand."
+      ],
+      "points": [
+        "Flowers bought each morning",
+        "Hand-arranged bouquets",
+        "Event decor planned with you"
+      ]
+    },
+    "pricing": {
+      "title": "Bouquets And Flower Plans",
+      "plans": [
+        {
+          "name": "Rose Bouquet",
+          "price": "$12",
+          "period": "/bouquet",
+          "perks": [
+            "Twelve fresh roses",
+            "Paper wrap and ribbon",
+            "Handwritten message card"
+          ]
+        },
+        {
+          "name": "Premium Flower Box",
+          "price": "$30",
+          "period": "/box",
+          "perks": [
+            "Mixed roses and lilies",
+            "Gift box packing",
+            "Same-day delivery"
+          ]
+        },
+        {
+          "name": "Weekly Flower Plan",
+          "price": "$35",
+          "period": "/month",
+          "perks": [
+            "Fresh bunch every week",
+            "Home or office delivery",
+            "Seasonal flowers"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Fresh From The Workbench",
+      "captions": [
+        "Red rose bouquet",
+        "Marigold garlands",
+        "Mandap flower decor",
+        "Lily vase arrangement",
+        "Pastel flower box",
+        "Morning flower market"
+      ]
+    },
+    "team": {
+      "title": "The Flower Team",
+      "roles": [
+        "Head Florist",
+        "Event Decorator",
+        "Delivery Coordinator"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "The bouquet arrived on time and looked exactly like the picture. My wife loved it.",
+        "role": "Anniversary customer"
+      },
+      {
+        "quote": "They decorated our reception stage with fresh flowers and finished before the guests arrived.",
+        "role": "Wedding host"
+      },
+      {
+        "quote": "I get fresh pooja flowers every morning and they have never missed a day.",
+        "role": "Daily subscriber"
+      }
+    ],
+    "blog": {
+      "title": "Flower Notes",
+      "posts": [
+        {
+          "tag": "Care",
+          "title": "How To Keep Roses Fresh For More Days"
+        },
+        {
+          "tag": "Meaning",
+          "title": "Choosing Flowers For Different Occasions"
+        },
+        {
+          "tag": "Weddings",
+          "title": "Planning Wedding Flower Decor On A Budget"
+        }
+      ]
+    },
+    "marquee": [
+      "Bouquets",
+      "Roses",
+      "Wedding Decor",
+      "Marigold",
+      "Pooja Flowers",
+      "Flower Box",
+      "Lilies",
+      "Same Day"
+    ],
+    "contactText": "Planning an event or a gift? Message {brand} with your date, budget and colour ideas and our florist will reply."
+  },
+  {
+    "id": "printing_press",
+    "label": "Printing press",
+    "theme": "creative_studio",
+    "keywords": [
+      "printing press",
+      "digital printing",
+      "offset printing",
+      "flex banner printing",
+      "visiting card printing",
+      "wedding card printing",
+      "brochure printing",
+      "प्रिंटिंग प्रेस"
+    ],
+    "heroTitles": [
+      "Print That Makes Your Business Look Sharp",
+      "From Visiting Cards To Giant Banners",
+      "Crisp Colours, Clean Cuts, On Time"
+    ],
+    "heroSubtitles": [
+      "{brand} prints visiting cards, brochures, flyers, letterheads and bill books with sharp colour and clean trimming.",
+      "Need a flex banner for a shop opening or wedding cards for a family function? {brand} designs, proofs and prints them fast.",
+      "Send your artwork or ask {brand} to design it. We share a proof, fix changes and deliver finished prints on the date promised."
+    ],
+    "button": "Get A Printing Quote",
+    "featureTitle": "Printing For Business And Celebrations",
+    "features": [
+      {
+        "title": "Visiting Cards",
+        "text": "Matt, glossy and textured cards in single or double side print, with options like spot UV."
+      },
+      {
+        "title": "Brochures And Flyers",
+        "text": "Folded brochures, leaflets and flyers on art paper, printed in colour for launches and promotions."
+      },
+      {
+        "title": "Flex And Vinyl Banners",
+        "text": "Shopfront boards, event banners and stickers printed at large size with strong, weather-ready colour."
+      },
+      {
+        "title": "Wedding And Invitation Cards",
+        "text": "Designs and prints for shaadi cards, engagement invites and puja cards in many paper styles."
+      },
+      {
+        "title": "Bill Books And Stationery",
+        "text": "Invoice books, letterheads, envelopes and carbonless forms printed with your business details."
+      },
+      {
+        "title": "Design And Proof Service",
+        "text": "Our designer prepares or fixes your artwork and shares a proof for approval before printing."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Free",
+        "label": "Digital proof"
+      },
+      {
+        "value": "Same day",
+        "label": "Small jobs"
+      },
+      {
+        "value": "In-house",
+        "label": "Design and print"
+      }
+    ],
+    "steps": {
+      "title": "How A Print Job Moves",
+      "items": [
+        {
+          "title": "Share Your Needs",
+          "text": "Tell us what you need, the size, quantity and the date you want it."
+        },
+        {
+          "title": "Approve The Proof",
+          "text": "We send a digital proof and fix any changes before printing begins."
+        },
+        {
+          "title": "We Print And Finish",
+          "text": "Your job is printed, cut, folded or bound as required."
+        },
+        {
+          "title": "Collect Or Deliver",
+          "text": "Pick up from our press or have it delivered to your shop or home."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "What file format should I send?",
+        "a": "PDF is best, but we also accept CorelDRAW, Photoshop and high-resolution image files."
+      },
+      {
+        "q": "Can you design the artwork for me?",
+        "a": "Yes, our designer can create your card, flyer or banner from your logo and details."
+      },
+      {
+        "q": "How long does printing take?",
+        "a": "Visiting cards and small jobs are ready in a day. Wedding cards and large runs take a few days."
+      },
+      {
+        "q": "Do you offer bulk discounts?",
+        "a": "Yes, the rate per piece drops as the quantity rises. Send us your numbers for a quote."
+      },
+      {
+        "q": "Will the colours match my screen?",
+        "a": "Screens vary, so we share a proof and can print a small sample before the full run."
+      }
+    ],
+    "cta": {
+      "title": "Have A Print Job Waiting?",
+      "button": "Get A Printing Quote"
+    },
+    "about": {
+      "title": "A Press That Cares About Your Details",
+      "paragraphs": [
+        "{brand} is a local printing press that handles design, printing and finishing under one roof, so your job does not travel between shops.",
+        "We check every proof for spelling, margins and colour before it reaches the machine, which saves you from reprints and delays."
+      ],
+      "points": [
+        "Design, print and finish together",
+        "Proof before every job",
+        "Fair rates for bulk"
+      ]
+    },
+    "pricing": {
+      "title": "Popular Print Packs",
+      "plans": [
+        {
+          "name": "Visiting Card Pack",
+          "price": "$6",
+          "period": "/pack",
+          "perks": [
+            "Matt or glossy finish",
+            "Free digital proof",
+            "Ready in one day"
+          ]
+        },
+        {
+          "name": "Shop Banner",
+          "price": "$18",
+          "period": "/banner",
+          "perks": [
+            "Flex print up to 4x3 feet",
+            "Eyelets and finishing",
+            "Colour proof first"
+          ]
+        },
+        {
+          "name": "Flyer Pack",
+          "price": "$25",
+          "period": "/pack",
+          "perks": [
+            "A5 art paper, colour print",
+            "Design help included",
+            "Delivery in two days"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "From The Press Floor",
+      "captions": [
+        "Card stock stacks",
+        "Banner on the printer",
+        "Wedding invite samples",
+        "Proof checking desk",
+        "Folded brochures",
+        "Cutting and binding"
+      ]
+    },
+    "team": {
+      "title": "The Print Team",
+      "roles": [
+        "Print Operator",
+        "Graphic Designer",
+        "Finishing Supervisor"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "They fixed my logo file, sent a proof the same day and my cards were ready next morning.",
+        "role": "Shop owner"
+      },
+      {
+        "quote": "Our wedding cards looked rich and arrived well before the invite dates.",
+        "role": "Family host"
+      },
+      {
+        "quote": "Regular bill books and letterheads come on time and the print quality stays consistent.",
+        "role": "Small business owner"
+      }
+    ],
+    "blog": {
+      "title": "Print Guide",
+      "posts": [
+        {
+          "tag": "Basics",
+          "title": "Choosing Paper And Finish For Your Visiting Card"
+        },
+        {
+          "tag": "Files",
+          "title": "How To Prepare Artwork So It Prints Sharp"
+        },
+        {
+          "tag": "Marketing",
+          "title": "Flyers Versus Banners For Your Shop Opening"
+        }
+      ]
+    },
+    "marquee": [
+      "Visiting Cards",
+      "Flex Banner",
+      "Brochures",
+      "Wedding Cards",
+      "Bill Books",
+      "Letterheads",
+      "Stickers",
+      "Digital Print"
+    ],
+    "contactText": "Send {brand} your artwork or idea with size and quantity, and we will reply with a quote and a proof."
+  },
+  {
+    "id": "jewellery_shop",
+    "label": "Jewellery shop",
+    "theme": "luxury_minimal",
+    "keywords": [
+      "jewellery shop",
+      "jeweller",
+      "gold jewellery",
+      "diamond jewellery",
+      "silver jewellery",
+      "bridal jewellery",
+      "gold ring",
+      "ज्वेलरी शॉप"
+    ],
+    "heroTitles": [
+      "Gold And Diamonds Made To Be Worn",
+      "Jewellery For The Moments You Keep",
+      "Crafted Pieces, Clear Prices"
+    ],
+    "heroSubtitles": [
+      "{brand} shows gold, diamond and silver jewellery with weight and making charges explained clearly at the counter.",
+      "Choose bridal sets, daily wear pieces or a gift for someone close. {brand} helps you pick designs that suit your budget.",
+      "Bring an old piece and {brand} can reshape it into something new, or design a custom ring, pendant or bangle with you."
+    ],
+    "button": "Visit The Showroom",
+    "featureTitle": "Pieces For Weddings And Everyday Wear",
+    "features": [
+      {
+        "title": "Gold Jewellery",
+        "text": "Chains, rings, bangles and earrings in hallmarked gold, from light daily wear to heavier festive sets."
+      },
+      {
+        "title": "Diamond Collection",
+        "text": "Rings, solitaires, pendants and earrings with certified stones, set in gold or platinum."
+      },
+      {
+        "title": "Bridal Sets",
+        "text": "Complete necklace, earring and maang tikka sets for the bride, planned around your wedding outfit."
+      },
+      {
+        "title": "Silver Gifts",
+        "text": "Silver coins, pooja items, anklets and gift pieces suited for festivals and baby naming ceremonies."
+      },
+      {
+        "title": "Custom Designs",
+        "text": "Share a sketch or a picture and our karigar will craft a ring, pendant or bangle to your size."
+      },
+      {
+        "title": "Exchange And Repair",
+        "text": "Exchange old gold for new, resize rings, polish pieces and repair clasps at the same showroom."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Hallmarked",
+        "label": "Gold pieces"
+      },
+      {
+        "value": "Certified",
+        "label": "Diamond stones"
+      },
+      {
+        "value": "Custom",
+        "label": "Made to your design"
+      }
+    ],
+    "steps": {
+      "title": "Choosing Your Jewellery",
+      "items": [
+        {
+          "title": "Tell Us The Occasion",
+          "text": "Share what you are shopping for, the budget and the style you like."
+        },
+        {
+          "title": "View Designs And Prices",
+          "text": "See pieces at the counter with weight, purity and making charges shown."
+        },
+        {
+          "title": "Customise If Needed",
+          "text": "Ask for changes in size, stone or design and we confirm a timeline."
+        },
+        {
+          "title": "Billing And Handover",
+          "text": "Receive a clear bill, hallmark details and a gift box with your jewellery."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Is your gold hallmarked?",
+        "a": "Our gold jewellery carries the hallmark mark, and the purity and weight are written on the bill."
+      },
+      {
+        "q": "Can I exchange my old jewellery?",
+        "a": "Yes, old gold can be exchanged after testing and weighing at the counter, and the value is adjusted on your bill."
+      },
+      {
+        "q": "Do you make custom designs?",
+        "a": "We make custom pieces based on your sketch or picture. Delivery takes a few weeks depending on the design."
+      },
+      {
+        "q": "Are diamonds certified?",
+        "a": "Our diamond jewellery comes with a certificate for the stone, and the details are shared with the bill."
+      },
+      {
+        "q": "Do you offer resizing and repair?",
+        "a": "We resize rings, repair clasps and polish pieces in our workshop. Small jobs are often done in a day."
+      }
+    ],
+    "cta": {
+      "title": "Looking For Something To Treasure?",
+      "button": "Visit The Showroom"
+    },
+    "about": {
+      "title": "A Jeweller You Can Talk To Openly",
+      "paragraphs": [
+        "{brand} is a family-run showroom where weight, purity and making charges are explained before you buy, not after.",
+        "Our karigars handle repairs and custom orders in-house, so what you imagine at the counter is what you wear on the day."
+      ],
+      "points": [
+        "Hallmarked gold",
+        "Clear bills and rates",
+        "In-house repair and custom work"
+      ]
+    },
+    "pricing": {
+      "title": "Typical Starting Points",
+      "plans": [
+        {
+          "name": "Bridal Consultation",
+          "price": "$0",
+          "period": "/consultation",
+          "perks": [
+            "Design sketch for the set",
+            "Weight and cost estimate",
+            "Matching to your outfit"
+          ]
+        },
+        {
+          "name": "Silver Gift Set",
+          "price": "$40",
+          "period": "/set",
+          "perks": [
+            "Silver pendant and earrings",
+            "Gift box included",
+            "Cleaning cloth provided"
+          ]
+        },
+        {
+          "name": "Daily Wear Gold",
+          "price": "$300",
+          "period": "/piece",
+          "perks": [
+            "Light gold chain or ring",
+            "Hallmark certificate",
+            "Lifetime cleaning service"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "From The Showroom",
+      "captions": [
+        "Gold bangle display",
+        "Diamond solitaire ring",
+        "Bridal necklace set",
+        "Silver pooja items",
+        "Karigar at work",
+        "Gift box packing"
+      ]
+    },
+    "team": {
+      "title": "Meet Our Craftspeople",
+      "roles": [
+        "Master Goldsmith",
+        "Diamond Consultant",
+        "Showroom Manager"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "They explained making charges clearly and helped us stay within budget for the wedding set.",
+        "role": "Bride's family"
+      },
+      {
+        "quote": "My grandmother's old chain was remade into a pendant and looks lovely.",
+        "role": "Custom client"
+      },
+      {
+        "quote": "Resizing my ring took a day and the finish was neat. Service was polite.",
+        "role": "Regular customer"
+      }
+    ],
+    "blog": {
+      "title": "Jewellery Guide",
+      "posts": [
+        {
+          "tag": "Buying Tips",
+          "title": "How To Read A Gold Jewellery Bill Properly"
+        },
+        {
+          "tag": "Diamonds",
+          "title": "Understanding Diamond Cut, Colour And Clarity"
+        },
+        {
+          "tag": "Weddings",
+          "title": "Planning A Bridal Jewellery Set Within Budget"
+        }
+      ]
+    },
+    "marquee": [
+      "Gold",
+      "Diamonds",
+      "Bridal Sets",
+      "Silver",
+      "Hallmarked",
+      "Custom Design",
+      "Gold Exchange",
+      "Rings"
+    ],
+    "contactText": "Planning a wedding set or a custom piece? Contact {brand} to book a showroom visit and see designs with a consultant."
+  },
+  {
+    "id": "mobile_phone_store",
+    "label": "Mobile phone store",
+    "theme": "modern_tech",
+    "keywords": [
+      "mobile shop",
+      "mobile phone store",
+      "smartphone store",
+      "phone accessories",
+      "second hand mobile",
+      "screen guard",
+      "मोबाइल शॉप"
+    ],
+    "heroTitles": [
+      "Latest Phones With Honest Advice",
+      "Your Next Phone Starts At Our Counter",
+      "Buy, Swap Or Repair Under One Roof"
+    ],
+    "heroSubtitles": [
+      "{brand} sells smartphones from leading brands at every budget, with live demos, easy EMI and set-up help before you leave.",
+      "Cracked screen or weak battery? {brand} repairs most phones the same day and fits tempered glass while you wait.",
+      "Trade in your old phone at {brand}, pick a new one and walk out with a case, a screen guard and your data moved."
+    ],
+    "button": "Compare Phones In Store",
+    "featureTitle": "Phones, Repairs And Accessories",
+    "features": [
+      {
+        "title": "New Smartphones",
+        "text": "Budget, mid-range and flagship phones from known brands, with a live demo of camera and performance."
+      },
+      {
+        "title": "Easy EMI Plans",
+        "text": "Spread the cost of a phone over months using card or no-cost EMI offers, with paperwork done at the counter."
+      },
+      {
+        "title": "Screen And Battery Repair",
+        "text": "Cracked displays, weak batteries and charging port faults fixed with quality parts, often the same day."
+      },
+      {
+        "title": "Old Phone Exchange",
+        "text": "Bring your used phone for testing and get a trade-in value to put towards a new device."
+      },
+      {
+        "title": "Cases, Chargers, Earbuds",
+        "text": "Covers, fast chargers, cables, power banks and earbuds in stock for popular models."
+      },
+      {
+        "title": "Data Transfer And Setup",
+        "text": "We move your contacts, photos and chats to the new phone and set up apps and security before handover."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Same day",
+        "label": "Common repairs"
+      },
+      {
+        "value": "Free",
+        "label": "Data transfer"
+      },
+      {
+        "value": "EMI",
+        "label": "Easy payment plans"
+      }
+    ],
+    "steps": {
+      "title": "Getting Your New Phone",
+      "items": [
+        {
+          "title": "Tell Us Your Budget",
+          "text": "Share your budget and what matters most, like camera, battery or gaming."
+        },
+        {
+          "title": "Try It In Hand",
+          "text": "Compare shortlisted phones at the counter with live demos."
+        },
+        {
+          "title": "Exchange And Pay",
+          "text": "Trade in your old phone and choose cash, card or EMI."
+        },
+        {
+          "title": "Setup And Warranty",
+          "text": "We transfer your data, fit a guard and give you the bill and warranty card."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Do you provide a warranty on new phones?",
+        "a": "Yes, new phones come with the brand warranty and a proper GST bill. We help with service centre claims."
+      },
+      {
+        "q": "Can I exchange my old phone when I buy a new one?",
+        "a": "Yes, bring your old phone and we will tell you what it is worth after a quick check. The value can be set against the new phone."
+      },
+      {
+        "q": "Can I exchange my old phone?",
+        "a": "Yes, bring it with the charger and ID. We test it and offer a value you can adjust on a new purchase."
+      },
+      {
+        "q": "Do you sell used or refurbished phones?",
+        "a": "We keep a small range of tested second-hand phones, each with a short shop warranty. Ask at the counter."
+      },
+      {
+        "q": "Will my data be safe during repair?",
+        "a": "We recommend a backup first. Most repairs do not need data to be touched, and we do not access your files."
+      }
+    ],
+    "cta": {
+      "title": "Time To Upgrade Your Phone?",
+      "button": "Compare Phones In Store"
+    },
+    "about": {
+      "title": "A Phone Shop That Explains First",
+      "paragraphs": [
+        "{brand} is a local mobile store where staff ask how you use your phone before pointing to a model, rather than pushing the priciest one.",
+        "We handle sales, repairs and accessories in one place, which means one bill, one team and help when something goes wrong."
+      ],
+      "points": [
+        "Honest model advice",
+        "Repairs done in-house",
+        "Setup and data transfer included"
+      ]
+    },
+    "pricing": {
+      "title": "Typical Offers And Services",
+      "plans": [
+        {
+          "name": "Exchange Upgrade",
+          "price": "$0",
+          "period": "/valuation",
+          "perks": [
+            "Free trade-in check",
+            "Value adjusted on new phone",
+            "Data transfer included"
+          ]
+        },
+        {
+          "name": "Screen Guard And Case",
+          "price": "$5",
+          "period": "/combo",
+          "perks": [
+            "Tempered glass fitted",
+            "Back case for your model",
+            "Fitted while you wait"
+          ]
+        },
+        {
+          "name": "Screen Replacement",
+          "price": "$30",
+          "period": "/repair",
+          "perks": [
+            "Quality replacement display",
+            "Same-day on common models",
+            "Short repair warranty"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Inside The Store",
+      "captions": [
+        "Phone display wall",
+        "Repair bench",
+        "Accessories rack",
+        "Screen guard fitting",
+        "Demo counter",
+        "New arrivals shelf"
+      ]
+    },
+    "team": {
+      "title": "The Store Team",
+      "roles": [
+        "Store Manager",
+        "Repair Technician",
+        "Sales Advisor"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "They asked about my usage and recommended a phone that cost less than I expected.",
+        "role": "First-time buyer"
+      },
+      {
+        "quote": "My screen was replaced in an hour and the touch feels as good as new.",
+        "role": "Repair customer"
+      },
+      {
+        "quote": "The staff moved all my chats and photos to the new phone, which saved me a lot of time.",
+        "role": "Upgrade customer"
+      }
+    ],
+    "blog": {
+      "title": "Phone Buying Guide",
+      "posts": [
+        {
+          "tag": "Buying",
+          "title": "How To Choose A Phone For Your Budget"
+        },
+        {
+          "tag": "Care",
+          "title": "Simple Habits That Make A Phone Battery Last Longer"
+        },
+        {
+          "tag": "Repair",
+          "title": "When To Repair And When To Replace Your Phone"
+        }
+      ]
+    },
+    "marquee": [
+      "Smartphones",
+      "Screen Repair",
+      "EMI Offers",
+      "Exchange",
+      "Tempered Glass",
+      "Chargers",
+      "Earbuds",
+      "Data Transfer"
+    ],
+    "contactText": "Want to check a phone model, a repair price or an exchange value? Message {brand} with the model and we will get back to you."
+  },
+  {
+    "id": "tailoring_alterations",
+    "label": "Tailoring and alterations",
+    "theme": "fashion_retail",
+    "keywords": [
+      "tailor",
+      "tailoring shop",
+      "alterations",
+      "blouse stitching",
+      "suit stitching",
+      "ladies tailor",
+      "clothes alteration",
+      "दर्जी"
+    ],
+    "heroTitles": [
+      "Clothes That Fit You, Not A Size Chart",
+      "Stitched To Your Measurements, Finished Clean",
+      "Alterations Done Right, On Time"
+    ],
+    "heroSubtitles": [
+      "{brand} stitches blouses, suits, shirts and kurtas to your measurements, with neat seams and finishing you can see.",
+      "Too tight, too long or out of fashion? {brand} alters pants, lehengas and sarees so they sit well again.",
+      "Bring a picture and your fabric to {brand}. We take measurements, plan the cut and give you a trial before the final stitch."
+    ],
+    "button": "Book A Fitting",
+    "featureTitle": "Stitching And Fixing For Every Wardrobe",
+    "features": [
+      {
+        "title": "Blouse Stitching",
+        "text": "Padded and plain blouses with back designs, piping and hooks, stitched to match your saree."
+      },
+      {
+        "title": "Salwar Suits And Kurtas",
+        "text": "Custom suits and kurtas cut to your size, with lining, piping and sleeve styles as you choose."
+      },
+      {
+        "title": "Shirts, Pants And Suits",
+        "text": "Formal shirts, trousers and blazers measured and stitched for office wear and weddings."
+      },
+      {
+        "title": "Alterations And Repairs",
+        "text": "Hemming, taking in, letting out, zip changes and torn seam repairs on everyday clothes."
+      },
+      {
+        "title": "Bridal And Festive Wear",
+        "text": "Lehengas, sherwanis and gowns stitched with trials, so the fit is right before the wedding day."
+      },
+      {
+        "title": "Kids And School Uniforms",
+        "text": "School uniforms and small festive outfits stitched in strong fabric with room for growth."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Free",
+        "label": "Trial fitting"
+      },
+      {
+        "value": "Fast",
+        "label": "Small alterations"
+      },
+      {
+        "value": "Custom",
+        "label": "Measured to you"
+      }
+    ],
+    "steps": {
+      "title": "From Fabric To Fitted Outfit",
+      "items": [
+        {
+          "title": "Measure And Discuss",
+          "text": "We take your measurements and talk through the style, neckline and finish."
+        },
+        {
+          "title": "Cut And Stitch",
+          "text": "Your fabric is cut with care and stitched by our experienced tailors."
+        },
+        {
+          "title": "Trial Fitting",
+          "text": "Try the outfit on, and we mark any changes while you are still in the shop."
+        },
+        {
+          "title": "Final Finish And Pickup",
+          "text": "After adjustments, the garment is pressed and handed over on the promised date."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "How long does stitching take?",
+        "a": "Blouses and kurtas take around four to seven days. Suits and lehengas take longer, and we confirm the date when you book."
+      },
+      {
+        "q": "Can I bring a design picture?",
+        "a": "Yes, bring a photo of the style you like. We will tell you how closely it can be matched with your fabric."
+      },
+      {
+        "q": "Do you do quick alterations while I wait?",
+        "a": "Simple jobs like hemming or a zip change can often be done the same day. Tell us how soon you need it."
+      },
+      {
+        "q": "What if the fitting is not right?",
+        "a": "Adjustments after the trial are included at no extra charge, within a reasonable range."
+      },
+      {
+        "q": "Do you provide the fabric?",
+        "a": "We stitch fabric you bring, and can also help you source lining, buttons and materials."
+      }
+    ],
+    "cta": {
+      "title": "Have A Garment That Needs Fixing?",
+      "button": "Book A Fitting"
+    },
+    "about": {
+      "title": "A Tailor Who Measures Twice",
+      "paragraphs": [
+        "{brand} is a tailoring shop where every outfit begins with a careful measurement and a conversation about how you want to wear it.",
+        "We value clean seams, even hems and on-time delivery, because a well-fitting outfit is worth waiting for and worth wearing often."
+      ],
+      "points": [
+        "Trial fitting every time",
+        "Clean finishing and pressing",
+        "Delivered on the promised date"
+      ]
+    },
+    "pricing": {
+      "title": "Typical Stitching Rates",
+      "plans": [
+        {
+          "name": "Alteration Basics",
+          "price": "$3",
+          "period": "/item",
+          "perks": [
+            "Hemming or zip change",
+            "Quick turnaround",
+            "Pressed before pickup"
+          ]
+        },
+        {
+          "name": "Blouse Stitching",
+          "price": "$10",
+          "period": "/blouse",
+          "perks": [
+            "Lining and padding",
+            "Trial fitting included",
+            "Seven day delivery"
+          ]
+        },
+        {
+          "name": "Custom Suit Stitching",
+          "price": "$30",
+          "period": "/suit",
+          "perks": [
+            "Measured and cut to you",
+            "Two fittings",
+            "Finishing and pressing"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "From The Workbench",
+      "captions": [
+        "Measuring tape ready",
+        "Blouse back designs",
+        "Fabric on the cutting table",
+        "Trial fitting corner",
+        "Pressed and packed",
+        "Thread and buttons wall"
+      ]
+    },
+    "team": {
+      "title": "The Tailoring Team",
+      "roles": [
+        "Master Tailor",
+        "Alteration Specialist",
+        "Finishing Lead"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "My blouse fit perfectly after one trial and the finishing inside was very neat.",
+        "role": "Saree customer"
+      },
+      {
+        "quote": "They altered my office trousers in a day and I could wear them to a meeting.",
+        "role": "Working professional"
+      },
+      {
+        "quote": "Our lehenga was stitched on time with two trials, which made the wedding stress free.",
+        "role": "Bride's family"
+      }
+    ],
+    "blog": {
+      "title": "Stitch Notes",
+      "posts": [
+        {
+          "tag": "Fit",
+          "title": "How To Take Measurements Before You Visit A Tailor"
+        },
+        {
+          "tag": "Fabric",
+          "title": "Choosing Lining And Fabric For Festive Outfits"
+        },
+        {
+          "tag": "Alterations",
+          "title": "Which Clothes Are Worth Altering And Which Are Not"
+        }
+      ]
+    },
+    "marquee": [
+      "Blouse Stitching",
+      "Alterations",
+      "Suits",
+      "Kurtas",
+      "Lehenga",
+      "Trial Fitting",
+      "Hemming",
+      "Uniforms"
+    ],
+    "contactText": "Planning a stitching order or an alteration? Message {brand} with a picture and we will share the rate and a fitting time."
+  }
+]

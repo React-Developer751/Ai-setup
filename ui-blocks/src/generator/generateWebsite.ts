@@ -12,7 +12,14 @@ import { thinkMotion, type MotionSetting } from './motionBrain'
 import { generateWebsiteContent } from './finalPrompt'
 import { buildLayout, compileWebsiteCode, compileWebsiteHtml, type LayoutChoice } from './finalProductionTemplate'
 import { hash, seededRandom } from './random'
-import { predictTheme } from './themeClassifier'
+import { paintsFrom } from './edit/sectionColors'
+import { applyChoiceEdits, applyColorEdits, applyContentEdits, filterLayout, needsLongPage } from './edit/applyEdits'
+import type { SiteEdits } from './edit/edits'
+import { decideTheme } from './themeClassifier'
+import { withFont } from './fonts'
+import { detectNiche } from './niche/applyNiche'
+import { NICHES } from './niche/niches'
+import { detectLocale } from './siteData'
 import { PALETTE_COUNT, defaultMode, paletteTokensByMode, presetPalette, themes, type ThemeKey } from './themes'
 
 /** True when this business type has hand-written template texts (the original five). */
@@ -36,16 +43,20 @@ export function planWebsite(
   creative = true,
   motionSetting: MotionSetting = 'auto',
   /** a multi-page site needs the full text even at the normal design level */
-  options: { fullContent?: boolean } = {},
+  options: { fullContent?: boolean; edits?: SiteEdits } = {},
 ) {
+  const edits = options.edits
   const prompt = userPrompt.trim()
   const rand = seededRandom(hash(`${prompt.toLowerCase()}|${variation}`))
   const pick = <T,>(items: readonly T[]): T => items[Math.floor(rand() * items.length)]
 
-  const themeKey = predictTheme(prompt)
+  // a niche ("pest control", "tattoo studio") has its own text; what the person corrected or chose wins over it
+  const decision = decideTheme(prompt)
+  const niche = edits?.theme || decision.source === 'correction' ? undefined : detectNiche(prompt, NICHES)
+  const themeKey = edits?.theme ?? niche?.theme ?? decision.theme
   const brain = analyzePrompt(prompt, themeKey)
-  const tier = tierOverride ?? brain.tier
-  const size = tier === 'normal' && !options.fullContent ? 'compact' : 'full'
+  const tier = edits?.tier ?? tierOverride ?? brain.tier
+  const size = tier === 'normal' && !options.fullContent && !needsLongPage(edits) ? 'compact' : 'full'
   const paletteIndex = Math.floor(rand() * PALETTE_COUNT)
   const headlineVariant = Math.floor(rand() * ((contentTemplates[themeKey]?.alternatives.length ?? 0) + 1))
 
@@ -66,38 +77,42 @@ export function planWebsite(
     marquee: false,
   }
   // normal keeps it short and plain, premium switches every section on and picks the richer layouts
-  const choice: LayoutChoice =
+  const baseChoice: LayoutChoice =
     tier === 'normal'
       ? { ...drawn, hero: drawn.hero === 'hero-split-reverse' ? 'hero-split' : drawn.hero, features: 'features-cards', testimonials: 'single', stats: false, faq: false }
       : tier === 'premium'
         ? { ...drawn, hero: drawn.hero === 'hero-split-reverse' ? 'hero-split' : drawn.hero, steps: 'timeline', testimonials: 'grid', stats: true, faq: true, gallery: true, team: true, blog: true }
         : drawn
 
+  // sections the person removed or added
+  const choice = applyChoiceEdits(baseChoice, edits)
+
   // creative brains get their own seeded streams, so turning them on never shuffles the layout choices above
-  const brand = extractContentDetails(prompt, themeKey).businessName
+  const brand = edits?.brand ?? extractContentDetails(prompt, themeKey, niche?.label).businessName
   // business types without hand-written template texts (law firm, clinic ...) always use the brains
   const useBrains = creative || !hasTemplates(themeKey)
   const copy = useBrains ? writeContent(themeKey, brand, seededRandom(hash(`${prompt.toLowerCase()}|copy|${variation}`))) : undefined
   const colors = useBrains ? thinkColors(prompt, themeKey, seededRandom(hash(`${prompt.toLowerCase()}|color|${variation}`))) : undefined
-  const palette = colors?.palette ?? presetPalette(themeKey, paletteIndex)
+  const palette = applyColorEdits(colors?.palette ?? presetPalette(themeKey, paletteIndex), themeKey, edits)
 
   // the motion brain has its own seeded stream too; some motion needs its own sections
-  const motion = thinkMotion(themeKey, tier, motionSetting, seededRandom(hash(`${prompt.toLowerCase()}|motion|${variation}`)))
+  const motion = thinkMotion(themeKey, tier, edits?.motion ?? motionSetting, seededRandom(hash(`${prompt.toLowerCase()}|motion|${variation}`)))
   if (size === 'full') {
     if (motion.features.marquee) choice.marquee = true
     if (motion.features.carousel && choice.testimonials !== 'none') choice.testimonials = 'carousel'
   }
 
   const theme = themes[themeKey]
-  const tokens = paletteTokensByMode(palette)
-  const initialMode = defaultMode(themeKey)
-  const content = generateWebsiteContent(prompt, themeKey, headlineVariant, size, copy)
+  const tokens = withFont(paletteTokensByMode(palette), themeKey)
+  const initialMode = edits?.mode ?? defaultMode(themeKey)
+  const content = applyContentEdits(generateWebsiteContent(prompt, themeKey, headlineVariant, size, copy, edits?.brand, { niche, rand: seededRandom(hash(`${prompt.toLowerCase()}|niche|${variation}`)), locale: detectLocale(prompt) }), edits, detectLocale(prompt).currency)
 
   return {
     prompt,
     variation,
     size,
     themeKey,
+    niche,
     paletteIndex,
     headlineVariant,
     choice,
@@ -125,13 +140,19 @@ export function generateWebsite(
   tierOverride?: Tier,
   creative = true,
   motionSetting: MotionSetting = 'auto',
+  /** changes the person asked for (see edit/edits.ts) */
+  edits?: SiteEdits,
 ) {
-  const plan = planWebsite(userPrompt, variation, tierOverride, creative, motionSetting)
+  const plan = planWebsite(userPrompt, variation, tierOverride, creative, motionSetting, { edits })
   const { theme, content, tokens, initialMode, tier, motion, choice } = plan
-  const layoutIds = buildLayout(choice)
+  const layoutIds = filterLayout(buildLayout(choice), edits)
+  // parts with a colour of their own ("footer green")
+  const paints = paintsFrom(edits, plan.palette)
 
   return {
     themeKey: plan.themeKey,
+    /** the id of the niche pack the text comes from (pest_control, tattoo_studio ...), if the prompt names one */
+    niche: plan.niche?.id,
     paletteIndex: plan.paletteIndex,
     headlineVariant: plan.headlineVariant,
     choice,
@@ -148,7 +169,7 @@ export function generateWebsite(
     brainsForced: plan.brainsForced,
     colorReasons: plan.colorReasons,
     visuals: plan.visuals,
-    html: compileWebsiteHtml(theme, layoutIds, content, tokens, initialMode, tier, motion, plan.visuals),
-    code: compileWebsiteCode(theme, layoutIds, content, tokens, initialMode, tier, motion, plan.visuals),
+    html: compileWebsiteHtml(theme, layoutIds, content, tokens, initialMode, tier, motion, plan.visuals, paints),
+    code: compileWebsiteCode(theme, layoutIds, content, tokens, initialMode, tier, motion, plan.visuals, paints),
   }
 }

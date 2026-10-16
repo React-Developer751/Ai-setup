@@ -10,6 +10,7 @@ import motionBrainSource from './motionBrain.ts?raw'
 import motionRuntimeSource from './motionRuntime.ts?raw'
 import packageJson from '../../package.json?raw'
 import { faviconSvg } from './artBrain'
+import { fontLinks } from './fonts'
 import { compileSiteHtml, type SiteFile } from './compileSite'
 import type { generateSite } from './generateSite'
 import type { generateWebsite } from './generateWebsite'
@@ -244,6 +245,7 @@ export function buildProject(source: ExportSource): ZipEntry[] {
     <title>${escapeHtml(source.brand)}</title>
     <meta name="description" content="${escapeHtml(source.description)}" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    ${fontLinks(source.themeKey).replace(/\n/g, '\n    ')}
   </head>
   <body>
     <div id="root"></div>
@@ -425,6 +427,7 @@ export function buildStandalone(source: ExportSource): string {
 <title>${escapeHtml(source.brand)}</title>
 <meta name="description" content="${escapeHtml(source.description)}" />
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,${encodeURIComponent(svg)}" />
+${fontLinks(source.themeKey)}
 <style>${css}
 html{scroll-behavior:smooth;scroll-padding-top:5rem}body{margin:0}</style>
 </head>
@@ -452,11 +455,25 @@ function show() {
   const root = app.querySelector('.g-root');
   if (mode) root.setAttribute('data-mode', mode);
   document.title = TITLES[path] || (MULTI ? '404 | ' + TITLES['/'] : TITLES['/']);
+  // inside the generator's preview frame: tell which page is shown
+  if (window.parent !== window) { try { window.parent.postMessage({ site: 'preview-route', path: path }, '*'); } catch (e) {} }
   if (MULTI) window.scrollTo(0, 0);
   stop = initMotion(root, MOTION);
 }
 
 document.addEventListener('click', (event) => {
+  // inside the generator's preview frame a "#..." link would be resolved against the generator's own address: handle it here
+  const anchor = event.target.closest('a[href^="#"]');
+  if (anchor && window.parent !== window) {
+    event.preventDefault();
+    const target = anchor.getAttribute('href');
+    if (target.startsWith('#/')) location.hash = target;
+    else if (target === '#') window.scrollTo(0, 0);
+    else { try { const element = document.querySelector(target); if (element) element.scrollIntoView({ behavior: 'smooth' }); } catch (e) {} }
+    const menu = anchor.closest('details');
+    if (menu) menu.removeAttribute('open');
+    return;
+  }
   const toggle = event.target.closest('[data-theme-toggle]');
   if (toggle) {
     const root = toggle.closest('.g-root');

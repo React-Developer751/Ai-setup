@@ -11,6 +11,8 @@ import type { Tier } from './designBrain'
 import type { LayoutChoice, LayoutId } from './finalProductionTemplate'
 import type { WebsiteContent } from './finalPrompt'
 import type { PageId, PagePlan, Post } from './siteTypes'
+import { filterLayout } from './edit/applyEdits'
+import type { SectionKey, SiteEdits } from './edit/edits'
 import type { ThemeKey } from './themes'
 
 /** Pages the builder can make. */
@@ -79,6 +81,7 @@ export function planSite(
   choice: LayoutChoice,
   rand: () => number,
   posts: Post[] = [],
+  edits?: SiteEdits,
 ): SitePlan {
   const labels = { ...DEFAULT_LABELS, ...(LABELS[theme] ?? {}) }
 
@@ -86,7 +89,10 @@ export function planSite(
   const wanted: PageId[] = ['home', 'about', 'services', 'contact', 'privacy', 'terms']
   if (tier !== 'normal') wanted.push('pricing', 'blog')
   if (tier === 'premium') wanted.push('team', 'gallery', 'faq')
-  const has = (id: PageId) => wanted.includes(id) && ENABLED_PAGES.includes(id)
+  // pages the person added or removed
+  for (const page of edits?.addedPages ?? []) if (!wanted.includes(page)) wanted.push(page)
+  const dropped = new Set<PageId>(edits?.hiddenPages ?? [])
+  const has = (id: PageId) => wanted.includes(id) && !dropped.has(id) && ENABLED_PAGES.includes(id)
   const present = (Object.keys(PATHS) as PageId[]).filter(has)
 
   const navIds = [...NAV_PRIORITY.filter(has).slice(0, MAX_NAV_LINKS), 'contact' as PageId]
@@ -131,13 +137,18 @@ export function planSite(
     terms: { title: 'Terms of Service', subtitle: `The rules for using the ${content.brandName} website and services.` },
   }
 
+  // sections the person removed: from the home page (and from every page for the ones that repeat, like the call to action)
+  const everywhere: SectionKey[] = ['stats', 'marquee', 'testimonials', 'cta', 'faq', 'blog', 'team', 'gallery', 'pricing']
+  const forPage = (id: PageId, list: LayoutId[]) =>
+    filterLayout(list, edits?.hidden.length ? { ...edits, hidden: edits.hidden.filter((s) => id === 'home' || everywhere.includes(s)) } : edits)
+
   const pages: PagePlan[] = present.map((id) => ({
     id,
     path: PATHS[id],
     label: labels[id],
     title: copy[id].title,
     subtitle: copy[id].subtitle,
-    sections: sections[id],
+    sections: forPage(id, sections[id]),
     inNav: navIds.includes(id),
   }))
 
@@ -151,7 +162,7 @@ export function planSite(
         label: post.title,
         title: post.title,
         subtitle: post.excerpt,
-        sections: ['post-body', ...(posts.length > 1 ? (['blog-related'] as LayoutId[]) : []), 'cta'],
+        sections: forPage('post' as PageId, ['post-body', ...(posts.length > 1 ? (['blog-related'] as LayoutId[]) : []), 'cta']),
         inNav: false,
         slug: post.slug,
       })

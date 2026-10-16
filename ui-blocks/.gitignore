@@ -25,3 +25,6 @@ dist-ssr
 
 # embedding model files (big): npm run models:download
 public/models/Xenova/
+
+# edit server: collected feedback
+server/data

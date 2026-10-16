@@ -5,6 +5,10 @@ import { extraContent, sharedContent, type Plan } from './extraContent'
 import { extractContentDetails } from './filter'
 import type { LegalDocs, Milestone, OpeningHours, Post } from './siteTypes'
 import type { ThemeKey } from './themes'
+import { applyNiche } from './niche/applyNiche'
+import type { Niche } from './niche/types'
+import { extractFacts, personalize, plainStats } from './personalize'
+import type { Locale } from './siteData'
 
 type Quote = { quote: string; author: string; role: string }
 
@@ -25,7 +29,9 @@ export type WebsiteContent = {
   team: { title: string; members: { name: string; role: string; bio?: string }[] }
   testimonials: Quote[]
   blog: { title: string; posts: { tag: string; title: string; slug?: string }[] }
-  contact: { title: string; text: string; email: string; phone: string; address: string }
+  contact: { title: string; text: string; email: string; phone: string; address: string; whatsapp?: string; hoursText?: string; /** the address is the person's own: show a real map */ showMap?: boolean }
+  /** real pictures instead of the drawn ones (see edit/edits.ts) */
+  photos?: { hero?: string; about?: string; gallery?: string[]; credit?: string }
   /** words for the scrolling keyword strip */
   marquee: string[]
   // extra data used by multi-page sites (a single page does not need them)
@@ -43,8 +49,14 @@ export function generateWebsiteContent(
   size: 'compact' | 'full' = 'full',
   /** everything written by the creative brain; when given it replaces the template texts */
   creative?: CreativeContent,
+  /** a name the person chose: it replaces the one found in the prompt */
+  brandOverride?: string,
+  /** a hand-written niche pack and what the prompt says about this business (see niche/ and personalize.ts) */
+  shaping?: { niche?: Niche; rand: () => number; locale?: Locale },
 ): WebsiteContent {
-  const { businessName, subject } = extractContentDetails(userPrompt, theme)
+  const details = extractContentDetails(userPrompt, theme, shaping?.niche?.label)
+  const businessName = brandOverride ?? details.businessName
+  const subject = details.subject
   const templates = contentTemplates[theme] || contentTemplates.modern_tech
   const extra = extraContent[theme] || extraContent.modern_tech
   const headline = variant > 0 ? (templates.alternatives[variant - 1] ?? templates) : templates
@@ -84,10 +96,19 @@ export function generateWebsiteContent(
     marquee: [...templates.features, ...extra.moreFeatures].map((f) => f.title),
   }
 
-  if (!creative) return content
+  // the niche pack replaces the kit's wording, then the facts of the prompt (services, place, promises) go on top
+  const shape = (value: WebsiteContent) => {
+    if (!shaping) return value
+    const base = shaping.niche ? applyNiche(value, shaping.niche, size, shaping.rand, shaping.locale) : value
+    const avoid = shaping.niche ? [shaping.niche.label, ...shaping.niche.keywords, ...shaping.niche.features.map((f) => f.title)] : []
+    const personal = personalize(base, extractFacts(userPrompt, subject, avoid), size, shaping.rand, !!shaping.niche)
+    // example numbers of the kits are claims nobody made: plain statements instead
+    return { ...personal, stats: plainStats(personal.stats, shaping.rand) }
+  }
+  if (!creative) return shape(content)
 
   // the creative brain wrote every block: swap them all in
-  return {
+  return shape({
     ...content,
     hero: { ...content.hero, button: creative.button },
     features: {
@@ -107,5 +128,5 @@ export function generateWebsiteContent(
     blog: creative.blog,
     contact: { ...content.contact, text: creative.contactText },
     marquee: creative.marquee,
-  }
+  })
 }

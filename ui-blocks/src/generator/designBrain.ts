@@ -112,6 +112,7 @@ export const tierSwaps: Record<Tier, [string, string][]> = {
     ['md:py-28', 'md:py-36'],
     ['md:py-32', 'md:py-40'],
     ['md:text-6xl', 'md:text-7xl'],
+    ['lg:text-6xl', 'lg:text-7xl'],
     ['md:text-4xl', 'md:text-5xl'],
     ['border p-8', 'border p-8 shadow-xl'],
   ],

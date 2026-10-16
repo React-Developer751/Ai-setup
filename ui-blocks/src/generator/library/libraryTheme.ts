@@ -3,11 +3,12 @@
 // in Tailwind v4, so redefining them on a wrapper element re-themes everything inside it.
 // Preline components use semantic tokens (--background, --primary ...); dark themes also get Preline's `.dark` mode.
 import type { CSSProperties } from 'react'
-import { onColor, type ColorMode, type Palette } from '../themes'
+import { fontVars } from '../fonts'
+import { onColor, type ColorMode, type Palette, type ThemeKey } from '../themes'
 
 const mix = (a: string, percent: number, b: string) => `color-mix(in oklab, ${a} ${percent}%, ${b})`
 
-export function libraryThemeStyle(palette: Palette, mode: ColorMode) {
+export function libraryThemeStyle(palette: Palette, mode: ColorMode, theme?: ThemeKey) {
   const dark = mode === 'dark'
   const { bg, surface, text, accent } = palette[mode]
   const onAccent = onColor(accent)
@@ -29,6 +30,8 @@ export function libraryThemeStyle(palette: Palette, mode: ColorMode) {
   }
 
   const style: Record<string, string> = {
+    // the typeface of this business type (Tailwind's font-sans / font-serif read these variables)
+    ...(theme ? { ...fontVars(theme), fontFamily: Object.values(fontVars(theme))[0] } : {}),
     background: bg,
     color: text,
     // native controls (scrollbars, form fields) follow the mode

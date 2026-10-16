@@ -21,6 +21,8 @@ import libraryRolesSource from './library/libraryRoles.ts?raw'
 import libraryThemeSource from './library/libraryTheme.ts?raw'
 import { libraryThemeStyle } from './library/libraryTheme'
 import sectionIdsSource from './library/sectionIds.ts?raw'
+import { deployFiles } from './deploy'
+import { fontLinks } from './fonts'
 import { Section, ThemeScope } from './library/ThemeScope'
 import themeScopeSource from './library/ThemeScope.tsx?raw'
 import { MOTION_RUNTIME_JS } from './motionRuntimeJs'
@@ -122,6 +124,7 @@ export async function buildLibraryProject(lib: Library): Promise<ZipEntry[]> {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>${escapeHtml(lib.content.brandName)}</title>
     <meta name="description" content="${escapeHtml(lib.content.hero.subtitle)}" />
+    ${fontLinks(lib.themeKey).replace(/\n/g, '\n    ')}
   </head>
   <body>
     <div id="root"></div>
@@ -243,10 +246,10 @@ function renderLibrary(lib: Library) {
   flushSync(() =>
     root.render(
       <ThemeScope theme={lib.themeKey} palette={lib.palette} content={lib.content}>
-        {lib.sections.map(({ role, componentId }) => {
+        {lib.sections.map(({ role, componentId, paint }) => {
           const Component = libraryComponents[componentId]
           return (
-            <Section key={role} role={role}>
+            <Section key={role} role={role} paint={paint}>
               <Component />
             </Section>
           )
@@ -257,7 +260,7 @@ function renderLibrary(lib: Library) {
   const html = host.innerHTML
   root.unmount()
 
-  const styles = Object.fromEntries((['light', 'dark'] as ColorMode[]).map((mode) => [mode, cssText(libraryThemeStyle(lib.palette, mode).style)]))
+  const styles = Object.fromEntries((['light', 'dark'] as ColorMode[]).map((mode) => [mode, cssText(libraryThemeStyle(lib.palette, mode, lib.themeKey).style)]))
   const needsPreline = /data-hs-|\bhs-/.test(html)
   const css = usedCss([html], false)
   return { html, styles, needsPreline, css }
@@ -272,6 +275,7 @@ export function buildLibraryStandalone(lib: Library): string {
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>${escapeHtml(lib.content.brandName)}</title>
 <meta name="description" content="${escapeHtml(lib.content.hero.subtitle)}" />
+${fontLinks(lib.themeKey)}
 <style>${css}
 html{scroll-behavior:smooth;scroll-padding-top:5rem}body{margin:0}</style>
 </head>
@@ -289,6 +293,18 @@ const page = document.querySelector('[data-gen-theme]');
 let mode = ${jsString(defaultMode(lib.themeKey))};
 
 document.addEventListener('click', (event) => {
+  // inside the generator's preview frame a "#..." link would be resolved against the generator's own address: handle it here
+  const anchor = event.target.closest('a[href^="#"]');
+  if (anchor && window.parent !== window) {
+    event.preventDefault();
+    const target = anchor.getAttribute('href');
+    if (target.startsWith('#/')) location.hash = target;
+    else if (target === '#') window.scrollTo(0, 0);
+    else { try { const element = document.querySelector(target); if (element) element.scrollIntoView({ behavior: 'smooth' }); } catch (e) {} }
+    const menu = anchor.closest('details');
+    if (menu) menu.removeAttribute('open');
+    return;
+  }
   const toggle = event.target.closest('[aria-label="Toggle dark mode"]');
   if (!toggle) return;
   mode = mode === 'dark' ? 'light' : 'dark';
@@ -361,6 +377,7 @@ initMotion(page, MOTION);
 <meta property="og:title" content="${escapeHtml(brand)}" />
 <meta property="og:description" content="${escapeHtml(description)}" />
 <meta property="og:type" content="website" />
+${fontLinks(lib.themeKey)}
 <meta property="og:site_name" content="${escapeHtml(brand)}" />
 <meta name="twitter:card" content="summary" />
 <meta name="theme-color" content="${palette.bg}" />
@@ -383,6 +400,7 @@ ${needsPreline ? '<script src="assets/preline.js"></script>\n' : ''}<script src=
     ...(needsPreline ? [{ path: 'assets/preline.js', content: prelineScript }] : []),
     { path: 'sitemap.xml', content: `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <url><loc>${siteUrl}/</loc><lastmod>${today}</lastmod></url>\n</urlset>\n` },
     { path: 'robots.txt', content: `User-agent: *\nAllow: /\n\nSitemap: ${siteUrl}/sitemap.xml\n` },
+    ...deployFiles(brand),
     {
       path: 'README.txt',
       content: `${brand}: a one-page static website (plain HTML, CSS and JavaScript).

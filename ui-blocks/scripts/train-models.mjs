@@ -85,6 +85,7 @@ function tune(name, examples) {
 const report = {}
 const jobs = [
   { name: 'themes', train: ['src/data/training/themes.train.jsonl', 'src/data/training/hinglish.train.jsonl'], test: ['src/data/training/themes.test.jsonl', 'src/data/training/hinglish.test.jsonl'], out: 'src/data/models/theme-model.json' },
+  { name: 'intents', train: ['src/data/training/edit-intents.train.jsonl'], test: ['src/data/training/edit-intents.test.jsonl'], out: 'src/data/models/intent-model.json' },
   { name: 'kinds', train: ['src/data/training/kinds.train.jsonl'], test: ['src/data/training/kinds.test.jsonl'], out: 'src/data/models/kind-model.json' },
 ]
 for (const job of jobs.filter((j) => !args.only || args.only === j.name)) {
@@ -109,4 +110,10 @@ for (const job of jobs.filter((j) => !args.only || args.only === j.name)) {
     report[job.name] = { cv: setting.cv, test: accuracy, count: tests.length }
   }
 }
-fs.writeFileSync('src/data/models/train-report.json', `${JSON.stringify({ trainedAt: new Date().toISOString().slice(0, 10), ...report }, null, 2)}\n`)
+let before = {}
+try {
+  before = JSON.parse(fs.readFileSync('src/data/models/train-report.json', 'utf8'))
+} catch {
+  // first run
+}
+fs.writeFileSync('src/data/models/train-report.json', `${JSON.stringify({ ...before, trainedAt: new Date().toISOString().slice(0, 10), ...report }, null, 2)}\n`)

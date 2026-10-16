@@ -1,0 +1,311 @@
+// Changes the person asks for after a site exists: "remove the FAQ", "rename it to Green Leaf", "make the buttons blue".
+// A change is a small, plain JSON operation (EditOp). Operations are checked here (`cleanOp`), added up into one state
+// (`SiteEdits`) and applied by the generators while they build the site, so a site is always: the prompt + the list of changes.
+// That makes every change reversible (undo = drop the last operation), repeatable, and the same for the page, the exports and the
+// understanding layers (rules, learned model, the optional AI server), which all only have to produce these operations.
+import type { Tier } from '../designBrain'
+import type { MotionSetting } from '../motionBrain'
+import { THEME_KEYS, type ThemeKey } from '../themes'
+
+/** parts of a page that can be removed or added */
+export const SECTIONS = ['stats', 'marquee', 'features', 'about', 'steps', 'gallery', 'pricing', 'team', 'testimonials', 'blog', 'faq', 'cta', 'contact'] as const
+export type SectionKey = (typeof SECTIONS)[number]
+
+/** pages of a multi-page site that can be removed or added (Home and Contact stay) */
+export const PAGES = ['about', 'services', 'pricing', 'team', 'gallery', 'blog', 'faq'] as const
+export type PageKey = (typeof PAGES)[number]
+
+/** texts that can be set directly */
+export const TEXT_FIELDS = ['heroTitle', 'heroSubtitle', 'heroButton', 'featuresTitle', 'aboutTitle', 'ctaTitle', 'contactTitle', 'subject'] as const
+export type TextField = (typeof TEXT_FIELDS)[number]
+
+/** parts of the page that can get a colour of their own (the navigation bar, the first screen, the footer and every section) */
+export const TARGETS = ['header', 'hero', 'footer', ...SECTIONS] as const
+export type Target = (typeof TARGETS)[number]
+
+/** a colour that goes with the main colour */
+export const HARMONIES = ['complementary', 'analogous', 'triadic', 'split'] as const
+export type Harmony = (typeof HARMONIES)[number]
+
+export const CONTACT_FIELDS = ['email', 'phone', 'address', 'whatsapp', 'hours'] as const
+export type ContactField = (typeof CONTACT_FIELDS)[number]
+
+/** real pictures for the first screen, the about section and the gallery (https addresses, or small data: pictures the person uploaded) */
+export type PhotoSet = { hero?: string; about?: string; gallery?: string[]; /** who to thank, e.g. "Photos: Pexels" */ credit?: string }
+
+export type ServiceItem = { name: string; price?: string; text?: string }
+
+export type Tone = 'warmer' | 'cooler' | 'vibrant' | 'muted' | 'darker' | 'lighter'
+export const TONES: Tone[] = ['warmer', 'cooler', 'vibrant', 'muted', 'darker', 'lighter']
+
+export type EditOp =
+  | { op: 'rename'; name: string }
+  | { op: 'accent'; hex: string }
+  | { op: 'tone'; tone: Tone }
+  | { op: 'harmony'; kind: Harmony }
+  | { op: 'alt'; hex: string }
+  | { op: 'sectionColor'; target: Target; hex: string }
+  | { op: 'clearSectionColor'; target: Target }
+  | { op: 'mode'; mode: 'light' | 'dark' }
+  | { op: 'remove'; section: SectionKey }
+  | { op: 'add'; section: SectionKey }
+  | { op: 'removePage'; page: PageKey }
+  | { op: 'addPage'; page: PageKey }
+  | { op: 'text'; field: TextField; text: string }
+  | { op: 'replace'; from: string; to: string }
+  | { op: 'contact'; field: ContactField; value: string }
+  /** what the business offers, with prices when the person gives them: the feature cards, and the price list when prices are there */
+  | { op: 'services'; items: ServiceItem[] }
+  | ({ op: 'photos' } & PhotoSet)
+  | { op: 'clearPhotos' }
+  | { op: 'tier'; tier: Tier }
+  | { op: 'motion'; level: MotionSetting }
+  | { op: 'theme'; theme: ThemeKey }
+
+export type SiteEdits = {
+  brand?: string
+  /** a colour for the buttons, links and highlights */
+  accent?: string
+  /** adjustments made to the palette, in the order they were asked */
+  tones: Tone[]
+  /** colours that go with the main colour, in the order they were asked */
+  harmony: Harmony[]
+  /** the second colour of the palette */
+  alt?: string
+  /** background colour of single parts: the text on top follows automatically */
+  sectionColors: Partial<Record<Target, string>>
+  mode?: 'light' | 'dark'
+  hidden: SectionKey[]
+  added: SectionKey[]
+  hiddenPages: PageKey[]
+  addedPages: PageKey[]
+  text: Partial<Record<TextField, string>>
+  replace: { from: string; to: string }[]
+  contact: Partial<Record<ContactField, string>>
+  services?: ServiceItem[]
+  photos?: PhotoSet
+  tier?: Tier
+  motion?: MotionSetting
+  theme?: ThemeKey
+}
+
+export const noEdits = (): SiteEdits => ({ tones: [], harmony: [], sectionColors: {}, hidden: [], added: [], hiddenPages: [], addedPages: [], text: {}, replace: [], contact: {} })
+
+const HEX = /^#[0-9a-f]{6}$/i
+const clean = (text: unknown, max: number) => (typeof text === 'string' ? text.replace(/\p{Cc}+/gu, ' ').replace(/\s+/g, ' ').trim().slice(0, max) : '')
+
+/** Checks one operation that came from outside (a parser, a model, a file) and returns it cleaned, or undefined when it is not valid. */
+export function cleanOp(raw: unknown): EditOp | undefined {
+  if (!raw || typeof raw !== 'object') return undefined
+  const o = raw as Record<string, unknown>
+  switch (o.op) {
+    case 'rename': {
+      const name = clean(o.name, 40)
+      return name.length >= 2 ? { op: 'rename', name } : undefined
+    }
+    case 'accent': {
+      const hex = typeof o.hex === 'string' ? o.hex.trim().toLowerCase() : ''
+      return HEX.test(hex) ? { op: 'accent', hex } : undefined
+    }
+    case 'tone':
+      return TONES.includes(o.tone as Tone) ? { op: 'tone', tone: o.tone as Tone } : undefined
+    case 'harmony':
+      return (HARMONIES as readonly unknown[]).includes(o.kind) ? { op: 'harmony', kind: o.kind as Harmony } : undefined
+    case 'alt': {
+      const hex = typeof o.hex === 'string' ? o.hex.trim().toLowerCase() : ''
+      return HEX.test(hex) ? { op: 'alt', hex } : undefined
+    }
+    case 'sectionColor': {
+      const hex = typeof o.hex === 'string' ? o.hex.trim().toLowerCase() : ''
+      return (TARGETS as readonly unknown[]).includes(o.target) && HEX.test(hex) ? { op: 'sectionColor', target: o.target as Target, hex } : undefined
+    }
+    case 'clearSectionColor':
+      return (TARGETS as readonly unknown[]).includes(o.target) ? { op: 'clearSectionColor', target: o.target as Target } : undefined
+    case 'mode':
+      return o.mode === 'light' || o.mode === 'dark' ? { op: 'mode', mode: o.mode } : undefined
+    case 'remove':
+    case 'add':
+      return (SECTIONS as readonly unknown[]).includes(o.section) ? ({ op: o.op, section: o.section } as EditOp) : undefined
+    case 'removePage':
+    case 'addPage':
+      return (PAGES as readonly unknown[]).includes(o.page) ? ({ op: o.op, page: o.page } as EditOp) : undefined
+    case 'text': {
+      const text = clean(o.text, 200)
+      return (TEXT_FIELDS as readonly unknown[]).includes(o.field) && text ? { op: 'text', field: o.field as TextField, text } : undefined
+    }
+    case 'replace': {
+      const from = clean(o.from, 120)
+      const to = clean(o.to, 120)
+      return from.length >= 2 && from !== to ? { op: 'replace', from, to } : undefined
+    }
+    case 'contact': {
+      const value = clean(o.value, 120)
+      return (CONTACT_FIELDS as readonly unknown[]).includes(o.field) && value ? { op: 'contact', field: o.field as ContactField, value } : undefined
+    }
+    case 'photos': {
+      const url = (v: unknown) => (typeof v === 'string' && (/^https:\/\/[^\s"'<>]{4,600}$/i.test(v) || /^data:image\/(?:png|jpe?g|webp);base64,[A-Za-z0-9+/=]{20,450000}$/.test(v)) ? v : undefined)
+      const gallery = (Array.isArray(o.gallery) ? o.gallery : []).map(url).filter((x): x is string => !!x).slice(0, 8)
+      const out: PhotoSet = { ...(url(o.hero) ? { hero: url(o.hero) } : {}), ...(url(o.about) ? { about: url(o.about) } : {}), ...(gallery.length ? { gallery } : {}), ...(clean(o.credit, 120) ? { credit: clean(o.credit, 120) } : {}) }
+      return out.hero || out.about || out.gallery ? { op: 'photos', ...out } : undefined
+    }
+    case 'clearPhotos':
+      return { op: 'clearPhotos' }
+    case 'services': {
+      const items = (Array.isArray(o.items) ? o.items : [])
+        .map((raw): ServiceItem | undefined => {
+          const r = (raw ?? {}) as Record<string, unknown>
+          const name = clean(r.name, 40)
+          const price = clean(r.price, 14)
+          const text = clean(r.text, 120)
+          return name.length >= 2 ? { name, ...(price ? { price } : {}), ...(text ? { text } : {}) } : undefined
+        })
+        .filter((x): x is ServiceItem => !!x)
+        .slice(0, 8)
+      return items.length ? { op: 'services', items } : undefined
+    }
+    case 'tier':
+      return o.tier === 'normal' || o.tier === 'better' || o.tier === 'premium' ? { op: 'tier', tier: o.tier } : undefined
+    case 'motion':
+      return o.level === 'auto' || o.level === 'off' || o.level === 'subtle' || o.level === 'rich' ? { op: 'motion', level: o.level } : undefined
+    case 'theme':
+      return (THEME_KEYS as readonly unknown[]).includes(o.theme) ? { op: 'theme', theme: o.theme as ThemeKey } : undefined
+    default:
+      return undefined
+  }
+}
+
+const without = <T,>(list: T[], item: T) => list.filter((x) => x !== item)
+const withItem = <T,>(list: T[], item: T) => (list.includes(item) ? list : [...list, item])
+
+/** All operations, in order, added up into the state the generators read. */
+export function editsFrom(ops: EditOp[]): SiteEdits {
+  const e = noEdits()
+  for (const op of ops) {
+    switch (op.op) {
+      case 'rename':
+        e.brand = op.name
+        break
+      case 'accent':
+        e.accent = op.hex
+        break
+      case 'tone':
+        // warmer and cooler cancel each other, the same for darker / lighter and vibrant / muted
+        e.tones = [...e.tones, op.tone].slice(-8)
+        break
+      case 'harmony':
+        e.harmony = [...e.harmony, op.kind].slice(-6)
+        break
+      case 'alt':
+        e.alt = op.hex
+        break
+      case 'sectionColor':
+        e.sectionColors = { ...e.sectionColors, [op.target]: op.hex }
+        break
+      case 'clearSectionColor': {
+        const { [op.target]: _gone, ...rest } = e.sectionColors
+        e.sectionColors = rest
+        break
+      }
+      case 'mode':
+        e.mode = op.mode
+        break
+      case 'remove':
+        e.hidden = withItem(e.hidden, op.section)
+        e.added = without(e.added, op.section)
+        break
+      case 'add':
+        e.added = withItem(e.added, op.section)
+        e.hidden = without(e.hidden, op.section)
+        break
+      case 'removePage':
+        e.hiddenPages = withItem(e.hiddenPages, op.page)
+        e.addedPages = without(e.addedPages, op.page)
+        break
+      case 'addPage':
+        e.addedPages = withItem(e.addedPages, op.page)
+        e.hiddenPages = without(e.hiddenPages, op.page)
+        break
+      case 'text':
+        e.text = { ...e.text, [op.field]: op.text }
+        break
+      case 'replace':
+        e.replace = [...e.replace, { from: op.from, to: op.to }]
+        break
+      case 'contact':
+        e.contact = { ...e.contact, [op.field]: op.value }
+        break
+      case 'services':
+        e.services = op.items
+        break
+      case 'photos': {
+        const { op: _op, ...set } = op
+        e.photos = { ...e.photos, ...set }
+        break
+      }
+      case 'clearPhotos':
+        e.photos = undefined
+        break
+      case 'tier':
+        e.tier = op.tier
+        break
+      case 'motion':
+        e.motion = op.level
+        break
+      case 'theme':
+        e.theme = op.theme
+        break
+    }
+  }
+  return e
+}
+
+export const isHidden = (edits: SiteEdits | undefined, section: SectionKey) => !!edits?.hidden.includes(section)
+export const isAdded = (edits: SiteEdits | undefined, section: SectionKey) => !!edits?.added.includes(section)
+
+/** one short sentence for what an operation does (shown in the chat and in the list of changes) */
+export function describeOp(op: EditOp): string {
+  switch (op.op) {
+    case 'rename':
+      return `Renamed the business to "${op.name}"`
+    case 'accent':
+      return `Changed the main colour to ${op.hex}`
+    case 'tone':
+      return `Made the colours ${op.tone}`
+    case 'harmony':
+      return `Used a ${op.kind} colour`
+    case 'alt':
+      return `Changed the second colour to ${op.hex}`
+    case 'sectionColor':
+      return `Made the ${op.target} ${op.hex}`
+    case 'clearSectionColor':
+      return `The ${op.target} has the normal colours again`
+    case 'mode':
+      return `Started in ${op.mode} mode`
+    case 'remove':
+      return `Removed the ${op.section} section`
+    case 'add':
+      return `Added the ${op.section} section`
+    case 'removePage':
+      return `Removed the ${op.page} page`
+    case 'addPage':
+      return `Added the ${op.page} page`
+    case 'text':
+      return `Changed the ${op.field.replace(/([A-Z])/g, ' $1').toLowerCase()} to "${op.text}"`
+    case 'replace':
+      return `Replaced "${op.from}" with "${op.to}"`
+    case 'contact':
+      return `Set the ${op.field} to ${op.value}`
+    case 'photos':
+      return `Added photos: ${[op.hero ? 'first screen' : '', op.about ? 'about' : '', op.gallery ? `${op.gallery.length} in the gallery` : ''].filter(Boolean).join(', ')}`
+    case 'clearPhotos':
+      return 'Removed the photos'
+    case 'services':
+      return `Listed ${op.items.length} service${op.items.length === 1 ? '' : 's'}: ${op.items.map((i) => i.name).join(', ')}`
+    case 'tier':
+      return `Design level: ${op.tier}`
+    case 'motion':
+      return `Animations: ${op.level}`
+    case 'theme':
+      return `Treated the business as ${op.theme.replace(/_/g, ' ')}`
+  }
+}

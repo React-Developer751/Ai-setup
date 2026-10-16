@@ -8,7 +8,7 @@
 import fs from 'node:fs'
 import { loadGeneratorModule } from './lib/load-generator.mjs'
 
-const write = process.argv.includes('--write')
+const write = process.argv.includes('--write') && !process.argv.some((a) => a.startsWith('--test='))
 const { scoreThemes, ruleEvidence } = await loadGeneratorModule('themeClassifier.ts')
 const { trainSparse, SparseModel } = await loadGeneratorModule('ml/sparseModel.ts')
 const { ruleDistribution, blend } = await loadGeneratorModule('ml/ensemble.ts')
@@ -19,7 +19,9 @@ const { trainProbe } = await loadGeneratorModule('ml/linearProbe.ts')
 
 const readLines = (file) => (fs.existsSync(file) ? fs.readFileSync(file, 'utf8').split('\n').filter((l) => l.trim()).map((l) => JSON.parse(l)) : [])
 const train = ['src/data/training/themes.train.jsonl', 'src/data/training/hinglish.train.jsonl'].flatMap(readLines)
-const test = ['src/data/training/themes.test.jsonl', 'src/data/training/hinglish.test.jsonl'].flatMap(readLines)
+// `--test=file.jsonl` measures another labelled file (for example a blind set written by somebody else); the tuned weights are never written then
+const testArg = process.argv.find((a) => a.startsWith('--test='))?.split('=')[1]
+const test = (testArg ? [testArg] : ['src/data/training/themes.test.jsonl', 'src/data/training/hinglish.test.jsonl']).flatMap(readLines)
 const modelFile = JSON.parse(fs.readFileSync('src/data/models/theme-model.json', 'utf8'))
 const vectorPath = `public/models/vectors/${modelKey}/themes.json`
 const vectorFile = modelKey !== 'none' && fs.existsSync(vectorPath) ? JSON.parse(fs.readFileSync(vectorPath, 'utf8')) : undefined

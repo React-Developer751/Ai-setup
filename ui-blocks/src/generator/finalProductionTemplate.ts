@@ -2,6 +2,9 @@
 // Section markup is written once and rendered in two flavours: "html" (live preview) and
 // "jsx" (the React file the user can copy/download), so the two can never drift apart.
 import type { WebsiteContent } from './finalPrompt'
+import { sectionOfLayout } from './edit/applyEdits'
+import type { Target } from './edit/edits'
+import { paintMarkup, targetOfLayout, type Paints } from './edit/sectionColors'
 import { art, logoMark, toJsx, type ArtKind } from './artBrain'
 import { tierSwaps, type Tier } from './designBrain'
 import { noMotion, type MotionFeatures, type MotionPlan } from './motionBrain'
@@ -51,7 +54,22 @@ export type LayoutId =
 export type Mode = 'html' | 'jsx'
 
 const esc = (s: string) =>
-  s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\{/g, '&#123;').replace(/\}/g, '&#125;')
+  // quotes too: the same text is also used inside attributes (action="mailto:...", aria-label="..."), where a quote would end the value
+  s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;').replace(/\{/g, '&#123;').replace(/\}/g, '&#125;')
+
+/** wa.me link of a WhatsApp number: digits only; a 10 digit number is taken as Indian (+91) */
+export const whatsappHref = (number: string, brand: string) => {
+  const digits = number.replace(/\D/g, '').replace(/^0+/, '')
+  const full = digits.length === 10 ? `91${digits}` : digits
+  return `https://wa.me/${full}?text=${encodeURIComponent(`Hello ${brand}`)}`
+}
+
+/** the round WhatsApp button in the corner of every page, when the person gave a number */
+const WHATSAPP_PATH = 'M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z'
+const whatsappButton = (c: WebsiteContent, k: string) =>
+  c.contact.whatsapp
+    ? `\n<a href="${esc(whatsappHref(c.contact.whatsapp, c.brandName))}" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" ${k}="fixed bottom-5 left-5 z-40 flex size-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-xl transition hover:scale-105"><svg ${k === 'className' ? 'className="size-7"' : 'class="size-7"'} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="${WHATSAPP_PATH}"></path></svg></a>`
+    : ''
 
 const sentence = (s: string) => (s ? s.charAt(0).toUpperCase() + s.slice(1) : s)
 
@@ -100,6 +118,8 @@ type Ctx = {
   post?: Post
   /** what the pictures are drawn from; without it the page has no drawn pictures */
   v?: Visuals
+  /** true when the page being made has a block that starts with this text ("pricing", "gallery" ...) */
+  has: (prefix: string) => boolean
 }
 
 /** The business type and a number that makes this site's pictures different from other sites'. */
@@ -180,6 +200,13 @@ const navLinks = (ctx: Ctx, gap: string) =>
 // ───────────── drawn pictures (see artBrain.ts) ─────────────
 /** One picture, as markup in the preview and as JSX in the React export. '' when the page has no `visuals`. */
 export const picture = (ctx: Ctx, kind: ArtKind, n = 0) => {
+  // a real photo (from the photo search or an upload) wins over the drawing
+  const photos = ctx.c.photos
+  const photo = kind === 'hero' ? photos?.hero : kind === 'about' ? photos?.about : kind === 'tile' && photos?.gallery?.length ? photos.gallery[n % photos.gallery.length] : undefined
+  if (photo) {
+    const alt = kind === 'tile' ? (ctx.c.gallery.captions[n] ?? ctx.c.brandName) : kind === 'about' ? `${ctx.c.brandName}: ${ctx.c.about.title}` : ctx.c.brandName
+    return `<img src="${esc(photo)}" alt="${esc(alt)}" loading="${kind === 'hero' ? 'eager' : 'lazy'}" decoding="async" ${ctx.k}="absolute inset-0 size-full object-cover" />`
+  }
   if (!ctx.v) return ''
   // covers must look the same on every page (the React export keeps one COVER_ART list); other pictures differ per page
   const where = ctx.site && kind !== 'cover' ? [...ctx.site.current].reduce((h, ch) => h + ch.charCodeAt(0), 0) : 0
@@ -199,7 +226,7 @@ const logo = (ctx: Ctx, size = 32) => {
 
 const heroText = ({ t, c, k, m }: Ctx, align: string, buttons: string) => `
           <span ${k}="${t.badge} inline-block rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-widest"${m.rv('fade')}>${esc(sentence(c.subject) || c.brandName)}</span>
-          <h1 ${k}="text-4xl font-extrabold break-words ${t.heading} md:text-6xl ${t.text_main}"${m.on('split', ' data-split') || m.rv('up', 1)}>
+          <h1 ${k}="text-4xl font-extrabold break-words ${t.heading} md:text-5xl lg:text-6xl ${t.text_main}"${m.on('split', ' data-split') || m.rv('up', 1)}>
             ${esc(c.hero.title)}
           </h1>
           <p ${k}="text-lg ${t.text_muted} ${align}"${m.rv('up', 2)}>
@@ -424,7 +451,8 @@ const sections: Record<LayoutId, (ctx: Ctx) => string> = {
   'hero-centered': (ctx) => {
     const { t, k, m } = ctx
     return `
-    <section id="home" ${k}="${t.bg} ${t.font} px-6 py-24 text-center md:px-12 md:py-32">
+    <section id="home" ${k}="${t.bg} ${t.font} relative isolate overflow-hidden px-6 py-24 text-center md:px-12 md:py-32">${ctx.c.photos?.hero ? `
+      <img src="${esc(ctx.c.photos.hero)}" alt="${esc(ctx.c.brandName)}" decoding="async" ${k}="absolute inset-0 -z-10 size-full object-cover opacity-30" />` : ''}
       <div ${k}="${t.gradient}${m.fx('gradient')} mx-auto max-w-4xl rounded-3xl p-1"${m.rv('scale')}>
         <div ${k}="${t.bg} space-y-6 rounded-3xl px-6 py-14 md:px-16">${heroText(ctx, 'mx-auto max-w-2xl', 'justify-center')}
         </div>
@@ -736,7 +764,9 @@ const sections: Record<LayoutId, (ctx: Ctx) => string> = {
     const info = [
       { label: 'Email', value: c.contact.email },
       { label: 'Phone', value: c.contact.phone },
+      ...(c.contact.whatsapp ? [{ label: 'WhatsApp', value: c.contact.whatsapp }] : []),
       { label: 'Address', value: c.contact.address },
+      ...(c.contact.hoursText ? [{ label: 'Hours', value: c.contact.hoursText }] : []),
     ]
     return `
     <section id="contact" ${k}="${t.bg} ${t.font} px-6 py-20 md:px-12">
@@ -761,7 +791,12 @@ const sections: Record<LayoutId, (ctx: Ctx) => string> = {
           <textarea name="message" required aria-label="Your message" placeholder="Your message" ${k}="${inputClass(ctx)} h-32"></textarea>
           <button type="submit" ${k}="${t.primary_btn} ${t.radius} w-full px-6 py-3 font-medium transition${m.fx('press')}">Send message</button>
         </form>
-      </div>
+      </div>${
+        c.contact.showMap
+          ? `
+      <div ${k}="${t.border} ${t.radius} relative mx-auto mt-10 h-72 max-w-6xl overflow-hidden border"><iframe title="Map: ${esc(c.contact.address)}" src="https://www.google.com/maps?q=${encodeURIComponent(c.contact.address)}&amp;output=embed" loading="lazy" ${ctx.mode === 'jsx' ? 'referrerPolicy' : 'referrerpolicy'}="no-referrer-when-downgrade" ${k}="size-full border-0"></iframe></div>`
+          : ''
+      }
     </section>`
   },
 
@@ -776,10 +811,10 @@ const sections: Record<LayoutId, (ctx: Ctx) => string> = {
           { title: 'Support', links: pageLinks(['faq', 'contact', 'privacy', 'terms']) },
         ].filter((column) => column.links.length)
       : [
-          { title: 'Company', links: [['About', '#about'], ['Our team', '#team'], ['Contact', '#contact']] },
-          { title: 'Explore', links: [['Features', '#features'], ['Pricing', '#pricing'], ['Gallery', '#gallery']] },
-          { title: 'Support', links: [['Contact', '#contact']] },
-        ]
+          { title: 'Company', links: ([['About', '#about', 'about'], ['Our team', '#team', 'team'], ['Contact', '#contact', 'contact']] as const).filter(([, , id]) => ctx.has(id)).map(([label, href]) => [label, href]) },
+          { title: 'Explore', links: ([['Features', '#features', 'features'], ['Pricing', '#pricing', 'pricing'], ['Gallery', '#gallery', 'gallery']] as const).filter(([, , id]) => ctx.has(id)).map(([label, href]) => [label, href]) },
+          { title: 'Support', links: ctx.has('contact') ? [['Contact', '#contact']] : [] },
+        ].filter((column) => column.links.length)
     return `
     <footer ${k}="${t.surface} ${t.font} ${t.border} border-t px-6 pt-16 pb-8 md:px-12"${m.rv('fade')}>
       <div ${k}="mx-auto grid max-w-6xl grid-cols-2 gap-10 md:grid-cols-5">
@@ -805,7 +840,7 @@ const sections: Record<LayoutId, (ctx: Ctx) => string> = {
           .join('')}
       </div>
       <div ${k}="${t.border} ${t.text_muted} mx-auto mt-12 max-w-6xl border-t pt-6 text-center text-xs">
-        &copy; ${new Date().getFullYear()} ${esc(c.brandName)}. All rights reserved.
+        &copy; ${new Date().getFullYear()} ${esc(c.brandName)}. All rights reserved.${c.photos?.credit ? ` &middot; ${esc(c.photos.credit)}` : ''}
       </div>
     </footer>`
   },
@@ -866,9 +901,13 @@ const sections: Record<LayoutId, (ctx: Ctx) => string> = {
     <section ${k}="${t.bg} ${t.font} px-6 pb-20 md:px-12">
       <div ${k}="mx-auto grid max-w-6xl gap-6 md:grid-cols-3">
         <div ${k}="${t.surface} ${t.border} ${t.radius} relative min-h-72 overflow-hidden border bg-[linear-gradient(var(--g-border)_1px,transparent_1px),linear-gradient(90deg,var(--g-border)_1px,transparent_1px)] bg-size-[36px_36px] md:col-span-2"${m.rv('scale')}>
-          <div ${k}="absolute inset-0 flex items-center justify-center">
+          ${
+            c.contact.showMap
+              ? `<iframe title="Map: ${esc(c.contact.address)}" src="https://www.google.com/maps?q=${encodeURIComponent(c.contact.address)}&amp;output=embed" loading="lazy" ${mode === 'jsx' ? 'referrerPolicy' : 'referrerpolicy'}="no-referrer-when-downgrade" ${k}="absolute inset-0 size-full border-0"></iframe>`
+              : `<div ${k}="absolute inset-0 flex items-center justify-center">
             <div ${k}="${t.primary_btn} flex size-14 items-center justify-center rounded-full shadow-xl${m.fx('float')}">${pin}</div>
-          </div>
+          </div>`
+          }
           <div ${k}="${t.surface} ${t.border} ${t.radius} absolute bottom-4 left-4 right-4 border px-5 py-4 shadow-xl sm:right-auto">
             <div ${k}="text-xs font-semibold uppercase tracking-widest ${t.accent}">Visit us</div>
             <div ${k}="font-semibold ${t.text_main}">${esc(c.contact.address)}</div>
@@ -1036,7 +1075,7 @@ const sections: Record<LayoutId, (ctx: Ctx) => string> = {
 
   footer: ({ t, c, k, m }) => `
     <footer ${k}="${t.bg} ${t.font} ${t.border} border-t px-6 py-8 text-center text-xs ${t.text_muted}"${m.rv('fade')}>
-      &copy; ${new Date().getFullYear()} ${esc(c.brandName)}${c.subject ? ` &middot; ${esc(sentence(c.subject))}` : ''}. All rights reserved.
+      &copy; ${new Date().getFullYear()} ${esc(c.brandName)}${c.subject ? ` &middot; ${esc(sentence(c.subject))}` : ''}. All rights reserved.${c.photos?.credit ? ` &middot; ${esc(c.photos.credit)}` : ''}
     </footer>`,
 }
 
@@ -1104,6 +1143,7 @@ export function renderSections(
   plan: MotionPlan,
   site?: SiteRender,
   visuals?: Visuals,
+  paints?: Paints,
 ) {
   const k = mode === 'jsx' ? 'className' : 'class'
   const has = (prefix: string) => layoutIds.some((id) => id.startsWith(prefix))
@@ -1112,7 +1152,7 @@ export function renderSections(
     : [
         { href: '#home', label: 'Home' },
         ...when(has('about'), { href: '#about', label: 'About' }),
-        { href: '#features', label: 'Features' },
+        ...when(has('features'), { href: '#features', label: 'Features' }),
         ...when(has('pricing'), { href: '#pricing', label: 'Pricing' }),
         ...when(has('faq'), { href: '#faq', label: 'FAQ' }),
         { href: '#contact', label: 'Contact' },
@@ -1124,9 +1164,11 @@ export function renderSections(
   const siteCtx = site ? { pages: site.pages, current: site.current } : undefined
   return layoutIds.map((id) => {
     const html = swap(
-      sections[id]({ t: theme, c: content, k, m, mode, full, links, site: siteCtx, page: site?.page, posts: site?.posts, post: site?.post, v: visuals }),
+      sections[id]({ t: theme, c: content, k, m, mode, full, links, site: siteCtx, page: site?.page, posts: site?.posts, post: site?.post, v: visuals, has }),
     )
-    return site ? routeLinks(html, site.pages) : html
+    const routed = (site ? routeLinks(html, site.pages) : html) + (id.startsWith('footer') ? whatsappButton(content, k) : '')
+    const tokens = paints?.[targetOfLayout(id, sectionOfLayout as (id: string) => Target | undefined) as Target]
+    return tokens ? paintMarkup(routed, tokens, mode) : routed
   })
 }
 
@@ -1146,9 +1188,10 @@ export function compileWebsiteHtml(
   tier: Tier = 'better',
   motion: MotionPlan = noMotion(),
   visuals?: Visuals,
+  paints?: Paints,
 ): string {
   const css = themeCss(tokens)
-  return `<style>${css}</style><div data-mode="${initialMode}" class="g-root min-h-screen overflow-x-clip [overflow-wrap:anywhere] ${theme.bg} ${theme.text_main}">${renderSections(theme, layoutIds, content, 'html', tier, motion, undefined, visuals).join('\n')}\n</div>`
+  return `<style>${css}</style><div data-mode="${initialMode}" class="g-root min-h-screen overflow-x-clip [overflow-wrap:anywhere] ${theme.bg} ${theme.text_main}">${renderSections(theme, layoutIds, content, 'html', tier, motion, undefined, visuals, paints).join('\n')}\n</div>`
 }
 
 /** A complete React component file as a string (with a working light / dark switch). */
@@ -1161,8 +1204,9 @@ export function compileWebsiteCode(
   tier: Tier = 'better',
   motion: MotionPlan = noMotion(),
   visuals?: Visuals,
+  paints?: Paints,
 ): string {
-  const body = renderSections(theme, layoutIds, content, 'jsx', tier, motion, undefined, visuals).join('\n')
+  const body = renderSections(theme, layoutIds, content, 'jsx', tier, motion, undefined, visuals, paints).join('\n')
   // React wants camelCase for standard style properties (custom --g-* variables stay as they are)
   const reactTokens = Object.fromEntries(
     Object.entries(tokens).map(([mode, values]) => [mode, Object.fromEntries(Object.entries(values).map(([key, value]) => [key === 'color-scheme' ? 'colorScheme' : key, value]))]),

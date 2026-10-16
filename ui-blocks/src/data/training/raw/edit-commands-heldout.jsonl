@@ -1,0 +1,220 @@
+{"text": "can you please rename it to Salt and Pepper", "context": "single", "expect": {"ops": [{"op": "rename", "name": "Salt and Pepper"}]}}
+{"text": "naam Sharma's Sweets rakho yaar", "context": "single", "expect": {"ops": [{"op": "rename", "name": "Sharma's Sweets"}]}}
+{"text": "rename it to Team Fitness", "context": "multi", "expect": {"ops": [{"op": "rename", "name": "Team Fitness"}]}}
+{"text": "call the shop Red Rose Bakery", "context": "single", "expect": {"ops": [{"op": "rename", "name": "Red Rose Bakery"}]}}
+{"text": "bro business name Blue Bird Cafe kar do", "context": "multi", "expect": {"ops": [{"op": "rename", "name": "Blue Bird Cafe"}]}}
+{"text": "change name to Joe & Sons", "context": "single", "expect": {"ops": [{"op": "rename", "name": "Joe & Sons"}]}}
+{"text": "rename to 4 Seasons Gym", "context": "multi", "expect": {"ops": [{"op": "rename", "name": "4 Seasons Gym"}]}}
+{"text": "brand ka naam Pink Pantry hona chahiye", "context": "single", "expect": {"ops": [{"op": "rename", "name": "Pink Pantry"}]}}
+{"text": "naam badal ke Gallery 21 kar do", "context": "multi", "expect": {"ops": [{"op": "rename", "name": "Gallery 21"}]}}
+{"text": "नाम बदलकर Green Leaf रखो", "context": "single", "expect": {"ops": [{"op": "rename", "name": "Green Leaf"}]}}
+{"text": "दुकान का नाम Sharma Sweets रखो", "context": "multi", "expect": {"ops": [{"op": "rename", "name": "Sharma Sweets"}]}}
+{"text": "renmae it to Zen Cafe", "context": "single", "expect": {"ops": [{"op": "rename", "name": "Zen Cafe"}]}}
+{"text": "call it The Pricing Lab", "context": "multi", "expect": {"ops": [{"op": "rename", "name": "The Pricing Lab"}]}}
+{"text": "rename it to Faq Fusion Kitchen", "context": "single", "expect": {"ops": [{"op": "rename", "name": "Faq Fusion Kitchen"}]}}
+{"text": "website ka naam O'Brien's Pub rakh do", "context": "single", "expect": {"ops": [{"op": "rename", "name": "O'Brien's Pub"}]}}
+{"text": "make the buttns blue", "context": "single", "expect": {"ops": [{"op": "accent", "hex": "#2563eb"}]}}
+{"text": "colur red karo", "context": "multi", "expect": {"ops": [{"op": "accent", "hex": "#dc2626"}]}}
+{"text": "pls use #FF6600 for buttons", "context": "single", "expect": {"ops": [{"op": "accent", "hex": "#ff6600"}]}}
+{"text": "theme colour #1A2B3C please", "context": "multi", "expect": {"ops": [{"op": "accent", "hex": "#1a2b3c"}]}}
+{"text": "buttons ko hara kar do", "context": "single", "expect": {"ops": [{"op": "accent", "hex": "#16a34a"}]}}
+{"text": "make the buttons dark blue", "context": "single", "expect": {"ops": [{"op": "accent", "hex": "#2563eb"}]}}
+{"text": "lal color chahiye", "context": "multi", "expect": {"ops": [{"op": "accent", "hex": "#dc2626"}]}}
+{"text": "neela rang lagao buttons par", "context": "single", "expect": {"ops": [{"op": "accent", "hex": "#2563eb"}]}}
+{"text": "gulabi theme", "context": "single", "expect": {"ops": [{"op": "accent", "hex": "#ec4899"}]}}
+{"text": "sunehri colour use karo", "context": "multi", "expect": {"ops": [{"op": "accent", "hex": "#ca8a04"}]}}
+{"text": "aasmani buttons", "context": "single", "expect": {"ops": [{"op": "accent", "hex": "#0ea5e9"}]}}
+{"text": "make it sky blue", "context": "single", "expect": {"ops": [{"op": "accent", "hex": "#0ea5e9"}]}}
+{"text": "links ko maroon karo", "context": "multi", "expect": {"ops": [{"op": "accent", "hex": "#991b1b"}]}}
+{"text": "बटन का रंग लाल करो", "context": "single", "expect": {"ops": [{"op": "accent", "hex": "#dc2626"}]}}
+{"text": "नीला रंग लगाओ", "context": "multi", "expect": {"ops": [{"op": "accent", "hex": "#2563eb"}]}}
+{"text": "use teal for the theme", "context": "single", "expect": {"ops": [{"op": "accent", "hex": "#0d9488"}]}}
+{"text": "peela color chahiye bhai", "context": "multi", "expect": {"ops": [{"op": "accent", "hex": "#eab308"}]}}
+{"text": "buttons black karo", "context": "single", "expect": {"ops": [{"op": "accent", "hex": "#000000"}]}}
+{"text": "colours ko thoda garam banao", "context": "single", "expect": {"ops": [{"op": "tone", "tone": "warmer"}]}}
+{"text": "colours thode thande karo", "context": "multi", "expect": {"ops": [{"op": "tone", "tone": "cooler"}]}}
+{"text": "make colors brighter", "context": "single", "expect": {"ops": [{"op": "tone", "tone": "vibrant"}]}}
+{"text": "softer colours pls", "context": "multi", "expect": {"ops": [{"op": "tone", "tone": "muted"}]}}
+{"text": "make the colors darker", "context": "single", "expect": {"ops": [{"op": "tone", "tone": "darker"}]}}
+{"text": "halka colour karo", "context": "single", "expect": {"ops": [{"op": "tone", "tone": "lighter"}]}}
+{"text": "zyada colorful banao", "context": "single", "expect": {"ops": [{"op": "tone", "tone": "vibrant"}]}}
+{"text": "रंग थोड़े गर्म करो", "context": "single", "expect": {"ops": [{"op": "tone", "tone": "warmer"}]}}
+{"text": "default me dark mode rakhna", "context": "single", "expect": {"ops": [{"op": "mode", "mode": "dark"}]}}
+{"text": "switch to light theme", "context": "multi", "expect": {"ops": [{"op": "mode", "mode": "light"}]}}
+{"text": "black theme", "context": "single", "expect": {"ops": [{"op": "mode", "mode": "dark"}]}}
+{"text": "light mode chahiye bro", "context": "single", "expect": {"ops": [{"op": "mode", "mode": "light"}]}}
+{"text": "open the site in dark mode", "context": "multi", "expect": {"ops": [{"op": "mode", "mode": "dark"}]}}
+{"text": "डार्क मोड चालू करो", "context": "single", "expect": {"ops": [{"op": "mode", "mode": "dark"}]}}
+{"text": "dark moad pls", "context": "multi", "expect": {"ops": [{"op": "mode", "mode": "dark"}]}}
+{"text": "faq section nahi chahiye", "context": "single", "expect": {"ops": [{"op": "remove", "section": "faq"}]}}
+{"text": "pls get rid of faq", "context": "multi", "expect": {"ops": [{"op": "removePage", "page": "faq"}, {"op": "remove", "section": "faq"}]}}
+{"text": "pricng page hatao", "context": "multi", "expect": {"ops": [{"op": "removePage", "page": "pricing"}, {"op": "remove", "section": "pricing"}]}}
+{"text": "testimonails mat dikhao", "context": "single", "expect": {"ops": [{"op": "remove", "section": "testimonials"}]}}
+{"text": "blog ko delete kar do", "context": "multi", "expect": {"ops": [{"op": "removePage", "page": "blog"}, {"op": "remove", "section": "blog"}]}}
+{"text": "remove faq, blog and pricing", "context": "multi", "expect": {"ops": [{"op": "removePage", "page": "faq"}, {"op": "remove", "section": "faq"}, {"op": "removePage", "page": "blog"}, {"op": "remove", "section": "blog"}, {"op": "removePage", "page": "pricing"}, {"op": "remove", "section": "pricing"}]}}
+{"text": "remove faq, blog and pricing", "context": "single", "expect": {"ops": [{"op": "remove", "section": "faq"}, {"op": "remove", "section": "blog"}, {"op": "remove", "section": "pricing"}]}}
+{"text": "hide the stats", "context": "multi", "expect": {"ops": [{"op": "remove", "section": "stats"}]}}
+{"text": "add a galery", "context": "single", "expect": {"ops": [{"op": "add", "section": "gallery"}]}}
+{"text": "add a galery", "context": "multi", "expect": {"ops": [{"op": "addPage", "page": "gallery"}, {"op": "add", "section": "gallery"}]}}
+{"text": "ek team page bhi bana do", "context": "multi", "expect": {"ops": [{"op": "addPage", "page": "team"}, {"op": "add", "section": "team"}]}}
+{"text": "I want an about section", "context": "multi", "expect": {"ops": [{"op": "addPage", "page": "about"}, {"op": "add", "section": "about"}]}}
+{"text": "remove services", "context": "multi", "expect": {"ops": [{"op": "removePage", "page": "services"}, {"op": "remove", "section": "features"}]}}
+{"text": "remove the offerings", "context": "single", "expect": {"ops": [{"op": "remove", "section": "features"}]}}
+{"text": "menu hatao", "context": "multi", "expect": {"ops": [{"op": "removePage", "page": "services"}, {"op": "remove", "section": "features"}]}}
+{"text": "ticker hatao", "context": "single", "expect": {"ops": [{"op": "remove", "section": "marquee"}]}}
+{"text": "show achievements", "context": "multi", "expect": {"ops": [{"op": "add", "section": "stats"}]}}
+{"text": "how it works section add karo", "context": "single", "expect": {"ops": [{"op": "add", "section": "steps"}]}}
+{"text": "process hata do", "context": "multi", "expect": {"ops": [{"op": "remove", "section": "steps"}]}}
+{"text": "reviews hatao", "context": "multi", "expect": {"ops": [{"op": "remove", "section": "testimonials"}]}}
+{"text": "add a call to action banner", "context": "single", "expect": {"ops": [{"op": "add", "section": "cta"}]}}
+{"text": "get in touch section chahiye", "context": "single", "expect": {"ops": [{"op": "add", "section": "contact"}]}}
+{"text": "photos dikhao", "context": "single", "expect": {"ops": [{"op": "add", "section": "gallery"}]}}
+{"text": "tasveeren hata do", "context": "multi", "expect": {"ops": [{"op": "removePage", "page": "gallery"}, {"op": "remove", "section": "gallery"}]}}
+{"text": "doctors section add karo", "context": "single", "expect": {"ops": [{"op": "add", "section": "team"}]}}
+{"text": "daam wala section hatao", "context": "multi", "expect": {"ops": [{"op": "removePage", "page": "pricing"}, {"op": "remove", "section": "pricing"}]}}
+{"text": "रिव्यू हटाओ", "context": "multi", "expect": {"ops": [{"op": "remove", "section": "testimonials"}]}}
+{"text": "फोटो गैलरी जोड़ो", "context": "multi", "expect": {"ops": [{"op": "addPage", "page": "gallery"}, {"op": "add", "section": "gallery"}]}}
+{"text": "FAQ सेक्शन निकाल दो", "context": "single", "expect": {"ops": [{"op": "remove", "section": "faq"}]}}
+{"text": "प्राइसिंग पेज हटाओ", "context": "multi", "expect": {"ops": [{"op": "removePage", "page": "pricing"}, {"op": "remove", "section": "pricing"}]}}
+{"text": "our story section chahiye", "context": "multi", "expect": {"ops": [{"op": "addPage", "page": "about"}, {"op": "add", "section": "about"}]}}
+{"text": "news section remove", "context": "single", "expect": {"ops": [{"op": "remove", "section": "blog"}]}}
+{"text": "can u add pricing plans", "context": "multi", "expect": {"ops": [{"op": "addPage", "page": "pricing"}, {"op": "add", "section": "pricing"}]}}
+{"text": "plz delete the scrolling strip", "context": "multi", "expect": {"ops": [{"op": "remove", "section": "marquee"}]}}
+{"text": "blog page add kar do yaar", "context": "multi", "expect": {"ops": [{"op": "addPage", "page": "blog"}, {"op": "add", "section": "blog"}]}}
+{"text": "coaches wala section hata do", "context": "multi", "expect": {"ops": [{"op": "removePage", "page": "team"}, {"op": "remove", "section": "team"}]}}
+{"text": "keywords strip chahiye", "context": "multi", "expect": {"ops": [{"op": "add", "section": "marquee"}]}}
+{"text": "main heading ko Always Fresh kar do", "context": "single", "expect": {"ops": [{"op": "text", "field": "heroTitle", "text": "Always Fresh"}]}}
+{"text": "main button me Shop Now likh do", "context": "single", "expect": {"ops": [{"op": "text", "field": "heroButton", "text": "Shop Now"}]}}
+{"text": "sub heading: Made with care since 1998", "context": "multi", "expect": {"ops": [{"op": "text", "field": "heroSubtitle", "text": "Made with care since 1998"}]}}
+{"text": "tagline ko We're open 24/7 kar do", "context": "single", "expect": {"ops": [{"op": "text", "field": "heroSubtitle", "text": "We're open 24/7"}]}}
+{"text": "set the features title to What We Do Best", "context": "single", "expect": {"ops": [{"op": "text", "field": "featuresTitle", "text": "What We Do Best"}]}}
+{"text": "about title: Our Story & Values", "context": "multi", "expect": {"ops": [{"op": "text", "field": "aboutTitle", "text": "Our Story & Values"}]}}
+{"text": "contact heading Get In Touch Today", "context": "single", "expect": {"ops": [{"op": "text", "field": "contactTitle", "text": "Get In Touch Today"}]}}
+{"text": "cta title Join 500+ Members Now", "context": "single", "expect": {"ops": [{"op": "text", "field": "ctaTitle", "text": "Join 500+ Members Now"}]}}
+{"text": "headline: Rename Your Day", "context": "single", "expect": {"ops": [{"op": "text", "field": "heroTitle", "text": "Rename Your Day"}]}}
+{"text": "services title ko Our Services & Menu karo", "context": "multi", "expect": {"ops": [{"op": "text", "field": "featuresTitle", "text": "Our Services & Menu"}]}}
+{"text": "हेडलाइन Fresh Every Day रखो", "context": "single", "expect": {"ops": [{"op": "text", "field": "heroTitle", "text": "Fresh Every Day"}]}}
+{"text": "main button label Book Now", "context": "multi", "expect": {"ops": [{"op": "text", "field": "heroButton", "text": "Book Now"}]}}
+{"text": "subheading is Best Pizza in Pune", "context": "single", "expect": {"ops": [{"op": "text", "field": "heroSubtitle", "text": "Best Pizza in Pune"}]}}
+{"text": "bro hero title ko Gym For Everyone likh do", "context": "multi", "expect": {"ops": [{"op": "text", "field": "heroTitle", "text": "Gym For Everyone"}]}}
+{"text": "button text: Get Free Trial", "context": "single", "expect": {"ops": [{"op": "text", "field": "heroButton", "text": "Get Free Trial"}]}}
+{"text": "बटन पर Book Now लिखो", "context": "single", "expect": {"ops": [{"op": "text", "field": "heroButton", "text": "Book Now"}]}}
+{"text": "change title of the page to Welcome to Annie's Kitchen", "context": "multi", "expect": {"ops": [{"op": "text", "field": "heroTitle", "text": "Welcome to Annie's Kitchen"}]}}
+{"text": "about us ka title Hamari Kahani rakho", "context": "single", "expect": {"ops": [{"op": "text", "field": "aboutTitle", "text": "Hamari Kahani"}]}}
+{"text": "replace instructors with mentors", "context": "single", "expect": {"ops": [{"op": "replace", "from": "instructors", "to": "mentors"}]}}
+{"text": "'chai' ki jagah 'coffee' likho", "context": "multi", "expect": {"ops": [{"op": "replace", "from": "chai", "to": "coffee"}]}}
+{"text": "replace Pune with Mumbai everywhere", "context": "single", "expect": {"ops": [{"op": "replace", "from": "Pune", "to": "Mumbai"}]}}
+{"text": "coaches ki jagah trainers likh do", "context": "multi", "expect": {"ops": [{"op": "replace", "from": "coaches", "to": "trainers"}]}}
+{"text": "change every 'Gym' to 'Studio'", "context": "single", "expect": {"ops": [{"op": "replace", "from": "Gym", "to": "Studio"}]}}
+{"text": "replace customers with guests", "context": "single", "expect": {"ops": [{"op": "replace", "from": "customers", "to": "guests"}]}}
+{"text": "'shop' ko 'store' se badlo", "context": "multi", "expect": {"ops": [{"op": "replace", "from": "shop", "to": "store"}]}}
+{"text": "\"students\" की जगह \"learners\" लिखो", "context": "single", "expect": {"ops": [{"op": "replace", "from": "students", "to": "learners"}]}}
+{"text": "call me on 91234 56789", "context": "single", "expect": {"ops": [{"op": "contact", "field": "phone", "value": "91234 56789"}]}}
+{"text": "email support@mybiz.in rakho", "context": "multi", "expect": {"ops": [{"op": "contact", "field": "email", "value": "support@mybiz.in"}]}}
+{"text": "address is 8 Hill Rd, Nashik", "context": "single", "expect": {"ops": [{"op": "contact", "field": "address", "value": "8 Hill Rd, Nashik"}]}}
+{"text": "phone number +91 99887 76655 daal do", "context": "multi", "expect": {"ops": [{"op": "contact", "field": "phone", "value": "+91 99887 76655"}]}}
+{"text": "pata 45 Park Street, Kolkata likho", "context": "single", "expect": {"ops": [{"op": "contact", "field": "address", "value": "45 Park Street, Kolkata"}]}}
+{"text": "फोन नंबर 9876543210 है", "context": "single", "expect": {"ops": [{"op": "contact", "field": "phone", "value": "9876543210"}]}}
+{"text": "email is sales@zen-cafe.com", "context": "multi", "expect": {"ops": [{"op": "contact", "field": "email", "value": "sales@zen-cafe.com"}]}}
+{"text": "keep the design plain and simple", "context": "single", "expect": {"ops": [{"op": "tier", "tier": "normal"}]}}
+{"text": "give it a premium feel", "context": "multi", "expect": {"ops": [{"op": "tier", "tier": "premium"}]}}
+{"text": "ekdum fancy kar do", "context": "single", "expect": {"ops": [{"op": "tier", "tier": "premium"}]}}
+{"text": "thoda better banao", "context": "multi", "expect": {"ops": [{"op": "tier", "tier": "better"}]}}
+{"text": "bilkul simple rakho", "context": "single", "expect": {"ops": [{"op": "tier", "tier": "normal"}]}}
+{"text": "luxury wala look chahiye", "context": "single", "expect": {"ops": [{"op": "tier", "tier": "premium"}]}}
+{"text": "ekdum basic design", "context": "multi", "expect": {"ops": [{"op": "tier", "tier": "normal"}]}}
+{"text": "design thoda nicer karo", "context": "single", "expect": {"ops": [{"op": "tier", "tier": "better"}]}}
+{"text": "प्रीमियम लुक दो", "context": "single", "expect": {"ops": [{"op": "tier", "tier": "premium"}]}}
+{"text": "disable all animations", "context": "single", "expect": {"ops": [{"op": "motion", "level": "off"}]}}
+{"text": "animations thode kam kar do", "context": "multi", "expect": {"ops": [{"op": "motion", "level": "subtle"}]}}
+{"text": "need more animations", "context": "single", "expect": {"ops": [{"op": "motion", "level": "rich"}]}}
+{"text": "animation off kar do", "context": "single", "expect": {"ops": [{"op": "motion", "level": "off"}]}}
+{"text": "zyada animation chahiye", "context": "multi", "expect": {"ops": [{"op": "motion", "level": "rich"}]}}
+{"text": "stop the animatons", "context": "single", "expect": {"ops": [{"op": "motion", "level": "off"}]}}
+{"text": "only a little motion", "context": "single", "expect": {"ops": [{"op": "motion", "level": "subtle"}]}}
+{"text": "एनिमेशन बंद करो", "context": "multi", "expect": {"ops": [{"op": "motion", "level": "off"}]}}
+{"text": "actually this is a bakery not a school", "context": "single", "expect": {"ops": [{"op": "theme", "theme": "food_dining"}]}}
+{"text": "yeh doctor ka clinic hai", "context": "multi", "expect": {"ops": [{"op": "theme", "theme": "healthcare"}]}}
+{"text": "its a tour operator website", "context": "single", "expect": {"ops": [{"op": "theme", "theme": "travel_tourism"}]}}
+{"text": "its a salon not a clinic", "context": "multi", "expect": {"ops": [{"op": "theme", "theme": "beauty_wellness"}]}}
+{"text": "yeh coaching institute hai", "context": "single", "expect": {"ops": [{"op": "theme", "theme": "education"}]}}
+{"text": "its a consulting firm", "context": "single", "expect": {"ops": [{"op": "theme", "theme": "professional_services"}]}}
+{"text": "pet shop ki site hai yeh", "context": "multi", "expect": {"ops": [{"op": "theme", "theme": "pets_animals"}]}}
+{"text": "wedding planner hai ye", "context": "single", "expect": {"ops": [{"op": "theme", "theme": "events_wedding"}]}}
+{"text": "it's a car garage", "context": "single", "expect": {"ops": [{"op": "theme", "theme": "automotive"}]}}
+{"text": "yeh clothing store hai", "context": "multi", "expect": {"ops": [{"op": "theme", "theme": "fashion_retail"}]}}
+{"text": "undo last change", "context": "single", "expect": {"control": "undo"}}
+{"text": "pichla change wapas karo", "context": "multi", "expect": {"control": "undo"}}
+{"text": "oops revert that", "context": "single", "expect": {"control": "undo"}}
+{"text": "undo that plz", "context": "multi", "expect": {"control": "undo"}}
+{"text": "पिछला बदलाव वापस करो", "context": "single", "expect": {"control": "undo"}}
+{"text": "redo it", "context": "single", "expect": {"control": "redo"}}
+{"text": "dobara lagao wahi", "context": "multi", "expect": {"control": "redo"}}
+{"text": "do it again, redo", "context": "single", "expect": {"control": "redo"}}
+{"text": "reset all changes", "context": "single", "expect": {"control": "reset"}}
+{"text": "saare changes mita do", "context": "multi", "expect": {"control": "reset"}}
+{"text": "go back to the original design", "context": "single", "expect": {"control": "reset"}}
+{"text": "सब कुछ रीसेट करो", "context": "multi", "expect": {"control": "reset"}}
+{"text": "create a website for a cake shop in Surat", "context": "single", "expect": {"newSite": true}}
+{"text": "ek naya salon ka website banao", "context": "multi", "expect": {"newSite": true}}
+{"text": "make me a site for my dance academy", "context": "single", "expect": {"newSite": true}}
+{"text": "i need a site for my dental clinic Smile Care", "context": "multi", "expect": {"newSite": true}}
+{"text": "ek naya website chahiye restaurant ke liye", "context": "single", "expect": {"newSite": true}}
+{"text": "build a website for a yoga studio in Goa", "context": "multi", "expect": {"newSite": true}}
+{"text": "मेरे लिए एक स्कूल की वेबसाइट बनाओ", "context": "single", "expect": {"newSite": true}}
+{"text": "new site for a law firm called Rao & Associates", "context": "single", "expect": {"newSite": true}}
+{"text": "mere wedding planning business ki website banao yaar", "context": "multi", "expect": {"newSite": true}}
+{"text": "generate a landing page for my pet shop", "context": "single", "expect": {"newSite": true}}
+{"text": "thanks!", "context": "single", "expect": {"ops": []}}
+{"text": "hello", "context": "multi", "expect": {"ops": []}}
+{"text": "what can you do?", "context": "single", "expect": {"ops": []}}
+{"text": "contact hata do", "context": "multi", "expect": {"ops": []}}
+{"text": "kya yeh free hai", "context": "single", "expect": {"ops": []}}
+{"text": "धन्यवाद", "context": "single", "expect": {"ops": []}}
+{"text": "remove the contact page", "context": "multi", "expect": {"ops": []}}
+{"text": "ok cool bro", "context": "single", "expect": {"ops": []}}
+{"text": "how long will it take", "context": "multi", "expect": {"ops": []}}
+{"text": "delete contact section", "context": "single", "expect": {"ops": []}}
+{"text": "kala button karo aur animations kam", "context": "single", "expect": {"ops": [{"op": "accent", "hex": "#000000"}, {"op": "motion", "level": "subtle"}]}}
+{"text": "remove the stats, rename to Joe's Garage, then use #00AA55", "context": "multi", "expect": {"ops": [{"op": "remove", "section": "stats"}, {"op": "rename", "name": "Joe's Garage"}, {"op": "accent", "hex": "#00aa55"}]}}
+{"text": "remove the faq and rename it to Zen Cafe", "context": "single", "expect": {"ops": [{"op": "remove", "section": "faq"}, {"op": "rename", "name": "Zen Cafe"}]}}
+{"text": "rename to Salt and Pepper, make buttons red", "context": "single", "expect": {"ops": [{"op": "rename", "name": "Salt and Pepper"}, {"op": "accent", "hex": "#dc2626"}]}}
+{"text": "dark mode karo aur pricing hatao", "context": "multi", "expect": {"ops": [{"op": "mode", "mode": "dark"}, {"op": "removePage", "page": "pricing"}, {"op": "remove", "section": "pricing"}]}}
+{"text": "add gallery then remove blog", "context": "multi", "expect": {"ops": [{"op": "addPage", "page": "gallery"}, {"op": "add", "section": "gallery"}, {"op": "removePage", "page": "blog"}, {"op": "remove", "section": "blog"}]}}
+{"text": "phone 98765 43210 and email hi@x.com", "context": "single", "expect": {"ops": [{"op": "contact", "field": "phone", "value": "98765 43210"}, {"op": "contact", "field": "email", "value": "hi@x.com"}]}}
+{"text": "make it premium, no animations", "context": "single", "expect": {"ops": [{"op": "tier", "tier": "premium"}, {"op": "motion", "level": "off"}]}}
+{"text": "buttons neela karo aur dark mode default rakho", "context": "single", "expect": {"ops": [{"op": "accent", "hex": "#2563eb"}, {"op": "mode", "mode": "dark"}]}}
+{"text": "remove faq, hide team and delete the stats", "context": "multi", "expect": {"ops": [{"op": "removePage", "page": "faq"}, {"op": "remove", "section": "faq"}, {"op": "removePage", "page": "team"}, {"op": "remove", "section": "team"}, {"op": "remove", "section": "stats"}]}}
+{"text": "rename it to Red Rose Bakery and make the buttons gold", "context": "multi", "expect": {"ops": [{"op": "rename", "name": "Red Rose Bakery"}, {"op": "accent", "hex": "#ca8a04"}]}}
+{"text": "headline Fresh Every Day, button Order Now", "context": "single", "expect": {"ops": [{"op": "text", "field": "heroTitle", "text": "Fresh Every Day"}, {"op": "text", "field": "heroButton", "text": "Order Now"}]}}
+{"text": "add pricing aur testimonials bhi daalo", "context": "multi", "expect": {"ops": [{"op": "addPage", "page": "pricing"}, {"op": "add", "section": "pricing"}, {"op": "add", "section": "testimonials"}]}}
+{"text": "make the buttons dark blue and switch to light mode", "context": "single", "expect": {"ops": [{"op": "accent", "hex": "#2563eb"}, {"op": "mode", "mode": "light"}]}}
+{"text": "replace coaches with trainers and rename to Team Fitness", "context": "single", "expect": {"ops": [{"op": "replace", "from": "coaches", "to": "trainers"}, {"op": "rename", "name": "Team Fitness"}]}}
+{"text": "blog hatao then galery add karo", "context": "multi", "expect": {"ops": [{"op": "removePage", "page": "blog"}, {"op": "remove", "section": "blog"}, {"op": "addPage", "page": "gallery"}, {"op": "add", "section": "gallery"}]}}
+{"text": "address: 7 Lake View, Udaipur and phone 99887 76655", "context": "multi", "expect": {"ops": [{"op": "contact", "field": "address", "value": "7 Lake View, Udaipur"}, {"op": "contact", "field": "phone", "value": "99887 76655"}]}}
+{"text": "simpler design aur animation band", "context": "single", "expect": {"ops": [{"op": "tier", "tier": "normal"}, {"op": "motion", "level": "off"}]}}
+{"text": "colors warmer karo and add a faq", "context": "multi", "expect": {"ops": [{"op": "tone", "tone": "warmer"}, {"op": "addPage", "page": "faq"}, {"op": "add", "section": "faq"}]}}
+{"text": "rename to Joe & Sons, then remove the about us", "context": "multi", "expect": {"ops": [{"op": "rename", "name": "Joe & Sons"}, {"op": "removePage", "page": "about"}, {"op": "remove", "section": "about"}]}}
+{"text": "sub heading: Made with care since 1998 and cta title Join Us Today", "context": "single", "expect": {"ops": [{"op": "text", "field": "heroSubtitle", "text": "Made with care since 1998"}, {"op": "text", "field": "ctaTitle", "text": "Join Us Today"}]}}
+{"text": "remove services and pricing page", "context": "multi", "expect": {"ops": [{"op": "removePage", "page": "services"}, {"op": "remove", "section": "features"}, {"op": "removePage", "page": "pricing"}, {"op": "remove", "section": "pricing"}]}}
+{"text": "नाम Green Leaf रखो और डार्क मोड करो", "context": "single", "expect": {"ops": [{"op": "rename", "name": "Green Leaf"}, {"op": "mode", "mode": "dark"}]}}
+{"text": "faq hatao aur blog bhi hatao", "context": "single", "expect": {"ops": [{"op": "remove", "section": "faq"}, {"op": "remove", "section": "blog"}]}}
+{"text": "make it fancy, add a gallery and pls use #FF6600 for buttons", "context": "multi", "expect": {"ops": [{"op": "tier", "tier": "premium"}, {"op": "addPage", "page": "gallery"}, {"op": "add", "section": "gallery"}, {"op": "accent", "hex": "#ff6600"}]}}
+{"text": "this is a restaurant not a gym, rename it to Annie's Kitchen", "context": "single", "expect": {"ops": [{"op": "theme", "theme": "food_dining"}, {"op": "rename", "name": "Annie's Kitchen"}]}}
+{"text": "email support@mybiz.in rakho aur address 12 MG Road Pune", "context": "single", "expect": {"ops": [{"op": "contact", "field": "email", "value": "support@mybiz.in"}, {"op": "contact", "field": "address", "value": "12 MG Road Pune"}]}}
+{"text": "thoda soft colours and more motion", "context": "single", "expect": {"ops": [{"op": "tone", "tone": "muted"}, {"op": "motion", "level": "rich"}]}}
+{"text": "replace cafe with bistro, remove the ticker", "context": "single", "expect": {"ops": [{"op": "replace", "from": "cafe", "to": "bistro"}, {"op": "remove", "section": "marquee"}]}}
+{"text": "rename it to Red Velvet Team and add team", "context": "multi", "expect": {"ops": [{"op": "rename", "name": "Red Velvet Team"}, {"op": "addPage", "page": "team"}, {"op": "add", "section": "team"}]}}
+{"text": "light mode aur buttons hara", "context": "multi", "expect": {"ops": [{"op": "mode", "mode": "light"}, {"op": "accent", "hex": "#16a34a"}]}}
+{"text": "remove reviews, remove faq then add blog", "context": "multi", "expect": {"ops": [{"op": "remove", "section": "testimonials"}, {"op": "removePage", "page": "faq"}, {"op": "remove", "section": "faq"}, {"op": "addPage", "page": "blog"}, {"op": "add", "section": "blog"}]}}
+{"text": "pricng hatao, naam Blue Bird Cafe rakho", "context": "single", "expect": {"ops": [{"op": "remove", "section": "pricing"}, {"op": "rename", "name": "Blue Bird Cafe"}]}}
+{"text": "make buttons teal and colors cooler", "context": "single", "expect": {"ops": [{"op": "accent", "hex": "#0d9488"}, {"op": "tone", "tone": "cooler"}]}}
+{"text": "बटन नीला करो और गैलरी जोड़ो", "context": "multi", "expect": {"ops": [{"op": "accent", "hex": "#2563eb"}, {"op": "addPage", "page": "gallery"}, {"op": "add", "section": "gallery"}]}}
+{"text": "remove photos, hide the stats and no animations", "context": "single", "expect": {"ops": [{"op": "remove", "section": "gallery"}, {"op": "remove", "section": "stats"}, {"op": "motion", "level": "off"}]}}
+{"text": "button par Book Now likho aur headline Welcome to 4 Seasons", "context": "multi", "expect": {"ops": [{"op": "text", "field": "heroButton", "text": "Book Now"}, {"op": "text", "field": "heroTitle", "text": "Welcome to 4 Seasons"}]}}
+{"text": "add about, add team and add pricing", "context": "multi", "expect": {"ops": [{"op": "addPage", "page": "about"}, {"op": "add", "section": "about"}, {"op": "addPage", "page": "team"}, {"op": "add", "section": "team"}, {"op": "addPage", "page": "pricing"}, {"op": "add", "section": "pricing"}]}}
+{"text": "can you please make it dark and remove the blog", "context": "single", "expect": {"ops": [{"op": "mode", "mode": "dark"}, {"op": "remove", "section": "blog"}]}}
+{"text": "remove contact and add gallery", "context": "multi", "expect": {"ops": [{"op": "addPage", "page": "gallery"}, {"op": "add", "section": "gallery"}]}}
+{"text": "services title Our Menu & Specials, about title Who We Are", "context": "single", "expect": {"ops": [{"op": "text", "field": "featuresTitle", "text": "Our Menu & Specials"}, {"op": "text", "field": "aboutTitle", "text": "Who We Are"}]}}
+{"text": "phone number 98765 43210 daal do aur email info@sharmasweets.in", "context": "multi", "expect": {"ops": [{"op": "contact", "field": "phone", "value": "98765 43210"}, {"op": "contact", "field": "email", "value": "info@sharmasweets.in"}]}}
+{"text": "hata do faq, add steps, make it premium", "context": "single", "expect": {"ops": [{"op": "remove", "section": "faq"}, {"op": "add", "section": "steps"}, {"op": "tier", "tier": "premium"}]}}

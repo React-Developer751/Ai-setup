@@ -48,7 +48,7 @@ function UnderstandingPanel({ prompt, site, onSmartReady }: Props) {
   }
 
   return (
-    <div className="basis-full space-y-2 rounded-lg border border-gray-200 bg-gray-50 p-3 text-xs text-gray-600">
+    <div className="space-y-3 rounded-xl border border-gray-200 bg-gray-50/60 p-3 text-xs text-gray-600">
       <div className="flex flex-wrap items-center gap-2">
         <span>
           Understood as <b className="text-gray-900">{label(decision.theme)}</b>
@@ -56,9 +56,9 @@ function UnderstandingPanel({ prompt, site, onSmartReady }: Props) {
           {decision.source === 'blend' && <> · {Math.round(decision.confidence * 100)}% sure ({decision.sources.join(' + ')})</>}
           {decision.source === 'default' && <> · no clear signal, a general business page</>}
         </span>
-        <label className="flex items-center gap-1">
-          Not right?
-          <select value="" onChange={(e) => correct(e.target.value)} className="rounded-md border border-gray-300 px-2 py-1" aria-label="Correct the business type">
+        <label className="flex w-full items-center gap-2">
+          <span className="shrink-0">Not right?</span>
+          <select value="" onChange={(e) => correct(e.target.value)} className="min-w-0 flex-1 rounded-md border border-gray-300 px-2 py-1 text-xs" aria-label="Correct the business type">
             <option value="">choose the right one…</option>
             {THEME_KEYS.map((key) => (
               <option key={key} value={key}>
@@ -71,7 +71,7 @@ function UnderstandingPanel({ prompt, site, onSmartReady }: Props) {
       </div>
 
       <div className="flex flex-wrap items-center gap-2">
-        <label className="flex items-center gap-1">
+        <label className="flex w-full items-center gap-2">
           <input type="checkbox" checked={smart.status === 'ready' || smart.status === 'loading'} onChange={(e) => turn(e.target.checked)} />
           <b className="text-gray-800">Smart understanding</b> (reads the meaning, not only the words)
         </label>
@@ -81,7 +81,7 @@ function UnderstandingPanel({ prompt, site, onSmartReady }: Props) {
             setModel(e.target.value)
             if (smart.status === 'ready' || smart.status === 'loading') void setSmart(true, prompt, e.target.value).then(onSmartReady)
           }}
-          className="rounded-md border border-gray-300 px-2 py-1"
+          className="min-w-0 flex-1 rounded-md border border-gray-300 px-2 py-1 text-xs"
           aria-label="Smart model"
         >
           {Object.entries(EMBEDDING_MODELS).map(([key, m]) => (

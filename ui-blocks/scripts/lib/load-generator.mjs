@@ -23,6 +23,16 @@ function build(source) {
     const file = path.resolve(path.dirname(source), spec)
     return fs.existsSync(file) ? `const ${name} = JSON.parse(${JSON.stringify(fs.readFileSync(file, 'utf8'))});` : match
   })
+  // a JSON file loaded later with import('./x.json') is put into the module as it is
+  js = js.replace(/import\(['"](\.{1,2}\/[^'"]+\.json)['"]\)/g, (match, spec) => {
+    const file = path.resolve(path.dirname(source), spec)
+    return fs.existsSync(file) ? `Promise.resolve({ default: JSON.parse(${JSON.stringify(fs.readFileSync(file, 'utf8'))}) })` : match
+  })
+  // files read as text by Vite (`?raw`) are put into the module as strings
+  js = js.replace(/^import (\w+) from ['"](\.{1,2}\/[^'"]+)\?raw['"];?$/gm, (match, name, spec) => {
+    const file = path.resolve(path.dirname(source), spec)
+    return fs.existsSync(file) ? `const ${name} = ${JSON.stringify(fs.readFileSync(file, 'utf8'))};` : match
+  })
   js = js.replace(/(from\s+['"])(\.{1,2}\/[^'"]+)(['"])/g, (match, open, spec, close) => {
     const base = path.resolve(path.dirname(source), spec)
     const resolved = fs.existsSync(`${base}.ts`) ? `${base}.ts` : fs.existsSync(path.join(base, 'index.ts')) ? path.join(base, 'index.ts') : null

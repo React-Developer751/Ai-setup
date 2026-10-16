@@ -1,6 +1,7 @@
 // Wrapper used by pages built from the stored components: it re-colours them with CSS variables
 // (no change to the components) and fills their placeholder text with the generated content.
-import { useLayoutEffect, useRef, useState, type ReactNode } from 'react'
+import { createContext, useContext, useLayoutEffect, useRef, useState, type ReactNode } from 'react'
+import { sectionTokens } from '../edit/sectionColors'
 import type { WebsiteContent } from '../finalPrompt'
 import type { MotionPlan } from '../motionBrain'
 import { initMotion } from '../motionRuntime'
@@ -21,7 +22,21 @@ const linkLabels: [string, string][] = [
   ['contact', 'Contact'],
 ]
 
-export function Section({ role, children }: { role: Role; children: ReactNode }) {
+/** the page palette: a part with a colour of its own (`paint`) works out its text and accent from it */
+const PaletteContext = createContext<Palette | undefined>(undefined)
+
+export function Section({ role, paint, children }: { role: Role; /** background colour of this part only */ paint?: string; children: ReactNode }) {
+  const palette = useContext(PaletteContext)
+  if (paint && palette) {
+    const t = sectionTokens(paint, palette)
+    const own = { bg: t['--g-bg'], surface: t['--g-surface'], border: t['--g-border'], text: t['--g-text'], muted: t['--g-muted'], accent: t['--g-accent'], alt: t['--g-accent'] }
+    const { style, dark } = libraryThemeStyle({ name: 'part', light: own, dark: own }, 'light')
+    return (
+      <div id={sectionIds[role]} data-role={role} style={style} className={dark || own.text === '#f9fafb' ? 'dark' : undefined}>
+        {children}
+      </div>
+    )
+  }
   return (
     <div id={sectionIds[role]} data-role={role}>
       {children}
@@ -49,7 +64,8 @@ export function ThemeScope({
 }) {
   const ref = useRef<HTMLDivElement>(null)
   const [mode, setMode] = useState<ColorMode>(() => defaultMode(theme))
-  const { style, dark } = libraryThemeStyle(palette ?? presetPalette(theme, accent), mode)
+  const pagePalette = palette ?? presetPalette(theme, accent)
+  const { style, dark } = libraryThemeStyle(pagePalette, mode, theme)
 
   useLayoutEffect(() => {
     const root = ref.current
@@ -71,7 +87,7 @@ export function ThemeScope({
 
   return (
     <div ref={ref} data-gen-theme={theme} className={`overflow-x-clip ${dark ? 'dark' : ''}`} style={style}>
-      {children}
+      <PaletteContext.Provider value={pagePalette}>{children}</PaletteContext.Provider>
       {/* light / dark switch: sticks to the bottom-right corner of the screen on every device */}
       <div className="pointer-events-none sticky bottom-4 z-50 flex h-0 justify-end px-4">
         <button

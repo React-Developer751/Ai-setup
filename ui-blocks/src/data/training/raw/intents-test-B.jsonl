@@ -1,0 +1,176 @@
+{"text":"it feels a bit too elaborate for a small tailor shop like mine","label":"tier"}
+{"text":"could we go for something that looks pricier","label":"tier"}
+{"text":"my customers are rich, site should say that","label":"tier"}
+{"text":"kuch toh jyada hi saja diya hai, halka kar do","label":"tier"}
+{"text":"looks like a school project, please lift the quality","label":"tier"}
+{"text":"less is more here","label":"tier"}
+{"text":"I'd prefer a more understated style","label":"tier"}
+{"text":"upscale clientele, so make the design match","label":"tier"}
+{"text":"thoda sa aur uthaao design ko, abhi dull hai","label":"tier"}
+{"text":"stripped back version","label":"tier"}
+{"text":"can it look like it costs a lot","label":"tier"}
+{"text":"bohot heavy lag raha hai","label":"tier"}
+{"text":"step it up","label":"tier"}
+{"text":"something more refined, if possible","label":"tier"}
+{"text":"isko ek level upar le jao","label":"tier"}
+{"text":"design kaafi kam kar do","label":"tier"}
+{"text":"just the essentials look","label":"tier"}
+{"text":"I want it to feel boutique and high end","label":"tier"}
+{"text":"make it more serious and corporate","label":"tier"}
+{"text":"kam se kam design rakho","label":"tier"}
+{"text":"पूरा डिज़ाइन थोड़ा रिच करो","label":"tier"}
+{"text":"bhai thoda swag lao design me, abhi sadha hai","label":"tier"}
+{"text":"my old phone lags, can the page stop moving around","label":"motion"}
+{"text":"it would be great if things gently appeared as people scroll","label":"motion"}
+{"text":"can you make it less jumpy","label":"motion"}
+{"text":"the website feels dead, give it some life","label":"motion"}
+{"text":"kya aap animation ko thoda halka kar sakte hain","label":"motion"}
+{"text":"I don't want anything flying in","label":"motion"}
+{"text":"bhai yeh sab hilna band karwa do","label":"motion"}
+{"text":"let content ease in rather than just sitting there","label":"motion"}
+{"text":"too many things flashing about","label":"motion"}
+{"text":"only a hint of movement","label":"motion"}
+{"text":"sab kuch ek dum static chahiye","label":"motion"}
+{"text":"a touch of motion would be lovely","label":"motion"}
+{"text":"scrolling pe kuch cool dikhna chahiye","label":"motion"}
+{"text":"can the sections reveal themselves slowly","label":"motion"}
+{"text":"please calm the page down","label":"motion"}
+{"text":"जब स्क्रॉल करूं तो चीज़ें धीरे से आएं","label":"motion"}
+{"text":"going all out on effects, I want it dramatic","label":"motion"}
+{"text":"animation vala kaam thoda kam karo na","label":"motion"}
+{"text":"no whooshing stuff pls","label":"motion"}
+{"text":"give the page some energy","label":"motion"}
+{"text":"it should feel still and serene","label":"motion"}
+{"text":"hover pe thoda pop hona chahiye aur scroll pe bhi","label":"motion"}
+{"text":"हम एक बेकरी हैं, कृपया उसी हिसाब से बदलें","label":"change_business"}
+{"text":"I sell sarees and suits, not gadgets","label":"change_business"}
+{"text":"hum bachon ko padhate hain, company nahi hai ye","label":"change_business"}
+{"text":"we are a clinic for teeth, nothing to do with fitness","label":"change_business"}
+{"text":"mere paas pet ki dukaan hai, galat category lag gayi","label":"change_business"}
+{"text":"the site is about weddings, we plan them","label":"change_business"}
+{"text":"dukaan jewellery ki hai, technology ki nahi","label":"change_business"}
+{"text":"actually we run a small cafe near the station","label":"change_business"}
+{"text":"i am a photographer sorry wrong type","label":"change_business"}
+{"text":"ye doctor ki website honi chahiye","label":"change_business"}
+{"text":"not a shop at all, we do tax filing and accounts","label":"change_business"}
+{"text":"bhai galat samajh liya aapne, main property dealer chalata hu","label":"change_business"}
+{"text":"sorry, I think you misunderstood, we are a jewellery shop","label":"change_business"}
+{"text":"we actually deal in cafe stuff, adjust the site type","label":"change_business"}
+{"text":"switch the category to hospital","label":"change_business"}
+{"text":"ye kaam interior designer ka hai ji, website us hisaab se banao","label":"change_business"}
+{"text":"not really a law firm, more of a software company","label":"change_business"}
+{"text":"bhai galat samajh liya aapne, main darzi chalata hu","label":"change_business"}
+{"text":"sorry, I think you misunderstood, we are a electrician","label":"change_business"}
+{"text":"we actually deal in spa stuff, adjust the site type","label":"change_business"}
+{"text":"switch the category to florist","label":"change_business"}
+{"text":"ye kaam CA ka hai ji, website us hisaab se banao","label":"change_business"}
+{"text":"hmm I preferred what we had one step ago","label":"undo"}
+{"text":"that last thing you did, please take it away","label":"undo"}
+{"text":"arey yaar yeh kya kar diya, pehle wala hi theek tha","label":"undo"}
+{"text":"could you step back to before that edit","label":"undo"}
+{"text":"not happy with this, bring back what it was a moment ago","label":"undo"}
+{"text":"जो अभी बदला उसे हटाकर पुराना दिखाओ","label":"undo"}
+{"text":"oops","label":"undo"}
+{"text":"undoing please","label":"undo"}
+{"text":"i changed my mind about the last one","label":"undo"}
+{"text":"take me back","label":"undo"}
+{"text":"please revert the most recent modification","label":"undo"}
+{"text":"wapas","label":"undo"}
+{"text":"pehle wala dikhao","label":"undo"}
+{"text":"ye wala nahi, uske pehle wala","label":"undo"}
+{"text":"rewind","label":"undo"}
+{"text":"can we go to the earlier version","label":"undo"}
+{"text":"ctrl-z that","label":"undo"}
+{"text":"sorry mis-click, undo","label":"undo"}
+{"text":"the change before this was nicer","label":"undo"}
+{"text":"lets go back a step","label":"undo"}
+{"text":"last wala galat ho gaya, hata do","label":"undo"}
+{"text":"bring the old thing back","label":"undo"}
+{"text":"oops I shouldn't have undone that, put it back","label":"redo"}
+{"text":"the thing before I went back, I want it again","label":"redo"}
+{"text":"wait, restore that edit I just cancelled","label":"redo"}
+{"text":"pehle wala change thik tha, undo ko cancel kar do","label":"redo"}
+{"text":"reapply what we removed a moment ago","label":"redo"}
+{"text":"go forward again","label":"redo"}
+{"text":"फिर से वही बदलाव कर दो","label":"redo"}
+{"text":"sorry, I wanted that, bring it forward","label":"redo"}
+{"text":"apply what I just took back","label":"redo"}
+{"text":"jo abhi wapas liya wo dobara aage laao","label":"redo"}
+{"text":"undo ghalat tha","label":"redo"}
+{"text":"redone please","label":"redo"}
+{"text":"can you redo it for me","label":"redo"}
+{"text":"cancel my previous undo","label":"redo"}
+{"text":"do what you did before again","label":"redo"}
+{"text":"change wapas daal do jo undo hua","label":"redo"}
+{"text":"return that change","label":"redo"}
+{"text":"that undo was a mistake","label":"redo"}
+{"text":"reinstate the change please","label":"redo"}
+{"text":"dobara se wahi chahiye","label":"redo"}
+{"text":"same as before again","label":"redo"}
+{"text":"redo karna tha","label":"redo"}
+{"text":"I've made too many edits, take it all back to how you first made it","label":"reset"}
+{"text":"please wipe every tweak I asked for","label":"reset"}
+{"text":"sab kuch jo humne badla wo mita do, wahi pehla wala chahiye","label":"reset"}
+{"text":"let's forget all the modifications","label":"reset"}
+{"text":"I want the website exactly as generated at first","label":"reset"}
+{"text":"दोबारा से शुरू, बदलाव सब मिटाओ","label":"reset"}
+{"text":"nuke all my changes","label":"reset"}
+{"text":"everything I changed, drop it","label":"reset"}
+{"text":"jo bhi badlav kiye sab khatam","label":"reset"}
+{"text":"take it back to zero","label":"reset"}
+{"text":"go back to the very first version you made","label":"reset"}
+{"text":"return to factory look","label":"reset"}
+{"text":"too messy now, clean it up to the original","label":"reset"}
+{"text":"delete every change so far","label":"reset"}
+{"text":"fir se pehle jaisa poora","label":"reset"}
+{"text":"all my modifications should vanish","label":"reset"}
+{"text":"blank edits, original please","label":"reset"}
+{"text":"reset the lot","label":"reset"}
+{"text":"I want no changes applied at all","label":"reset"}
+{"text":"sab kuch original kar do na please","label":"reset"}
+{"text":"clear every edit","label":"reset"}
+{"text":"put everything back as default","label":"reset"}
+{"text":"website needed - pet grooming shop in Bangalore","label":"new_site"}
+{"text":"hello, we just opened a travel agency for Kerala tours and would love an online presence, could you whip something up","label":"new_site"}
+{"text":"website needed - law firm in Chandigarh","label":"new_site"}
+{"text":"hello, we just opened a cafe in Goa and would love an online presence, could you whip something up","label":"new_site"}
+{"text":"website needed - interior design studio","label":"new_site"}
+{"text":"hello, we just opened a car repair garage in Nagpur and would love an online presence, could you whip something up","label":"new_site"}
+{"text":"website needed - organic vegetable farm","label":"new_site"}
+{"text":"hello, we just opened a salon for brides and would love an online presence, could you whip something up","label":"new_site"}
+{"text":"website needed - school in Lucknow","label":"new_site"}
+{"text":"hello, we just opened a NGO that feeds street dogs and would love an online presence, could you whip something up","label":"new_site"}
+{"text":"website needed - real estate broker in Noida","label":"new_site"}
+{"text":"hello, we just opened a sweet shop in Indore and would love an online presence, could you whip something up","label":"new_site"}
+{"text":"हमारी एक नई मिठाई की दुकान है, उसके लिए पूरी वेबसाइट चाहिए","label":"new_site"}
+{"text":"not related to this one - I need a fresh website for my homestay in Manali called Cedar Nest","label":"new_site"}
+{"text":"pehle wali nahi, ek naya site banao ek mehndi artist ke liye jiska naam Henna Hues hai","label":"new_site"}
+{"text":"let's do another site: a luxury car rental company, offices in Delhi and Gurgaon, airport transfers","label":"new_site"}
+{"text":"kya tum mere ice cream parlour ke liye alag se ek nayi website bana doge, naam Frosty Spoon","label":"new_site"}
+{"text":"Can you design a website from scratch for a men's grooming salon named Sharp Edge","label":"new_site"}
+{"text":"new project: online tutoring for spoken English, teachers are all from Chennai","label":"new_site"}
+{"text":"dhaba on highway, Punjabi food, need a full website","label":"new_site"}
+{"text":"consulting firm for startups in Bengaluru, make me a site","label":"new_site"}
+{"text":"एक योग गुरु की निजी वेबसाइट बनाइए","label":"new_site"}
+{"text":"I'll show this to my wife tonight and get back to you","label":"other"}
+{"text":"can this thing also send emails to my customers","label":"other"}
+{"text":"wah, ye toh kamaal ka hai, mere dost bhi use karenge","label":"other"}
+{"text":"do you store my data anywhere","label":"other"}
+{"text":"is there a paid plan or everything is free","label":"other"}
+{"text":"kal subah baat karte hain, abhi chai peeni hai","label":"other"}
+{"text":"what languages do you understand","label":"other"}
+{"text":"hmm let me think","label":"other"}
+{"text":"itna jaldi kaise bana diya yaar","label":"other"}
+{"text":"your tool is better than the one my nephew used","label":"other"}
+{"text":"no idea what to say lol","label":"other"}
+{"text":"pehle bataiye ye kaam kaise karta hai","label":"other"}
+{"text":"good work team, keep it up","label":"other"}
+{"text":"I think my internet is bad today","label":"other"}
+{"text":"any tips for getting more customers","label":"other"}
+{"text":"accha theek hai, dekhte hain","label":"other"}
+{"text":"क्या आप मेरे साथ हिंदी में बात कर सकते हैं","label":"other"}
+{"text":"sorry, wrong chat","label":"other"}
+{"text":"the page took a long time to open","label":"other"}
+{"text":"cricket ka score kya hai","label":"other"}
+{"text":"oh nice, didn't expect that","label":"other"}
+{"text":"who is your owner","label":"other"}

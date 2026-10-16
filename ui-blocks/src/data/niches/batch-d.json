@@ -1,0 +1,3338 @@
+[
+  {
+    "id": "tattoo_studio",
+    "label": "Tattoo studio",
+    "theme": "creative_studio",
+    "keywords": [
+      "tattoo",
+      "tattoo artist",
+      "tattoo design",
+      "tattoo cover up",
+      "piercing",
+      "permanent tattoo",
+      "tatoo",
+      "टैटू"
+    ],
+    "heroTitles": [
+      "Ink That Is Drawn Only For You",
+      "Your Story, Needle By Needle",
+      "Clean Studio, Bold Linework"
+    ],
+    "heroSubtitles": [
+      "{brand} designs every tattoo from scratch with you, then inks it with sterile single-use needles in a spotless private booth.",
+      "From a tiny minimal symbol to a full sleeve, sit down with an artist at {brand} and turn a rough idea into skin-ready art.",
+      "Old tattoo you regret or a scar you want to hide? {brand} plans cover-ups and reworks with honest advice on what will work."
+    ],
+    "button": "Book A Tattoo Consultation",
+    "featureTitle": "Tattoo And Piercing Work Done Properly",
+    "features": [
+      {
+        "title": "Custom Tattoo Designs",
+        "text": "Your artist sketches an original design around your idea, size and placement instead of copying a flash sheet."
+      },
+      {
+        "title": "Sterile Single-Use Needles",
+        "text": "Needles, tubes and ink caps are opened fresh in front of you, and every station is wiped down between clients."
+      },
+      {
+        "title": "Cover-Ups And Reworks",
+        "text": "Faded, patchy or unwanted tattoos are assessed first, then redesigned with darker, denser art to cover them."
+      },
+      {
+        "title": "Fine Line And Minimal",
+        "text": "Small lettering, symbols and delicate line tattoos done with steady hands and light, controlled shading."
+      },
+      {
+        "title": "Body Piercing",
+        "text": "Ear, nose and navel piercings done with sterile equipment, proper jewellery and clear healing instructions."
+      },
+      {
+        "title": "Aftercare Guidance",
+        "text": "You leave with written aftercare steps, a healing balm and a free touch-up check once the skin has settled."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Single-use",
+        "label": "Needles every time"
+      },
+      {
+        "value": "Free",
+        "label": "Design consultation"
+      },
+      {
+        "value": "Private",
+        "label": "Booth for each client"
+      }
+    ],
+    "steps": {
+      "title": "From Idea To Healed Tattoo",
+      "items": [
+        {
+          "title": "Share Your Idea",
+          "text": "Bring references, a rough sketch or just a feeling, and tell us where on the body it should go."
+        },
+        {
+          "title": "Approve The Design",
+          "text": "Your artist draws a stencil, and we adjust size and detail until you are fully happy with it."
+        },
+        {
+          "title": "Get Inked",
+          "text": "The stencil is placed on clean skin and the tattoo is done in a sterile, private booth with breaks."
+        },
+        {
+          "title": "Heal And Touch Up",
+          "text": "Follow the aftercare sheet, then come back for a quick check and touch-up if any spot needs it."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Does getting a tattoo hurt a lot?",
+        "a": "It feels different on every body part and for every person. Ribs and fingers sting more than the outer arm, and we pause whenever you need a break."
+      },
+      {
+        "q": "Do you reuse needles or ink?",
+        "a": "Never. Needles and tubes are single-use and opened in front of you, and ink goes into a fresh cap for every client."
+      },
+      {
+        "q": "Can an old tattoo be covered?",
+        "a": "Often yes, with a bigger and darker design. The artist looks at the old tattoo in person before suggesting what is realistic."
+      },
+      {
+        "q": "How should I look after a new tattoo?",
+        "a": "Keep it clean, apply a thin layer of the balm we give you and avoid sun, swimming and scratching while it heals."
+      },
+      {
+        "q": "Do I need to book before coming in?",
+        "a": "Yes for tattoos, since each design needs time. Piercings can sometimes be done on the same day, so message us to check."
+      }
+    ],
+    "cta": {
+      "title": "Ready To Plan Your Next Tattoo?",
+      "button": "Book My Tattoo Slot"
+    },
+    "about": {
+      "title": "A Studio Built Around Safe, Original Art",
+      "paragraphs": [
+        "{brand} is an artist-run tattoo studio where every design is drawn for the person wearing it, never pulled from a catalogue.",
+        "We keep the space clean and the process open: you see the new needle, you approve the stencil, and you never feel rushed into a decision."
+      ],
+      "points": [
+        "Original artwork only",
+        "Hospital-style hygiene",
+        "Honest cover-up advice"
+      ]
+    },
+    "pricing": {
+      "title": "Simple Tattoo Pricing",
+      "plans": [
+        {
+          "name": "Minimal Tattoo",
+          "price": "$25",
+          "period": "/piece",
+          "perks": [
+            "Small symbol or text",
+            "Stencil approval",
+            "Aftercare balm"
+          ]
+        },
+        {
+          "name": "Custom Piece",
+          "price": "$80",
+          "period": "/session",
+          "perks": [
+            "Original design drawn",
+            "Medium size artwork",
+            "Free touch-up check"
+          ]
+        },
+        {
+          "name": "Cover-Up Or Sleeve",
+          "price": "$200",
+          "period": "/session",
+          "perks": [
+            "Planned across sessions",
+            "Detailed shading work",
+            "Priority artist time"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Fresh From The Booth",
+      "captions": [
+        "Fine line florals",
+        "Blackwork sleeve",
+        "Lettering and script",
+        "Cover-up rework",
+        "Realistic portrait",
+        "Minimal symbols"
+      ]
+    },
+    "team": {
+      "title": "Meet The Artists",
+      "roles": [
+        "Lead Tattoo Artist",
+        "Piercing Specialist",
+        "Studio Manager"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "The artist redrew my design twice until it felt right, and the studio looked spotless from start to finish.",
+        "role": "First-time tattoo client"
+      },
+      {
+        "quote": "They covered my old faded tattoo with something far better and explained the healing steps clearly.",
+        "role": "Cover-up client"
+      },
+      {
+        "quote": "Quick, gentle piercing with proper jewellery, and I got a printed care sheet to take home.",
+        "role": "Piercing client"
+      }
+    ],
+    "blog": {
+      "title": "Tattoo Notes",
+      "posts": [
+        {
+          "tag": "Aftercare",
+          "title": "How To Heal A New Tattoo Week By Week"
+        },
+        {
+          "tag": "Planning",
+          "title": "What To Bring To Your First Tattoo Consultation"
+        },
+        {
+          "tag": "Cover-Ups",
+          "title": "Can A Dark Old Tattoo Really Be Covered Up"
+        }
+      ]
+    },
+    "marquee": [
+      "Custom Ink",
+      "Fine Line",
+      "Cover-Ups",
+      "Piercing",
+      "Sterile Gear",
+      "Blackwork",
+      "Lettering",
+      "Aftercare"
+    ],
+    "contactText": "Send {brand} a picture of your idea or the tattoo you want covered, and an artist will reply with a suggested plan and a consultation slot."
+  },
+  {
+    "id": "drone_photography",
+    "label": "Drone photography",
+    "theme": "creative_studio",
+    "keywords": [
+      "drone photography",
+      "drone videography",
+      "drone shoot",
+      "aerial photography",
+      "drone operator",
+      "wedding drone",
+      "drone camera on rent",
+      "ड्रोन फोटोग्राफी"
+    ],
+    "heroTitles": [
+      "See Your Place From The Sky",
+      "Aerial Shots That Stop The Scroll",
+      "Higher Angles, Sharper Stories"
+    ],
+    "heroSubtitles": [
+      "{brand} flies licensed pilots and 4K camera drones to capture weddings, property, events and sites from angles the ground cannot reach.",
+      "Need a smooth aerial reel or a clean overhead map of your land? {brand} plans the flight, shoots it safely and edits it for you.",
+      "Weddings, farmhouses, factories and festivals look different from above, and {brand} films them with steady, cinematic drone footage."
+    ],
+    "button": "Get A Drone Shoot Quote",
+    "featureTitle": "Aerial Photo And Video For Every Occasion",
+    "features": [
+      {
+        "title": "Wedding Drone Coverage",
+        "text": "Baraat, venue entry and ceremony captured from above, planned with your photographer so nothing overlaps."
+      },
+      {
+        "title": "Real Estate Aerials",
+        "text": "Plots, farmhouses and buildings shown with their surroundings, roads and boundaries in clean overhead frames."
+      },
+      {
+        "title": "Construction Progress",
+        "text": "Scheduled flights record each stage of a site so owners and investors can see progress without visiting."
+      },
+      {
+        "title": "Event And Festival Videos",
+        "text": "Crowd scale, stage layout and procession routes filmed in smooth 4K with quiet, steady flight paths."
+      },
+      {
+        "title": "Inspection And Survey Shots",
+        "text": "Rooftops, towers and large solar plants checked from the air, with close images of problem areas."
+      },
+      {
+        "title": "Editing And Delivery",
+        "text": "Footage is colour graded, trimmed with music if you want it, and delivered as reel, full video and raw photos."
+      }
+    ],
+    "stats": [
+      {
+        "value": "4K",
+        "label": "Video resolution"
+      },
+      {
+        "value": "Licensed",
+        "label": "Drone pilots"
+      },
+      {
+        "value": "Pre-planned",
+        "label": "Flight permissions"
+      }
+    ],
+    "steps": {
+      "title": "How A Drone Shoot Works",
+      "items": [
+        {
+          "title": "Brief And Recce",
+          "text": "Tell us the location and shots you want, and we check airspace rules and take permission."
+        },
+        {
+          "title": "Flight Plan",
+          "text": "We pick the time of day for the best light and decide the paths, heights and backup batteries."
+        },
+        {
+          "title": "Shoot Day",
+          "text": "The pilot and a spotter fly the drone safely and capture photos and video as per the plan."
+        },
+        {
+          "title": "Edit And Deliver",
+          "text": "Footage is graded and cut, and the final files reach you through a download link."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Do you take permission to fly the drone?",
+        "a": "Yes. We check airspace zones, register flights where required and arrange permission for sensitive places before the shoot day."
+      },
+      {
+        "q": "Can you shoot indoors or in crowded halls?",
+        "a": "Small indoor drone shots are possible in large halls with owner approval. Dense crowds are kept at a safe distance for everyone."
+      },
+      {
+        "q": "What if it rains or is very windy?",
+        "a": "Drones do not fly safely in rain or strong wind, so we move the shoot to another slot at no extra charge."
+      },
+      {
+        "q": "In what format do I get the files?",
+        "a": "You get 4K video, edited reels for social media and high-resolution photos through a download link."
+      },
+      {
+        "q": "How long does editing take?",
+        "a": "A short reel usually takes a few days and a full event film takes longer. We confirm the date when you book."
+      }
+    ],
+    "cta": {
+      "title": "Want Your Next Shoot From Above?",
+      "button": "Get A Drone Shoot Quote"
+    },
+    "about": {
+      "title": "Pilots Who Think Like Photographers",
+      "paragraphs": [
+        "{brand} is a small aerial team that treats the drone as a camera first. We plan the light, the framing and the story before the propellers spin.",
+        "Safety comes before the shot. We carry spare batteries, check wind and airspace, and never fly over people without clear distance."
+      ],
+      "points": [
+        "Licensed pilots",
+        "Light and angle planning",
+        "Safe flights only"
+      ]
+    },
+    "pricing": {
+      "title": "Drone Shoot Packages",
+      "plans": [
+        {
+          "name": "Property Shoot",
+          "price": "$40",
+          "period": "/shoot",
+          "perks": [
+            "20 edited aerial photos",
+            "One 60-second clip",
+            "Delivery by link"
+          ]
+        },
+        {
+          "name": "Event Coverage",
+          "price": "$110",
+          "period": "/event",
+          "perks": [
+            "Up to 3 hours flying",
+            "4K edited highlight video",
+            "Social media reel"
+          ]
+        },
+        {
+          "name": "Full Day Project",
+          "price": "$220",
+          "period": "/day",
+          "perks": [
+            "Multiple locations",
+            "Full film with music",
+            "Raw footage included"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Seen From Above",
+      "captions": [
+        "Baraat from above",
+        "Farmhouse overview",
+        "River bend sunrise",
+        "Construction site",
+        "Festival crowd",
+        "Resort at dusk"
+      ]
+    },
+    "team": {
+      "title": "The Flight Crew",
+      "roles": [
+        "Licensed Drone Pilot",
+        "Aerial Video Editor",
+        "Flight Coordinator"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "The aerial clips of our venue made the wedding film look cinematic, and the pilot coordinated well with our photographer.",
+        "role": "Wedding client"
+      },
+      {
+        "quote": "They covered our plot from four angles and delivered edited photos on time for the listing.",
+        "role": "Property dealer"
+      },
+      {
+        "quote": "Monthly site flights helped us show progress to investors without anyone travelling to the project.",
+        "role": "Builder"
+      }
+    ],
+    "blog": {
+      "title": "From The Flight Log",
+      "posts": [
+        {
+          "tag": "Weddings",
+          "title": "Where A Drone Fits In Your Wedding Day Plan"
+        },
+        {
+          "tag": "Property",
+          "title": "Aerial Photos That Help A Plot Sell Faster"
+        },
+        {
+          "tag": "Rules",
+          "title": "Drone Permission In India Explained Simply"
+        }
+      ]
+    },
+    "marquee": [
+      "Aerial 4K",
+      "Drone Reels",
+      "Wedding Drone",
+      "Site Survey",
+      "Roof Checks",
+      "Property Shots",
+      "Event Films",
+      "Cinematic"
+    ],
+    "contactText": "Tell {brand} the place, date and kind of shots you have in mind, and we will reply with a flight plan and a quote."
+  },
+  {
+    "id": "wedding_dj_sound",
+    "label": "Wedding DJ and sound",
+    "theme": "events_wedding",
+    "keywords": [
+      "wedding dj",
+      "dj on rent",
+      "dj sound system",
+      "dj for party",
+      "sound system rental",
+      "dj booking",
+      "sangeet dj",
+      "डीजे"
+    ],
+    "heroTitles": [
+      "Fill The Floor Till The Last Song",
+      "Loud Where It Counts, Clear Everywhere",
+      "Your Baraat Deserves A Proper Beat"
+    ],
+    "heroSubtitles": [
+      "{brand} brings DJs, speakers, lights and a sound engineer to weddings, sangeets and parties and reads the crowd all night.",
+      "From the baraat dhol mix to the last slow song, {brand} builds the playlist with you and runs the whole sound setup.",
+      "Rent a full DJ setup or book a DJ with lights and fog. {brand} sets up early, tests every mic and plays on your schedule."
+    ],
+    "button": "Check DJ Date Availability",
+    "featureTitle": "Sound, Lights And A DJ Who Reads The Room",
+    "features": [
+      {
+        "title": "Wedding And Sangeet DJ",
+        "text": "Bollywood, Punjabi and regional sets planned with your family, then adjusted live as the dance floor responds."
+      },
+      {
+        "title": "Baraat Sound Setup",
+        "text": "Mobile speakers and wireless mics for the procession, with a clean handover to the venue system at the entry."
+      },
+      {
+        "title": "Speakers And Mixers",
+        "text": "Line-array style speakers, subwoofers and digital mixers sized to your hall or lawn so sound is even everywhere."
+      },
+      {
+        "title": "Lights And Dance Floor",
+        "text": "Moving heads, laser and cold-spark effects timed to key moments like the couple entry and the first dance."
+      },
+      {
+        "title": "Mics And Stage Audio",
+        "text": "Wireless handhelds and lapel mics for speeches, anchors and live singers, tested before the first guest arrives."
+      },
+      {
+        "title": "Corporate And Birthday Gigs",
+        "text": "Smaller setups for office parties, birthdays and house parties, with a DJ who keeps the volume friendly."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Backup",
+        "label": "Gear on every event"
+      },
+      {
+        "value": "Early",
+        "label": "Setup and sound check"
+      },
+      {
+        "value": "Custom",
+        "label": "Playlist with you"
+      }
+    ],
+    "steps": {
+      "title": "How We Plan Your Night",
+      "items": [
+        {
+          "title": "Share The Plan",
+          "text": "Tell us the date, venue, guest count and the music mood for each function."
+        },
+        {
+          "title": "Build The Playlist",
+          "text": "You send must-play and do-not-play songs, and we shape the set around family and friends."
+        },
+        {
+          "title": "Setup And Sound Check",
+          "text": "The crew reaches early, places speakers and lights and tests every mic before guests walk in."
+        },
+        {
+          "title": "Play And Pack",
+          "text": "The DJ runs the night, reads the crowd and the team packs up quietly after the final song."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Will the DJ play only our song list?",
+        "a": "He plays your must-play songs and avoids your blocked ones, and fills the gaps by watching what the crowd actually dances to."
+      },
+      {
+        "q": "How early do you reach the venue?",
+        "a": "Usually three to four hours before start time, so the setup and sound check are done well before the first guest."
+      },
+      {
+        "q": "Do you bring backup equipment?",
+        "a": "Yes. We carry a spare mixer, mics and cables so a single failure never stops the music."
+      },
+      {
+        "q": "Can you work within venue sound limits?",
+        "a": "Yes. We check the venue and local timing rules in advance and adjust the volume and setup to stay within them."
+      },
+      {
+        "q": "Is the generator or power included?",
+        "a": "We can arrange a silent generator if the venue has weak power. Tell us when booking so it is added to the quote."
+      }
+    ],
+    "cta": {
+      "title": "Is Your Date Still Open For Us?",
+      "button": "Reserve My Date"
+    },
+    "about": {
+      "title": "Sound Crew That Stays Behind The Beat",
+      "paragraphs": [
+        "{brand} is a DJ and sound team that has set up for lawns, banquet halls, terraces and farmhouse weddings, so every venue's echo is familiar.",
+        "We care about two things: guests should hear clearly even at the back, and the dance floor should never go empty for long."
+      ],
+      "points": [
+        "Early setup always",
+        "Backup gear carried",
+        "Clean, even sound"
+      ]
+    },
+    "pricing": {
+      "title": "DJ And Sound Packages",
+      "plans": [
+        {
+          "name": "House Party Setup",
+          "price": "$60",
+          "period": "/event",
+          "perks": [
+            "DJ with speakers",
+            "Two wireless mics",
+            "Basic party lights"
+          ]
+        },
+        {
+          "name": "Wedding Night",
+          "price": "$220",
+          "period": "/night",
+          "perks": [
+            "DJ and sound engineer",
+            "Moving head lights",
+            "Dance floor effects"
+          ]
+        },
+        {
+          "name": "Full Wedding Weekend",
+          "price": "$550",
+          "period": "/event",
+          "perks": [
+            "Baraat to reception",
+            "Premium sound and lights",
+            "Stage and mic cover"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Nights We Powered",
+      "captions": [
+        "Baraat dhol mix",
+        "Sangeet dance floor",
+        "Reception entry",
+        "Laser light show",
+        "Lawn sound setup",
+        "Cold spark finale"
+      ]
+    },
+    "team": {
+      "title": "Meet The Crew",
+      "roles": [
+        "Lead Wedding DJ",
+        "Sound Engineer",
+        "Lighting Technician"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "The DJ read our crowd perfectly, switching from old songs to Punjabi hits exactly when the floor needed it.",
+        "role": "Wedding host"
+      },
+      {
+        "quote": "Sound reached the back of the lawn without being too loud near the stage, and the mics worked all night.",
+        "role": "Bride's brother"
+      },
+      {
+        "quote": "They set up by afternoon, tested everything and left the venue clean after the party ended.",
+        "role": "Birthday host"
+      }
+    ],
+    "blog": {
+      "title": "Music And Sound Tips",
+      "posts": [
+        {
+          "tag": "Planning",
+          "title": "How To Build A Wedding Playlist Everyone Dances To"
+        },
+        {
+          "tag": "Sound",
+          "title": "Why Some Wedding Halls Sound Echoey And How To Fix It"
+        },
+        {
+          "tag": "Sangeet",
+          "title": "Song Order For A Sangeet That Never Goes Flat"
+        }
+      ]
+    },
+    "marquee": [
+      "Wedding DJ",
+      "Sangeet Night",
+      "Baraat Sound",
+      "Moving Lights",
+      "Wireless Mics",
+      "Dance Floor",
+      "Cold Sparks",
+      "Live Mixing"
+    ],
+    "contactText": "Send {brand} your date, venue and rough guest count, and we will confirm availability and suggest a setup that suits the hall."
+  },
+  {
+    "id": "event_decor_planner",
+    "label": "Event decor and planning",
+    "theme": "events_wedding",
+    "keywords": [
+      "event decorator",
+      "wedding decorator",
+      "event planner",
+      "wedding planner",
+      "stage decoration",
+      "mandap decoration",
+      "birthday decoration",
+      "इवेंट प्लानर"
+    ],
+    "heroTitles": [
+      "Decor That Turns Venues Into Stories",
+      "From Bare Hall To Beautiful Stage",
+      "Every Flower, Light And Detail Planned"
+    ],
+    "heroSubtitles": [
+      "{brand} plans and decorates weddings, engagements and parties, from the mandap and stage to entry gates and table settings.",
+      "Share your theme and budget and {brand} brings a mood board, a decor plan and a team that sets it all up before guests arrive.",
+      "Birthdays, baby showers, corporate launches and weddings: {brand} handles design, vendors and setup so you can enjoy your event."
+    ],
+    "button": "Plan My Event Decor",
+    "featureTitle": "Decor And Planning Under One Roof",
+    "features": [
+      {
+        "title": "Mandap And Stage Decor",
+        "text": "Floral, fabric or themed mandaps and stages designed to suit the venue size and your family's traditions."
+      },
+      {
+        "title": "Theme Mood Boards",
+        "text": "Colours, flowers and props are shown on a mood board first, so you approve the look before any order is placed."
+      },
+      {
+        "title": "Entrance And Photo Corners",
+        "text": "Welcome gates, signage and selfie backdrops that make a strong first impression and good photographs."
+      },
+      {
+        "title": "Lighting And Ambience",
+        "text": "Fairy lights, chandeliers and warm uplighting set to match each function from haldi to reception."
+      },
+      {
+        "title": "Birthday And Baby Showers",
+        "text": "Balloon work, theme backdrops and cake tables for home or hall celebrations of every size."
+      },
+      {
+        "title": "Vendor Coordination",
+        "text": "We line up caterers, photographers and artists on a single schedule, with one person you can call on the day."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Mood board",
+        "label": "Shared before booking"
+      },
+      {
+        "value": "On-site",
+        "label": "Team at every setup"
+      },
+      {
+        "value": "One plan",
+        "label": "For all vendors"
+      }
+    ],
+    "steps": {
+      "title": "How We Plan Your Event",
+      "items": [
+        {
+          "title": "Tell Us Your Vision",
+          "text": "Share the date, venue, guest count, theme ideas and the budget you are comfortable with."
+        },
+        {
+          "title": "See The Design",
+          "text": "We prepare a mood board and itemised estimate, and refine it with you until it feels right."
+        },
+        {
+          "title": "Setup Day",
+          "text": "Our crew builds the stage, lighting and props at the venue well before the first guest arrives."
+        },
+        {
+          "title": "Run And Wrap Up",
+          "text": "A coordinator stays on-site to handle changes, then the team dismantles and clears the venue."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Can you work within a fixed budget?",
+        "a": "Yes. Tell us your number first and we design around it, showing which elements to keep and which to simplify."
+      },
+      {
+        "q": "Do you use real flowers or artificial ones?",
+        "a": "Both. Fresh flowers suit entries and mandaps, while artificial pieces work for lasting structures. We explain the cost of each."
+      },
+      {
+        "q": "How early should we book?",
+        "a": "Wedding dates fill quickly, so try to book a few months ahead. Smaller parties can often be arranged with a couple of weeks of notice."
+      },
+      {
+        "q": "Will you decorate venues outside your city?",
+        "a": "We travel for destination events. Travel and stay costs are listed separately in the estimate."
+      },
+      {
+        "q": "What happens if our plan changes?",
+        "a": "Small changes are adjusted in the decor plan up to a few days before the event. Larger changes are quoted again clearly."
+      }
+    ],
+    "cta": {
+      "title": "Ready To Style Your Big Day?",
+      "button": "Plan My Event Decor"
+    },
+    "about": {
+      "title": "Designers Who Also Do The Heavy Lifting",
+      "paragraphs": [
+        "{brand} began with a simple belief: an event looks good when someone has planned the colours, the lighting and the schedule together.",
+        "Our designers and set crew work as one team, so what you approve on the mood board is what actually appears on the stage."
+      ],
+      "points": [
+        "Mood board first",
+        "In-house setup crew",
+        "Clear itemised estimates"
+      ]
+    },
+    "pricing": {
+      "title": "Decor Packages",
+      "plans": [
+        {
+          "name": "Party Styling",
+          "price": "$80",
+          "period": "/event",
+          "perks": [
+            "Backdrop and balloons",
+            "Table and cake setup",
+            "Two-hour setup"
+          ]
+        },
+        {
+          "name": "Wedding Function",
+          "price": "$450",
+          "period": "/function",
+          "perks": [
+            "Stage and entrance decor",
+            "Lighting and florals",
+            "On-site coordinator"
+          ]
+        },
+        {
+          "name": "Full Wedding Design",
+          "price": "$1100",
+          "period": "/event",
+          "perks": [
+            "All functions designed",
+            "Mandap and reception",
+            "Vendor management"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Spaces We Styled",
+      "captions": [
+        "Floral mandap",
+        "Reception stage",
+        "Haldi corner",
+        "Entrance gate",
+        "Candle table setting",
+        "Baby shower backdrop"
+      ]
+    },
+    "team": {
+      "title": "The Planning Team",
+      "roles": [
+        "Lead Decor Designer",
+        "Event Coordinator",
+        "Floral Artist"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "They showed the mood board first, stuck to our budget and the stage looked exactly like the picture.",
+        "role": "Wedding family"
+      },
+      {
+        "quote": "Having one coordinator handling the caterer and photographer saved us a lot of phone calls.",
+        "role": "Engagement host"
+      },
+      {
+        "quote": "The balloon and backdrop setup was ready an hour early and cleared up neatly afterwards.",
+        "role": "Birthday parent"
+      }
+    ],
+    "blog": {
+      "title": "Decor Ideas And Advice",
+      "posts": [
+        {
+          "tag": "Weddings",
+          "title": "How To Choose A Mandap Theme That Suits Your Venue"
+        },
+        {
+          "tag": "Budget",
+          "title": "Where To Spend And Save On Wedding Decor"
+        },
+        {
+          "tag": "Parties",
+          "title": "Simple Birthday Decor Ideas For Home Celebrations"
+        }
+      ]
+    },
+    "marquee": [
+      "Mandap Decor",
+      "Stage Design",
+      "Flower Work",
+      "Theme Party",
+      "Fairy Lights",
+      "Entry Gates",
+      "Mood Boards",
+      "Baby Shower"
+    ],
+    "contactText": "Share your date, venue and theme ideas with {brand} and we will come back with a mood board and an itemised estimate."
+  },
+  {
+    "id": "bridal_makeup",
+    "label": "Bridal makeup",
+    "theme": "beauty_wellness",
+    "keywords": [
+      "bridal makeup",
+      "bridal makeup artist",
+      "wedding makeup",
+      "party makeup",
+      "hd makeup",
+      "airbrush makeup",
+      "engagement makeup",
+      "ब्राइडल मेकअप"
+    ],
+    "heroTitles": [
+      "Look Like Yourself, Only Radiant",
+      "Bridal Makeup That Lasts Till Vidaai",
+      "Your Wedding Face, Calmly Done"
+    ],
+    "heroSubtitles": [
+      "{brand} creates bridal looks that photograph well and feel light, with skin prep, HD or airbrush finish and a full touch-up kit.",
+      "Book a trial with {brand} before the wedding, choose the look you love and walk into your big day knowing exactly how it will turn out.",
+      "Haldi, mehendi, engagement or reception: {brand} plans a different look for each function and arrives at your home on time."
+    ],
+    "button": "Book A Bridal Trial",
+    "featureTitle": "Bridal And Party Makeup Services",
+    "features": [
+      {
+        "title": "Bridal Trial Session",
+        "text": "A full trial to test shades, lip colours and the finish with your outfit, so the wedding morning has no surprises."
+      },
+      {
+        "title": "HD And Airbrush Makeup",
+        "text": "A smooth, camera-ready base that stays fresh through the rituals, the heat and the evening photographs."
+      },
+      {
+        "title": "Hairstyling And Draping",
+        "text": "Buns, curls and braids with accessories set firmly, plus saree and dupatta draping done neatly."
+      },
+      {
+        "title": "Function-Wise Looks",
+        "text": "Soft glow for haldi, bold eyes for sangeet, classic red lips for the wedding, each planned separately."
+      },
+      {
+        "title": "Family And Guest Makeup",
+        "text": "Mother, sisters and bridesmaids can book the same artist team, so everyone is ready on schedule."
+      },
+      {
+        "title": "Skin Prep And Touch-Up Kit",
+        "text": "Skin is prepped with suitable products for your type, and you get a small kit for lips and shine control."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Trial",
+        "label": "Before the wedding day"
+      },
+      {
+        "value": "At home",
+        "label": "Or venue service"
+      },
+      {
+        "value": "Patch test",
+        "label": "For sensitive skin"
+      }
+    ],
+    "steps": {
+      "title": "Your Bridal Look, Step By Step",
+      "items": [
+        {
+          "title": "Share Your Outfit",
+          "text": "Send pictures of your lehenga or saree, jewellery and the look you imagine for each function."
+        },
+        {
+          "title": "Trial Session",
+          "text": "We try the makeup and hair on you, adjust it and note the exact products and shades used."
+        },
+        {
+          "title": "Wedding Morning",
+          "text": "The team reaches your home or hotel early, so there is no rush even with the muhurat timing."
+        },
+        {
+          "title": "Final Touch-Ups",
+          "text": "Before you leave for the venue we set the makeup and show you how to fix lips and shine."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Is a trial really necessary?",
+        "a": "We strongly suggest one. It lets you approve the look in daylight and gives us time to change anything before the wedding."
+      },
+      {
+        "q": "Do you use branded products?",
+        "a": "We use well-known professional products and tell you the names. Share any skin allergies beforehand and we do a patch test."
+      },
+      {
+        "q": "Will the makeup last the whole day?",
+        "a": "With proper skin prep and setting, it holds through rituals and photographs. We also leave a small touch-up kit with you."
+      },
+      {
+        "q": "Can you come to our home or hotel?",
+        "a": "Yes, we travel to homes, hotels and venues. Travel charges for distant locations are told in advance."
+      },
+      {
+        "q": "How early should I book my date?",
+        "a": "Wedding season dates go fast, so book as soon as your date is fixed. A booking amount confirms the slot."
+      }
+    ],
+    "cta": {
+      "title": "Want To Lock Your Bridal Date?",
+      "button": "Book A Bridal Trial"
+    },
+    "about": {
+      "title": "Makeup That Looks Like You, Polished",
+      "paragraphs": [
+        "{brand} is a bridal makeup studio that believes the bride should still recognise her face in the mirror and in the album.",
+        "We take enough time to listen, prepare your skin and plan each function, so your wedding morning feels calm instead of hurried."
+      ],
+      "points": [
+        "Trial before the wedding",
+        "Skin-safe products",
+        "Always on time"
+      ]
+    },
+    "pricing": {
+      "title": "Makeup Packages",
+      "plans": [
+        {
+          "name": "Party Makeup",
+          "price": "$30",
+          "period": "/look",
+          "perks": [
+            "Base and eye makeup",
+            "Simple hairstyle",
+            "Studio session"
+          ]
+        },
+        {
+          "name": "Bridal Makeup",
+          "price": "$180",
+          "period": "/event",
+          "perks": [
+            "HD or airbrush finish",
+            "Hair and draping",
+            "Touch-up kit"
+          ]
+        },
+        {
+          "name": "Bridal Plus Trial",
+          "price": "$300",
+          "period": "/package",
+          "perks": [
+            "Full trial session",
+            "Wedding and one function",
+            "Family makeup add-on"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Looks We Created",
+      "captions": [
+        "Red lip bride",
+        "Soft glam reception",
+        "Haldi dewy look",
+        "Airbrush finish",
+        "Bridal hairstyle",
+        "Mehendi day look"
+      ]
+    },
+    "team": {
+      "title": "Meet The Artists",
+      "roles": [
+        "Lead Bridal Makeup Artist",
+        "Hair Stylist",
+        "Saree Draping Artist"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "The trial helped me decide my lip colour, and on the wedding day the makeup stayed fresh till late evening.",
+        "role": "Bride"
+      },
+      {
+        "quote": "They reached before sunrise, stayed calm and finished the whole family on time.",
+        "role": "Bride's sister"
+      },
+      {
+        "quote": "My skin is sensitive, and they did a patch test and chose products that suited me.",
+        "role": "Engagement client"
+      }
+    ],
+    "blog": {
+      "title": "Bridal Beauty Notes",
+      "posts": [
+        {
+          "tag": "Preparation",
+          "title": "Skin Prep Routine To Follow Before Your Wedding Day"
+        },
+        {
+          "tag": "Makeup",
+          "title": "HD Or Airbrush Makeup Which Finish Suits You"
+        },
+        {
+          "tag": "Planning",
+          "title": "How To Plan Separate Looks For Each Wedding Function"
+        }
+      ]
+    },
+    "marquee": [
+      "Bridal Look",
+      "HD Makeup",
+      "Airbrush",
+      "Hair Styling",
+      "Saree Draping",
+      "Mehendi Look",
+      "Trial Session",
+      "Party Glam"
+    ],
+    "contactText": "Message {brand} your wedding date and the outfit colours, and we will suggest looks and a trial slot that fits your schedule."
+  },
+  {
+    "id": "video_editing_studio",
+    "label": "Video editing studio",
+    "theme": "modern_tech",
+    "keywords": [
+      "video editing",
+      "video editor",
+      "reel editing",
+      "youtube video editing",
+      "wedding video editing",
+      "video editing service",
+      "short video editing",
+      "वीडियो एडिटिंग"
+    ],
+    "heroTitles": [
+      "Raw Footage In, Watchable Video Out",
+      "Cuts That Keep People Watching",
+      "Edit Once, Publish Everywhere"
+    ],
+    "heroSubtitles": [
+      "{brand} edits YouTube videos, reels, wedding films and business promos with clean cuts, sound cleanup and colour that looks consistent.",
+      "Send {brand} your clips and a few reference videos, and get back an edit with captions, music and graphics ready to upload.",
+      "Creators and brands use {brand} to turn long recordings into tight videos, short reels and thumbnails on a steady weekly schedule."
+    ],
+    "button": "Send Footage For A Quote",
+    "featureTitle": "Editing For Every Kind Of Video",
+    "features": [
+      {
+        "title": "YouTube Video Editing",
+        "text": "Long videos trimmed, paced and cleaned up with b-roll, lower thirds and a thumbnail that matches the topic."
+      },
+      {
+        "title": "Reels And Shorts",
+        "text": "Vertical cuts with hooks, subtitles and beat-matched music made for Instagram, Shorts and Facebook."
+      },
+      {
+        "title": "Wedding Film Edits",
+        "text": "Hours of ceremony footage shaped into a highlight film, teaser and full-length edit with gentle colour grading."
+      },
+      {
+        "title": "Subtitles And Captions",
+        "text": "Accurate Hindi, English and Hinglish captions, styled to be readable on small phone screens."
+      },
+      {
+        "title": "Colour And Sound Cleanup",
+        "text": "Skin tones corrected, shots matched and background noise reduced so voices stay clear."
+      },
+      {
+        "title": "Motion Graphics And Intros",
+        "text": "Logo animations, animated titles and simple explainer graphics designed in your brand colours."
+      }
+    ],
+    "stats": [
+      {
+        "value": "2 rounds",
+        "label": "Of revisions included"
+      },
+      {
+        "value": "Fast",
+        "label": "Reel turnaround"
+      },
+      {
+        "value": "Source files",
+        "label": "Shared on request"
+      }
+    ],
+    "steps": {
+      "title": "How Your Edit Gets Made",
+      "items": [
+        {
+          "title": "Share The Files",
+          "text": "Upload footage by link with a short brief covering length, style, platform and reference videos."
+        },
+        {
+          "title": "First Cut",
+          "text": "An editor assembles the story, adds music and captions, and sends a draft link for your review."
+        },
+        {
+          "title": "Revisions",
+          "text": "You give timestamped notes and we fix them quickly within the agreed number of rounds."
+        },
+        {
+          "title": "Final Delivery",
+          "text": "You receive the export in the right size for each platform, along with a thumbnail if requested."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "How do I send large video files?",
+        "a": "Share a Google Drive or similar link. For very large shoots we can also accept a hard drive or a cloud folder."
+      },
+      {
+        "q": "How many revisions do I get?",
+        "a": "Each package includes two rounds of changes. Extra rounds are possible and are told to you before we start them."
+      },
+      {
+        "q": "Can you copy the style of a creator I like?",
+        "a": "We can match pacing, caption style and colour feel from a reference, while keeping your own content and branding original."
+      },
+      {
+        "q": "Do you handle music licensing?",
+        "a": "We use royalty-free tracks suited to your platform and can use your licensed music if you send it."
+      },
+      {
+        "q": "Is my raw footage kept private?",
+        "a": "Yes. Your footage is used only for your project and deleted from our systems on request after delivery."
+      }
+    ],
+    "cta": {
+      "title": "Got Footage Waiting To Be Edited?",
+      "button": "Send Footage For A Quote"
+    },
+    "about": {
+      "title": "Editors Who Respect Your Raw Material",
+      "paragraphs": [
+        "{brand} is a small editing team for creators, businesses and photographers who would rather shoot than sit in front of a timeline.",
+        "Every project gets a single lead editor who learns your style, so the second video needs fewer notes than the first."
+      ],
+      "points": [
+        "One lead editor",
+        "Clear revision rounds",
+        "Platform-ready exports"
+      ]
+    },
+    "pricing": {
+      "title": "Editing Plans",
+      "plans": [
+        {
+          "name": "Reel Edit",
+          "price": "$8",
+          "period": "/reel",
+          "perks": [
+            "Up to 60 seconds",
+            "Captions and music",
+            "One revision round"
+          ]
+        },
+        {
+          "name": "YouTube Edit",
+          "price": "$30",
+          "period": "/video",
+          "perks": [
+            "Up to 10 minutes",
+            "Colour and sound cleanup",
+            "Thumbnail design"
+          ]
+        },
+        {
+          "name": "Wedding Highlight",
+          "price": "$120",
+          "period": "/film",
+          "perks": [
+            "Teaser and highlight film",
+            "Colour grading",
+            "Two revision rounds"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Frames From Our Edits",
+      "captions": [
+        "YouTube vlog cut",
+        "Reel with captions",
+        "Wedding highlight",
+        "Product promo",
+        "Podcast clips",
+        "Motion title intro"
+      ]
+    },
+    "team": {
+      "title": "The Edit Desk",
+      "roles": [
+        "Lead Video Editor",
+        "Motion Graphics Artist",
+        "Colour Grader"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "They turned a messy two-hour recording into a tight video, and the captions were accurate in Hinglish.",
+        "role": "YouTube creator"
+      },
+      {
+        "quote": "Weekly reels arrive on schedule and match our brand colours, which saved our team a lot of time.",
+        "role": "Brand manager"
+      },
+      {
+        "quote": "The wedding highlight kept the emotional moments and trimmed the long speeches nicely.",
+        "role": "Wedding photographer"
+      }
+    ],
+    "blog": {
+      "title": "Editing Tips",
+      "posts": [
+        {
+          "tag": "Reels",
+          "title": "How To Hook Viewers In The First Three Seconds"
+        },
+        {
+          "tag": "YouTube",
+          "title": "Raw Footage Checklist Before You Hand It To An Editor"
+        },
+        {
+          "tag": "Captions",
+          "title": "Subtitle Styles That Stay Readable On Small Phones"
+        }
+      ]
+    },
+    "marquee": [
+      "Reel Edits",
+      "YouTube Cuts",
+      "Wedding Films",
+      "Captions",
+      "Colour Grade",
+      "Sound Cleanup",
+      "Motion Titles",
+      "Thumbnails"
+    ],
+    "contactText": "Send {brand} a sample of your footage and a reference video you like, and we will reply with a quote and a turnaround date."
+  },
+  {
+    "id": "funeral_services",
+    "label": "Funeral services",
+    "theme": "professional_services",
+    "keywords": [
+      "funeral services",
+      "antim sanskar",
+      "last rites",
+      "cremation services",
+      "funeral arrangements",
+      "death certificate help",
+      "shav vahan",
+      "अंतिम संस्कार"
+    ],
+    "heroTitles": [
+      "Quiet Support In A Difficult Hour",
+      "Every Arrangement Handled With Dignity",
+      "We Take Care Of The Rest For You"
+    ],
+    "heroSubtitles": [
+      "{brand} helps families arrange the last rites with dignity, from transport and rituals to paperwork, at any hour of the day or night.",
+      "When a loss happens, one call to {brand} is enough. We guide your family gently through each step and handle the practical details.",
+      "{brand} respects every faith and family custom, and supports the ceremony, the cremation or burial and the documents that follow."
+    ],
+    "button": "Call Us Any Hour",
+    "featureTitle": "Support For Families, Step By Step",
+    "features": [
+      {
+        "title": "Immediate Assistance",
+        "text": "A coordinator takes your call at any hour and sends the right help to the home, hospital or care facility."
+      },
+      {
+        "title": "Respectful Transport",
+        "text": "A clean, dignified vehicle carries the departed to the home, the ghat, the crematorium or the burial ground."
+      },
+      {
+        "title": "Ceremony Arrangements",
+        "text": "Pandit, priest or maulvi, along with the samagri, flowers and seating, arranged as per your family's tradition."
+      },
+      {
+        "title": "Cremation And Burial",
+        "text": "We coordinate time slots, wood or electric options and permissions at the cremation ground or cemetery."
+      },
+      {
+        "title": "Documents And Certificates",
+        "text": "We guide you on the death certificate, municipal records and other papers the family will need later."
+      },
+      {
+        "title": "Ashes And Final Rites",
+        "text": "Collection of ashes and arrangements for immersion or later rituals can be planned with your family."
+      }
+    ],
+    "stats": [
+      {
+        "value": "24/7",
+        "label": "Phone support"
+      },
+      {
+        "value": "All faiths",
+        "label": "Customs respected"
+      },
+      {
+        "value": "One call",
+        "label": "Starts every arrangement"
+      }
+    ],
+    "steps": {
+      "title": "How We Support Your Family",
+      "items": [
+        {
+          "title": "Call Us",
+          "text": "Tell us where the departed is and what your family needs, and a coordinator will respond right away."
+        },
+        {
+          "title": "Plan Together",
+          "text": "We discuss rituals, timing and place, and explain every cost in plain words before we proceed."
+        },
+        {
+          "title": "Ceremony Day",
+          "text": "Our team handles transport, materials and the people needed, so the family can stay together."
+        },
+        {
+          "title": "Paperwork Guidance",
+          "text": "In the following days we help you complete the certificates and records required by the authorities."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Can you help at night or on a holiday?",
+        "a": "Yes. Our line is open at all hours, every day, and a coordinator will answer and arrange help without delay."
+      },
+      {
+        "q": "Do you follow our religion's customs?",
+        "a": "Yes. Tell us your community and traditions, and we arrange the right priest and materials so the rites are done properly."
+      },
+      {
+        "q": "What are the charges and what do they cover?",
+        "a": "We share a written list of every item and its cost before starting, so there are no surprises for the family during a hard time."
+      },
+      {
+        "q": "Can you help with the death certificate?",
+        "a": "We guide you on the papers needed and the offices to visit, and can assist with the process where the rules allow."
+      },
+      {
+        "q": "Do you only work in this city?",
+        "a": "We mainly serve this city and nearby areas. For transport to another place, call us and we will explain what can be arranged."
+      }
+    ],
+    "cta": {
+      "title": "Need Help Right Now?",
+      "button": "Call Us Any Hour"
+    },
+    "about": {
+      "title": "Here To Help, Quietly And Respectfully",
+      "paragraphs": [
+        "{brand} exists to take practical burdens off a grieving family, so that time can be spent with loved ones instead of arranging vehicles and materials.",
+        "We speak plainly, never pressure anyone to buy more than they need, and treat every family's customs and wishes with care."
+      ],
+      "points": [
+        "Clear, written costs",
+        "No pressure, ever",
+        "Calm, trained staff"
+      ]
+    },
+    "pricing": {
+      "title": "Clear Service Charges",
+      "plans": [
+        {
+          "name": "Basic Arrangement",
+          "price": "$60",
+          "period": "/service",
+          "perks": [
+            "Vehicle for transport",
+            "Basic ritual materials",
+            "Coordinator support"
+          ]
+        },
+        {
+          "name": "Complete Rites",
+          "price": "$150",
+          "period": "/service",
+          "perks": [
+            "Priest and materials",
+            "Ground slot coordination",
+            "Document guidance"
+          ]
+        },
+        {
+          "name": "Extended Support",
+          "price": "$280",
+          "period": "/service",
+          "perks": [
+            "Multi-day rituals help",
+            "Ashes and immersion",
+            "Out-of-city transport"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "How We Prepare",
+      "captions": [
+        "Dignified vehicle",
+        "Ritual materials",
+        "Flower arrangements",
+        "Quiet prayer space",
+        "Seating for family",
+        "Cremation ground"
+      ]
+    },
+    "team": {
+      "title": "People Who Assist You",
+      "roles": [
+        "Family Coordinator",
+        "Ritual Assistant",
+        "Transport Driver"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "They answered at midnight, stayed calm and explained each step, which let us focus on our mother.",
+        "role": "Family member"
+      },
+      {
+        "quote": "The costs were written down before anything began and nothing extra was pushed on us.",
+        "role": "Customer"
+      },
+      {
+        "quote": "They guided us patiently with the certificate formalities in the days afterward.",
+        "role": "Customer"
+      }
+    ],
+    "blog": {
+      "title": "Guidance For Families",
+      "posts": [
+        {
+          "tag": "Guidance",
+          "title": "What To Do In The First Hours After A Death"
+        },
+        {
+          "tag": "Documents",
+          "title": "Papers A Family Needs After The Last Rites"
+        },
+        {
+          "tag": "Rituals",
+          "title": "Understanding Antim Sanskar And The Days That Follow"
+        }
+      ]
+    },
+    "marquee": [
+      "Antim Sanskar",
+      "Last Rites",
+      "Always Open",
+      "Dignified Care",
+      "Family Support",
+      "Ceremony Help",
+      "Documents",
+      "All Faiths"
+    ],
+    "contactText": "Please call {brand} at any hour. If you cannot talk, send a message with the location and we will call you back."
+  },
+  {
+    "id": "scrap_recycling",
+    "label": "Scrap and recycling",
+    "theme": "organic_nature",
+    "keywords": [
+      "scrap dealer",
+      "kabadi",
+      "kabadiwala",
+      "scrap buyer",
+      "scrap pickup",
+      "old newspaper buyer",
+      "e-waste recycling",
+      "कबाड़ी",
+      "कबाड़ वाला"
+    ],
+    "heroTitles": [
+      "Sell Your Scrap, Get Paid On The Spot",
+      "Old Metal In, Cash Out, Planet Happier",
+      "Clear The Clutter, Keep The Value"
+    ],
+    "heroSubtitles": [
+      "{brand} collects scrap metal, paper, plastic and old electronics from your door, weighs it in front of you and pays instantly.",
+      "Homes, offices and factories can book a pickup with {brand}. We use a digital scale, quote today's rate and pay by cash or UPI.",
+      "Sorted and sent to licensed recyclers, your waste from {brand} pickups does not end up in a landfill or a roadside dump."
+    ],
+    "button": "Book A Scrap Pickup",
+    "featureTitle": "Scrap We Buy And Recycle",
+    "features": [
+      {
+        "title": "Metal Scrap",
+        "text": "Iron, steel, copper, brass and aluminium bought by weight at current market rates, from kitchens to factories."
+      },
+      {
+        "title": "Paper And Cardboard",
+        "text": "Old newspaper, books, office files and cartons collected in bulk and baled for paper mills."
+      },
+      {
+        "title": "E-Waste Collection",
+        "text": "Old computers, phones, cables and batteries picked up and sent for safe, authorised recycling."
+      },
+      {
+        "title": "Plastic And Bottles",
+        "text": "Sorted plastic, bottles and containers bought and sent to recyclers instead of the dump."
+      },
+      {
+        "title": "Bulk And Industrial Scrap",
+        "text": "Factory offcuts, machinery, drums and demolition metal cleared with a truck and a loading crew."
+      },
+      {
+        "title": "Home And Office Clearance",
+        "text": "Old furniture, appliances and storeroom junk removed in one visit, with usable items priced fairly."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Instant",
+        "label": "Cash or UPI payment"
+      },
+      {
+        "value": "Digital",
+        "label": "Weighing on your doorstep"
+      },
+      {
+        "value": "Licensed",
+        "label": "Recycling partners"
+      }
+    ],
+    "steps": {
+      "title": "How A Pickup Works",
+      "items": [
+        {
+          "title": "Book A Slot",
+          "text": "Call or message us with the type and rough quantity of scrap and choose a time that suits you."
+        },
+        {
+          "title": "We Arrive",
+          "text": "Our team reaches on time with a digital scale and quotes the day's rate for each material."
+        },
+        {
+          "title": "Weigh And Pay",
+          "text": "Everything is weighed in front of you, and the amount is paid right away by cash or UPI."
+        },
+        {
+          "title": "Recycle Responsibly",
+          "text": "Your scrap is sorted and handed to authorised recyclers and processors."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "How do you decide the rate?",
+        "a": "Rates follow the daily market price for each material. We tell you the rate before weighing so you can accept or decline."
+      },
+      {
+        "q": "Is the weighing scale accurate?",
+        "a": "We use a digital scale and you can watch the reading for every item. You are welcome to compare with your own scale."
+      },
+      {
+        "q": "Is there a minimum quantity for pickup?",
+        "a": "Small household loads are fine in many areas. Call us and we will tell you if a pickup makes sense for your quantity."
+      },
+      {
+        "q": "What do you do with e-waste?",
+        "a": "Electronics go to authorised recyclers who dismantle them safely, so toxic parts are not dumped. We can advise on wiping data first."
+      },
+      {
+        "q": "Do you buy from factories and shops?",
+        "a": "Yes. Factories, shops and offices can set up regular or one-time pickups with a truck and a loading crew."
+      }
+    ],
+    "cta": {
+      "title": "Got Scrap Lying Around?",
+      "button": "Book A Scrap Pickup"
+    },
+    "about": {
+      "title": "Fair Weight, Fair Rate, Proper Recycling",
+      "paragraphs": [
+        "{brand} is a scrap buying and recycling business that works on a simple promise: honest weighing, a rate told upfront and payment before we leave.",
+        "We sort what we collect and pass it to licensed recyclers, so metal, paper and electronics are reused instead of burned or dumped."
+      ],
+      "points": [
+        "Honest digital weighing",
+        "Rates told upfront",
+        "Licensed recycling only"
+      ]
+    },
+    "pricing": {
+      "title": "How Scrap Pickup Is Priced",
+      "plans": [
+        {
+          "name": "Home Pickup",
+          "price": "$0",
+          "period": "/pickup",
+          "perks": [
+            "Free doorstep visit",
+            "Pay by weight",
+            "Instant payment"
+          ]
+        },
+        {
+          "name": "Office Clearance",
+          "price": "$12",
+          "period": "/pickup",
+          "perks": [
+            "Team for loading",
+            "E-waste and files",
+            "Record of collection"
+          ]
+        },
+        {
+          "name": "Industrial Lot",
+          "price": "$60",
+          "period": "/truck",
+          "perks": [
+            "Truck and crew",
+            "Bulk metal handling",
+            "Weighbridge slip"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "On Pickup Day",
+      "captions": [
+        "Digital weighing",
+        "Sorted metal scrap",
+        "Baled cardboard",
+        "E-waste collection",
+        "Loaded pickup truck",
+        "Mixed plastic bales"
+      ]
+    },
+    "team": {
+      "title": "Our Pickup Crew",
+      "roles": [
+        "Pickup Executive",
+        "Sorting Supervisor",
+        "Truck Driver"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "They weighed everything in front of us, told the rate first and paid through UPI before leaving.",
+        "role": "Home customer"
+      },
+      {
+        "quote": "Our old computers and cables were collected from the office and we received a note of what was taken.",
+        "role": "Office manager"
+      },
+      {
+        "quote": "They cleared our factory offcuts in one morning with a truck and a loading crew.",
+        "role": "Workshop owner"
+      }
+    ],
+    "blog": {
+      "title": "Scrap And Recycling Guide",
+      "posts": [
+        {
+          "tag": "Rates",
+          "title": "How Scrap Rates Are Decided And Why They Change"
+        },
+        {
+          "tag": "E-Waste",
+          "title": "What To Do With Old Phones, Laptops And Batteries"
+        },
+        {
+          "tag": "Home Tips",
+          "title": "How To Sort Household Scrap To Get A Better Price"
+        }
+      ]
+    },
+    "marquee": [
+      "Scrap Pickup",
+      "Metal Buyer",
+      "Paper Scrap",
+      "E-Waste",
+      "Instant Pay",
+      "Digital Scale",
+      "Recycling",
+      "Bulk Clearance"
+    ],
+    "contactText": "Call or message {brand} with a list of what you have and your area, and we will quote the rate and fix a pickup time."
+  },
+  {
+    "id": "coworking_space",
+    "label": "Coworking space",
+    "theme": "modern_tech",
+    "keywords": [
+      "coworking space",
+      "co-working space",
+      "shared office",
+      "hot desk",
+      "private cabin office",
+      "meeting room rental",
+      "office space for rent",
+      "को वर्किंग स्पेस"
+    ],
+    "heroTitles": [
+      "A Desk, A Plug And Fast Wi-Fi",
+      "Work Where The Good Ideas Gather",
+      "Your Office, Minus The Lease Headache"
+    ],
+    "heroSubtitles": [
+      "{brand} offers hot desks, dedicated desks and private cabins with fast internet, meeting rooms, coffee and a business address.",
+      "Freelancers, startups and remote teams use {brand} to work without long leases, deposits or the cost of furnishing an office.",
+      "Take a day pass, a monthly desk or a team cabin at {brand} and start work tomorrow with power backup and a quiet floor."
+    ],
+    "button": "Book A Free Tour",
+    "featureTitle": "Everything You Need To Work Well",
+    "features": [
+      {
+        "title": "Hot Desks",
+        "text": "Pick any open seat each day in a bright shared floor, with a locker for your laptop bag and notes."
+      },
+      {
+        "title": "Dedicated Desks",
+        "text": "Your own desk, chair and storage that stays set up for you, available at any hour on your plan."
+      },
+      {
+        "title": "Private Cabins",
+        "text": "Lockable cabins for two to ten people, furnished and ready, so a small team can move in the same week."
+      },
+      {
+        "title": "Meeting And Training Rooms",
+        "text": "Bookable rooms with a display, whiteboard and video-call setup for client meetings and workshops."
+      },
+      {
+        "title": "Fast Wi-Fi And Backup",
+        "text": "Dual internet lines and power backup keep calls and deployments running through outages."
+      },
+      {
+        "title": "Business Address",
+        "text": "Use our address for registration and mail handling, along with a reception that signs for your parcels."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Dual",
+        "label": "Internet connections"
+      },
+      {
+        "value": "Power",
+        "label": "Backup on every desk"
+      },
+      {
+        "value": "Flexible",
+        "label": "Day to monthly plans"
+      }
+    ],
+    "steps": {
+      "title": "Start Working In Four Steps",
+      "items": [
+        {
+          "title": "Visit The Space",
+          "text": "Drop in for a tour, see the floors and cabins and try a desk for a few hours."
+        },
+        {
+          "title": "Pick A Plan",
+          "text": "Choose a day pass, hot desk, dedicated desk or cabin that matches your team size."
+        },
+        {
+          "title": "Complete Onboarding",
+          "text": "Share your ID and documents, receive your access card and get the Wi-Fi and printer details."
+        },
+        {
+          "title": "Settle In",
+          "text": "Book meeting rooms through our app, join community events and use the pantry as you like."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Can I try the space before joining?",
+        "a": "Yes. Book a free tour or buy a single day pass to see the noise level, internet and seating before choosing a plan."
+      },
+      {
+        "q": "Is there a long lock-in period?",
+        "a": "Plans are monthly and flexible. Cabins for bigger teams may have a short minimum term, which we explain before you sign."
+      },
+      {
+        "q": "What happens if power or internet goes down?",
+        "a": "The space runs on backup power and has two internet providers, so most outages go unnoticed on your desk."
+      },
+      {
+        "q": "Can I use your address to register my company?",
+        "a": "Yes, on suitable plans. We provide the address and documents needed, along with mail and parcel handling."
+      },
+      {
+        "q": "Are tea and coffee included?",
+        "a": "Tea, coffee and filtered water are included for members. Meals and snacks can be ordered from the nearby cafes."
+      }
+    ],
+    "cta": {
+      "title": "Ready To Swap Your Spare Room For A Desk?",
+      "button": "Book A Free Tour"
+    },
+    "about": {
+      "title": "A Workspace Made For Small, Serious Teams",
+      "paragraphs": [
+        "{brand} is a coworking space for people who need a professional place to work without the cost and commitment of a private office.",
+        "We keep the floor quiet during the day, schedule community events after work and handle the boring parts like bills, cleaning and maintenance."
+      ],
+      "points": [
+        "Quiet floor policy",
+        "Flexible monthly plans",
+        "All bills included"
+      ]
+    },
+    "pricing": {
+      "title": "Coworking Plans",
+      "plans": [
+        {
+          "name": "Hot Desk",
+          "price": "$55",
+          "period": "/month",
+          "perks": [
+            "Any open seat",
+            "Wi-Fi and coffee",
+            "Five meeting room hours"
+          ]
+        },
+        {
+          "name": "Dedicated Desk",
+          "price": "$110",
+          "period": "/month",
+          "perks": [
+            "Your own desk and locker",
+            "24/7 access",
+            "Mail handling"
+          ]
+        },
+        {
+          "name": "Private Cabin",
+          "price": "$420",
+          "period": "/month",
+          "perks": [
+            "Lockable cabin for four",
+            "Meeting room credits",
+            "Business address"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Inside The Space",
+      "captions": [
+        "Open work floor",
+        "Private cabins",
+        "Meeting room",
+        "Pantry corner",
+        "Phone booth",
+        "Reception desk"
+      ]
+    },
+    "team": {
+      "title": "Your Space Team",
+      "roles": [
+        "Community Manager",
+        "Facility Manager",
+        "Front Desk Executive"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "I moved from a noisy cafe to a dedicated desk here, and calls are finally clear and uninterrupted.",
+        "role": "Freelance designer"
+      },
+      {
+        "quote": "We started with a cabin for three people and added desks as the team grew, with no paperwork trouble.",
+        "role": "Startup founder"
+      },
+      {
+        "quote": "The meeting room is easy to book, and the reception handles client arrivals nicely.",
+        "role": "Consultant"
+      }
+    ],
+    "blog": {
+      "title": "Work Smarter Notes",
+      "posts": [
+        {
+          "tag": "Startups",
+          "title": "Coworking Or Private Office Which Fits A Small Team"
+        },
+        {
+          "tag": "Freelance",
+          "title": "How To Build A Productive Routine Outside Your Home"
+        },
+        {
+          "tag": "Community",
+          "title": "Getting Real Value From Networking Events At Work"
+        }
+      ]
+    },
+    "marquee": [
+      "Hot Desks",
+      "Private Cabins",
+      "Meeting Rooms",
+      "Fast Wi-Fi",
+      "Power Backup",
+      "Day Pass",
+      "Business Address",
+      "Open 24/7"
+    ],
+    "contactText": "Message {brand} with your team size and when you want to start, and we will fix a tour and suggest the right plan."
+  },
+  {
+    "id": "yoga_retreat",
+    "label": "Yoga retreat",
+    "theme": "beauty_wellness",
+    "keywords": [
+      "yoga retreat",
+      "yoga teacher training",
+      "yoga ashram",
+      "meditation retreat",
+      "yoga stay",
+      "yoga holiday",
+      "rishikesh yoga",
+      "योग रिट्रीट"
+    ],
+    "heroTitles": [
+      "Slow Down Where The Air Is Clean",
+      "A Week Of Yoga, Quiet And Reset",
+      "Breathe Deeper, Sleep Better, Come Back Lighter"
+    ],
+    "heroSubtitles": [
+      "{brand} hosts residential yoga and meditation retreats with daily classes, simple sattvic meals and a quiet setting away from the city.",
+      "Come for a weekend or a full week at {brand}. Morning practice, guided meditation and unhurried afternoons are all part of the day.",
+      "Whether you are new to yoga or deepening your practice, {brand} offers small-group teaching with a teacher who adjusts to your level."
+    ],
+    "button": "Reserve Your Retreat Spot",
+    "featureTitle": "What A Stay With Us Includes",
+    "features": [
+      {
+        "title": "Daily Yoga Classes",
+        "text": "Morning and evening asana sessions in small groups, with options for beginners and regular practitioners."
+      },
+      {
+        "title": "Meditation And Pranayama",
+        "text": "Guided breathwork and silent sitting sessions that teach simple methods you can carry home."
+      },
+      {
+        "title": "Sattvic Vegetarian Meals",
+        "text": "Freshly cooked, light vegetarian food served three times a day, with notes for allergies and diet needs."
+      },
+      {
+        "title": "Peaceful Rooms",
+        "text": "Clean, simple rooms with shared or private options, set in a calm garden away from traffic noise."
+      },
+      {
+        "title": "Teacher Training Courses",
+        "text": "Structured teacher training modules covering asana, anatomy and philosophy for those who wish to teach."
+      },
+      {
+        "title": "Nature Walks And Satsang",
+        "text": "Gentle guided walks and evening reflection circles to unwind after the day's practice."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Small",
+        "label": "Group sizes"
+      },
+      {
+        "value": "Sattvic",
+        "label": "Vegetarian meals"
+      },
+      {
+        "value": "All levels",
+        "label": "Welcome to join"
+      }
+    ],
+    "steps": {
+      "title": "Planning Your Retreat Stay",
+      "items": [
+        {
+          "title": "Choose Your Dates",
+          "text": "Pick a weekend, weekly or longer retreat and tell us your experience with yoga."
+        },
+        {
+          "title": "Confirm Your Spot",
+          "text": "Reserve with a small advance and receive a packing list, schedule and arrival directions."
+        },
+        {
+          "title": "Arrive And Settle",
+          "text": "Check in, meet your teacher and join the evening welcome circle and a light dinner."
+        },
+        {
+          "title": "Practice And Rest",
+          "text": "Follow the daily rhythm of classes, meals and free time, with a personal chat with your teacher."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Do I need yoga experience?",
+        "a": "No. Beginners are welcome, and teachers offer easier variations in every class so you can go at your own pace."
+      },
+      {
+        "q": "What does a typical day look like?",
+        "a": "Morning practice and meditation, a meal, rest time, an afternoon session, evening reflection and early sleep. Free time is built in."
+      },
+      {
+        "q": "Can I join with a health condition?",
+        "a": "Tell us about injuries or conditions when booking. Yoga here is for wellbeing and is not a replacement for medical advice."
+      },
+      {
+        "q": "What should I bring?",
+        "a": "Comfortable clothes, a water bottle and a personal towel. Mats and props are provided, and we send a full packing list."
+      },
+      {
+        "q": "Is the food only vegetarian?",
+        "a": "Yes, all meals are simple vegetarian sattvic food, prepared fresh. Tell us about allergies and we adjust the menu."
+      }
+    ],
+    "cta": {
+      "title": "Ready For A Proper Pause?",
+      "button": "Reserve Your Retreat Spot"
+    },
+    "about": {
+      "title": "A Place To Practise Without Hurry",
+      "paragraphs": [
+        "{brand} is a quiet retreat where yoga is taught the traditional way, with attention to breath, posture and a calm mind more than flashy poses.",
+        "Groups stay small so teachers know each student by name. There is no pressure to perform, only room to rest and practise."
+      ],
+      "points": [
+        "Small group teaching",
+        "Traditional yoga methods",
+        "Phone-light environment"
+      ]
+    },
+    "pricing": {
+      "title": "Retreat Stay Options",
+      "plans": [
+        {
+          "name": "Weekend Reset",
+          "price": "$110",
+          "period": "/stay",
+          "perks": [
+            "Two nights shared room",
+            "Daily classes",
+            "Sattvic meals"
+          ]
+        },
+        {
+          "name": "Week Of Yoga",
+          "price": "$320",
+          "period": "/week",
+          "perks": [
+            "Six nights stay",
+            "Classes and meditation",
+            "One personal session"
+          ]
+        },
+        {
+          "name": "Private Room Week",
+          "price": "$480",
+          "period": "/week",
+          "perks": [
+            "Private room and bath",
+            "All classes and meals",
+            "Nature walk guidance"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Days At The Retreat",
+      "captions": [
+        "Sunrise practice",
+        "Meditation hall",
+        "Garden walkway",
+        "Sattvic thali",
+        "Quiet guest room",
+        "Evening satsang"
+      ]
+    },
+    "team": {
+      "title": "Your Teachers",
+      "roles": [
+        "Lead Yoga Teacher",
+        "Meditation Guide",
+        "Retreat Manager"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "The small group meant the teacher corrected my posture personally, and I slept better all week.",
+        "role": "Retreat guest"
+      },
+      {
+        "quote": "Simple food, quiet mornings and no pressure. I returned home feeling lighter than I expected.",
+        "role": "Weekend guest"
+      },
+      {
+        "quote": "As a beginner I was nervous, but every class had easier options and the teachers were patient.",
+        "role": "First-time yoga student"
+      }
+    ],
+    "blog": {
+      "title": "Notes From The Mat",
+      "posts": [
+        {
+          "tag": "Beginners",
+          "title": "What To Expect On Your First Yoga Retreat"
+        },
+        {
+          "tag": "Practice",
+          "title": "Simple Breathing Exercises You Can Do At Your Desk"
+        },
+        {
+          "tag": "Food",
+          "title": "Why Light Sattvic Meals Suit Yoga Practice"
+        }
+      ]
+    },
+    "marquee": [
+      "Yoga Retreat",
+      "Meditation",
+      "Pranayama",
+      "Sattvic Food",
+      "Teacher Training",
+      "Morning Asana",
+      "Silent Walks",
+      "Quiet Stay"
+    ],
+    "contactText": "Write to {brand} with your preferred dates and any health notes, and we will share the schedule and room options."
+  },
+  {
+    "id": "farm_stay_homestay",
+    "label": "Farm stay and homestay",
+    "theme": "travel_tourism",
+    "keywords": [
+      "farm stay",
+      "homestay",
+      "farmhouse stay",
+      "farm house booking",
+      "village stay",
+      "rural stay",
+      "agri tourism",
+      "होमस्टे",
+      "फार्म स्टे"
+    ],
+    "heroTitles": [
+      "Wake Up To Fields, Not Traffic",
+      "Stay With A Family, Eat From The Farm",
+      "A Slow Weekend In The Real Countryside"
+    ],
+    "heroSubtitles": [
+      "{brand} welcomes guests into a working farm and family home with home-cooked meals, fresh air and simple, clean rooms.",
+      "Pick fruit, milk a cow, ride a bullock cart or just sit on the porch. {brand} is the countryside break the city rarely gives.",
+      "Book a room or the whole house at {brand}. Meals from the garden and the kitchen are cooked by the host family."
+    ],
+    "button": "Check Room Availability",
+    "featureTitle": "Farm Life, Comfortably Done",
+    "features": [
+      {
+        "title": "Clean Rooms At The Farm",
+        "text": "Airy rooms with attached bathrooms, fresh linen and mosquito nets, set around the courtyard and fields."
+      },
+      {
+        "title": "Home-Cooked Meals",
+        "text": "Regional dishes made by the host family using vegetables, grains and milk from the farm itself."
+      },
+      {
+        "title": "Farm Activities",
+        "text": "Picking vegetables, feeding animals, tending crops and learning how the harvest works, at your own pace."
+      },
+      {
+        "title": "Bonfire And Open Sky",
+        "text": "Evening bonfires with folk music and stargazing from the open fields, free of city lights."
+      },
+      {
+        "title": "Village Walks And Cycling",
+        "text": "Guided walks to ponds, temples and local markets, with cycles available for the shorter routes."
+      },
+      {
+        "title": "Family And Group Stays",
+        "text": "Larger groups, kids and grandparents can stay together with extra beds and flexible meal timings."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Farm fresh",
+        "label": "Meals from the kitchen"
+      },
+      {
+        "value": "Family",
+        "label": "Run and hosted"
+      },
+      {
+        "value": "Pickup",
+        "label": "From the nearest station"
+      }
+    ],
+    "steps": {
+      "title": "Planning Your Farm Stay",
+      "items": [
+        {
+          "title": "Choose Dates",
+          "text": "Tell us how many people are coming and which nights, and we confirm room availability."
+        },
+        {
+          "title": "Confirm Booking",
+          "text": "Pay a small advance to hold the rooms and receive the route map and a list of what to carry."
+        },
+        {
+          "title": "Arrive At The Farm",
+          "text": "Reach the village, or ask for pickup from the station, and get welcomed with fresh tea or sherbet."
+        },
+        {
+          "title": "Live The Day",
+          "text": "Join farm activities, eat with the host family and relax with a bonfire in the evening."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Is the farm stay suitable for children?",
+        "a": "Yes. Children enjoy the animals and open space. Please keep an eye on them near the pond and farm machinery."
+      },
+      {
+        "q": "What kind of food is served?",
+        "a": "Home-style vegetarian meals are standard, and non-vegetarian food can be arranged on request. Tell us about allergies when booking."
+      },
+      {
+        "q": "How do I reach the farm?",
+        "a": "We share exact directions after booking. Pickup from the nearest railway or bus station can be arranged for a small fee."
+      },
+      {
+        "q": "Is there Wi-Fi and mobile network?",
+        "a": "Network coverage is available but can be weak at times. We encourage guests to keep phones aside for a few hours."
+      },
+      {
+        "q": "Can we book the entire house for a group?",
+        "a": "Yes, small groups and families can book the whole homestay. It is a good fit for birthdays and small reunions."
+      }
+    ],
+    "cta": {
+      "title": "Fancy A Weekend Among The Fields?",
+      "button": "Check Room Availability"
+    },
+    "about": {
+      "title": "A Family Farm That Opens Its Doors",
+      "paragraphs": [
+        "{brand} is a working farm where the family still grows its own crops and keeps its own animals, and guests are welcome to join the rhythm.",
+        "We keep things honest and simple: clean rooms, fresh food and warm hosts, not a fancy resort with a farm painted on the wall."
+      ],
+      "points": [
+        "Real working farm",
+        "Hosted by the family",
+        "Simple, clean rooms"
+      ]
+    },
+    "pricing": {
+      "title": "Farm Stay Rates",
+      "plans": [
+        {
+          "name": "Day Visit",
+          "price": "$15",
+          "period": "/person",
+          "perks": [
+            "Lunch and tea",
+            "Farm activities",
+            "Village walk"
+          ]
+        },
+        {
+          "name": "Night Stay",
+          "price": "$40",
+          "period": "/night",
+          "perks": [
+            "Room for two",
+            "Dinner and breakfast",
+            "Bonfire evening"
+          ]
+        },
+        {
+          "name": "Family Weekend",
+          "price": "$130",
+          "period": "/weekend",
+          "perks": [
+            "Two nights, family room",
+            "All meals included",
+            "Station pickup"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Life At The Farm",
+      "captions": [
+        "Courtyard breakfast",
+        "Morning in the fields",
+        "Bullock cart ride",
+        "Farm fresh thali",
+        "Bonfire evening",
+        "Cosy farm room"
+      ]
+    },
+    "team": {
+      "title": "Your Hosts",
+      "roles": [
+        "Host Family Head",
+        "Farm Guide",
+        "Home Cook"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "Our kids fed the calves and picked tomatoes, and the home-cooked dinner was the best part of the trip.",
+        "role": "Family guest"
+      },
+      {
+        "quote": "Quiet nights, clean rooms and hosts who treat you like family rather than a booking.",
+        "role": "Weekend guest"
+      },
+      {
+        "quote": "We booked the whole house for a small reunion and the family arranged everything smoothly.",
+        "role": "Group organiser"
+      }
+    ],
+    "blog": {
+      "title": "From The Farm",
+      "posts": [
+        {
+          "tag": "Travel",
+          "title": "Why A Farm Stay Makes A Better Weekend Break"
+        },
+        {
+          "tag": "Food",
+          "title": "What You Will Eat At A Village Homestay"
+        },
+        {
+          "tag": "Families",
+          "title": "Tips For Visiting A Farm With Young Children"
+        }
+      ]
+    },
+    "marquee": [
+      "Farm Stay",
+      "Homestay",
+      "Home Cooking",
+      "Bonfire Night",
+      "Village Walks",
+      "Fresh Produce",
+      "Family Rooms",
+      "Countryside"
+    ],
+    "contactText": "Message {brand} with your dates and the number of guests, and the host family will reply with rooms, meals and directions."
+  },
+  {
+    "id": "pg_hostel",
+    "label": "PG and hostel",
+    "theme": "real_estate",
+    "keywords": [
+      "pg",
+      "paying guest",
+      "pg accommodation",
+      "hostel",
+      "boys hostel",
+      "girls hostel",
+      "student hostel",
+      "working professional pg",
+      "पीजी",
+      "हॉस्टल"
+    ],
+    "heroTitles": [
+      "A Safe Room Close To Campus",
+      "Home-Style Stay Without The Deposit Stress",
+      "Pack A Bag, The Room Is Ready"
+    ],
+    "heroSubtitles": [
+      "{brand} offers furnished rooms for students and working professionals with meals, Wi-Fi, laundry and round-the-clock security.",
+      "Single, double and triple sharing rooms at {brand} come with a bed, cupboard and study table, so you only carry your clothes.",
+      "Looking for a PG near your college or office? {brand} gives you clean rooms, tasty food and a warden you can actually talk to."
+    ],
+    "button": "Book A Room Visit",
+    "featureTitle": "Everything A Resident Needs Under One Roof",
+    "features": [
+      {
+        "title": "Furnished Rooms",
+        "text": "Single, double and triple sharing rooms with beds, mattresses, cupboards and study tables ready to use."
+      },
+      {
+        "title": "Home-Style Meals",
+        "text": "Breakfast, lunch and dinner cooked in a clean kitchen, with a weekly menu and a say in the changes."
+      },
+      {
+        "title": "Wi-Fi And Power Backup",
+        "text": "High-speed internet in every room and inverter backup, so studies and work-from-home hours continue."
+      },
+      {
+        "title": "Security And CCTV",
+        "text": "Gated entry, CCTV in common areas and a warden on site, with visitor rules for the residents' safety."
+      },
+      {
+        "title": "Laundry And Housekeeping",
+        "text": "Rooms are cleaned regularly and washing machines are available in a separate, tidy laundry area."
+      },
+      {
+        "title": "Study And Common Areas",
+        "text": "Quiet study room, TV lounge and a water purifier on each floor, with dining space for residents."
+      }
+    ],
+    "stats": [
+      {
+        "value": "24/7",
+        "label": "Security on site"
+      },
+      {
+        "value": "3 meals",
+        "label": "Cooked every day"
+      },
+      {
+        "value": "Monthly",
+        "label": "Rent, no long lock-in"
+      }
+    ],
+    "steps": {
+      "title": "Moving In Is Simple",
+      "items": [
+        {
+          "title": "Visit And See",
+          "text": "Walk through the rooms, kitchen and common areas and meet the warden before you decide."
+        },
+        {
+          "title": "Choose Your Bed",
+          "text": "Pick the sharing type that suits your budget and share your move-in date."
+        },
+        {
+          "title": "Fill The Details",
+          "text": "Submit ID proof, guardian or company details and pay the refundable security deposit."
+        },
+        {
+          "title": "Move In",
+          "text": "Get your keys and house rules, settle in and start from the first meal the same day."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Is the security deposit refundable?",
+        "a": "Yes. The deposit is returned when you leave, after checking for damage or dues. The amount is told clearly before you book."
+      },
+      {
+        "q": "What are the visitor and gate timings?",
+        "a": "Gate timing is set for safety, and visitors may meet residents in the common lounge during day hours. Rules are shared when you visit."
+      },
+      {
+        "q": "Is food included in the rent?",
+        "a": "Plans with and without meals are available. Food-included plans cover breakfast, lunch and dinner on all days."
+      },
+      {
+        "q": "Do you have separate PGs for boys and girls?",
+        "a": "Yes, residents are accommodated in separate blocks or floors with their own entry and care staff."
+      },
+      {
+        "q": "What is the notice period to leave?",
+        "a": "We ask for a short notice period so the bed can be rented again. The exact period is written in the agreement."
+      }
+    ],
+    "cta": {
+      "title": "Want To See A Room Today?",
+      "button": "Book A Room Visit"
+    },
+    "about": {
+      "title": "A PG That Feels Like A Second Home",
+      "paragraphs": [
+        "{brand} is run by a family that lives on the premises, so cleanliness, food and safety get daily attention instead of occasional promises.",
+        "We keep rules fair and rents transparent, because residents stay longer when they feel respected and the money is spent where they can see it."
+      ],
+      "points": [
+        "Warden lives on site",
+        "Transparent monthly rent",
+        "Clean, quiet environment"
+      ]
+    },
+    "pricing": {
+      "title": "Room Rent Options",
+      "plans": [
+        {
+          "name": "Triple Sharing",
+          "price": "$65",
+          "period": "/month",
+          "perks": [
+            "Bed and study table",
+            "Wi-Fi included",
+            "Common lounge access"
+          ]
+        },
+        {
+          "name": "Double Sharing",
+          "price": "$95",
+          "period": "/month",
+          "perks": [
+            "Three meals daily",
+            "Laundry facility",
+            "Power backup"
+          ]
+        },
+        {
+          "name": "Single Room",
+          "price": "$150",
+          "period": "/month",
+          "perks": [
+            "Private room and cupboard",
+            "Meals and Wi-Fi",
+            "Housekeeping service"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Inside The Building",
+      "captions": [
+        "Double sharing room",
+        "Study lounge",
+        "Dining hall",
+        "Clean washrooms",
+        "Laundry area",
+        "Gated entrance"
+      ]
+    },
+    "team": {
+      "title": "People Who Run It",
+      "roles": [
+        "Hostel Warden",
+        "Mess Cook",
+        "Security Guard"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "The food tastes like home, the Wi-Fi works and I feel safe returning late from the library.",
+        "role": "College student"
+      },
+      {
+        "quote": "Rent is clear, there are no hidden charges and the warden solves problems quickly.",
+        "role": "Working professional"
+      },
+      {
+        "quote": "Our daughter lives here, and the gated entry and warden gave us peace of mind.",
+        "role": "Parent"
+      }
+    ],
+    "blog": {
+      "title": "Living Away From Home",
+      "posts": [
+        {
+          "tag": "Checklist",
+          "title": "Questions To Ask Before You Pay For A PG Room"
+        },
+        {
+          "tag": "Budget",
+          "title": "How To Budget Monthly Expenses As A Hostel Resident"
+        },
+        {
+          "tag": "Student Life",
+          "title": "Settling Into A New City When You Live In A PG"
+        }
+      ]
+    },
+    "marquee": [
+      "PG Rooms",
+      "Boys Hostel",
+      "Girls Hostel",
+      "Meals Included",
+      "Fast Wi-Fi",
+      "CCTV Safety",
+      "Laundry",
+      "Near Campus"
+    ],
+    "contactText": "Call or message {brand} with your preferred sharing type and move-in date, and we will fix a time for a room visit."
+  },
+  {
+    "id": "temple_trust",
+    "label": "Temple trust",
+    "theme": "nonprofit",
+    "keywords": [
+      "temple trust",
+      "mandir trust",
+      "temple donation",
+      "temple darshan timings",
+      "pooja booking",
+      "dharamshala",
+      "temple seva",
+      "मंदिर ट्रस्ट",
+      "धर्मशाला"
+    ],
+    "heroTitles": [
+      "A Place For Prayer And Peace",
+      "Seva, Satsang And Open Doors",
+      "Come In, Sit Quietly, Offer Your Prayers"
+    ],
+    "heroSubtitles": [
+      "{brand} welcomes devotees for daily darshan, aarti and festival celebrations, and serves the community through seva and prasad.",
+      "Book a pooja, offer a donation or plan a visit with {brand}. Timings, rituals and festival dates are shared clearly for every devotee.",
+      "The trust of {brand} cares for the temple, the dharamshala and community programmes, with donations used openly for the seva."
+    ],
+    "button": "View Darshan Timings",
+    "featureTitle": "Worship, Seva And Community Service",
+    "features": [
+      {
+        "title": "Daily Darshan And Aarti",
+        "text": "Morning and evening aarti with open darshan hours, announced clearly so families can plan their visit."
+      },
+      {
+        "title": "Pooja And Havan Booking",
+        "text": "Book archana, abhishek or havan with a priest, and receive the date, samagri list and prasad."
+      },
+      {
+        "title": "Festival Celebrations",
+        "text": "Navratri, Janmashtami, Shivratri and other festivals observed with bhajan, decoration and community meals."
+      },
+      {
+        "title": "Annadaan And Prasad",
+        "text": "Free meals and prasad served to devotees and the needy, supported by donations and volunteers."
+      },
+      {
+        "title": "Dharamshala Stay",
+        "text": "Simple, clean rooms for pilgrims and visiting families, booked ahead on a donation basis."
+      },
+      {
+        "title": "Donations And Seva",
+        "text": "Contribute towards temple upkeep, annadaan or education seva, with a receipt for every offering."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Daily",
+        "label": "Aarti and darshan"
+      },
+      {
+        "value": "Open",
+        "label": "To all devotees"
+      },
+      {
+        "value": "Receipt",
+        "label": "For every donation"
+      }
+    ],
+    "steps": {
+      "title": "Planning Your Visit Or Seva",
+      "items": [
+        {
+          "title": "Check The Timings",
+          "text": "See darshan and aarti hours, and any special festival schedule, before you leave home."
+        },
+        {
+          "title": "Book A Pooja",
+          "text": "Choose the pooja or havan, share your name and gotra, and select a date with the priest."
+        },
+        {
+          "title": "Offer Your Seva",
+          "text": "Donate at the counter or online, or volunteer for prasad and cleaning on festival days."
+        },
+        {
+          "title": "Receive Prasad",
+          "text": "Take blessings, collect prasad and your receipt, and stay for aarti if you can."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "What are the temple opening hours?",
+        "a": "Darshan runs in the morning and evening with a short afternoon break. Festival days may have changed timings, which we post in advance."
+      },
+      {
+        "q": "How can I book a pooja or havan?",
+        "a": "Contact the temple office with the pooja type and your preferred date. The priest confirms the time and tells you what to bring."
+      },
+      {
+        "q": "Are donations receipted?",
+        "a": "Yes, every donation gets a numbered receipt. The trust records how contributions are used for the temple and its seva."
+      },
+      {
+        "q": "Is the dharamshala open to everyone?",
+        "a": "The dharamshala is open to pilgrims and visiting families, depending on room availability. Please book in advance during festival time."
+      },
+      {
+        "q": "Is there a dress code or photography rule?",
+        "a": "We request modest dress and ask that phones be kept silent. Photography is not allowed inside the sanctum."
+      }
+    ],
+    "cta": {
+      "title": "Would You Like To Join Our Seva?",
+      "button": "Offer Your Seva"
+    },
+    "about": {
+      "title": "Faith Kept Alive Through Service",
+      "paragraphs": [
+        "{brand} is a community trust that looks after the temple, its rituals and the people who depend on its seva, from priests to visiting pilgrims.",
+        "Every contribution goes towards temple upkeep, daily worship, annadaan and community work, and the trustees keep clear records for devotees to see."
+      ],
+      "points": [
+        "Open to all devotees",
+        "Donations recorded openly",
+        "Run by volunteers"
+      ]
+    },
+    "pricing": {
+      "title": "Seva And Pooja Offerings",
+      "plans": [
+        {
+          "name": "Archana Seva",
+          "price": "$3",
+          "period": "/pooja",
+          "perks": [
+            "Name and gotra archana",
+            "Prasad included",
+            "Priest's blessing"
+          ]
+        },
+        {
+          "name": "Abhishek Pooja",
+          "price": "$12",
+          "period": "/pooja",
+          "perks": [
+            "Full abhishek by priest",
+            "Samagri arranged",
+            "Prasad and receipt"
+          ]
+        },
+        {
+          "name": "Annadaan Seva",
+          "price": "$60",
+          "period": "/day",
+          "perks": [
+            "Meal for many devotees",
+            "Served by volunteers",
+            "Donation receipt"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Moments At The Temple",
+      "captions": [
+        "Morning aarti",
+        "Temple courtyard",
+        "Festival decoration",
+        "Annadaan meal",
+        "Diya lighting",
+        "Evening bhajan"
+      ]
+    },
+    "team": {
+      "title": "Those Who Serve",
+      "roles": [
+        "Head Priest",
+        "Trust Secretary",
+        "Seva Coordinator"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "The timings are posted clearly, the priest was patient and the prasad was handed over with care.",
+        "role": "Devotee"
+      },
+      {
+        "quote": "We stayed in the dharamshala during the festival and found it simple, clean and well looked after.",
+        "role": "Visiting pilgrim"
+      },
+      {
+        "quote": "Our donation received a proper receipt and the trust explained exactly how it would be used.",
+        "role": "Donor"
+      }
+    ],
+    "blog": {
+      "title": "Temple Notices And Reflections",
+      "posts": [
+        {
+          "tag": "Festivals",
+          "title": "Festival Calendar And What To Expect At The Temple"
+        },
+        {
+          "tag": "Rituals",
+          "title": "Understanding The Meaning Behind The Daily Aarti"
+        },
+        {
+          "tag": "Seva",
+          "title": "How Annadaan Is Prepared And Served To Devotees"
+        }
+      ]
+    },
+    "marquee": [
+      "Daily Darshan",
+      "Aarti",
+      "Pooja Booking",
+      "Annadaan",
+      "Prasad",
+      "Dharamshala",
+      "Festivals",
+      "Temple Seva"
+    ],
+    "contactText": "Please write to the office of {brand} for pooja booking, dharamshala stay or donation details, and we will reply with timings and guidance."
+  },
+  {
+    "id": "travel_cab_taxi",
+    "label": "Cab and taxi service",
+    "theme": "travel_tourism",
+    "keywords": [
+      "taxi service",
+      "cab booking",
+      "outstation cab",
+      "airport taxi",
+      "car rental with driver",
+      "cab service",
+      "tempo traveller",
+      "टैक्सी सेवा",
+      "कैब बुकिंग"
+    ],
+    "heroTitles": [
+      "Book The Ride, We Handle The Road",
+      "On Time, Every Time, Door To Door",
+      "Outstation Trips With A Driver Who Knows The Way"
+    ],
+    "heroSubtitles": [
+      "{brand} runs clean, air-conditioned cabs with trained local drivers for airport transfers, city rides and outstation trips.",
+      "Tell {brand} your pickup, destination and passengers, and get a fixed fare with tolls and driver allowance clearly listed.",
+      "Family holiday, wedding guests or office travel: {brand} offers sedans, SUVs and tempo travellers booked by call or message."
+    ],
+    "button": "Book A Cab Now",
+    "featureTitle": "Rides For Every Kind Of Trip",
+    "features": [
+      {
+        "title": "Airport Pickup And Drop",
+        "text": "Drivers track your flight or train and wait at arrivals with a name board, so you are never left standing."
+      },
+      {
+        "title": "Outstation Taxi",
+        "text": "One-way and round-trip cabs to nearby cities and hill stations at fixed fares, with route advice from the driver."
+      },
+      {
+        "title": "Local City Rides",
+        "text": "Hourly rental packages for shopping, meetings and errands, with the cab and driver staying with you."
+      },
+      {
+        "title": "Sedans, SUVs And Tempo Vans",
+        "text": "Pick a car for two to a tempo traveller for twelve, all serviced and cleaned before each trip."
+      },
+      {
+        "title": "Wedding And Event Cars",
+        "text": "Decorated cars and shuttle service for guests, planned with timings for the baraat, hotel and venue."
+      },
+      {
+        "title": "Corporate Travel",
+        "text": "Monthly cab accounts for companies with staff pickups, client rides and a single invoice."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Fixed",
+        "label": "Fare told in advance"
+      },
+      {
+        "value": "24/7",
+        "label": "Booking by phone"
+      },
+      {
+        "value": "Verified",
+        "label": "Drivers with licence"
+      }
+    ],
+    "steps": {
+      "title": "Booking Your Ride",
+      "items": [
+        {
+          "title": "Share Trip Details",
+          "text": "Send the pickup point, destination, date, time and number of passengers by call or message."
+        },
+        {
+          "title": "Get Your Fare",
+          "text": "We reply with the car type and a fixed fare, listing tolls, parking and driver allowance."
+        },
+        {
+          "title": "Receive Driver Details",
+          "text": "Before pickup you get the driver's name, number and the cab's registration."
+        },
+        {
+          "title": "Ride And Pay",
+          "text": "Travel in a clean cab, pay by cash or UPI at the end and get a receipt on request."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Is the fare fixed or by the meter?",
+        "a": "For airport and outstation trips the fare is fixed in advance. Local hourly rides are charged by the package you choose."
+      },
+      {
+        "q": "Are tolls and parking included?",
+        "a": "We tell you clearly in the quote whether tolls, parking and state taxes are included or paid as per actuals."
+      },
+      {
+        "q": "Do you provide cabs for early flights?",
+        "a": "Yes. Night and early-morning pickups are common, and drivers confirm with you the evening before."
+      },
+      {
+        "q": "Can I change or cancel my booking?",
+        "a": "Yes. Tell us as early as possible. Cancellation terms are told at booking and are lighter when you cancel in good time."
+      },
+      {
+        "q": "Are drivers licensed and verified?",
+        "a": "All drivers hold valid licences, are verified by us and know the main routes. Vehicles carry permits and insurance."
+      }
+    ],
+    "cta": {
+      "title": "Where Are You Headed Next?",
+      "button": "Book A Cab Now"
+    },
+    "about": {
+      "title": "Local Drivers, Straight Fares",
+      "paragraphs": [
+        "{brand} is a local cab and taxi operator that depends on repeat travellers, so punctuality and clean cars matter more to us than quick rides.",
+        "We keep our fleet serviced, our drivers briefed and our fares written down, which means fewer arguments and calmer journeys."
+      ],
+      "points": [
+        "Fares told before the trip",
+        "Cleaned and serviced cars",
+        "Drivers who know routes"
+      ]
+    },
+    "pricing": {
+      "title": "Sample Cab Fares",
+      "plans": [
+        {
+          "name": "Airport Transfer",
+          "price": "$12",
+          "period": "/trip",
+          "perks": [
+            "Sedan with AC",
+            "Flight tracking",
+            "Name board pickup"
+          ]
+        },
+        {
+          "name": "Local 8 Hour Rental",
+          "price": "$30",
+          "period": "/day",
+          "perks": [
+            "80 km included",
+            "Driver stays with you",
+            "AC sedan or SUV"
+          ]
+        },
+        {
+          "name": "Outstation Round Trip",
+          "price": "$55",
+          "period": "/day",
+          "perks": [
+            "Fixed daily rate",
+            "Driver allowance listed",
+            "Tempo traveller option"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Our Fleet And Trips",
+      "captions": [
+        "Sedan at airport",
+        "Tempo traveller",
+        "Hill road journey",
+        "Decorated wedding car",
+        "SUV for families",
+        "Night highway drive"
+      ]
+    },
+    "team": {
+      "title": "Our Travel Desk",
+      "roles": [
+        "Senior Driver",
+        "Booking Coordinator",
+        "Fleet Supervisor"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "The driver was waiting at arrivals with a name board and the fare matched the quote exactly.",
+        "role": "Airport passenger"
+      },
+      {
+        "quote": "Our hill-station trip was comfortable, and the driver suggested good stops along the way.",
+        "role": "Family traveller"
+      },
+      {
+        "quote": "Staff cabs arrive on time every morning and the monthly invoice is simple to follow.",
+        "role": "Office admin"
+      }
+    ],
+    "blog": {
+      "title": "Travel Tips On The Road",
+      "posts": [
+        {
+          "tag": "Outstation",
+          "title": "How To Plan A Smooth One-Way Outstation Cab Trip"
+        },
+        {
+          "tag": "Airport",
+          "title": "Booking An Early Morning Airport Cab Without Stress"
+        },
+        {
+          "tag": "Groups",
+          "title": "When A Tempo Traveller Beats Booking Two Cabs"
+        }
+      ]
+    },
+    "marquee": [
+      "Airport Taxi",
+      "Outstation Cab",
+      "City Rides",
+      "Tempo Traveller",
+      "Fixed Fares",
+      "AC Cabs",
+      "Wedding Cars",
+      "Local Drivers"
+    ],
+    "contactText": "Call or message {brand} with your pickup, destination and travel date, and we will send the fare and driver details."
+  },
+  {
+    "id": "security_guard_agency",
+    "label": "Security guard agency",
+    "theme": "professional_services",
+    "keywords": [
+      "security guard agency",
+      "security guard service",
+      "security agency",
+      "guard services",
+      "bouncer services",
+      "society security guard",
+      "gunman service",
+      "सिक्योरिटी गार्ड"
+    ],
+    "heroTitles": [
+      "Trained Guards You Can Rely On",
+      "Gates Covered, Premises Secured",
+      "Security That Shows Up On Time, Every Shift"
+    ],
+    "heroSubtitles": [
+      "{brand} supplies verified, uniformed security guards for societies, offices, factories, shops and events, with supervisors who check in.",
+      "Whether you need one night guard or a full shift roster, {brand} handles recruitment, training, uniforms, attendance and replacements.",
+      "From the gate register to patrol rounds, {brand} guards follow written duty instructions and report to a supervisor every day."
+    ],
+    "button": "Request A Security Quote",
+    "featureTitle": "Guarding Services For Every Premises",
+    "features": [
+      {
+        "title": "Residential Society Guards",
+        "text": "Gate duty, visitor registers and patrol rounds for apartments and colonies, with trained staff each shift."
+      },
+      {
+        "title": "Office And Corporate Security",
+        "text": "Neatly dressed guards for reception, access control and visitor management at offices and business parks."
+      },
+      {
+        "title": "Factory And Warehouse Guards",
+        "text": "Gate checks, material entry records and night patrol for industrial sites and godowns."
+      },
+      {
+        "title": "Event Security And Bouncers",
+        "text": "Crowd control, entry management and bouncers for weddings, concerts and private parties."
+      },
+      {
+        "title": "Verified And Trained Staff",
+        "text": "Every guard has police verification and ID checks, plus training in basic fire safety and emergency response."
+      },
+      {
+        "title": "Supervisors And Replacements",
+        "text": "Field supervisors inspect posts and a guard is replaced the same day if someone is absent or unsuitable."
+      }
+    ],
+    "stats": [
+      {
+        "value": "Verified",
+        "label": "Guards with ID checks"
+      },
+      {
+        "value": "Same day",
+        "label": "Replacement if absent"
+      },
+      {
+        "value": "Daily",
+        "label": "Supervisor check-ins"
+      }
+    ],
+    "steps": {
+      "title": "How We Set Up Your Security",
+      "items": [
+        {
+          "title": "Site Visit",
+          "text": "A supervisor visits, notes entry points and risks, and suggests the guards and shifts needed."
+        },
+        {
+          "title": "Agreement",
+          "text": "We share a written quote and contract with duty hours, wages, uniforms and responsibilities."
+        },
+        {
+          "title": "Deployment",
+          "text": "Briefed, uniformed guards reach your site with a duty chart and your emergency contact list."
+        },
+        {
+          "title": "Supervision",
+          "text": "A field supervisor checks attendance and alertness, and you receive a monthly report on shifts."
+        }
+      ]
+    },
+    "faq": [
+      {
+        "q": "Are your guards police verified?",
+        "a": "Yes. Each guard goes through ID checks and police verification before being posted, and we keep records for client review."
+      },
+      {
+        "q": "What if a guard doesn't show up?",
+        "a": "We send a replacement the same day from our reserve staff, so your post is not left empty during the shift."
+      },
+      {
+        "q": "Can you provide guards for one day events?",
+        "a": "Yes. We supply guards and bouncers for weddings, exhibitions and parties for as little as a single day or evening."
+      },
+      {
+        "q": "Do you handle wages and compliance?",
+        "a": "Yes. We manage guard salaries, provident fund and insurance as required, so you do not deal with payroll for the staff."
+      },
+      {
+        "q": "Do guards carry weapons?",
+        "a": "Most posts need unarmed guards trained in observation and response. Armed guards are arranged only where law and licence allow."
+      }
+    ],
+    "cta": {
+      "title": "Need Guards For Your Premises?",
+      "button": "Request A Security Quote"
+    },
+    "about": {
+      "title": "Disciplined Guards, Accountable Supervision",
+      "paragraphs": [
+        "{brand} is a private security agency that recruits, trains and supervises its own guards, instead of simply sending people to a gate and hoping for the best.",
+        "Clients get a named supervisor, written duty instructions and quick replacements, so security stays steady even when staff change."
+      ],
+      "points": [
+        "Police verified staff",
+        "Named field supervisor",
+        "Written duty instructions"
+      ]
+    },
+    "pricing": {
+      "title": "Guard Service Rates",
+      "plans": [
+        {
+          "name": "Event Guard",
+          "price": "$15",
+          "period": "/shift",
+          "perks": [
+            "Uniformed guard",
+            "Entry management",
+            "Single-day booking"
+          ]
+        },
+        {
+          "name": "Day Or Night Guard",
+          "price": "$160",
+          "period": "/month",
+          "perks": [
+            "One 12 hour shift",
+            "Supervisor visits",
+            "Same-day replacement"
+          ]
+        },
+        {
+          "name": "Round-The-Clock Post",
+          "price": "$320",
+          "period": "/month",
+          "perks": [
+            "Two guards on rotation",
+            "Duty register kept",
+            "Monthly shift report"
+          ]
+        }
+      ]
+    },
+    "gallery": {
+      "title": "On Duty Across Sites",
+      "captions": [
+        "Society gate post",
+        "Office reception",
+        "Factory night patrol",
+        "Event entry control",
+        "Morning briefing",
+        "Supervisor inspection"
+      ]
+    },
+    "team": {
+      "title": "Who Manages Your Post",
+      "roles": [
+        "Security Supervisor",
+        "Operations Manager",
+        "Training Officer"
+      ]
+    },
+    "testimonials": [
+      {
+        "quote": "Guards arrive in clean uniform, keep the visitor register properly and a supervisor checks in each week.",
+        "role": "Society secretary"
+      },
+      {
+        "quote": "When one guard fell ill the agency sent a replacement within hours, so the gate never stayed empty.",
+        "role": "Factory manager"
+      },
+      {
+        "quote": "Their event team controlled the entry smoothly and stayed polite with our guests.",
+        "role": "Wedding host"
+      }
+    ],
+    "blog": {
+      "title": "Security Know-How",
+      "posts": [
+        {
+          "tag": "Societies",
+          "title": "What A Good Gate Register Looks Like In A Society"
+        },
+        {
+          "tag": "Hiring",
+          "title": "Questions To Ask Before Hiring A Security Agency"
+        },
+        {
+          "tag": "Events",
+          "title": "How Many Guards Does Your Event Actually Need"
+        }
+      ]
+    },
+    "marquee": [
+      "Security Guards",
+      "Gate Duty",
+      "Night Patrol",
+      "Event Bouncers",
+      "Verified Staff",
+      "Supervisors",
+      "Access Control",
+      "Site Safety"
+    ],
+    "contactText": "Tell {brand} about your premises, shifts and the number of guards you need, and a supervisor will visit and send a written quote."
+  }
+]

@@ -4,9 +4,25 @@ import { generateWebsite, hash, seededRandom } from '../generateWebsite'
 import { applyPoolToContent } from '../siteData'
 import type { Tier } from '../designBrain'
 import type { MotionSetting } from '../motionBrain'
+import type { SectionKey, SiteEdits, Target } from '../edit/edits'
 import { rolePools, tierPools, type Role } from './libraryRoles'
 
-export type LibrarySection = { role: Role; componentId: string }
+/** the part of a page that a library component fills, for each section a person can ask to remove or add */
+const ROLE_OF: Partial<Record<SectionKey, Role[]>> = {
+  stats: ['stats'],
+  features: ['features'],
+  about: ['about', 'profile'],
+  steps: ['steps'],
+  gallery: ['gallery'],
+  pricing: ['pricing'],
+  team: ['team'],
+  testimonials: ['testimonial'],
+  blog: ['blog'],
+  cta: ['cta'],
+  contact: ['contact'],
+}
+
+export type LibrarySection = { role: Role; componentId: string; /** background colour of this part only ("footer green") */ paint?: string }
 
 const componentName = (id: string) => id.split('/')[1]
 
@@ -16,8 +32,10 @@ export function generateLibraryPage(
   tierOverride?: Tier,
   creative = true,
   motionSetting: MotionSetting = 'auto',
+  /** changes the person asked for (see edit/edits.ts) */
+  edits?: SiteEdits,
 ) {
-  const generated = generateWebsite(userPrompt, variation, tierOverride, creative, motionSetting)
+  const generated = generateWebsite(userPrompt, variation, tierOverride, creative, motionSetting, edits)
   // your own data (src/data/dataPool.json) first, the generated text for what it does not cover
   const poolRand = seededRandom(hash(`${userPrompt.trim().toLowerCase()}|pool|${variation}`))
   const base = { ...generated, content: applyPoolToContent(generated.content, generated.themeKey, userPrompt, poolRand) }
@@ -45,34 +63,25 @@ export function generateLibraryPage(
   const show = (role: keyof typeof optional) =>
     tier === 'premium' ? role !== 'profile' && role !== 'links' : tier === 'normal' ? false : optional[role]
 
-  const order: Role[] =
+  // which parts the page has: the short page (normal), or the long one with its optional parts; then what the person removed or added
+  const FULL: Role[] = ['nav', 'hero', 'stats', 'about', 'profile', 'features', 'steps', 'gallery', 'pricing', 'team', 'testimonial', 'blog', 'links', 'cta', 'contact', 'footer']
+  const visible = new Set<Role>(
     tier === 'normal'
       ? ['nav', 'hero', 'about', 'features', 'cta', 'contact', 'footer']
-      : [
-          'nav',
-          'hero',
-          ...(show('stats') ? (['stats'] as const) : []),
-          'about',
-          ...(show('profile') ? (['profile'] as const) : []),
-          'features',
-          'steps',
-          ...(show('gallery') ? (['gallery'] as const) : []),
-          'pricing',
-          ...(show('team') ? (['team'] as const) : []),
-          'testimonial',
-          ...(show('blog') ? (['blog'] as const) : []),
-          ...(show('links') ? (['links'] as const) : []),
-          'cta',
-          'contact',
-          'footer',
-        ]
-  const sections: LibrarySection[] = order.map((role) => ({ role, componentId: chosen[role] }))
+      : ['nav', 'hero', 'about', 'features', 'steps', 'pricing', 'testimonial', 'cta', 'contact', 'footer', ...(['stats', 'profile', 'gallery', 'team', 'blog', 'links'] as const).filter((role) => show(role))],
+  )
+  for (const section of edits?.added ?? []) for (const role of ROLE_OF[section] ?? []) if (role !== 'profile') visible.add(role)
+  for (const section of edits?.hidden ?? []) for (const role of ROLE_OF[section] ?? []) visible.delete(role)
+  const order: Role[] = FULL.filter((role) => visible.has(role))
+  const targetOfRole = (role: Role): Target | undefined =>
+    role === 'nav' ? 'header' : role === 'hero' ? 'hero' : role === 'footer' ? 'footer' : role === 'profile' ? 'about' : ((Object.keys(ROLE_OF) as SectionKey[]).find((key) => ROLE_OF[key]?.includes(role)) as Target | undefined)
+  const sections: LibrarySection[] = order.map((role) => ({ role, componentId: chosen[role], paint: edits?.sectionColors[targetOfRole(role) as Target] }))
 
   const imports = sections
     .map(({ componentId }) => `import ${componentName(componentId)} from './components/${componentId}'`)
     .join('\n')
   const body = sections
-    .map(({ role, componentId }) => `      <Section role="${role}">\n        <${componentName(componentId)} />\n      </Section>`)
+    .map(({ role, componentId, paint }) => `      <Section role="${role}"${paint ? ` paint="${paint}"` : ''}>\n        <${componentName(componentId)} />\n      </Section>`)
     .join('\n')
 
   const code = `// Page assembled from the stored components. Save as src/GeneratedLandingPage.tsx
@@ -100,5 +109,5 @@ ${body}
 }
 `
 
-  return { themeKey: base.themeKey, palette: base.palette, content: base.content, sections, code, tier, brain: base.brain, motion: base.motion, copy: base.copy, brainsForced: base.brainsForced, colorReasons: base.colorReasons }
+  return { themeKey: base.themeKey, niche: generated.niche, palette: base.palette, content: base.content, sections, code, tier, brain: base.brain, motion: base.motion, copy: base.copy, brainsForced: base.brainsForced, colorReasons: base.colorReasons }
 }

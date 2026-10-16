@@ -3,6 +3,7 @@
 //   * a small React project (router, layout, one file per page) for the Code tab.
 // Both come from the same section templates as the single page, so they cannot drift apart.
 import type { Tier } from './designBrain'
+import type { Paints } from './edit/sectionColors'
 import { coverJsx, gradientAt, renderSections, themeCss, type LayoutId, type PageInfo, type Visuals } from './finalProductionTemplate'
 import type { WebsiteContent } from './finalPrompt'
 import type { MotionPlan } from './motionBrain'
@@ -22,6 +23,8 @@ export type SiteSpec = {
   navId: 'navbar-left' | 'navbar-center'
   headerStyle: 'center' | 'left'
   visuals: Visuals
+  /** colours of single parts of the page ("footer green"), see edit/sectionColors.ts */
+  paints?: Paints
 }
 
 export type SiteFile = { path: string; code: string }
@@ -69,6 +72,7 @@ export function compileSiteHtml(spec: SiteSpec, page: PagePlan): string {
       post: page.slug ? spec.posts.find((p) => p.slug === page.slug) : undefined,
     },
     spec.visuals,
+    spec.paints,
   )
   return `<style>${themeCss(spec.tokens)}</style><div data-mode="${spec.initialMode}" class="g-root ${rootClass(spec.theme)}">${body.join('\n')}\n</div>`
 }
@@ -123,7 +127,7 @@ export function compileSiteFiles(spec: SiteSpec): SiteFile[] {
       current: page.path,
       page: pageInfo(spec, page),
       posts: spec.posts,
-    }, spec.visuals)
+    }, spec.visuals, spec.paints)
 
   const notFound: PagePlan = { id: 'notfound', path: '/404', label: '404', title: 'Page not found', subtitle: '', sections: ['not-found'], inNav: false }
   const home = spec.pages.find((p) => p.id === 'home') ?? spec.pages[0]

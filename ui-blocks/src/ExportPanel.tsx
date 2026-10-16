@@ -8,6 +8,7 @@ import type { generateSite } from './generator/generateSite'
 import type { generateWebsite } from './generator/generateWebsite'
 import type { generateLibraryPage } from './generator/library/generateLibraryPage'
 import { downloadFile } from './generator/zip'
+import { readPicture } from './generator/edit/imageFile'
 
 type Props = {
   /** which engine made the page on screen */
@@ -16,31 +17,12 @@ type Props = {
   multi: ReturnType<typeof generateSite>
   site: ReturnType<typeof generateWebsite>
   library: ReturnType<typeof generateLibraryPage>
+  /** what the person filled in (shared with the preview) */
+  details: ExportDetails
+  onDetails: (next: ExportDetails | ((current: ExportDetails) => ExportDetails)) => void
 }
 
 /** Reads a picture and shrinks it, so that it can be embedded in the pages without making them heavy. */
-function readPicture(file: File, maxSize: number): Promise<string> {
-  return new Promise((resolve, reject) => {
-    const url = URL.createObjectURL(file)
-    const image = new Image()
-    image.onload = () => {
-      const scale = Math.min(1, maxSize / Math.max(image.width, image.height))
-      const canvas = document.createElement('canvas')
-      canvas.width = Math.round(image.width * scale)
-      canvas.height = Math.round(image.height * scale)
-      canvas.getContext('2d')!.drawImage(image, 0, 0, canvas.width, canvas.height)
-      URL.revokeObjectURL(url)
-      // a logo may have a transparent background: keep PNG for it, JPEG for photos
-      resolve(file.type === 'image/png' || file.type === 'image/svg+xml' ? canvas.toDataURL('image/png') : canvas.toDataURL('image/jpeg', 0.82))
-    }
-    image.onerror = () => {
-      URL.revokeObjectURL(url)
-      reject(new Error('This file is not a picture the browser can read.'))
-    }
-    image.src = url
-  })
-}
-
 const FIELDS: { key: 'email' | 'phone' | 'address' | 'siteUrl' | 'formEndpoint'; label: string; placeholder: string; templatesOnly?: boolean }[] = [
   { key: 'email', label: 'Email', placeholder: 'hello@yourbusiness.com' },
   { key: 'phone', label: 'Phone', placeholder: '+91 98765 43210' },
@@ -49,8 +31,7 @@ const FIELDS: { key: 'email' | 'phone' | 'address' | 'siteUrl' | 'formEndpoint';
   { key: 'formEndpoint', label: 'Form service', placeholder: 'https://formspree.io/f/xxxxxxx', templatesOnly: true },
 ]
 
-function ExportPanel({ engine, isMulti, multi, site, library }: Props) {
-  const [details, setDetails] = useState<ExportDetails>({})
+function ExportPanel({ engine, isMulti, multi, site, library, details, onDetails: setDetails }: Props) {
   const [open, setOpen] = useState(false)
   const [error, setError] = useState('')
   const isLibrary = engine === 'library'
@@ -64,7 +45,7 @@ function ExportPanel({ engine, isMulti, multi, site, library }: Props) {
     setError('')
     if (!file) return set(key, '')
     try {
-      set(key, await readPicture(file, maxSize))
+      set(key, await readPicture(file, maxSize, key === 'logo'))
     } catch (problem) {
       setError(problem instanceof Error ? problem.message : 'Could not read the picture.')
     }

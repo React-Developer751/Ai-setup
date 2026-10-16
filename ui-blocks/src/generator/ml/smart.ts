@@ -29,7 +29,10 @@ const saved = storage()?.getItem(MODEL_STORE)
 if (saved && EMBEDDING_MODELS[saved]) modelKey = saved
 
 let wasm: EmbedOptions['wasmPaths']
-const options = (): EmbedOptions => ({ localModelPath: '/models/', wasmPaths: wasm, model: EMBEDDING_MODELS[modelKey].name, prefix: EMBEDDING_MODELS[modelKey].prefix })
+/** where the model files are: this site's /models/, or another address (VITE_MODELS_URL, for example a CDN) so that the 150 MB stay out of the build */
+const MODELS_URL = ((import.meta as { env?: Record<string, string | undefined> }).env?.VITE_MODELS_URL ?? '/models/').replace(/\/?$/, '/')
+
+const options = (): EmbedOptions => ({ localModelPath: MODELS_URL, wasmPaths: wasm, model: EMBEDDING_MODELS[modelKey].name, prefix: EMBEDDING_MODELS[modelKey].prefix })
 
 const notify = () => {
   version++
@@ -49,14 +52,14 @@ export const smartWanted = () => storage()?.getItem(STORE) === 'on'
 // ── files of the active model, loaded once per model
 type Loaded = { vectors?: Promise<Vectors | undefined>; probe?: Promise<Probe | undefined> }
 const files = new Map<string, Loaded>()
-function fileOf(kind: 'themes' | 'kinds') {
+function fileOf(kind: 'themes' | 'kinds' | 'intents') {
   const key = `${modelKey}/${kind}`
   const entry = files.get(key) ?? {}
-  entry.vectors ??= fetch(`/models/vectors/${modelKey}/${kind}.json`)
+  entry.vectors ??= fetch(`${MODELS_URL}vectors/${modelKey}/${kind}.json`)
     .then((r) => (r.ok ? r.json() : undefined))
     .then((file) => (file ? unpackVectors(file) : undefined))
     .catch(() => undefined)
-  entry.probe ??= fetch(`/models/vectors/${modelKey}/${kind}-probe.json`)
+  entry.probe ??= fetch(`${MODELS_URL}vectors/${modelKey}/${kind}-probe.json`)
     .then((r) => (r.ok ? (r.json() as Promise<ProbeFile>) : undefined))
     .then((file) => (file ? new Probe(file) : undefined))
     .catch(() => undefined)
@@ -111,6 +114,22 @@ export async function understandKinds(texts: string[]): Promise<void> {
     })
   } catch {
     // the importer simply works without it
+  }
+}
+
+/** what an edit request means ("remove the faq", "make it simpler" ...), by meaning: a probability for every intent; undefined when the model is not ready */
+export async function smartIntent(text: string): Promise<Record<string, number> | undefined> {
+  if (status !== 'ready' || !text.trim()) return undefined
+  try {
+    const { vectors, probe } = fileOf('intents')
+    const [known, trained] = await Promise.all([vectors, probe])
+    if (!known) return undefined
+    const [vector] = await embed([text], options())
+    const a = nearest(vector, known)
+    const b = trained?.predict(vector)
+    return Object.fromEntries(Object.keys(a).map((label) => [label, b ? (a[label] + 2 * b[label]) / 3 : a[label]]))
+  } catch {
+    return undefined
   }
 }
 

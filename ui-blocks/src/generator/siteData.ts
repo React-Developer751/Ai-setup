@@ -15,6 +15,8 @@ import {
 import type { LegalBlock, LegalDocs, Post, PostBlock } from './siteTypes'
 import type { Milestone, OpeningHours } from './siteTypes'
 import type { ThemeKey } from './themes'
+import { nicheSiteData } from './niche/applyNiche'
+import type { Niche } from './niche/types'
 
 const DAYS = {
   weekdays: 'Mon - Fri',
@@ -592,6 +594,8 @@ export function writeSiteData(
   prompt: string,
   content: WebsiteContent,
   rand: () => number,
+  /** a niche pack: its own team roles, FAQ, reviews, gallery and blog instead of the kit's */
+  niche?: Niche,
 ): { content: WebsiteContent; locale: Locale } {
   const locale = detectLocale(prompt)
   // a real business from the pool (its own tagline, services, prices, contact and hours) comes before anything invented
@@ -602,22 +606,20 @@ export function writeSiteData(
   const posts = mergePosts(writePosts(theme, brand, subject, locale, rand), seed, rand)
   const reviews = mergeReviews(writeReviews(theme, brand, locale, rand), seed, rand)
 
-  return {
-    locale,
-    content: {
-      ...content,
-      timeline: writeTimeline(brand, rand),
-      hours: business?.hours.length ? business.hours : writeHours(theme, rand),
-      posts,
-      team: { ...content.team, members: mergeTeam(writeTeam(theme, brand, locale, rand), seed, rand) },
-      gallery: { ...content.gallery, captions: mergeGallery(writeGalleryCaptions(theme, rand), seed, rand) },
-      faq: mergeFaq(writeFaq(theme, brand, rand), seed, rand),
-      testimonials: reviews,
-      testimonial: reviews[0],
-      pricing: { ...content.pricing, plans: writePricing(content.pricing.plans, locale) },
-      blog: { ...content.blog, posts: posts.slice(0, 3).map((p) => ({ tag: p.tag, title: p.title, slug: p.slug })) },
-      contact: { ...content.contact, ...contact },
-      legal: writeLegal(brand, contact.email, locale),
-    },
+  const base = {
+    ...content,
+    timeline: writeTimeline(brand, rand),
+    hours: business?.hours.length ? business.hours : writeHours(theme, rand),
+    posts,
+    team: { ...content.team, members: mergeTeam(writeTeam(theme, brand, locale, rand), seed, rand) },
+    gallery: { ...content.gallery, captions: mergeGallery(writeGalleryCaptions(theme, rand), seed, rand) },
+    faq: mergeFaq(writeFaq(theme, brand, rand), seed, rand),
+    testimonials: reviews,
+    testimonial: reviews[0],
+    pricing: { ...content.pricing, plans: writePricing(content.pricing.plans, locale) },
+    blog: { ...content.blog, posts: posts.slice(0, 3).map((p) => ({ tag: p.tag, title: p.title, slug: p.slug })) },
+    contact: { ...content.contact, ...contact },
+    legal: writeLegal(brand, contact.email, locale),
   }
+  return { locale, content: niche ? nicheSiteData(base, content, niche, locale, rand) : base }
 }
