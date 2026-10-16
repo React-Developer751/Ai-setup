@@ -86,3 +86,25 @@ commands), `npm run eval:intents` (free-language examples; add `-- --meaning` fo
 * **Publishing**: the SEO folder export now contains `netlify.toml`, `_headers` (security headers, caching), `.nojekyll` and `DEPLOY.md`
   (Netlify, Cloudflare Pages, GitHub Pages, shared hosting; what to change before going live).
 * Checks: `npm test` (also `npm run test:business`, `npm run test:projects`).
+
+## Pictures from the image AI (PixelMath, the `normal` folder)
+
+The folder `../normal` holds PixelMath, a text-to-image engine in pure Python with an HTTP API (its own README explains it). It is used as a second
+source of pictures, next to uploads and the Pexels photo search:
+
+```bash
+npm run images      # starts the engine (python3 ../normal/serve.py, port 8000); the folder is only run, never changed
+npm run server      # this project's server: /api/ai-image asks the engine, /api/health says images: true
+npm run dev         # the page: Real photos > "Draw scenes for my site"
+```
+
+* Engine v1.3 draws **business props** (115: food, shops, doctors, tools, vehicles, buildings, animals ...) in scenes (a desk, a cafe table, a room, a workshop,
+  a landscape) as flat illustrations, plus sunsets, skylines, galaxies and mandalas; no photographs, brands or faces with detail.
+  `src/data/imageScenes.json` gives every business type and 55 niches their own scenes in words the engine understands (a bakery shop for a bakery,
+  a doctor with a clinic, tools and a ladder for a plumber, solar panels for a solar installer ...). Edit that file to change what is drawn;
+  `src/generator/imageAi.ts` picks from it.
+* One click draws 8 pictures (first screen, About, 6 for the gallery), turns them into small JPEGs inside the page (so exports do not need the engine)
+  and puts them on the site like other photos (undo, projects and exports work the same). "Draw other scenes" gives a new set.
+* Settings: `PIXELMATH_URL` (default http://127.0.0.1:8000), `PIXELMATH_API_KEY` (if the engine runs with a key: sent by the server, never by the page),
+  `PIXELMATH_DIR` and `PIXELMATH_PORT` for `npm run images`, `EDIT_IMAGES_PER_MINUTE` (default 90).
+* Check: `npm run test:images` (plans, words, the server's proxy against a fake engine, and the real engine when it runs).

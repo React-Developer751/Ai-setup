@@ -1,0 +1,357 @@
+{
+  "info": {
+    "name": "PixelMath API",
+    "description": "Requests for the PixelMath HTTP API. Set baseUrl (and apiKey if the server was started with one).",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-API-Key",
+        "type": "string"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://127.0.0.1:8000"
+    },
+    {
+      "key": "apiKey",
+      "value": ""
+    },
+    {
+      "key": "jobId",
+      "value": ""
+    }
+  ],
+  "item": [
+    {
+      "name": "Health",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/health",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "health"
+          ]
+        },
+        "description": "Is the server up? No API key needed."
+      }
+    },
+    {
+      "name": "Generate image (JSON -> PNG)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/generate",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "generate"
+          ]
+        },
+        "description": "Returns the PNG. Use Send and Download, or the Preview tab.",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"prompt\": \"red house with a tree under a sunset sky\",\n  \"size\": 512,\n  \"seed\": 0,\n  \"format\": \"png\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Generate image (GET query)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/generate?prompt=cyberpunk neo city at night&size=512",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "generate"
+          ],
+          "query": [
+            {
+              "key": "prompt",
+              "value": "cyberpunk neo city at night"
+            },
+            {
+              "key": "size",
+              "value": "512"
+            }
+          ]
+        },
+        "description": "Same as POST but with query parameters; also works in a browser."
+      }
+    },
+    {
+      "name": "Generate as base64 JSON",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/generate",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "generate"
+          ]
+        },
+        "description": "Returns {image_base64, mime, mode, ...} for apps that want JSON.",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"prompt\": \"blue ocean with a boat and the sun\",\n  \"size\": 256,\n  \"response\": \"base64\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Generate with trained model",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/generate",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "generate"
+          ]
+        },
+        "description": "Uses the trained model for words the built-in lexicon does not know.",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"prompt\": \"aqua mossy\",\n  \"size\": 256,\n  \"learned\": \"always\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Parse prompt",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/parse",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "parse"
+          ]
+        },
+        "description": "Shows entities, colours, time of day and which words were not understood.",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"prompt\": \"ek laal ghar aur do ped, raat\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Model info",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/model",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "model"
+          ]
+        },
+        "description": ""
+      }
+    },
+    {
+      "name": "Train: upload zip (form-data)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/train",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "train"
+          ]
+        },
+        "description": "Pick a zip in the 'data' field. Zip = images + captions.csv (file,caption). Needs --model on the server.",
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "data",
+              "type": "file",
+              "src": [],
+              "description": "zip of images + captions.csv"
+            },
+            {
+              "key": "epochs",
+              "value": "80",
+              "type": "text"
+            },
+            {
+              "key": "fresh",
+              "value": "false",
+              "type": "text"
+            }
+          ]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "const j = pm.response.json();",
+              "if (j.job_id) { pm.collectionVariables.set('jobId', j.job_id); }"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Train: raw zip body",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/zip"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/train?epochs=80",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "train"
+          ],
+          "query": [
+            {
+              "key": "epochs",
+              "value": "80"
+            }
+          ]
+        },
+        "description": "Alternative: body = binary zip, Content-Type application/zip.",
+        "body": {
+          "mode": "file",
+          "file": {}
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "const j = pm.response.json();",
+              "if (j.job_id) { pm.collectionVariables.set('jobId', j.job_id); }"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Training job status",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/jobs/{{jobId}}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "jobs",
+            "{{jobId}}"
+          ]
+        },
+        "description": "Poll until status is done or error."
+      }
+    },
+    {
+      "name": "Recent jobs",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/jobs",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "jobs"
+          ]
+        },
+        "description": ""
+      }
+    }
+  ]
+}

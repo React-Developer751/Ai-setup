@@ -12,6 +12,7 @@ import { setSmart, smartStatus, smartVersion, smartWanted, subscribeSmart, under
 import { getPoolVersion, poolSummary, subscribePool } from './generator/dataPool'
 import BusinessForm from './BusinessForm'
 import PhotosPanel from './PhotosPanel'
+import { scenePlan } from './generator/imageAi'
 import ProjectsPanel from './ProjectsPanel'
 import { deleteProject, forgetSession, lastSession, listProjects, rememberSession, saveProject, type Project, type Snapshot } from './generator/projects'
 import EditChat, { type ChatMessage } from './EditChat'
@@ -455,6 +456,7 @@ function GeneratorPage() {
             defaultQuery={active.content.subject || brandName}
             hasPhotos={!!edits.photos}
             supported={shownEngine === 'templates'}
+            planFor={(offset) => scenePlan(themeKey, niche, variation + offset)}
             onApply={(ops, label) => {
               say({ role: 'user', text: label })
               applyOps(label, ops, 'rules', 'Put the photos on your site.')

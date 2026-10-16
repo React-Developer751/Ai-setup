@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import type { EditOp } from './generator/edit/edits'
+import type { ScenePlan } from './generator/imageAi'
+import { makePictures } from './generator/edit/imageAiClient'
 import { readPicture } from './generator/edit/imageFile'
 import { searchPhotos, type PhotoResult } from './generator/edit/serverEdit'
 
@@ -10,15 +12,19 @@ type Props = {
   onClear: () => void
   /** the photos are put on the pages of the built-in templates; the 92-components page keeps its own pictures */
   supported: boolean
+  /** the scenes the image engine would draw for this business (another number = other scenes) */
+  planFor: (offset: number) => ScenePlan
 }
 
 /** The first screen, the about picture and the gallery get real photos: from the photo search of the server (Pexels) or from the person's own files. */
-function PhotosPanel({ defaultQuery, hasPhotos, onApply, onClear, supported }: Props) {
+function PhotosPanel({ defaultQuery, hasPhotos, onApply, onClear, supported, planFor }: Props) {
   const [query, setQuery] = useState('')
   const [page, setPage] = useState(1)
   const [result, setResult] = useState<PhotoResult>()
   const [problem, setProblem] = useState('')
   const [busy, setBusy] = useState(false)
+  const [progress, setProgress] = useState('')
+  const [round, setRound] = useState(0)
 
   const search = async (nextPage: number) => {
     setBusy(true)
@@ -35,6 +41,19 @@ function PhotosPanel({ defaultQuery, hasPhotos, onApply, onClear, supported }: P
     if (!result) return
     const urls = result.photos.map((p) => p.url)
     onApply([{ op: 'photos', hero: urls[0], about: urls[1], gallery: urls.slice(2, 9), credit: `Photos: ${result.source}` }], 'Photos from the search')
+  }
+
+  const draw = async () => {
+    setBusy(true)
+    setProblem('')
+    setProgress('0 of 8')
+    const answer = await makePictures(planFor(round), (done, total) => setProgress(`${done} of ${total}`))
+    setBusy(false)
+    setProgress('')
+    if (answer.ops) {
+      setRound((r) => r + 1)
+      onApply(answer.ops, 'Pictures from the image AI')
+    } else setProblem(answer.problem ?? '')
   }
 
   const upload = async (files: FileList | null) => {
@@ -62,6 +81,13 @@ function PhotosPanel({ defaultQuery, hasPhotos, onApply, onClear, supported }: P
           <span className="font-medium text-gray-700">Your own photos (up to 8)</span>
           <input type="file" accept="image/*" multiple onChange={(e) => void upload(e.target.files)} className="block w-full text-xs" />
         </label>
+        <div className="space-y-1">
+          <span className="font-medium text-gray-700">Or draw scenes with the image AI (PixelMath)</span>
+          <p className="text-[11px] text-gray-500">Flat illustrations that fit your kind of business (sunsets, skylines, forests, galaxies, mandalas): not photos of your products. Needs: npm run images and npm run server.</p>
+          <button type="button" onClick={() => void draw()} disabled={busy} className="w-full rounded-lg bg-indigo-600 px-3 py-1.5 text-sm font-semibold text-white hover:bg-indigo-700 disabled:opacity-50">
+            {busy && progress ? `Drawing ${progress} ...` : round ? 'Draw other scenes' : 'Draw scenes for my site'}
+          </button>
+        </div>
         <div className="space-y-1">
           <span className="font-medium text-gray-700">Or search free photos (needs the server with a Pexels key)</span>
           <div className="flex gap-2">

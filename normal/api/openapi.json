@@ -1,0 +1,821 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "PixelMath API",
+    "version": "1.3.0",
+    "description": "Text-to-image engine written from scratch (no external model). Generate images, inspect how prompts are parsed, and train the engine on your own images."
+  },
+  "servers": [
+    {
+      "url": "http://127.0.0.1:8000"
+    }
+  ],
+  "security": [
+    {
+      "ApiKeyAuth": []
+    },
+    {
+      "BearerAuth": []
+    }
+  ],
+  "paths": {
+    "/health": {
+      "get": {
+        "summary": "Liveness check",
+        "operationId": "health",
+        "security": [],
+        "responses": {
+          "200": {
+            "description": "Server is up",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Health"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/generate": {
+      "post": {
+        "summary": "Generate an image from a prompt",
+        "operationId": "generate",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GenerateRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "PNG/BMP bytes (response=binary) or JSON with base64 (response=base64). Headers: X-PixelMath-Mode, X-PixelMath-Seed, X-Render-Seconds",
+            "content": {
+              "image/png": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              },
+              "image/bmp": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GenerateJson"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid parameter",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Missing or invalid API key",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "Content-Type must be application/json",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Server busy: retry after the Retry-After seconds",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "summary": "Generate an image (query parameters, handy in a browser)",
+        "operationId": "generateGet",
+        "parameters": [
+          {
+            "name": "prompt",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "maxLength": 2000
+            }
+          },
+          {
+            "name": "size",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "default": 512,
+              "minimum": 16,
+              "maximum": 2048
+            }
+          },
+          {
+            "name": "width",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "height",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "seed",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "default": 0
+            }
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "png",
+                "bmp"
+              ],
+              "default": "png"
+            }
+          },
+          {
+            "name": "learned",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "auto",
+                "always",
+                "blend",
+                "off"
+              ],
+              "default": "auto"
+            }
+          },
+          {
+            "name": "response",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "binary",
+                "base64"
+              ],
+              "default": "binary"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Image bytes",
+            "content": {
+              "image/png": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              },
+              "image/bmp": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid parameter",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Missing or invalid API key",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Server busy",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/parse": {
+      "post": {
+        "summary": "Show how a prompt is understood",
+        "operationId": "parse",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "prompt"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "prompt": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Parse result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ParseResult"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Invalid parameter",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Missing or invalid API key",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/model": {
+      "get": {
+        "summary": "Info about the loaded trained model",
+        "operationId": "model",
+        "responses": {
+          "200": {
+            "description": "Model info",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ModelInfo"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Missing or invalid API key",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/train": {
+      "post": {
+        "summary": "Train on an uploaded zip of images + captions (asynchronous)",
+        "description": "Zip layout: images (png/jpg/bmp) plus optional captions.csv (file,caption), captions.json or a .txt next to each image. Needs the server started with --model PATH. Returns a job to poll.",
+        "operationId": "train",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "required": [
+                  "data"
+                ],
+                "properties": {
+                  "data": {
+                    "type": "string",
+                    "format": "binary",
+                    "description": "the zip file"
+                  },
+                  "epochs": {
+                    "type": "integer",
+                    "default": 80,
+                    "minimum": 1,
+                    "maximum": 500
+                  },
+                  "lr": {
+                    "type": "number",
+                    "default": 0.3
+                  },
+                  "l2": {
+                    "type": "number",
+                    "default": 0.0001
+                  },
+                  "val_frac": {
+                    "type": "number",
+                    "default": 0.15
+                  },
+                  "seed": {
+                    "type": "integer",
+                    "default": 0
+                  },
+                  "fresh": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "ignore the existing model"
+                  },
+                  "grid": {
+                    "type": "integer",
+                    "default": 16,
+                    "description": "new models only"
+                  },
+                  "refit": {
+                    "type": "boolean",
+                    "default": true
+                  }
+                }
+              }
+            },
+            "application/zip": {
+              "schema": {
+                "type": "string",
+                "format": "binary"
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "Accepted",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TrainAccepted"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad zip or parameter",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Missing or invalid API key",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Training disabled (no --model)",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "409": {
+            "description": "A training job is already running",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "413": {
+            "description": "Upload or unzipped data too large",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "415": {
+            "description": "Unsupported Content-Type",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/jobs/{id}": {
+      "get": {
+        "summary": "Training job status",
+        "operationId": "job",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Job",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Job"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Unknown job",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Missing or invalid API key",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/jobs": {
+      "get": {
+        "summary": "Recent training jobs",
+        "operationId": "jobs",
+        "responses": {
+          "200": {
+            "description": "Job list"
+          },
+          "401": {
+            "description": "Missing or invalid API key",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "ApiKeyAuth": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "X-API-Key"
+      },
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer"
+      }
+    },
+    "schemas": {
+      "Error": {
+        "type": "object",
+        "properties": {
+          "error": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string"
+              },
+              "message": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "Health": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string"
+          },
+          "version": {
+            "type": "string"
+          },
+          "model_loaded": {
+            "type": "boolean"
+          },
+          "training_enabled": {
+            "type": "boolean"
+          },
+          "auth_required": {
+            "type": "boolean"
+          }
+        }
+      },
+      "GenerateRequest": {
+        "type": "object",
+        "required": [
+          "prompt"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "prompt": {
+            "type": "string",
+            "maxLength": 2000,
+            "example": "red house with a tree under a sunset sky"
+          },
+          "size": {
+            "type": "integer",
+            "default": 512,
+            "minimum": 16,
+            "maximum": 2048,
+            "description": "square size; the server may cap it lower (default 1024)"
+          },
+          "width": {
+            "type": "integer"
+          },
+          "height": {
+            "type": "integer"
+          },
+          "seed": {
+            "type": "integer",
+            "default": 0,
+            "description": "same prompt + seed = same image"
+          },
+          "format": {
+            "type": "string",
+            "enum": [
+              "png",
+              "bmp"
+            ],
+            "default": "png"
+          },
+          "learned": {
+            "type": "string",
+            "enum": [
+              "auto",
+              "always",
+              "blend",
+              "off"
+            ],
+            "default": "auto"
+          },
+          "response": {
+            "type": "string",
+            "enum": [
+              "binary",
+              "base64"
+            ],
+            "default": "binary"
+          }
+        }
+      },
+      "GenerateJson": {
+        "type": "object",
+        "properties": {
+          "image_base64": {
+            "type": "string"
+          },
+          "mime": {
+            "type": "string"
+          },
+          "width": {
+            "type": "integer"
+          },
+          "height": {
+            "type": "integer"
+          },
+          "seed": {
+            "type": "integer"
+          },
+          "mode": {
+            "type": "string"
+          },
+          "render_seconds": {
+            "type": "number"
+          },
+          "known_words": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "ParseResult": {
+        "type": "object",
+        "properties": {
+          "mode": {
+            "type": "string"
+          },
+          "time": {
+            "type": "string",
+            "nullable": true
+          },
+          "flags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "entities": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "not_in_lexicon": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "model_knows": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "ModelInfo": {
+        "type": "object",
+        "properties": {
+          "loaded": {
+            "type": "boolean"
+          },
+          "grid": {
+            "type": "integer"
+          },
+          "samples": {
+            "type": "integer"
+          },
+          "vocabulary": {
+            "type": "integer"
+          },
+          "top_words": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        }
+      },
+      "TrainAccepted": {
+        "type": "object",
+        "properties": {
+          "job_id": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "status_url": {
+            "type": "string"
+          }
+        }
+      },
+      "Job": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "queued",
+              "extracting",
+              "reading",
+              "training",
+              "done",
+              "error"
+            ]
+          },
+          "message": {
+            "type": "string"
+          },
+          "epoch": {
+            "type": "integer"
+          },
+          "epochs": {
+            "type": "integer"
+          },
+          "train_rmse": {
+            "type": "number",
+            "nullable": true
+          },
+          "val_rmse": {
+            "type": "number",
+            "nullable": true
+          },
+          "images_read": {
+            "type": "integer"
+          },
+          "skipped_count": {
+            "type": "integer"
+          },
+          "skipped": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "metrics": {
+            "type": "object",
+            "nullable": true
+          },
+          "error": {
+            "type": "object",
+            "nullable": true
+          }
+        }
+      }
+    }
+  }
+}

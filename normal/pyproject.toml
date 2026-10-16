@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pixelmath-engine"
+version = "1.3.0"
+description = "Text-to-image from pure maths, trainable on your own images. Zero runtime dependencies."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+pixelmath = "pixelmath.__main__:main"
+pixelmath-train = "pixelmath.trainer:main"
+pixelmath-serve = "pixelmath.server:main"
+
+[tool.setuptools]
+packages = ["pixelmath", "pixelmath.props"]

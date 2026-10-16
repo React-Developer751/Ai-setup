@@ -18,6 +18,10 @@ const TOKEN = process.env.EDIT_SERVER_TOKEN
 const PEXELS_KEY = process.env.PEXELS_API_KEY
 const PEXELS_BASE = (process.env.PEXELS_BASE_URL ?? 'https://api.pexels.com').replace(/\/$/, '')
 const photoCache = new Map()
+// optional image engine (PixelMath, the `normal` folder: npm run images): scenes for the first screen, About and gallery
+const PIXELMATH_URL = (process.env.PIXELMATH_URL ?? 'http://127.0.0.1:8000').replace(/\/$/, '')
+const PIXELMATH_KEY = process.env.PIXELMATH_API_KEY
+const IMAGES_PER_MINUTE = Number(process.env.EDIT_IMAGES_PER_MINUTE ?? 90)
 const RATE_PER_MINUTE = Number(process.env.EDIT_RATE_PER_MINUTE ?? 30)
 const KEY = process.env.ANTHROPIC_API_KEY
 const BASE = (process.env.ANTHROPIC_BASE_URL ?? 'https://api.anthropic.com').replace(/\/$/, '')
@@ -137,6 +141,29 @@ const limited = (ip) => {
   return recent.length > RATE_PER_MINUTE
 }
 
+const imageHits = new Map()
+const imagesLimited = (ip) => {
+  const now = Date.now()
+  const recent = (imageHits.get(ip) ?? []).filter((t) => now - t < 60_000)
+  recent.push(now)
+  imageHits.set(ip, recent)
+  return recent.length > IMAGES_PER_MINUTE
+}
+
+let engineProbe = { at: 0, up: false }
+/** is the image engine answering? (asked at most every 5 seconds) */
+async function imageEngineUp() {
+  if (Date.now() - engineProbe.at < 5000) return engineProbe.up
+  let up = false
+  try {
+    up = (await fetch(`${PIXELMATH_URL}/health`, { signal: AbortSignal.timeout(1500) })).ok
+  } catch {
+    up = false
+  }
+  engineProbe = { at: Date.now(), up }
+  return up
+}
+
 const send = (res, status, body) => {
   res.writeHead(status, { 'content-type': 'application/json', 'cache-control': 'no-store' })
   res.end(JSON.stringify(body))
@@ -145,7 +172,29 @@ const send = (res, status, body) => {
 export const server = http.createServer(async (req, res) => {
   try {
     const url = new URL(req.url ?? '/', 'http://localhost')
-    if (req.method === 'GET' && url.pathname === '/api/health') return send(res, 200, { ok: true, ai: !!KEY, photos: !!PEXELS_KEY, model: KEY ? MODEL : null })
+    if (req.method === 'GET' && url.pathname === '/api/health') return send(res, 200, { ok: true, ai: !!KEY, photos: !!PEXELS_KEY, images: await imageEngineUp(), model: KEY ? MODEL : null })
+    if (req.method === 'GET' && url.pathname === '/api/ai-image') {
+      if (imagesLimited(req.socket.remoteAddress ?? 'unknown')) return send(res, 429, { error: 'too many pictures requested, try again in a minute' })
+      const prompt = (url.searchParams.get('prompt') ?? '').replace(/[^\p{L}\p{M}\p{N} ,.'-]+/gu, ' ').replace(/\s+/g, ' ').trim().slice(0, 200)
+      const num = (name, min, max, fallback) => {
+        const v = Number(url.searchParams.get(name) ?? fallback)
+        return Number.isInteger(v) && v >= min && v <= max ? v : undefined
+      }
+      const width = num('width', 64, 1024, 640)
+      const height = num('height', 64, 1024, 480)
+      const seed = num('seed', 0, 999999, 1)
+      if (prompt.length < 2 || !width || !height || seed === undefined) return send(res, 400, { error: 'prompt (2-200 letters), width and height (64-1024) and seed (0-999999) are needed' })
+      let upstream
+      try {
+        upstream = await fetch(`${PIXELMATH_URL}/generate`, { method: 'POST', headers: { 'content-type': 'application/json', ...(PIXELMATH_KEY ? { 'x-api-key': PIXELMATH_KEY } : {}) }, body: JSON.stringify({ prompt, width, height, seed, format: 'png' }), signal: AbortSignal.timeout(60_000) })
+      } catch {
+        return send(res, 503, { error: 'the image engine is not running (npm run images)' })
+      }
+      if (!upstream.ok || !/^image\//.test(upstream.headers.get('content-type') ?? '')) return send(res, 502, { error: `the image engine answered ${upstream.status}` })
+      const bytes = Buffer.from(await upstream.arrayBuffer())
+      res.writeHead(200, { 'content-type': upstream.headers.get('content-type'), 'content-length': bytes.length, 'cache-control': 'public, max-age=86400' })
+      return res.end(bytes)
+    }
     if (req.method === 'GET' && url.pathname === '/api/photos') {
       if (limited(req.socket.remoteAddress ?? 'unknown')) return send(res, 429, { error: 'too many requests, try again in a minute' })
       if (!PEXELS_KEY) return send(res, 503, { error: 'PEXELS_API_KEY is not set' })

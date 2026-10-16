@@ -1,0 +1,1286 @@
+{
+ "themes": {
+  "modern_tech": {
+   "hero": [
+    "software company dashboard",
+    "laptop on a desk",
+    "futuristic cyberpunk city at night"
+   ],
+   "about": "team working with laptops",
+   "gallery": [
+    "blue abstract technology background",
+    "phone and tablet",
+    "globe with chat bubbles",
+    "light bulb idea",
+    "growth chart",
+    "security shield"
+   ]
+  },
+  "organic_nature": {
+   "hero": [
+    "green forest with a river and birds",
+    "farm with a tractor in a field",
+    "meadow with flowers and a tree on a sunny day"
+   ],
+   "about": "plant and flowers in a garden",
+   "gallery": [
+    "houseplant and lamp",
+    "flower bouquet",
+    "wind turbine in a green field",
+    "solar panels in a field",
+    "tree and grass at sunrise",
+    "mountain with forest and fog at dawn"
+   ]
+  },
+  "bold_fitness": {
+   "hero": [
+    "gym with dumbbells",
+    "mountain at sunrise with orange sky",
+    "big red sun over dark mountains"
+   ],
+   "about": "yoga and dumbbells",
+   "gallery": [
+    "kettlebell and dumbbells",
+    "trophy and medal",
+    "football on grass",
+    "bicycle on a road at sunrise",
+    "cricket set",
+    "stormy mountains with a road"
+   ]
+  },
+  "luxury_minimal": {
+   "hero": [
+    "moon over a black city skyline at night",
+    "luxury beach resort at sunset",
+    "gold mandala on black"
+   ],
+   "about": "chandelier and sofa",
+   "gallery": [
+    "wine glass on a table",
+    "luxury watch product shot",
+    "candles on a table",
+    "villa with swimming pool",
+    "golden desert at sunset with a big sun",
+    "night sky with stars and moon"
+   ]
+  },
+  "playful_vibrant": {
+   "hero": [
+    "birthday party cake and balloons",
+    "rainbow over green hills with flowers",
+    "kids playground"
+   ],
+   "about": "children with balloons",
+   "gallery": [
+    "balloons",
+    "gift box",
+    "ice cream",
+    "swing and slide",
+    "football",
+    "rainbow with clouds"
+   ]
+  },
+  "professional_services": {
+   "hero": [
+    "law firm documents and lawyer",
+    "businessperson with laptop in an office",
+    "city skyline at day with a road"
+   ],
+   "about": "meeting team in an office",
+   "gallery": [
+    "certificate and document",
+    "growth chart",
+    "coins and chart",
+    "security shield",
+    "suitcase",
+    "blue geometric tiles"
+   ]
+  },
+  "healthcare": {
+   "hero": [
+    "doctor and medical clinic",
+    "dental clinic with friendly dentist",
+    "hospital building with a doctor"
+   ],
+   "about": "doctor with a medical cross",
+   "gallery": [
+    "medical cross",
+    "pharmacy medicine",
+    "yoga meditation",
+    "plant and lotus",
+    "ambulance",
+    "blue and green abstract tiles"
+   ]
+  },
+  "food_dining": {
+   "hero": [
+    "restaurant dining table",
+    "bakery with fresh bread",
+    "coffee shop"
+   ],
+   "about": "chef in a kitchen",
+   "gallery": [
+    "pizza",
+    "burger",
+    "cake",
+    "croissant and coffee",
+    "ice cream",
+    "plate of pasta"
+   ]
+  },
+  "education": {
+   "hero": [
+    "school building with students",
+    "university campus",
+    "students studying with books"
+   ],
+   "about": "teacher in a classroom",
+   "gallery": [
+    "graduation cap",
+    "books on a bookshelf",
+    "pencil and book",
+    "globe",
+    "light bulb idea",
+    "certificate"
+   ]
+  },
+  "creative_studio": {
+   "hero": [
+    "camera and photography studio",
+    "abstract art in purple and pink",
+    "mandala in magenta and teal"
+   ],
+   "about": "photographer with a camera",
+   "gallery": [
+    "camera",
+    "headphones music",
+    "geometric tiles orange and violet",
+    "pencil and book",
+    "light bulb idea",
+    "pink sunset over a city"
+   ]
+  },
+  "general_business": {
+   "hero": [
+    "shop storefront",
+    "city skyline at day under a blue sky",
+    "businessperson in an office"
+   ],
+   "about": "team in an office",
+   "gallery": [
+    "shopping bag sale",
+    "coins and chart",
+    "phone and laptop",
+    "map pin and globe",
+    "delivery truck",
+    "review card with stars"
+   ]
+  },
+  "real_estate": {
+   "hero": [
+    "modern villa with a garden",
+    "apartment buildings at dusk",
+    "real estate villa with swimming pool"
+   ],
+   "about": "house with a tree and grass",
+   "gallery": [
+    "sofa and lamp in a living room",
+    "bedroom with a bed",
+    "house by the sea at sunset",
+    "city skyline at sunset",
+    "map pin",
+    "bungalow with a garden"
+   ]
+  },
+  "travel_tourism": {
+   "hero": [
+    "luxury beach resort at sunset",
+    "tropical island with palm trees and blue sea",
+    "mountain hiking adventure with tent"
+   ],
+   "about": "airplane and suitcase",
+   "gallery": [
+    "camping tent in the forest",
+    "hotel in the mountains at night",
+    "airplane in the sky",
+    "map pin and globe",
+    "boat on the sea at sunset",
+    "desert at sunset"
+   ]
+  },
+  "automotive": {
+   "hero": [
+    "car dealership red car",
+    "car driving on a road at sunset",
+    "garage with a mechanic"
+   ],
+   "about": "mechanic with a wrench",
+   "gallery": [
+    "wrench and toolbox",
+    "car on a road",
+    "truck on a highway",
+    "bicycle",
+    "scooter",
+    "gear"
+   ]
+  },
+  "beauty_wellness": {
+   "hero": [
+    "spa lotus candles relaxation",
+    "salon with scissors and comb",
+    "pink sunrise with flowers and a lake"
+   ],
+   "about": "yoga meditation",
+   "gallery": [
+    "lotus",
+    "candles",
+    "scissors and comb",
+    "plant and lamp",
+    "flower bouquet",
+    "mandala in pink and gold"
+   ]
+  },
+  "events_wedding": {
+   "hero": [
+    "wedding celebration",
+    "birthday party cake and balloons",
+    "mandala in red and gold"
+   ],
+   "about": "wedding couple under an arch",
+   "gallery": [
+    "bouquet",
+    "balloons",
+    "cake",
+    "candles and wine glass",
+    "gift box",
+    "gold mandala"
+   ]
+  },
+  "pets_animals": {
+   "hero": [
+    "pet shop with dogs",
+    "dog and cat",
+    "veterinary clinic with a dog"
+   ],
+   "about": "dog in a garden",
+   "gallery": [
+    "cat",
+    "rabbit",
+    "parrot",
+    "goldfish",
+    "horse",
+    "green meadow with a tree and birds on a sunny day"
+   ]
+  },
+  "fashion_retail": {
+   "hero": [
+    "boutique shop storefront",
+    "t-shirt and shoes",
+    "shopping bag sale"
+   ],
+   "about": "tailor with a sewing machine",
+   "gallery": [
+    "shoes",
+    "handbag",
+    "watch",
+    "t-shirt",
+    "scissors and thread",
+    "sale tag"
+   ]
+  },
+  "home_services": {
+   "hero": [
+    "plumber fixing pipes",
+    "electrician with a plug",
+    "painter with a paint roller"
+   ],
+   "about": "toolbox and ladder",
+   "gallery": [
+    "wrench and hammer",
+    "broom and bucket",
+    "tap",
+    "drill and saw",
+    "helmet",
+    "house with a tree"
+   ]
+  },
+  "nonprofit": {
+   "hero": [
+    "community of people",
+    "children playing in a park",
+    "tree and sunrise over a green field"
+   ],
+   "about": "team of people",
+   "gallery": [
+    "balloons and children",
+    "bouquet",
+    "red heart",
+    "school bus",
+    "plants in a garden",
+    "hill at dawn with a rainbow"
+   ]
+  }
+ },
+ "niches": {
+  "pest_control": {
+   "hero": [
+    "cleaning with a broom and bucket",
+    "house with a tree and grass on a sunny day",
+    "shield and house"
+   ],
+   "about": "worker with a bucket",
+   "gallery": [
+    "shield",
+    "broom and bucket",
+    "house",
+    "toolbox",
+    "plant",
+    "garden with flowers"
+   ]
+  },
+  "packers_movers": {
+   "hero": [
+    "moving truck with boxes",
+    "packers and movers with a truck",
+    "truck on a highway"
+   ],
+   "about": "workers with boxes",
+   "gallery": [
+    "truck",
+    "suitcase",
+    "forklift",
+    "house",
+    "sofa",
+    "map pin"
+   ]
+  },
+  "solar_installer": {
+   "hero": [
+    "solar panels on a house",
+    "solar panels in a field",
+    "wind turbine and solar panels"
+   ],
+   "about": "solar panels and a worker",
+   "gallery": [
+    "solar panels",
+    "wind turbine",
+    "light bulb",
+    "house with a sun",
+    "plug",
+    "factory with solar panels"
+   ]
+  },
+  "cctv_security_install": {
+   "hero": [
+    "security camera and shield",
+    "camera and security shield on a building",
+    "shield"
+   ],
+   "about": "security shield and a person",
+   "gallery": [
+    "camera",
+    "shield",
+    "shield",
+    "monitor",
+    "house",
+    "map pin"
+   ]
+  },
+  "ac_repair": {
+   "hero": [
+    "technician with a wrench",
+    "wrench and toolbox",
+    "repair workshop"
+   ],
+   "about": "technician with a toolbox",
+   "gallery": [
+    "wrench",
+    "screwdriver",
+    "toolbox",
+    "plug",
+    "gear",
+    "house"
+   ]
+  },
+  "painting_contractor": {
+   "hero": [
+    "painter with a paint roller",
+    "house with a tree and grass",
+    "paint roller and ladder"
+   ],
+   "about": "painter with a ladder",
+   "gallery": [
+    "paint roller",
+    "ladder",
+    "bucket",
+    "house",
+    "brush and abstract art",
+    "blue house"
+   ]
+  },
+  "carpentry_furniture": {
+   "hero": [
+    "carpenter with a saw and a hammer",
+    "sofa and lamp in a living room",
+    "workshop with a saw"
+   ],
+   "about": "carpenter in a workshop",
+   "gallery": [
+    "saw",
+    "hammer",
+    "chair",
+    "bookshelf",
+    "bed",
+    "sofa"
+   ]
+  },
+  "cleaning_services": {
+   "hero": [
+    "cleaning with a broom and bucket",
+    "sofa and plant in a living room",
+    "cleaning service"
+   ],
+   "about": "worker with a broom",
+   "gallery": [
+    "broom",
+    "bucket",
+    "sofa",
+    "plant",
+    "lamp",
+    "house"
+   ]
+  },
+  "laundry_drycleaning": {
+   "hero": [
+    "shirts and t-shirt",
+    "t-shirt and shirt",
+    "clothes and shirts"
+   ],
+   "about": "shirt and bag",
+   "gallery": [
+    "shirt",
+    "t-shirt",
+    "shopping bag",
+    "scissors and thread",
+    "bucket",
+    "shoes"
+   ]
+  },
+  "water_purifier_service": {
+   "hero": [
+    "technician with a wrench and a tap",
+    "tap with water",
+    "wrench and tap"
+   ],
+   "about": "technician with a toolbox",
+   "gallery": [
+    "tap",
+    "wrench",
+    "toolbox",
+    "blue abstract water",
+    "bucket",
+    "house"
+   ]
+  },
+  "car_rental": {
+   "hero": [
+    "car dealership red car",
+    "car driving on a road at sunset",
+    "cars on a road"
+   ],
+   "about": "car and map pin",
+   "gallery": [
+    "car",
+    "map pin",
+    "road at sunset",
+    "suitcase",
+    "taxi",
+    "mountain road"
+   ]
+  },
+  "driving_school": {
+   "hero": [
+    "car driving on a road",
+    "car on a road at sunrise",
+    "student with a car"
+   ],
+   "about": "student and a car",
+   "gallery": [
+    "car",
+    "road",
+    "map pin",
+    "student",
+    "certificate",
+    "traffic on a city road"
+   ]
+  },
+  "mobile_repair": {
+   "hero": [
+    "smartphone with a screwdriver",
+    "phone and tablet repair",
+    "repair workshop with a phone"
+   ],
+   "about": "technician with a smartphone",
+   "gallery": [
+    "phone",
+    "tablet",
+    "screwdriver",
+    "gear",
+    "headphones",
+    "laptop"
+   ]
+  },
+  "bike_repair_garage": {
+   "hero": [
+    "bicycle and wrench",
+    "garage with a bicycle",
+    "mechanic with a bicycle"
+   ],
+   "about": "mechanic with a wrench",
+   "gallery": [
+    "bicycle",
+    "wrench",
+    "gear",
+    "scooter",
+    "toolbox",
+    "road"
+   ]
+  },
+  "interior_designer": {
+   "hero": [
+    "sofa and lamp in a living room",
+    "living room interior with a plant",
+    "bedroom with a bed and lamp"
+   ],
+   "about": "chair and bookshelf",
+   "gallery": [
+    "sofa",
+    "lamp",
+    "plant",
+    "bed",
+    "chair",
+    "bookshelf"
+   ]
+  },
+  "craft_brewery_bar": {
+   "hero": [
+    "restaurant dining table with wine glass",
+    "bar with a wine glass",
+    "restaurant interior"
+   ],
+   "about": "bartender and a wine glass",
+   "gallery": [
+    "wine glass",
+    "burger",
+    "pizza",
+    "candles",
+    "plate of pasta",
+    "restaurant dining table"
+   ]
+  },
+  "cloud_kitchen": {
+   "hero": [
+    "chef and burger",
+    "chef in a kitchen with pizza",
+    "delivery van with food"
+   ],
+   "about": "chef in a kitchen",
+   "gallery": [
+    "burger",
+    "pizza",
+    "plate of pasta",
+    "delivery truck",
+    "cake",
+    "coffee"
+   ]
+  },
+  "tiffin_service": {
+   "hero": [
+    "lunch plate and delivery",
+    "plate of pasta and delivery van",
+    "chef and a delivery van"
+   ],
+   "about": "chef in a kitchen",
+   "gallery": [
+    "plate of pasta",
+    "delivery truck",
+    "bicycle",
+    "bread",
+    "tea cup",
+    "map pin"
+   ]
+  },
+  "sweet_shop_mithai": {
+   "hero": [
+    "sweet shop with cakes",
+    "cake and cupcake shop",
+    "gift box and cake"
+   ],
+   "about": "chef with a cake",
+   "gallery": [
+    "cake",
+    "cupcake",
+    "gift box",
+    "balloons",
+    "bakery",
+    "candles"
+   ]
+  },
+  "ice_cream_parlour": {
+   "hero": [
+    "ice cream shop",
+    "ice cream cones",
+    "ice cream and cupcake"
+   ],
+   "about": "ice cream and a cupcake",
+   "gallery": [
+    "ice cream",
+    "cupcake",
+    "cake",
+    "balloons",
+    "coffee",
+    "cafe"
+   ]
+  },
+  "juice_smoothie_bar": {
+   "hero": [
+    "juice bar",
+    "juice and fruit",
+    "cafe with juice"
+   ],
+   "about": "juice and plants",
+   "gallery": [
+    "juice",
+    "plant",
+    "cup",
+    "cafe",
+    "cake",
+    "bicycle"
+   ]
+  },
+  "catering_service": {
+   "hero": [
+    "catering buffet",
+    "wedding catering with food",
+    "party buffet with a chef"
+   ],
+   "about": "chef with a buffet",
+   "gallery": [
+    "plate of pasta",
+    "cake",
+    "wine glass",
+    "chef",
+    "balloons",
+    "candles"
+   ]
+  },
+  "kirana_grocery": {
+   "hero": [
+    "kirana shop",
+    "supermarket with shopping cart",
+    "grocery store"
+   ],
+   "about": "shopkeeper with a shopping bag",
+   "gallery": [
+    "shopping cart",
+    "shopping bag",
+    "bread",
+    "delivery truck",
+    "plant",
+    "sale tag"
+   ]
+  },
+  "bookstore": {
+   "hero": [
+    "bookshop with books",
+    "books on a bookshelf",
+    "reading a book"
+   ],
+   "about": "student with books",
+   "gallery": [
+    "book",
+    "bookshelf",
+    "pencil",
+    "lamp",
+    "cup",
+    "graduation cap"
+   ]
+  },
+  "gift_shop": {
+   "hero": [
+    "gift shop with gift boxes",
+    "gift box and balloons",
+    "gift box shop"
+   ],
+   "about": "gift box and bouquet",
+   "gallery": [
+    "gift box",
+    "balloons",
+    "bouquet",
+    "candles",
+    "shopping bag",
+    "heart"
+   ]
+  },
+  "florist": {
+   "hero": [
+    "flower shop bouquet",
+    "florist with flowers",
+    "bouquet in a shop"
+   ],
+   "about": "bouquet and plants",
+   "gallery": [
+    "bouquet",
+    "flower",
+    "plant",
+    "garden with flowers",
+    "gift box",
+    "rose"
+   ]
+  },
+  "printing_press": {
+   "hero": [
+    "printing press with documents",
+    "document and paper",
+    "documents and a pencil"
+   ],
+   "about": "worker with documents",
+   "gallery": [
+    "document",
+    "paper",
+    "pencil",
+    "book",
+    "gear",
+    "certificate"
+   ]
+  },
+  "jewellery_shop": {
+   "hero": [
+    "jewellery shop with gold coins",
+    "gold coins and watch",
+    "luxury watch product shot"
+   ],
+   "about": "gold coins and a gift box",
+   "gallery": [
+    "gold coins",
+    "watch",
+    "gift box",
+    "diamond",
+    "ring",
+    "heart"
+   ]
+  },
+  "mobile_phone_store": {
+   "hero": [
+    "mobile phone store",
+    "smartphone store with phones",
+    "phones and tablets"
+   ],
+   "about": "shopkeeper with a phone",
+   "gallery": [
+    "smartphone",
+    "tablet",
+    "headphones",
+    "laptop",
+    "shopping bag",
+    "sale tag"
+   ]
+  },
+  "tailoring_alterations": {
+   "hero": [
+    "tailor sewing machine",
+    "tailor shop with a sewing machine",
+    "scissors thread and shirt"
+   ],
+   "about": "tailor with a sewing machine",
+   "gallery": [
+    "sewing machine",
+    "scissors",
+    "thread spool",
+    "shirt",
+    "t-shirt",
+    "shoes"
+   ]
+  },
+  "chartered_accountant": {
+   "hero": [
+    "accountant with documents and a chart",
+    "growth chart and coins",
+    "office with documents and a laptop"
+   ],
+   "about": "accountant with a laptop",
+   "gallery": [
+    "growth chart",
+    "coins",
+    "document",
+    "laptop",
+    "certificate",
+    "shield"
+   ]
+  },
+  "insurance_agent": {
+   "hero": [
+    "security shield insurance",
+    "shield and house and car",
+    "family and a shield"
+   ],
+   "about": "agent with a shield",
+   "gallery": [
+    "shield",
+    "house",
+    "car",
+    "medical cross",
+    "coins",
+    "certificate"
+   ]
+  },
+  "loan_finance_agent": {
+   "hero": [
+    "coins and a house",
+    "finance with coins and a chart",
+    "loan documents and coins"
+   ],
+   "about": "agent with documents",
+   "gallery": [
+    "coins",
+    "house",
+    "car",
+    "growth chart",
+    "document",
+    "shield"
+   ]
+  },
+  "astrologer_vastu": {
+   "hero": [
+    "night sky with stars and moon",
+    "mandala in purple and gold",
+    "galaxy with stars and a planet"
+   ],
+   "about": "mandala and stars",
+   "gallery": [
+    "stars",
+    "moon",
+    "mandala",
+    "planet",
+    "candles",
+    "lotus"
+   ]
+  },
+  "ielts_language_coaching": {
+   "hero": [
+    "students with a globe and books",
+    "language classroom with students",
+    "globe and chat bubbles"
+   ],
+   "about": "teacher and students",
+   "gallery": [
+    "globe",
+    "chat bubbles",
+    "book",
+    "pencil",
+    "graduation cap",
+    "certificate"
+   ]
+  },
+  "tuition_centre": {
+   "hero": [
+    "classroom with students",
+    "students studying with books",
+    "teacher in a classroom"
+   ],
+   "about": "teacher with students",
+   "gallery": [
+    "book",
+    "pencil",
+    "graduation cap",
+    "light bulb",
+    "bookshelf",
+    "certificate"
+   ]
+  },
+  "music_dance_classes": {
+   "hero": [
+    "headphones and music",
+    "stage with a spotlight and music",
+    "mandala and music"
+   ],
+   "about": "student with headphones",
+   "gallery": [
+    "headphones",
+    "stars",
+    "balloons",
+    "trophy",
+    "heart",
+    "mandala"
+   ]
+  },
+  "ayurveda_panchakarma": {
+   "hero": [
+    "ayurvedic herbs plants and lotus",
+    "spa lotus candles relaxation",
+    "green plants and candles"
+   ],
+   "about": "yoga meditation with plants",
+   "gallery": [
+    "lotus",
+    "plant",
+    "candles",
+    "leaf",
+    "yoga",
+    "forest"
+   ]
+  },
+  "physiotherapy": {
+   "hero": [
+    "yoga stretching and exercise",
+    "clinic with a doctor and exercise",
+    "yoga studio"
+   ],
+   "about": "doctor with a patient",
+   "gallery": [
+    "yoga",
+    "dumbbells",
+    "medical cross",
+    "doctor",
+    "bed",
+    "plant"
+   ]
+  },
+  "diagnostic_lab": {
+   "hero": [
+    "laboratory with medical equipment",
+    "pathology lab with a doctor",
+    "hospital with a medical cross"
+   ],
+   "about": "doctor in a laboratory",
+   "gallery": [
+    "medical cross",
+    "doctor",
+    "hospital",
+    "clock",
+    "document",
+    "shield"
+   ]
+  },
+  "pharmacy": {
+   "hero": [
+    "pharmacy medicine",
+    "pharmacy shop with medical cross",
+    "medicine and medical cross"
+   ],
+   "about": "pharmacist with medicine",
+   "gallery": [
+    "medical cross",
+    "medicine",
+    "shield",
+    "doctor",
+    "delivery truck",
+    "plant"
+   ]
+  },
+  "counselling_therapy": {
+   "hero": [
+    "psychologist and chat bubbles",
+    "yoga meditation and chat bubbles",
+    "calm green plants and lotus"
+   ],
+   "about": "psychologist with a lamp",
+   "gallery": [
+    "chat bubbles",
+    "lotus",
+    "plant",
+    "lamp",
+    "heart",
+    "sofa"
+   ]
+  },
+  "immigration_consultant": {
+   "hero": [
+    "airplane and globe",
+    "airplane tickets and suitcase",
+    "globe with an airplane and documents"
+   ],
+   "about": "consultant with documents",
+   "gallery": [
+    "airplane",
+    "globe",
+    "suitcase",
+    "document",
+    "map pin",
+    "certificate"
+   ]
+  },
+  "notary_documentation": {
+   "hero": [
+    "notary documents and certificate",
+    "documents with a seal",
+    "document and pencil"
+   ],
+   "about": "notary with documents",
+   "gallery": [
+    "document",
+    "certificate",
+    "pencil",
+    "shield",
+    "book",
+    "clock"
+   ]
+  },
+  "digital_marketing_agency": {
+   "hero": [
+    "digital marketing analytics report",
+    "marketing chart and laptop",
+    "laptop with a growth chart"
+   ],
+   "about": "team with laptops",
+   "gallery": [
+    "growth chart",
+    "laptop",
+    "phone",
+    "chat bubbles",
+    "light bulb idea",
+    "globe"
+   ]
+  },
+  "tattoo_studio": {
+   "hero": [
+    "abstract art in black and red",
+    "mandala in red and black",
+    "geometric tiles in black and red"
+   ],
+   "about": "mandala and heart",
+   "gallery": [
+    "heart",
+    "star",
+    "mandala",
+    "moon",
+    "abstract art in red",
+    "tiles in black and gold"
+   ]
+  },
+  "drone_photography": {
+   "hero": [
+    "mountains at sunrise with a lake",
+    "camera and mountains at sunrise",
+    "city skyline at sunset"
+   ],
+   "about": "camera and a photographer",
+   "gallery": [
+    "camera",
+    "mountain",
+    "sea with a boat",
+    "city",
+    "forest",
+    "beach"
+   ]
+  },
+  "wedding_dj_sound": {
+   "hero": [
+    "headphones and party",
+    "party with music and balloons",
+    "wedding celebration with music"
+   ],
+   "about": "party crowd",
+   "gallery": [
+    "headphones",
+    "balloons",
+    "stars",
+    "wine glass",
+    "wedding couple",
+    "cake"
+   ]
+  },
+  "event_decor_planner": {
+   "hero": [
+    "party decoration with balloons and candles",
+    "wedding celebration",
+    "birthday party cake and balloons"
+   ],
+   "about": "wedding couple under an arch",
+   "gallery": [
+    "balloons",
+    "candles",
+    "bouquet",
+    "cake",
+    "gift box",
+    "mandala"
+   ]
+  },
+  "bridal_makeup": {
+   "hero": [
+    "bride with a bouquet",
+    "wedding couple and bouquet",
+    "salon with scissors and comb"
+   ],
+   "about": "bride and flowers",
+   "gallery": [
+    "bouquet",
+    "mirror and comb",
+    "candles",
+    "heart",
+    "flower",
+    "wedding couple"
+   ]
+  },
+  "video_editing_studio": {
+   "hero": [
+    "film camera and monitor",
+    "video editing monitor and headphones",
+    "camera and laptop"
+   ],
+   "about": "editor with a monitor",
+   "gallery": [
+    "monitor",
+    "camera",
+    "headphones",
+    "laptop",
+    "camera",
+    "stars"
+   ]
+  },
+  "funeral_services": {
+   "hero": [
+    "sea at dusk with a moon",
+    "lake at dawn with fog",
+    "moon with stars over mountains"
+   ],
+   "about": "candles and a lotus",
+   "gallery": [
+    "candles",
+    "lotus",
+    "moon",
+    "stars",
+    "sea at dusk",
+    "hill at dawn"
+   ]
+  },
+  "scrap_recycling": {
+   "hero": [
+    "truck and gear in a factory",
+    "factory with a truck",
+    "recycling truck and bucket"
+   ],
+   "about": "worker with a truck",
+   "gallery": [
+    "truck",
+    "gear",
+    "forklift",
+    "factory",
+    "bucket",
+    "plant"
+   ]
+  },
+  "coworking_space": {
+   "hero": [
+    "office with laptops and team",
+    "coworking space with desks and plants",
+    "city skyline at day with an office"
+   ],
+   "about": "team with laptops",
+   "gallery": [
+    "laptop",
+    "chair",
+    "plant",
+    "lamp",
+    "coffee",
+    "monitor"
+   ]
+  },
+  "yoga_retreat": {
+   "hero": [
+    "yoga meditation in the mountains",
+    "yoga studio with plants",
+    "meditation by a lake at sunrise"
+   ],
+   "about": "yoga meditation",
+   "gallery": [
+    "lotus",
+    "candles",
+    "plant",
+    "mountain",
+    "lake at dawn",
+    "mandala"
+   ]
+  },
+  "farm_stay_homestay": {
+   "hero": [
+    "farm with a tractor in wheat field",
+    "cottage with grass and flowers on a sunny day",
+    "dairy farm with cows"
+   ],
+   "about": "cottage and a tree",
+   "gallery": [
+    "tractor",
+    "cow",
+    "chicken",
+    "tent",
+    "cottage",
+    "tree and grass"
+   ]
+  },
+  "pg_hostel": {
+   "hero": [
+    "hostel with beds and chairs",
+    "city apartment buildings at dusk",
+    "student room with a bed and a chair"
+   ],
+   "about": "student with books",
+   "gallery": [
+    "bed",
+    "chair",
+    "lamp",
+    "bookshelf",
+    "apartment",
+    "laptop"
+   ]
+  },
+  "temple_trust": {
+   "hero": [
+    "mandala in gold and red",
+    "sunrise over a lake with a sun",
+    "mandala in orange and gold"
+   ],
+   "about": "candles and a lotus",
+   "gallery": [
+    "lotus",
+    "candles",
+    "mandala",
+    "sun",
+    "stars",
+    "flowers"
+   ]
+  },
+  "travel_cab_taxi": {
+   "hero": [
+    "taxi on a road at sunset",
+    "car driving on a road in the mountains",
+    "taxi and a map pin"
+   ],
+   "about": "driver with a car",
+   "gallery": [
+    "taxi",
+    "car",
+    "map pin",
+    "suitcase",
+    "road at sunrise",
+    "airplane"
+   ]
+  },
+  "security_guard_agency": {
+   "hero": [
+    "security shield and guard",
+    "shield and a building",
+    "security guard with a shield"
+   ],
+   "about": "guard with a shield",
+   "gallery": [
+    "shield",
+    "camera",
+    "building",
+    "map pin",
+    "person",
+    "clock"
+   ]
+  }
+ }
+}
